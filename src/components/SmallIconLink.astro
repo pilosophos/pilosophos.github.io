@@ -1,0 +1,16 @@
+---
+const { href, icon, label, noUnderline } = Astro.props;
+---
+<a href={ href } class="group flex items-center gap-1">
+  <img src={icon}
+    class="w-[16px] h-[16px] relative group-hover:-top-[1px]"
+    width="16"
+    height="16"
+    role="presentation"
+  />
+  <span
+    class:list={[ "link", { underline: !noUnderline } ]}
+  >
+    { label }
+  </span>
+</a>

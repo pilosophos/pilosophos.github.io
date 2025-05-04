@@ -1,0 +1,16 @@
+---
+const { i, href, label, flavorText } = Astro.props;
+---
+
+<a href={ href }
+  class="block h-20 flex relative mb-3 items-center hover:font-bold"
+  style={{
+    left: `-${87 + i*33}px`
+  }}
+>
+  <div class="w-full h-full -skew-x-20 border border-pi-purple border-r-0"></div>
+  <div class="ps-7 absolute text-pi-pink">
+    <p class="font-display text-3xl">{ label }</p>
+    <p>{ flavorText }</p>
+  </div>
+</a>

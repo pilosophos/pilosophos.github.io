@@ -1,11 +1,61 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import BigNavLink from '../components/BigNavLink.astro';
+import DefaultLayout from '../layouts/DefaultLayout.astro';
 ---
 
-<Layout>
-  <Welcome />
+<DefaultLayout title="Home">
+  <div class="flex items-center justify-center w-full pt-15">
+    <div class="flex">
+      <img
+        class="w-2xl relative -top-5 left-36"
+        src="/images/hero.png"
+        alt="A drawing of a cat emerging from a CRT monitor chasing a computer mouse"
+      />
+      <nav class="absolute w-90">
+        <ul>
+          <li>
+            <BigNavLink
+              i={0}
+              href="/art"
+              label="Art"
+              flavorText="Pictures worth 1000 words"
+            />
+          </li>
+          <li>
+            <BigNavLink
+              i={1}
+              href="/writing"
+              label="Writing"
+              flavorText="Words worth 1/1000 of a picture"
+            />
+          </li>
+          <li>
+            <BigNavLink
+              i={2}
+              href="/support-me"
+              label="Support me"
+              flavorText="You can commission or buy my art!"
+            />
+          </li>
+          <li>
+            <BigNavLink
+              i={3}
+              href="/about"
+              label="About me"
+              flavorText="About the guy behind it all"
+            />
+          </li>
+        </ul>
+        <ul class="flex gap-x-3 relative -left-52 w-90 flex-wrap">
+          <li>Email</li>
+          <li>Mastodon</li>
+          <li>Bluesky</li>
+          <li>Pixiv</li>
+          <li>Reddit</li>
+          <li>Tumblr</li>
+          <li>Instagram</li>
+        </ul>
+      </nav>
+    </div>
+  </div>
 </Layout>

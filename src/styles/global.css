@@ -4,29 +4,42 @@
   --color-pi-gray: #38383f;
   --color-pi-pink: #ff90e7;
   --color-pi-purple: #c45dc6;
+  --color-pi-cyan: #9eecec;
+  --color-pi-cyan-dark: #7ebdbd;
 
   --font-sans: "NEC", sans-serif;
   --font-display: "DOSV JPN24", sans-serif;
 }
 
+@layer components {
+  .link {
+    color: var(--color-pi-cyan);
+    text-decoration: dotted;
+  }
+
+  .link:hover {
+    color: var(--color-pi-cyan-dark)
+  }
+}
+
 @font-face {
   font-family: "NEC";
-  src: url( './assets/fonts/Web437_NEC_APC3_8x16.woff' );
+  src: url( '/fonts/Web437_NEC_APC3_8x16.woff' );
 }
 
 @font-face {
   font-family: "Terminus";
-  src: url( './assets/fonts/Terminus.woff' );
+  src: url( '/fonts/Terminus.woff' );
   size-adjust: 110%;
 }
 
 @font-face {
   font-family: "DOSV JPN24";
-  src: url( './assets/fonts/web_dos-v_re_jpn24.woff' );
+  src: url( '/fonts/web_dos-v_re_jpn24.woff' );
 }
 
 @font-face {
   font-family: "PressStart2P";
-  src: url( './assets/fonts/PressStart2P-Regular.ttf' );
+  src: url( '/fonts/PressStart2P-Regular.ttf' );
   size-adjust: 70%;
 }

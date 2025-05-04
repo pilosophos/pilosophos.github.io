@@ -1,0 +1,51 @@
+---
+import SmallIconLink from "./SmallIconLink.astro";
+---
+
+<header class="flex justify-center">
+  <div class="flex p-3 w-full md:w-320 border-b border-stone-500">
+    <div class="flex w-1/2 h-16">
+      <img src="/images/malaszec-logo-inverted.svg" class="w-15" />
+      <div class="flex flex-col justify-center items-center ms-3">
+        <h1 class="font-display text-4xl">Pilosophos' Circle</h1>
+        <span>Art & stuff from a guy on the internet</span>
+      </div>
+    </div>
+    <nav class="text-2xl w-1/2 flex flex-col items-end">
+      <ul class="flex gap-5">
+        <li>
+          <SmallIconLink noUnderline
+            label="Art"
+            icon="/images/icons/tiny/paint_file-0.png"
+            href="/art"
+          />
+        </li>
+        <li>
+          <SmallIconLink noUnderline
+            label="Writing"
+            icon="/images/icons/tiny/winrep-0.png"
+            href="/writing"
+          />
+        </li>
+        <li>
+          <SmallIconLink noUnderline
+            label="Support me"
+            icon="/images/icons/tiny/paint_file-0.png"
+            href="/support-me"
+          />
+        </li>
+        <li>
+          <SmallIconLink noUnderline
+            label="About"
+            icon="/images/icons/tiny/paint_file-0.png"
+            href="/about"
+          />
+        </li>
+      </ul>
+      <details>
+        <summary class="text-end">More</summary>
+        Hello world
+      </details>
+    </nav>
+  </div>
+</header>
