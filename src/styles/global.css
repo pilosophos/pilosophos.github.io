@@ -1,1 +1,32 @@
 @import "tailwindcss";
+
+@theme {
+  --color-pi-gray: #38383f;
+  --color-pi-pink: #ff90e7;
+  --color-pi-purple: #c45dc6;
+
+  --font-sans: "NEC", sans-serif;
+  --font-display: "DOSV JPN24", sans-serif;
+}
+
+@font-face {
+  font-family: "NEC";
+  src: url( './assets/fonts/Web437_NEC_APC3_8x16.woff' );
+}
+
+@font-face {
+  font-family: "Terminus";
+  src: url( './assets/fonts/Terminus.woff' );
+  size-adjust: 110%;
+}
+
+@font-face {
+  font-family: "DOSV JPN24";
+  src: url( './assets/fonts/web_dos-v_re_jpn24.woff' );
+}
+
+@font-face {
+  font-family: "PressStart2P";
+  src: url( './assets/fonts/PressStart2P-Regular.ttf' );
+  size-adjust: 70%;
+}
