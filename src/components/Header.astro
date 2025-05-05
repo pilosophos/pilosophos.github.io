@@ -2,14 +2,17 @@
 import SmallIconLink from "./SmallIconLink.astro";
 ---
 
-<header class="container flex flex-col items-center gap-3 p-3 border-b border-stone-500 md:flex-row">
-  <div class="flex h-16 md:w-1/2">
-    <img src="/images/malaszec-logo-inverted.svg" class="w-15" />
-    <div class="flex flex-col justify-center items-center text-center ms-3">
-      <h1 class="font-display text-2xl lg:text-4xl">Pilosophos' Circle</h1>
-      <span class="w-60">Art & stuff from a guy on the internet</span>
-    </div>
+<header class="container flex flex-col items-center gap-3 p-3 border-b border-stone-500 md:flex-row md:items-start">
+  <div class="h-16 md:w-1/2">
+    <a href="/" class="flex w-fit hover:text-pi-cyan">
+      <img src="/images/malaszec-logo-inverted.svg" class="w-15" />
+      <div class="flex flex-col justify-center items-center text-center ms-3">
+        <h1 class="font-display text-2xl md:text-3xl lg:text-4xl">Pilosophos' Circle</h1>
+        <span class="w-60 md:w-max">Born and raised on the internet</span>
+      </div>
+    </a>
   </div>
+
   <nav class="flex flex-col items-center lg:text-2xl md:w-1/2 md:items-end">
     <ul class="flex gap-5">
       <li>
@@ -28,7 +31,7 @@ import SmallIconLink from "./SmallIconLink.astro";
       </li>
       <li>
         <SmallIconLink noUnderline
-          label="Support me"
+          label="Support&nbsp;me"
           icon="/images/icons/tiny/paint_file-0.png"
           href="/support-me"
         />
@@ -41,9 +44,50 @@ import SmallIconLink from "./SmallIconLink.astro";
         />
       </li>
     </ul>
-    <details>
-      <summary class="text-end">More</summary>
-      Hello world
-    </details>
+
+    <ul class="flex gap-x-3 text-base flex-wrap justify-center md:justify-end">
+      <li>
+        <SmallIconLink noUnderline
+          label="Interests"
+          icon="/images/icons/tiny/paint_old-1.png"
+          href="/interests"
+        />
+      </li>
+      <li>
+        <SmallIconLink noUnderline
+          label="Recommendations"
+          icon="/images/icons/tiny/trust0-1.png"
+          href="/recommendations"
+        />
+      </li>
+      <li>
+        <SmallIconLink noUnderline
+          label="Homelab"
+          icon="/images/icons/tiny/network_normal_two_pcs-1.png"
+          href="/homelab"
+        />
+      </li>
+      <li>
+        <SmallIconLink noUnderline
+          label="Software"
+          icon="/images/icons/tiny/appwizard-0.png"
+          href="/software"
+        />
+      </li>
+      <li>
+        <SmallIconLink noUnderline
+          label="Demos"
+          icon="/images/icons/tiny/color_profile.png"
+          href="/demos"
+        />
+      </li>
+      <li>
+        <SmallIconLink noUnderline
+          label="Links"
+          icon="/images/icons/tiny/internet_connection_wiz.png"
+          href="/links"
+        />
+      </li>
+    </ul>
   </nav>
 </header>

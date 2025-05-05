@@ -9,7 +9,7 @@ const { href, icon, label, noUnderline } = Astro.props;
     role="presentation"
   />
   <span
-    class:list={[ "link", { underline: !noUnderline } ]}
+    class:list={[ "link group-hover:text-pi-cyan-dark", { underline: !noUnderline } ]}
   >
     { label }
   </span>

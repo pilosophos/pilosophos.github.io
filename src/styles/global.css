@@ -13,7 +13,7 @@
 
 @layer components {
   .container {
-    @apply mx-auto px-3 xl:px-0 w-full xl:w-320;
+    @apply mx-auto px-3 xl:px-0 w-full xl:w-320!;
   }
 
   .link {
