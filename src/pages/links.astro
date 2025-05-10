@@ -1,0 +1,87 @@
+---
+import ArticleHeader from "../components/ArticleHeader.astro";
+import BigIconLink from "../components/BigIconLink.astro";
+import IconH2 from "../components/IconH2.astro";
+import DefaultLayout from "../layouts/DefaultLayout.astro";
+---
+
+<DefaultLayout title="Links">
+  <main class="container">
+    <ArticleHeader
+      icon="/images/icons/internet_connection_wiz.png"
+      title="Links"
+    >
+      This page has links to my stuff on other sites, as well as links to places on the internet I think are cool
+    </ArticleHeader>
+
+    <section class="mb-10">
+      <IconH2 icon="/images/icons/msagent-3.png" class="mb-5">My stuff</IconH2>
+      <ul>
+        <li>Lorem ipsum</li>
+      </ul>
+    </section>
+    
+    <section class="mb-10">
+      <IconH2 icon="/images/icons/xml.png" class="mb-5">Other people's cool sites</IconH2>
+      <ul class="grid gap-5 md:grid-cols-2">
+        <li>
+          <BigIconLink href="https://tilde.town" icon="/images/88x31/tildetown.gif" label="tilde.town">
+            <p>A wonderful community of technology-enjoyers, and where one of the mirrors of Pilosophos' Circle used to be hosted.</p>
+          </BigIconLink>
+        </li>
+        <li>
+          <BigIconLink href="https://corru.observer/" icon="/images/88x31/corru-observer.gif" label="Corru Observer">
+            <p>A cool web game about exploring a fragmented alien biocomputer. Aesthetics no doubt inspired by Fauux.</p>
+          </BigIconLink>
+        </li>
+        <li>
+          <BigIconLink href="https://fauux.neocities.org/" icon="/images/88x31/fauux.gif" label="Fauux">
+            <p>The famous ¿Lain fansite? that feels more like computer art than anything.</p>
+          </BigIconLink>
+        </li>
+        <li>
+          <BigIconLink href="https://talkhaus.raocow.com/" icon="/images/88x31/talkhaus.png" label="Raocow's Talkhaus">
+            <p>The forum belonging to the only YouTube let's player who I can still stand even after some 15+ years of LPing, Raocow. The Talkhaus makes some neat things sometimes, like <a href="https://www.smwcentral.net/?p=section&a=details&id=17125" class="link">ASMT</a>.</p>
+          </BigIconLink>
+        </li>
+        <li>
+          <BigIconLink href="https://windowsitter.world/" icon="/images/88x31/windowsitterworld.png" label="Window Sitter World">
+            <p>A collection of little anime characters that sit on top of your computer windows, put together by tilde.town's own ~nincollin.</p>
+          </BigIconLink>
+        </li>
+        <li>
+          <BigIconLink href="https://win98icons.alexmeub.com/" icon="/images/icons/xml.png" label="Windows 98 Icon Viewer">
+            <p>A collection of icons ripped from Windows 98 in png format. Most of the icons on Pilo's Circle come from here.</p>
+          </BigIconLink>
+        </li>
+        <li>
+          <BigIconLink href="https://jdan.github.io/98.css/" icon="/images/icons/xml.png" label="98.css">
+            <p>Hands down the best Windows 98 css theme. Bootstrap NOT required.</p>
+          </BigIconLink>
+        </li>
+        <li>
+          <BigIconLink href="https://int10h.org/oldschool-pc-fonts/" icon="/images/icons/xml.png" label="The Ultimate Oldschool PC Font Pack">
+            <p>
+              A collection of fonts ripped from old DOS-era PCs. Two fonts used on my website,
+              <a href="https://int10h.org/oldschool-pc-fonts/fontlist/font?dos-v_re_jpn24" class="link font-mono">DOS/V re. JPN24</a>
+              and
+              <a href="https://int10h.org/oldschool-pc-fonts/fontlist/font?nec_apc3_8x16" class="link">NEC APC3 8x16</a>,
+              are from here.
+            </p>
+          </BigIconLink>
+        </li>
+        <li>
+          <BigIconLink href="https://moebuntu.web.fc2.com/home_eng.html" icon="/images/icons/xml.png" label="Moebuntu">
+            <p>A customization package to moe-nize [sic] your Ubuntu install. もえもえきゅ～ん！</p>
+          </BigIconLink>
+        </li>
+        <li>
+          <BigIconLink href="https://iffybooks.net/zines/" icon="/images/icons/xml.png" label="Iffy Books Zines">
+            <p>A bunch of cool little hacker zines from Iffy Books, based in Philadelphia.</p>
+          </BigIconLink>
+        </li>
+        
+      </ul>
+    </section>
+  </main>
+</DefaultLayout>
