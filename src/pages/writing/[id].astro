@@ -1,0 +1,53 @@
+---
+import { getCollection, render } from 'astro:content';
+import DefaultLayout from '../../layouts/DefaultLayout.astro';
+import SmallIconLink from '../../components/SmallIconLink.astro';
+// 1. Generate a new path for every collection entry
+export async function getStaticPaths() {
+  const posts = await getCollection('writing');
+  return posts.map(post => ({
+    params: { id: post.id },
+    props: { post },
+  }));
+}
+// 2. For your template, you can get the entry directly from the prop
+const { post } = Astro.props;
+const { Content } = await render(post);
+---
+<DefaultLayout title={ post.data.title }>
+  <article class="
+    container
+    xl:-left-30 relative
+    prose prose-invert lg:prose-2xl
+    prose-headings:font-display prose-headings:font-normal
+    prose-h1:text-4xl
+    prose-h2:text-3xl prose-h2:mt-0
+    prose-h3:text-2xl
+    prose-h4:text-xl
+    prose-a:text-pi-cyan prose-a:decoration-dotted prose-a:hover:text-pi-cyan-dark
+    prose-code:font-normal prose-code:font-display prose-code:text-pi-pink prose-code:before:content-none prose-code:after:content-none
+    prose-figcaption:text-base prose-figcaption:text-stone-400
+  ">
+    <header class="text-base mb-5 not-prose">
+      <nav>
+        <SmallIconLink
+          label="Back to writing index"
+          icon="/images/icons/tiny/winrep-0.png"
+          href="/writing"
+        />
+      </nav>
+    </header>
+    <main>
+      <Content />
+    </main>
+    <footer class="text-base mb-5 not-prose">
+      <nav>
+        <SmallIconLink
+          label="Back to writing index"
+          icon="/images/icons/tiny/winrep-0.png"
+          href="/writing"
+        />
+      </nav>
+    </footer>
+  </article>
+</DefaultLayout>

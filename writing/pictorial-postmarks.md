@@ -1,14 +1,13 @@
 ---
 title: How to get a pictorial postmark
 description: Fancy schmancy stamps that your postal service will stamp on your stamps
-layout: ../../layouts/WritingLayout.astro
-tags: nonfiction
+tags: [nonfiction]
 ---
 
 # How to get a pictorial postmark
 
 ## What are they?
-<figure class="relative !mt-0 flex flex-col items-center lg:float-right lg:-mr-90 lg:w-80">
+<figure class="relative !mt-0 flex flex-col items-center xl:float-right xl:-mr-90 xl:w-80">
   <img src="/images/pictorial-postmark-uk.jpg" alt="A pictorial postmark from Fenelon Falls, Ontario, Canada" width="153" height="153">
   <figcaption>A pictorial postmark from Fenelon Falls, Ontario, Canada</figcaption>
 </figure>
@@ -52,7 +51,7 @@ For more precise details, see the Postmark Bulletin PDF linked from the [Royal M
 </aside>
 
 
-<figure class="flex flex-col justify-center items-center gap-3 lg:flex-row lg:w-280">
+<figure class="flex flex-col justify-center items-center gap-3 xl:flex-row xl:w-280">
   <img src="/images/pictorial-postmark-uk.webp" alt="Example handstamp as it appears in the Postmark Bulletin, with serial number and date." width="153" class="me-3">
   <figcaption>A handstamp as it appears in the Postmark Bulletin, with serial number and date. The outer envelope needs to be marked with the serial number (15997), the words "Special Handstamp", and be received by Royal Mail before 8 Sep 2024. This particular handstamp is stamped at the London Special Handstamp Centre, so the envelope must be addressed to there.</figcaption>
 </figure>
@@ -60,7 +59,7 @@ For more precise details, see the Postmark Bulletin PDF linked from the [Royal M
 #### United States (USPS)
 Pictorial postmarks are made available starting on a certain date, and the USPS must receive your outer envelope within the 30 day period following the availability date. Each postmark will have its own address.
 
-<figure class="flex flex-col justify-center items-center gap-3 lg:flex-row lg:w-280">
+<figure class="flex flex-col justify-center items-center gap-3 xl:flex-row xl:w-280">
   <img src="/images/pictorial-postmark-us.webp" alt="A pictorial postmark from Fenelon Falls, Ontario, Canada" width="546" class="me-3">
   <figcaption>A pictorial postmark as it appears on the USPS postal bulletin, with date and address. The address starts from "Rollag Station." The outer envelope should be received by USPS by 29 September 2024, 30 days after the availability date.</figcaption>
 </figure>

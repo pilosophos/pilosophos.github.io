@@ -1,11 +1,10 @@
 ---
 title: Xbox 360 development tools
 description: What you need to get started with Xbox 360 homebrew development
-layout: ../../layouts/WritingLayout.astro
-tags: nonfiction
+tags: [nonfiction]
 ---
-## {{ page.title }}
-<p class="lead">{{ page.description }}</p>
+## Xbox 360 development tools
+<p class="lead">What you need to get started with Xbox 360 homebrew development</p>
 
 ### Summary
 Most people are advised to download the Xbox 360 SDK, which will also require Visual Studio 2010, to write homebrew in C++. To use C# with XNA, you should also install XNA Game Studio 4.0 Refresh and XNA 4.0 Extensions, which requires Games for Windows Live. Alternatively, a fully open-source C/C++ stack is possible using LibXenon, but the compiled executables are not recognized by Aurora/FreestyleDash and requires booting into Xell to run.

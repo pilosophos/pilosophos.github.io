@@ -1,0 +1,16 @@
+---
+import { getCollection } from 'astro:content';
+import DefaultLayout from "../../layouts/DefaultLayout.astro";
+const posts = await getCollection('writing');
+
+---
+<DefaultLayout title="Writing">
+  <main class="container">
+    <h1>My posts</h1>
+    <ul>
+      {posts.map(post => (
+        <li><a href={`/writing/${post.id}`}>{post.data.title}</a></li>
+      ))}
+    </ul>
+  </main>
+</DefaultLayout>

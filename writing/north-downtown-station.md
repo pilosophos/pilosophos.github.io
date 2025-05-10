@@ -1,8 +1,7 @@
 ---
 title: North Downtown Station
 description: The feeling of a Malaszec train station
-layout: ../../layouts/WritingLayout.astro
-tags: fiction Malaszec
+tags: [fiction, Malaszec]
 ---
 # North Downtown Station
 
