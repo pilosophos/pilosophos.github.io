@@ -8,7 +8,7 @@ import { glob, file } from 'astro/loaders';
 const writing = defineCollection({
   loader: glob({
     pattern: "**/*.md",
-    base: "./writing",
+    base: "./src/writing",
   }),
   schema: z.object({
     title: z.string(),
