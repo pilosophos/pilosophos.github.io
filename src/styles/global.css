@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@plugin '@tailwindcss/typography';
 
 @theme {
   --color-pi-gray: #38383f;
@@ -8,6 +9,7 @@
   --color-pi-cyan-dark: #7ebdbd;
 
   --font-sans: "NEC", sans-serif;
+  --font-mono: "NEC", sans-serif;
   --font-display: "DOSV JPN24", sans-serif;
 }
 

@@ -1,0 +1,35 @@
+---
+import Favicon from '../components/Favicon.astro'
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import '../styles/global.css'
+
+const { title } = Astro.props;
+---
+<!DOCTYPE html>
+<html lang="en" class="bg-pi-gray text-white h-full">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <Favicon />
+  <title>{ title } | Pilosophos' Circle</title>
+</head>
+<body class="h-full">
+  <Header />
+  <main class="
+    container
+    lg:-left-30 relative
+    prose prose-invert lg:prose-2xl
+    prose-headings:font-display prose-headings:font-normal
+    prose-h1:text-4xl
+    prose-h2:text-3xl
+    prose-h3:text-2xl
+    prose-h4:text-xl
+    prose-a:text-pi-cyan prose-a:decoration-dotted prose-a:hover:text-pi-cyan-dark
+    prose-code:font-normal prose-code:font-display prose-code:text-pi-pink prose-code:before:content-none prose-code:after:content-none
+  ">
+    <slot />
+  </main>
+  <Footer />
+</body>
+</html>
