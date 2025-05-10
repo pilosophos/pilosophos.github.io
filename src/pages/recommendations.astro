@@ -1,0 +1,183 @@
+---
+import ArticleHeader from "../components/ArticleHeader.astro";
+import IconH2 from "../components/IconH2.astro";
+import SmallIconLink from "../components/SmallIconLink.astro";
+import DefaultLayout from "../layouts/DefaultLayout.astro";
+
+---
+<DefaultLayout title="Recommendations">
+  <ArticleHeader
+    icon="/images/icons/trust0-0.png"
+    title="Recommendations"
+  >
+    People ask me what TV shows or music that I recommend fairly often,
+    and then I immediately forget all the things I like. So here's a big list of them.
+  </ArticleHeader>
+
+
+  <nav class="container flex justify-center mb-10">
+    <ul class="flex gap-3">
+      <li><SmallIconLink href="#traditional-games" icon="/images/icons/tiny/game_solitaire-1.png" label="Traditional games"/>
+      <li><SmallIconLink href="#video-games" icon="/images/icons/tiny/joystick-0.png" label="Video games"/>
+      <li><SmallIconLink href="#music" icon="images/icons/tiny/cd_audio_cd_a-5.png" label="Music"/>
+      <li><SmallIconLink href="#movies" icon="images/icons/tiny/media_player-1.png" label="Movies"/>
+      <li><SmallIconLink href="#tv" icon="/images/icons/tiny/network_televisons-0.png" label="TV"/>
+      <li><SmallIconLink href="#anime" icon="/images/icons/anime.png" label="Anime"/>
+      <li><SmallIconLink href="#manga" icon="/images/icons/manga.png" label="Manga"/>
+    </ul>
+  </nav>
+
+  <main class="container">
+    <section class="mb-10">
+      <IconH2 id="traditional-games" class="mb-5" icon="/images/icons/game_freecell-1.png">Traditional Games</IconH2>
+
+      <ul class="list-disc ms-5">
+        <li><a class="link" href="https://boardgamegeek.com/boardgame/168435/between-two-cities">Between Two Cities</a> - Pulls off being simultaneously cooperative and competitive exceptionally well</li>
+        <li><a class="link" href="https://boardgamegeek.com/boardgame/36218/dominion">Dominion + expansions</a> - Strategic deckbuilding game</li>
+        <li><a class="link" href="https://boardgamegeek.com/boardgame/184491/spaceteam">Spaceteam</a> - Incredibly chaotic cooperative game</li>
+        <li><a class="link" href="https://boardgamegeek.com/boardgame/113924/zombicide">Zombicide</a> - Tactical cooperative zombie survival game</li>
+        <li><a class="link" href="https://boardgamegeek.com/boardgame/230802/azul">Azul</a> - Competitive puzzle game</li>
+        <li><a class="link" href="https://boardgamegeek.com/boardgame/230802/azul">Powergrid</a> - Competitive resource management game</li>
+        <li><a class="link" href="https://boardgamegeek.com/boardgame/9209/ticket-to-ride">Ticket to Ride</a> - Competitive train route building game</li>
+      </ul>
+    </section>
+
+    <section class="mb-10">
+      <IconH2 id="video-games" icon="/images/icons/joystick-2.png">Video games</IconH2>
+
+      <aside class="mb-5">
+        <dl>
+          <div>
+            <dt class="inline"><img class="inline" src="/images/icons/tiny/clock-0.png" alt="Passes the 2 AM test" height="16" width="16" /></dt>
+            <dd class="inline">= Passes the 2 AM test: playing this game has made me unknowingly stay up past 2 AM</dd>
+          </div>
+          <div>
+            <dt class="inline"><img class="inline" src="/images/icons/tiny/trust0-1.png" alt="Game completed" height="16" width="16" /></dt>
+            <dd class="inline">= Game has an ending that I have completed</dd>
+          </div>
+        </dl>
+      </aside>
+
+      <ul class="list-disc ms-5 mb-5 flex flex-col gap-3">
+        <li>
+          <a class="link" href="https://www.paradoxinteractive.com/games/shadowrun-trilogy/about">Shadowrun Trilogy</a>
+          <img class="inline" src="/images/icons/tiny/clock-0.png" alt="Passes the 2 AM test" height="16" width="16" /><img class="inline" src="/images/icons/tiny/trust0-1.png" alt="Game completed" height="16" width="16" />
+          - Magical cyberpunk RPG set in the Shadowrun universe. Play Returns first, but Hong Kong is the best. If you play anything in this list, play this.
+        </li>
+        <li>
+          <a class="link" href="https://www.paradoxinteractive.com/games/stellaris/about">Stellaris</a>
+          <img class="inline" src="/images/icons/tiny/clock-0.png" alt="Passes the 2 AM test" height="16" width="16" /><img class="inline" src="/images/icons/tiny/trust0-1.png" alt="Game completed" height="16" width="16" />
+          - Space 4X game with excellent story events</li>
+        <li>
+          <a class="link" href="https://yakuza.sega.com/yakuza0/">Yakuza 0</a>
+          <img class="inline" src="/images/icons/tiny/trust0-1.png" alt="Game completed" height="16" width="16" />
+          - Brawler with excellent characters, side quests, and minigames
+        </li>
+        <li><a class="link" href="https://www.zachtronics.com/shenzhen-io/">Shenzhen I/O</a> - If you're a find programming extremely restrictive microcontrollers in assembly might be fun, definitely play this. Throw everything you know about programming out the window though, because magic optimizations and crazy hacks are pretty much required.</li>
+        <li>
+          <a class="link" href="https://baldursgate3.game/">Baldur's Gate 3</a>
+          <img class="inline" src="/images/icons/tiny/clock-0.png" alt="Passes the 2 AM test" height="16" width="16" />
+          - An RPG set in the Forgotten Realms D&D universe. It's a sequel to BG1&2 and based on the D&D 5e ruleset, but it's not necessary to have played any of these.
+        </li>
+        <li><a class="link" href="https://https://www.playbalatro.com/">Balatro</a>
+          <img class="inline" src="/images/icons/tiny/trust0-1.png" alt="Game completed" height="16" width="16" />
+          - Standard card-deck based roguelite game where you acquire joker cards to increase the score of poker hands, while manipulating your deck to increase your chances of playing the hands that you power up. Don't be fooled by its simplicity: its addictive force is no joke.
+        </li>
+      </ul>
+
+      <section>
+        <h3 class="font-display text-xl">Arcade games</h3>
+        <p class="muted mb-2">Some of these games may have non-arcade ports, but this list refers <em>specifically</em> to the arcade versions.</p>
+
+        <ul class="list-disc ms-5 mb-5 flex flex-col gap-3">
+          <li><a class="link" href="https://maimai.sega.com/">Maimai</a> - Everyone's favorite rhythm game that's played on a washing machine.</li>
+          <li><a class="link" href="https://en.wikipedia.org/wiki/Ridge_Racer_(1993_video_game)">Ridge Racer</a> - Quintessentially arcade-y racing game. There's a PS2 port I haven't played. Ridge Racer for the PSP (not a port) is also pretty good.</li>
+        </ul>
+      </section> 
+
+      <section>
+        <h3 class="font-display text-xl">VR games</h3>
+        <ul class="list-disc ms-5 mb-5 flex flex-col gap-3">
+          <li><a class="link" href="https://www.cloudheadgames.com/pistol-whip">Pistol Whip</a> - Shoot the targets... to the beat! It's a rhythm game and FPS game at the same time, and it's a blast!</li>
+        </ul>
+      </section>
+
+      <section>
+        <h3 class="font-display text-xl">Visual novels</h3>
+        <p class="muted mb-2">
+          Visual novels are less "video games" and more choose-your-own-adventure books with talking heads and maybe the occasional minigame, so they get their own section.
+          These may have console ports which will always be all-ages versions, but are otherwise nearly identical in terms of gameplay.
+        </p>
+
+        <ul class="list-disc ms-5 mb-5 flex flex-col gap-3">
+          <li>
+            <a class="link" href="https://vndb.org/v5">Little Busters! Converted Edition (PSP)</a>
+            <img class="inline" src="/images/icons/tiny/trust0-1.png" alt="Game completed" height="16" width="16" />
+            - Really cute story about a high school boy and his childhood friends who recruit some schoolmates for a baseball team before one of their own graduates and leaves for a job.
+            <span class="muted">(LB! Ecstasy is the only version that is 18+; the original, Steam, and Converted Editions are all-ages).</span>
+          </li>
+        </ul>
+      </section> 
+
+    </section>
+
+    <section>
+      <IconH2 id="music" icon="/images/icons/cd_audio_cd_a-2.png">Music</IconH2>
+
+      <aside class="mb-5">
+        <dl>
+          <div>
+            <dt class="inline"><img class="inline" src="/images/icons/tiny/microphone-1.png" alt="Seen live" height="16" width="16" /></dt>
+            <dd class="inline">= I have seen this artist perform live under this name <span class="muted">(If band member also tours solo, and I have only seen the band, the solo artist does not receive this icon)</span></dd>
+          </div>
+        </dl>
+      </aside>
+
+      <ul class="list-disc ms-5 mb-5 flex flex-col gap-3">
+        <li>
+          <a href="https://www.boaukofficial.com/" class="link">Bôa</a>
+          <dt class="inline"><img class="inline" src="/images/icons/tiny/microphone-1.png" alt="Seen live" height="16" width="16" />
+          - (Indie Rock, funk in their earlier work) This is my favorite band by far, and one of the few bands where I actually like most, if not all of their songs. Their unpublished early work, such as <a href="https://mebious.info/paul_turrell/music/boa/unpublished/thefarm/" class="link">The Farm</a>, is more funk, and the band gained a more rock sound over time. They got back together in 2021 thanks to their sudden popularity on TikTok, and released their first album in 19 years with <a href="https://boa-uk.bandcamp.com/album/whiplash" class="link">Whiplash</a> in 2024.
+        </li>
+        <li><a href="https://jasminerodgers.com/" class="link">Jasmine Rodgers</a> - (Folk) The lead singer for Bôa is also a folk musician outside of the band, combining acoustic guitar and ukulele with her wonderful voice we all know and love.</li>
+        <li><a href="https://en.wikipedia.org/wiki/Second_Person_(band)" class="link">Second Person</a> - (Trip hop) This is the band that introduced me to trip hop as a genre, originally because someone said it was similar to Bôa. I don't think they're that similar, but Second Person's music is wonderful regardless.</li>
+        <li>
+          <a href="https://reol.jp/" class="link">Reol</a>
+          <dt class="inline"><img class="inline" src="/images/icons/tiny/microphone-1.png" alt="Seen live" height="16" width="16" />
+          - (J-pop, EDM) She got her start doing covers of vocaloid songs on the Japanese video site NicoNicoDouga, but over the years has been writing her own songs, been a part of her eponymous band RΞOL, and collaborated with well-known producers like GigaP.
+        </li>
+        <li>
+          <a href="https://en.touhouwiki.net/wiki/Pizuya%27s_Cell" class="link">Pizuya's Cell</a> (Japanese, Touhou electro, metal, etc.) - This is a doujin music circle centered around arranges of the Touhou OSTs. Their metal is really solid, and they do really good metal with bowed strings. For some reason some of their albums are interspersed with classical music with a TTS voiceover, which is kind of jarring.
+
+          <aside class="ms-5 border-s ps-5 ">
+            <h1 class="font-display">Recommended Pizuya's Cell songs</h1>
+            <ul class="list-disc ms-5">
+              <li><a href="https://en.touhouwiki.net/wiki/Lyrics:_Free_Your_Mind_(Pizuya%27s_Cell)" class="link">Free Your Mind</a></li>
+              <li><a href="https://en.touhouwiki.net/wiki/Lyrics:_%E9%9B%BB%E5%B9%BD%E4%BD%93%E3%81%AE%E5%BD%BC%E5%A5%B3" class="link">電幽体の彼女</a></li>
+            </ul>
+          </aside>
+        </li>
+        <li><a href="https://en.wikipedia.org/wiki/The_Black_Keys" class="link">The Black Keys</a> (Rock)</li>
+        <li><a href="https://cepheid.net/" class="link">Cepheid</a> (English vocaloid metal)</li>
+        
+      </ul>
+
+    </section>
+
+    <section>
+      <IconH2 id="movies" icon="/images/icons/media_player-0.png">Movies</IconH2>
+    </section>
+
+    <section>
+      <IconH2 id="tv" icon="/images/icons/network_televisons-3.png">TV</IconH2>
+    </section>
+
+    <section>
+      <IconH2 id="anime" icon="/images/icons/anime.png">Anime</IconH2>
+    </section>
+
+    <section>
+      <IconH2 id="manga" icon="/images/icons/manga.png">Manga</IconH2>
+    </section>
+  </main>
+</DefaultLayout>
