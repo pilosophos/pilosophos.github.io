@@ -1,0 +1,103 @@
+---
+import MalaszecLogoAscii from '../components/MalaszecLogoAscii.html';
+import SmallIconLink from '../components/SmallIconLink.astro';
+import DefaultLayout from '../layouts/DefaultLayout.astro';
+---
+<DefaultLayout title="About">
+  <div class="container relative overflow-hidden">
+    <p class="font-display text-2xl/10 text-justify text-white/5 absolute top-0 left-0 -z-1" aria-hidden="true">
+      Despite being a Star Trek fan, I've never seen Star Wars.
+      I can't stand horror movies.
+      When I went to Japan, somtimes I didn't go into a restaurant unless I knew how to order something.
+      I took a Latin class for four years in high school, but I barely remember any of it.
+      Whenever I type Pokémon, I try to make sure to type it with the accent.
+      Being stuck in a time loop might be pretty cool, at least for a while.
+      The times I feel loneliest is when I'm surrounded by people.
+      I used to watch a lot of anime, but I haven't been keeping up with it anymore.
+      One of the few free analog TV broadcasts when I was a kid was an oldies channel, so now I'm a fan of some ancient shows like Sanford & Son and McHale's Navy.
+      I speak a language spoken by less than 100 people.
+      Sometimes I wonder what it'd be like to wanter the streets as a cat.
+      I wish more things tasted the way they smell.
+      Please do not touch me.
+      I don't really like the taste of milk, but that's okay, because I'm lactose intolerant.
+      Akira is just okay; Ghost in the Shell is better.
+      I used to play Animal Crossing every day, and I feel kinda bad that I haven't been to my town in a while.
+      I still miss Club Penguin.
+      Discord is crap, but all my friends use it so I'm stuck there. But hey, at least it's not Line.
+      I avoided a girl I liked for years because she had a boyfriend, but when I saw her again I realized I shouldn't have cared so much in the first place.
+      When I was a kid, I signed up for SMWCentral forums and annoyed the hell out of everyone unintentionally.
+      I don't like the overly shiny interior design in Strange New Worlds.
+      The person I admire most is Fred Rogers, the host of Mister Rogers' Neighborhood.
+      I like how I look in a hoodie, but I never wear them outside because a jacket is more practical.
+      I love cyberpunk, but couldn't really get into solarpunk.
+      I'd never admit out loud, but I really like nightcore.
+      The only shonen anime I got into was Pokémon.
+      I want to make music but I haven't put in enough practice to be good.
+    </p>
+
+    <main class="flex flex-col-reverse items-center gap-10 p-5 xl:flex-row">
+      <div aria-hidden="true">
+        <pre class="ascii-art text-pi-cyan"><MalaszecLogoAscii/></pre>
+      </div>
+      <div class="flex flex-col justify-center">
+        <h1 class="text-3xl font-display mb-3">[~pilosophos]$ whoami</h1>
+        <dl class="grid gap-4">
+
+          <div class="grid grid-cols-3 gap-1">
+            <dt class="font-bold">Aliases</dt>
+            <dd class="col-span-2">pilosophos, pilosopher, PI, pilo</dd>
+          </div>
+
+          <div class="grid grid-cols-3 gap-1">
+            <dt class="font-bold">Place of origin</dt>
+            <dd class="col-span-2">The internet</dd>
+          </div>
+
+          <div class="grid grid-cols-3 gap-1">
+            <dt class="font-bold">Interests</dt>
+            <dd class="col-span-2">drawing, worldbuilding, conlanging, technology, gaming, etc.</dd>
+          </div>
+
+          <div class="grid grid-cols-3 gap-1">
+            <dt class="font-bold">Drawing tools</dt>
+            <dd class="col-span-2">Huion Kamvas Pro 16, Krita, Pentel Graphgear 500, Pilot Metropolitan</dd>
+          </div>
+
+          <div class="grid grid-cols-3 gap-1">
+            <dt class="font-bold">Favorite show</dt>
+            <dd class="col-span-2">Star Trek: Deep Space Nine</dd>
+          </div>
+
+          <div class="grid grid-cols-3 gap-1">
+            <dt class="font-bold">Favorite band</dt>
+            <dd class="col-span-2">Bôa</dd>
+          </div>
+
+          <div class="grid grid-cols-3 gap-1">
+            <dt class="font-bold">Favorite anime</dt>
+            <dd class="col-span-2">Ghost in the Shell: Stand Alone Complex</dd>
+          </div>
+
+          <div class="grid grid-cols-3 gap-1">
+            <dt class="font-bold">Social media</dt>
+            <dd class="col-span-2">
+              <SmallIconLink href="mailto:pilosophos@gmail.com" label="email" icon="/images/icons/tiny/envelope_closed-1.png"/>
+              <SmallIconLink href="https://tiny.tilde.website/@pilosophos" label="mastodon" icon="/images/icons/mastodon.png"/>
+              <SmallIconLink href="https://bsky.app/profile/pilosophos.com" label="bluesky" icon="/images/icons/bluesky.png"/>
+              <SmallIconLink href="https://www.instagram.com/pilosophos/" label="tumblr" icon="/images/icons/tumblr.png"/>
+              <SmallIconLink href="https://reddit.com/user/pilosophos/" label="reddit" icon="/images/icons/reddit.png"/>
+              <SmallIconLink href="https://www.instagram.com/pilosophos/" label="instagram" icon="/images/icons/instagram.png"/>
+              <SmallIconLink href="https://www.pixiv.net/en/users/77474454" label="pixiv" icon="/images/icons/pixiv.png"/>
+            </dd>
+          </div>
+
+          <div class="grid grid-cols-3 gap-1">
+            <dt class="font-bold">PGP key</dt>
+            <dd class="col-span-2"><a href="/pgp-key.txt" class="link">pilosophos@gmail.com (fingerprint: 5A2074689029343297160719ED76EDAF5644F381)</a></dd>
+          </div>
+
+        </dl>
+      </div>
+    </div>
+  </main>
+</DefaultLayout>

@@ -1,0 +1,12 @@
+---
+const { icon, title } = Astro.props;
+---
+<header class="container text-center mb-5 font-display">
+  <div>
+    <img class="inline align-baseline me-1" src={ icon } role="presentation">
+    <h1 class="text-4xl text-center mb-10 inline">{ title }</h1>
+  </div>
+  <p class="text-xl mt-3">
+    <slot/>
+  </p>
+</header>

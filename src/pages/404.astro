@@ -1,0 +1,18 @@
+---
+import ArticleHeader from "../components/ArticleHeader.astro";
+import DefaultLayout from "../layouts/DefaultLayout.astro";
+
+---
+<DefaultLayout title="404 Not Found">
+  <ArticleHeader
+    icon="/images/icons/help_sheet-0.png"
+    title="404 Not Found"
+  >
+    The page you tried to access doesn't exist.
+  </ArticleHeader>
+
+  <div class="container text-center">
+    <p>If you think it existed before, you can try copying the URL in the address bar into the <a class="link" href="https://web.archive.org/">Internet Archive's Wayback Machine</a>.</p>
+    <p>Otherwise, you can return to the <a href="/" class="link">homepage</a>.</p>
+  </div>
+</DefaultLayout>
