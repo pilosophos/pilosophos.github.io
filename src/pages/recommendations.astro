@@ -1,9 +1,13 @@
 ---
+import { Image } from "astro:assets";
 import ArticleHeader from "../components/ArticleHeader.astro";
 import IconH2 from "../components/IconH2.astro";
 import SmallIconLink from "../components/SmallIconLink.astro";
 import DefaultLayout from "../layouts/DefaultLayout.astro";
+import SideImgFig from "../components/SideImgFig.astro";
 
+import shadowrunCapsuleImg from "../assets/images/shadowrun-hk.jpg"
+import boaImg from "../assets/images/boa-get-there.jpg";
 ---
 <DefaultLayout title="Recommendations">
   <ArticleHeader
@@ -58,6 +62,10 @@ import DefaultLayout from "../layouts/DefaultLayout.astro";
         </dl>
       </aside>
 
+      <SideImgFig src={ shadowrunCapsuleImg } alt="A poster of Shadowrun: Hong Kong" height="400">
+        I've heard that the tabletop game, which the Shadowrun Trilogy is based on, can be hard to play, but the video games are easy to pick up and get immersed in Shadowrun's world.
+      </SideImgFig>
+
       <ul class="list-disc ms-5 mb-5 flex flex-col gap-3">
         <li>
           <a class="link" href="https://www.paradoxinteractive.com/games/shadowrun-trilogy/about">Shadowrun Trilogy</a>
@@ -71,7 +79,7 @@ import DefaultLayout from "../layouts/DefaultLayout.astro";
         <li>
           <a class="link" href="https://yakuza.sega.com/yakuza0/">Yakuza 0</a>
           <img class="inline" src="/images/icons/tiny/trust0-1.png" alt="Game completed" height="16" width="16" />
-          - Brawler with excellent characters, side quests, and minigames
+          - Brawler with excellent characters, side quests, and minigames. You wouldn't expect it from a game where you play as a hardened Japanese gangster, but the main character, Kiryu Kazama, has a heart of gold and the side quests can be pretty touching.
         </li>
         <li><a class="link" href="https://www.zachtronics.com/shenzhen-io/">Shenzhen I/O</a> - If you're a find programming extremely restrictive microcontrollers in assembly might be fun, definitely play this. Throw everything you know about programming out the window though, because magic optimizations and crazy hacks are pretty much required.</li>
         <li>
@@ -124,6 +132,10 @@ import DefaultLayout from "../layouts/DefaultLayout.astro";
     <section class="mb-10">
       <IconH2 id="music" icon="/images/icons/cd_audio_cd_a-2.png">Music</IconH2>
 
+      <SideImgFig src={ boaImg } alt="Album cover for Get There (2005) by Bôa" width="300">
+        I'd like to collect on my hipster cred and state for the record that I was into Bôa way before they blew up on TikTok.
+      </SideImgFig>
+
       <aside class="mb-5">
         <dl>
           <div>
@@ -159,13 +171,20 @@ import DefaultLayout from "../layouts/DefaultLayout.astro";
         </li>
         <li><a href="https://en.wikipedia.org/wiki/The_Black_Keys" class="link">The Black Keys</a> (Rock)</li>
         <li><a href="https://cepheid.net/" class="link">Cepheid</a> (English vocaloid metal)</li>
-        
       </ul>
 
     </section>
 
     <section class="mb-10">
-      <IconH2 id="movies" icon="/images/icons/media_player-0.png">Movies</IconH2>
+      <IconH2 id="movies" icon="/images/icons/media_player-0.png" class="mb-5">Movies</IconH2>
+
+      <ul class="list-disc ms-5 mb-5 flex flex-col gap-3">
+        <li><a href="https://en.wikipedia.org/wiki/Infernal_Affairs" class="link">Infernal Affairs 1+2</a> - Gripping crime drama focusing on a double-crossing detective and a disgraced cop going undercover. It's much better than the American version, The Departed. The third movie is alright, but the constant flashbacks and timeskips make it feel unfocused and not that memorable.</li>
+        <li><a href="https://en.wikipedia.org/wiki/From_Beijing_with_Love" class="link">From Beijing with Love</a> - Hilarious James Bond parody written and directed by Hong Kong comedy movie legend Stephen Chow. I like James Bond movies― I <em>love</em> this.</li>
+        <li><a href="https://en.wikipedia.org/wiki/No_Exit_(1954_film)" class="link">No Exit (Huis Clos) (1954)</a> - Sartre's imagining of hell as a somewhat mundane hotel where the guests torture each other though little more than conversation has always interested me. After reading the screenplay I wanted to find a live action adaptation, and out of all of them, this is the good one. It's in French, and subtitles might be a little hard to source. An interlibrary loan program is a good way to do so, if it's available to you.</li>
+        <li><a href="https://en.wikipedia.org/wiki/What_We_Do_in_the_Shadows" class="link">What We Do in the Shadows</a> - A slice-of-life mockumentary about some vampires who are flatmates in Wellington, New Zealand. I love these fantasy meets modern reality kind of stories, and this movie is just great fun.</li>
+      </ul>
+
     </section>
 
     <section class="mb-10">

@@ -1,0 +1,19 @@
+---
+/**
+ * SideImgFig is an image figure with caption in an aside that floats to the
+ * right on big screens, but block-level and centered on small ones.
+ * 
+ * Child elements are added as figcaption children.
+ */
+import { Image } from "astro:assets";
+
+const { src, alt, height, width, title } = Astro.props;
+---
+<aside class="flex justify-center my-5 md:my-0 md:float-end md:ms-10">
+  <figure class="table">
+    <Image src={ src } alt={ alt } title={ title } height={ height } width={ width } />
+    <figcaption class="text-stone-400 table-caption caption-bottom mt-2">
+      <slot/>
+    </figcaption>
+  </figure>
+</aside>

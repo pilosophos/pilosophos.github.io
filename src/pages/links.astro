@@ -2,6 +2,7 @@
 import ArticleHeader from "../components/ArticleHeader.astro";
 import BigIconLink from "../components/BigIconLink.astro";
 import IconH2 from "../components/IconH2.astro";
+import SmallIconLink from "../components/SmallIconLink.astro";
 import DefaultLayout from "../layouts/DefaultLayout.astro";
 ---
 
@@ -17,7 +18,24 @@ import DefaultLayout from "../layouts/DefaultLayout.astro";
     <section class="mb-10">
       <IconH2 icon="/images/icons/msagent-3.png" class="mb-5">My stuff</IconH2>
       <ul>
-        <li>Lorem ipsum</li>
+        <li>
+          <SmallIconLink href="https://tiny.tilde.website/@pilosophos" label="mastodon" icon="/images/icons/mastodon.png"/>
+        </li>
+        <li>
+          <SmallIconLink href="https://bsky.app/profile/pilosophos.com" label="bluesky" icon="/images/icons/bluesky.png"/>
+        </li>
+        <li>
+          <SmallIconLink href="https://www.instagram.com/pilosophos/" label="tumblr" icon="/images/icons/tumblr.png"/>
+        </li>
+        <li>
+          <SmallIconLink href="https://reddit.com/user/pilosophos/" label="reddit" icon="/images/icons/reddit.png"/>
+        </li>
+        <li>
+          <SmallIconLink href="https://www.instagram.com/pilosophos/" label="instagram" icon="/images/icons/instagram.png"/>
+        </li>
+        <li>
+          <SmallIconLink href="https://www.pixiv.net/en/users/77474454" label="pixiv" icon="/images/icons/pixiv.png"/>
+        </li>
       </ul>
     </section>
     
