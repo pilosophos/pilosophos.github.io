@@ -26,6 +26,10 @@
   .link:hover {
     color: var(--color-pi-cyan-dark)
   }
+
+  .muted {
+    @apply text-stone-400;
+  }
 }
 
 @font-face {

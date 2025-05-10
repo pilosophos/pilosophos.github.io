@@ -2,15 +2,29 @@
 import { getCollection } from 'astro:content';
 import DefaultLayout from "../../layouts/DefaultLayout.astro";
 const posts = await getCollection('writing');
-
+import BigIconLink from '../../components/BigIconLink.astro';
 ---
 <DefaultLayout title="Writing">
   <main class="container">
-    <h1>My posts</h1>
-    <ul>
-      {posts.map(post => (
-        <li><a href={`/writing/${post.id}`}>{post.data.title}</a></li>
-      ))}
+    <h1 class="text-4xl font-display text-center mb-10">Writing</h1>
+
+    <ul class="grid gap-3 md:grid-cols-2">
+      {
+        posts.map(post => (
+          <li class="mb-5">
+            <BigIconLink
+              href={ `/writing/${post.id}` }
+              label={ post.data.title }
+              icon="/images/icons/winrep-1.png"
+            >
+              <p>{ post.data.description }</p>
+              <div class="muted">
+                Tags: { post.data.tags.join(', ') }
+              </div>
+            </BigIconLink>
+          </li>
+        ))
+      }
     </ul>
   </main>
 </DefaultLayout>
