@@ -20,7 +20,7 @@
 
   .link {
     color: var(--color-pi-cyan);
-    text-decoration: dotted;
+    text-decoration: underline dotted;
   }
 
   .link:hover {
