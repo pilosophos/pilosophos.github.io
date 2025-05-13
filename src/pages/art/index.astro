@@ -9,17 +9,19 @@ const art = await getCollection('art');
 
 <DefaultLayout title="Art">
   <main class="container">
-    {
-      art.map(async piece => {
-        const { Content } = await render(piece);
-        
-        return (
-          <div>
-            <Image src={ piece.data.cover } alt={ piece.data.title }/>
-            <Content />
-          </div>
-        )
-      })
-    }
+    <ul class="grid grid-cols-3 gap-5">
+      {
+        art.map(async piece => {
+          const { Content } = await render(piece);
+      
+          return (
+            <li>
+              <Image src={ piece.data.cover } alt={ piece.data.title } quality="max" width={400}/>
+              <Content />
+            </li>
+          )
+        })
+      }
+    </ul>
   </main>
 </DefaultLayout>
