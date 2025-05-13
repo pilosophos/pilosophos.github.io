@@ -92,7 +92,7 @@ const art = await getCollection('art');
       );
 
       // show viewer if there's an art ID specified in the URL
-      const artId = new URLSearchParams(window.location.search).get('image');
+      const artId = window.location.hash.substring(1);
       if (artId) showViewer(artId);
 
       document.getElementById('viewer__close').addEventListener('click', hideViewer);
@@ -102,6 +102,7 @@ const art = await getCollection('art');
 
     function showViewer(artId) {
       viewer.classList.remove('hidden');
+      window.location.hash = artId;
 
       const image = document.getElementById('image-' + artId).content.cloneNode(true);
       imgContainer.innerHTML = '';
@@ -114,6 +115,7 @@ const art = await getCollection('art');
 
     function hideViewer() {
       viewer.classList.add('hidden');
+      window.location.hash = '';
     }
 
     init();
