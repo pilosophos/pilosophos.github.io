@@ -1,0 +1,28 @@
+---
+import { Image } from "astro:assets";
+import { getCollection, render } from 'astro:content';
+import DefaultLayout from '../../layouts/DefaultLayout.astro';
+// 1. Generate a new path for every collection entry
+export async function getStaticPaths() {
+  const posts = await getCollection('art');
+  return posts.map(post => ({
+    params: { id: post.id },
+    props: { post },
+  }));
+}
+// 2. For your template, you can get the entry directly from the prop
+const { post } = Astro.props;
+const { Content } = await render(post);
+---
+
+<DefaultLayout title={ post.data.title }>
+  <main class="container">
+    <Image
+      src={ post.data.cover }
+      alt={ post.data.title }
+      quality="max"
+      width={400}
+      class="art-thumbnail"
+    />
+  </main>
+</DefaultLayout>

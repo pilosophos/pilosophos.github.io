@@ -12,15 +12,17 @@ const art = await getCollection('art');
       {
         art.map(async (piece, i) =>
           <li>
-            <Image
-              src={ piece.data.cover }
-              alt={ piece.data.title }
-              quality="max"
-              width={400}
-              class="art-thumbnail"
-              data-index={ i }
-              data-art-id={ piece.id }
-            />
+            <a href={ '/art/' + piece.id }>
+              <Image
+                src={ piece.data.cover }
+                alt={ piece.data.title }
+                quality="max"
+                width={400}
+                class="art-thumbnail"
+                data-index={ i }
+                data-art-id={ piece.id }
+              />
+            </a>
           </li>
         )
       }
@@ -88,7 +90,10 @@ const art = await getCollection('art');
     function init() {
       // turn thumbnails into image viewer activators
       document.querySelectorAll('.art-thumbnail').forEach(
-        e => e.addEventListener('click', () => showViewer(e.dataset.artId))
+        thumb => thumb.addEventListener('click', event => {
+          event.preventDefault();
+          showViewer(thumb.dataset.artId);
+        })
       );
 
       // show viewer if there's an art ID specified in the URL
