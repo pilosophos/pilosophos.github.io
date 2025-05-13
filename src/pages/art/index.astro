@@ -1,0 +1,25 @@
+---
+import { Image } from "astro:assets";
+import DefaultLayout from "../../layouts/DefaultLayout.astro";
+import { getCollection, getEntry, render } from 'astro:content';
+
+const art = await getCollection('art');
+
+---
+
+<DefaultLayout title="Art">
+  <main class="container">
+    {
+      art.map(async piece => {
+        const { Content } = await render(piece);
+        
+        return (
+          <div>
+            <Image src={ piece.data.cover } alt={ piece.data.title }/>
+            <Content />
+          </div>
+        )
+      })
+    }
+  </main>
+</DefaultLayout>
