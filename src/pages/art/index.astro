@@ -74,15 +74,26 @@ const art = await getCollection('art');
   class="hidden fixed left-0 top-0 w-screen h-screen bg-black/75"
 >
   <article id="viewer__article" class="flex flex-row items-center justify-between w-full h-full">
-    <div id="viewer__main" class="flex relative justify-center w-full">
+    <div id="viewer__main" class="flex-center relative h-screen w-full">
+
       <div id="viewer__image"></div>
-      <nav class="absolute left-0 h-full flex items-center px-3">
-        <button id="viewer__prev" class="bg-red-500 rounded-full w-10 h-10">Prev</button>
-      </nav>
-      <nav class="absolute right-0 h-full flex items-center px-3">
-        <button id="viewer__next" class="bg-red-500 rounded-full w-10 h-10">Next</button>
-      </nav>
+
+      <button
+        aria-label="Previous"
+        id="viewer__prev"
+        class="absolute left-0 h-screen flex-center px-3 bg-gradient-to-r from-black/50 to-transparent from-black/50 to-transparent hover:pe-10  transition-all duration-200"
+      >
+        <div class="flex-center w-8 h-8 rounded-full bg-white opacity-70 text-pi-gray text-3xl font-display">←</div>
+      </button>
+      <button
+        aria-label="Next"
+        id="viewer__next"
+        class="absolute right-0 h-screen flex-center px-3 bg-gradient-to-l from-black/50 to-transparent hover:ps-10 transition-all duration-200"
+      >
+        <div class="flex-center w-8 h-8 rounded-full bg-white opacity-70 text-pi-gray text-3xl font-display">→</div>
+      </button>
     </div>
+
     <div id="viewer__sidebar" class="bg-zinc-900 h-screen w-150 p-10">
       <nav class="mb-3 pb-2 border-b border-stone-500">
         <button id="viewer__close" class="muted hover:text-pi-cyan text-lg font-display">
@@ -99,7 +110,6 @@ const art = await getCollection('art');
     'use strict';
 
     const viewer = document.getElementById('viewer');
-    const article = document.getElementById('viewer__article');
     const imgContainer = document.getElementById('viewer__image');
     const mainArea = document.getElementById('viewer__main');
     const descContainer = document.getElementById('viewer__desc');
@@ -121,7 +131,6 @@ const art = await getCollection('art');
 
       document.getElementById('viewer__close').addEventListener('click', hideViewer);
       mainArea.addEventListener('click', e => { if (e.target === mainArea) hideViewer() });
-      article.addEventListener('click', e => { if (e.target === article) hideViewer() });
     }
 
     function showViewer(artId) {

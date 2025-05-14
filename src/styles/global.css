@@ -21,6 +21,12 @@
     prose-figcaption:text-base prose-figcaption:text-stone-400;
 }
 
+@utility flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @layer components {
   .container {
     @apply mx-auto px-3 xl:px-0 w-full xl:w-320!;
