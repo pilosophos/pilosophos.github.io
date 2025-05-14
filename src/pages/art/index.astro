@@ -8,27 +8,36 @@ const art = await getCollection('art');
 
 <DefaultLayout title="Art">
   <main class="container">
-    <ul class="grid md:grid-cols-2 lg:grid-cols-3 justify-center gap-5">
+    <div id="gallery" class="grid md:grid-cols-2 lg:grid-cols-3 justify-center gap-5 mx-auto">
+      <div class="grid-sizer"></div>
       {
         art.map(async (piece, i) =>
-          <li>
-            <a href={ '/art/' + piece.id }>
-              <Image
-                src={ piece.data.cover }
-                alt={ piece.data.title }
-                quality="max"
-                width={400}
-                class="art-thumbnail"
-                data-index={ i }
-                data-art-id={ piece.id }
-              />
-            </a>
-          </li>
+          <a href={ '/art/' + piece.id } class="gallery-item mb-[10px] w-[350px] lg:w-[400px]">
+            <Image
+              src={ piece.data.cover }
+              alt={ piece.data.title }
+              quality="max"
+              width={400}
+              class="art-thumbnail"
+              data-index={ i }
+              data-art-id={ piece.id }
+            />
+          </a>
         )
       }
-    </ul>
+    </div>
   </main>
 </DefaultLayout>
+
+<script>
+  import Masonry from 'masonry-layout';
+  new Masonry('#gallery', {
+    itemSelector: '.gallery-item',
+    gutter: 10,
+    fitWidth: true,
+    transitionDuration: '0.2s',
+  })
+</script>
 
 {
   // generate templates for image descriptions
