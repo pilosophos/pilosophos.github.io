@@ -74,7 +74,7 @@ const art = await getCollection('art');
   class="hidden fixed left-0 top-0 w-screen h-screen bg-black/75"
 >
   <article id="viewer__article" class="flex flex-col items-center lg:justify-between w-full h-full overflow-y-scroll lg:flex-row">
-    <div id="viewer__main" class="flex-center relative w-full">
+    <div id="viewer__main" class="flex-center relative w-full lg:h-full">
 
       <div id="viewer__image"></div>
 
@@ -83,12 +83,11 @@ const art = await getCollection('art');
         id="viewer__prev"
         class="
           group absolute left-0 h-full flex-center px-3 bg-gradient-to-r from-black/30 to-transparent transition-all duration-200
-          hover:ps-7 lg:px-5
+          hover:ps-7 disabled:hover:px-3 lg:px-5 lg:disabled:hover:ps-5 disabled:opacity-10
         "
       >
         <div class="
-          group-hover:opacity-90 flex-center w-6 h-6 rounded-full bg-white opacity-70 text-pi-gray text-2xl font-display box-shadow
-          lg:w-8 lg:h-8 lg:text-3xl
+          group-hover:opacity-90 flex-center w-8 h-8 rounded-full bg-white opacity-70 text-pi-gray text-2xl font-display box-shadow
         ">
           ←
         </div>
@@ -98,12 +97,11 @@ const art = await getCollection('art');
         id="viewer__next"
         class="
           group absolute right-0 h-full flex-center px-3 bg-gradient-to-l from-black/30 to-transparent transition-all duration-200
-          hover:pe-7 lg:px-5
+          hover:pe-7 disabled:hover:px-3 lg:px-5 lg:disabled:hover:pe-5 disabled:opacity-10
         "
       >
         <div class="
-          group-hover:opacity-90 flex-center w-6 h-6 rounded-full bg-white opacity-70 text-pi-gray text-2xl font-display box-shadow
-          lg:w-8 lg:h-8 lg:text-3xl
+          group-hover:opacity-90 flex-center w-8 h-8 rounded-full bg-white opacity-70 text-pi-gray text-2xl font-display box-shadow
         ">
           →
         </div>
@@ -170,17 +168,17 @@ const art = await getCollection('art');
       const nextArt = document.querySelector(`[data-index='${artIndex + 1}']`)?.dataset?.artId;
       if (nextArt) {
         nextBtn.onclick = () => showViewer(nextArt);
-        nextBtn.classList.remove('hidden');
+        nextBtn.disabled = false;
       } else {
-        nextBtn.classList.add('hidden');
+        nextBtn.disabled = true;
       }
 
       const prevArt = document.querySelector(`[data-index='${artIndex - 1}']`)?.dataset?.artId;
       if (prevArt) {
         prevBtn.onclick = () => showViewer(prevArt);
-        prevBtn.classList.remove('hidden');
+        prevBtn.disabled = false;
       } else {
-        prevBtn.classList.add('hidden');
+        prevBtn.disabled = true;
       }
     }
 
