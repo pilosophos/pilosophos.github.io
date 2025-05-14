@@ -1,11 +1,12 @@
 ---
-const { href, label, icon } = Astro.props
+const { href, label, icon, width } = Astro.props
 ---
 <div class="group flex">
   <a href={ href } class="me-3 shrink-0">
     <img src={ icon }
       class="relative group-hover:-top-[1px] object-contain mt-1"
       role="presentation"
+      width={ width }
     >
   </a>
   <div>
