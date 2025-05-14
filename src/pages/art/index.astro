@@ -73,38 +73,50 @@ const art = await getCollection('art');
   id="viewer"
   class="hidden fixed left-0 top-0 w-screen h-screen bg-black/75"
 >
-  <article id="viewer__article" class="flex flex-row items-center justify-between w-full h-full">
-    <div id="viewer__main" class="flex-center relative h-screen w-full">
+  <article id="viewer__article" class="flex flex-col items-center lg:justify-between w-full h-full overflow-y-scroll lg:flex-row">
+    <div id="viewer__main" class="flex-center relative w-full">
 
       <div id="viewer__image"></div>
 
       <button
         aria-label="Previous"
         id="viewer__prev"
-        class="group absolute left-0 h-screen flex-center px-3 bg-gradient-to-r from-black/50 to-transparent from-black/50 to-transparent hover:pe-10 transition-all duration-200"
+        class="
+          group absolute left-0 h-full flex-center px-3 bg-gradient-to-r from-black/30 to-transparent transition-all duration-200
+          hover:ps-7 lg:px-5
+        "
       >
-        <div class="group-hover:opacity-90 flex-center w-8 h-8 rounded-full bg-white opacity-70 text-pi-gray text-3xl font-display">
+        <div class="
+          group-hover:opacity-90 flex-center w-6 h-6 rounded-full bg-white opacity-70 text-pi-gray text-2xl font-display box-shadow
+          lg:w-8 lg:h-8 lg:text-3xl
+        ">
           ←
         </div>
       </button>
       <button
         aria-label="Next"
         id="viewer__next"
-        class="group absolute right-0 h-screen flex-center px-3 bg-gradient-to-l from-black/50 to-transparent hover:ps-10 transition-all duration-200"
+        class="
+          group absolute right-0 h-full flex-center px-3 bg-gradient-to-l from-black/30 to-transparent transition-all duration-200
+          hover:pe-7 lg:px-5
+        "
       >
-        <div class="group-hover:opacity-90 flex-center w-8 h-8 rounded-full bg-white opacity-70 text-pi-gray text-3xl font-display">
+        <div class="
+          group-hover:opacity-90 flex-center w-6 h-6 rounded-full bg-white opacity-70 text-pi-gray text-2xl font-display box-shadow
+          lg:w-8 lg:h-8 lg:text-3xl
+        ">
           →
         </div>
       </button>
     </div>
 
-    <div id="viewer__sidebar" class="bg-zinc-900 h-screen w-150 p-10">
-      <nav class="mb-3 pb-2 border-b border-stone-500">
-        <button id="viewer__close" class="muted hover:text-pi-cyan text-lg font-display">
+    <div id="viewer__sidebar" class="flex flex-col bg-zinc-900 p-5 w-screen h-full lg:w-150 lg:h-screen lg:p-10">
+      <nav class="pb-2 border-b border-stone-500 mb-3">
+        <button id="viewer__close" class="muted hover:text-pi-cyan font-display lg:text-lg">
           &leftarrow; Back to gallery
         </button>
       </nav>
-      <div id="viewer__desc" class="h-full overflow-y-scroll prose prose-invariants prose-headings:font-normal"></div>
+      <div id="viewer__desc" class="prose prose-invariants prose-headings:font-normal overflow-y-scroll"></div>
     </div>
   </article>
 </div>
