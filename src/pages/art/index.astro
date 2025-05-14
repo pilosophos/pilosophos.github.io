@@ -9,7 +9,6 @@ const art = await getCollection('art');
 <DefaultLayout title="Art">
   <main class="container">
     <div id="gallery" class="grid md:grid-cols-2 lg:grid-cols-3 justify-center gap-5 mx-auto">
-      <div class="grid-sizer"></div>
       {
         art.map(async (piece, i) =>
           <a href={ '/art/' + piece.id } class="gallery-item mb-[10px] w-[350px] lg:w-[400px]">
