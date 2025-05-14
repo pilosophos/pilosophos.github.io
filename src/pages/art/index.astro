@@ -74,7 +74,15 @@ const art = await getCollection('art');
   class="hidden fixed left-0 top-0 w-screen h-screen bg-black/75"
 >
   <article id="viewer__article" class="flex flex-row items-center justify-between w-full h-full">
-    <div id="viewer__image" class="flex justify-center w-full"></div>
+    <div id="viewer__main" class="flex relative justify-center w-full">
+      <div id="viewer__image"></div>
+      <nav class="absolute left-0 h-full flex items-center px-3">
+        <button id="viewer__prev" class="bg-red-500 rounded-full w-10 h-10">Prev</button>
+      </nav>
+      <nav class="absolute right-0 h-full flex items-center px-3">
+        <button id="viewer__next" class="bg-red-500 rounded-full w-10 h-10">Next</button>
+      </nav>
+    </div>
     <div id="viewer__sidebar" class="bg-zinc-900 h-screen w-150 p-10">
       <nav class="mb-3 pb-2 border-b border-stone-500">
         <button id="viewer__close" class="muted hover:text-pi-cyan text-lg font-display">
@@ -93,7 +101,10 @@ const art = await getCollection('art');
     const viewer = document.getElementById('viewer');
     const article = document.getElementById('viewer__article');
     const imgContainer = document.getElementById('viewer__image');
+    const mainArea = document.getElementById('viewer__main');
     const descContainer = document.getElementById('viewer__desc');
+    const nextBtn = document.getElementById('viewer__next');
+    const prevBtn = document.getElementById('viewer__prev');
 
     function init() {
       // turn thumbnails into image viewer activators
@@ -109,7 +120,7 @@ const art = await getCollection('art');
       if (artId) showViewer(artId);
 
       document.getElementById('viewer__close').addEventListener('click', hideViewer);
-      imgContainer.addEventListener('click', e => { if (e.target === imgContainer) hideViewer() });
+      mainArea.addEventListener('click', e => { if (e.target === mainArea) hideViewer() });
       article.addEventListener('click', e => { if (e.target === article) hideViewer() });
     }
 
@@ -128,6 +139,18 @@ const art = await getCollection('art');
       const desc = document.getElementById('desc-' + artId).content.cloneNode(true);
       descContainer.innerHTML = '';
       descContainer.append(desc);
+
+      let artIndex = document.querySelector(`[data-art-id='${artId}']`).dataset.index;
+      artIndex = Number(artIndex)
+      const nextArt = document.querySelector(`[data-index='${artIndex + 1}']`)?.dataset?.artId;
+      if (nextArt) {
+        nextBtn.onclick = () => showViewer(nextArt);
+      }
+
+      const prevArt = document.querySelector(`[data-index='${artIndex - 1}']`)?.dataset?.artId;
+      if (prevArt) {
+        prevBtn.onclick = () => showViewer(prevArt);
+      }
     }
 
     function hideViewer() {
