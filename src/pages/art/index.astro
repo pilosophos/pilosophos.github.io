@@ -170,11 +170,17 @@ const art = await getCollection('art');
       const nextArt = document.querySelector(`[data-index='${artIndex + 1}']`)?.dataset?.artId;
       if (nextArt) {
         nextBtn.onclick = () => showViewer(nextArt);
+        nextBtn.classList.remove('hidden');
+      } else {
+        nextBtn.classList.add('hidden');
       }
 
       const prevArt = document.querySelector(`[data-index='${artIndex - 1}']`)?.dataset?.artId;
       if (prevArt) {
         prevBtn.onclick = () => showViewer(prevArt);
+        prevBtn.classList.remove('hidden');
+      } else {
+        prevBtn.classList.add('hidden');
       }
     }
 
