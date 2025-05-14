@@ -81,16 +81,20 @@ const art = await getCollection('art');
       <button
         aria-label="Previous"
         id="viewer__prev"
-        class="absolute left-0 h-screen flex-center px-3 bg-gradient-to-r from-black/50 to-transparent from-black/50 to-transparent hover:pe-10  transition-all duration-200"
+        class="group absolute left-0 h-screen flex-center px-3 bg-gradient-to-r from-black/50 to-transparent from-black/50 to-transparent hover:pe-10 transition-all duration-200"
       >
-        <div class="flex-center w-8 h-8 rounded-full bg-white opacity-70 text-pi-gray text-3xl font-display">←</div>
+        <div class="group-hover:opacity-90 flex-center w-8 h-8 rounded-full bg-white opacity-70 text-pi-gray text-3xl font-display">
+          ←
+        </div>
       </button>
       <button
         aria-label="Next"
         id="viewer__next"
-        class="absolute right-0 h-screen flex-center px-3 bg-gradient-to-l from-black/50 to-transparent hover:ps-10 transition-all duration-200"
+        class="group absolute right-0 h-screen flex-center px-3 bg-gradient-to-l from-black/50 to-transparent hover:ps-10 transition-all duration-200"
       >
-        <div class="flex-center w-8 h-8 rounded-full bg-white opacity-70 text-pi-gray text-3xl font-display">→</div>
+        <div class="group-hover:opacity-90 flex-center w-8 h-8 rounded-full bg-white opacity-70 text-pi-gray text-3xl font-display">
+          →
+        </div>
       </button>
     </div>
 
