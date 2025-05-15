@@ -8,15 +8,15 @@ const art = (await getCollection('art')).toSorted((a, b) => b.data.date?.getTime
 
 <DefaultLayout title="Art">
   <main class="container">
-    <div id="gallery" class="grid md:grid-cols-2 lg:grid-cols-3 justify-center gap-5 mx-auto">
+    <div id="gallery" class="grid md:grid-cols-2 lg:grid-cols-3 justify-center gap-3 mx-auto">
       {
         art.map(async (piece, i) =>
-          <a href={ '/art/' + piece.id } class="gallery-item mb-[10px] w-[350px] lg:w-[400px]">
+          <a href={ '/art/' + piece.id } class="gallery-item mb-[10px] w-[350px] lg:w-[420px]">
             <Image
               src={ piece.data.cover }
               alt={ piece.data.title }
               quality="max"
-              width={400}
+              width={420}
               class="art-thumbnail"
               data-index={ i }
               data-art-id={ piece.id }
