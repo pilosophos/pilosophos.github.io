@@ -2,15 +2,14 @@
 import { getCollection } from 'astro:content';
 import DefaultLayout from "../../layouts/DefaultLayout.astro";
 import BigIconLink from '../../components/BigIconLink.astro';
+import ArticleHeader from '../../components/ArticleHeader.astro';
 
 const posts = await getCollection('writing');
 ---
 <DefaultLayout title="Writing">
-  <header class="container text-center mb-5">
-    <img class="inline align-baseline me-1" src="/images/icons/winrep-1.png" role="presentation">
-    <h1 class="text-4xl font-display text-center mb-10 inline">Writing</h1>
-    <p class="text-xl font-display">I'm hoping to give Shakespeare a run for his money someday</p>
-  </header>
+  <ArticleHeader icon="/images/icons/winrep-1.png" title="Writing">
+    I'm hoping to give Shakespeare a run for his money someday
+  </ArticleHeader>
 
   <main class="container">
     <ul class="grid gap-3 md:grid-cols-2">
