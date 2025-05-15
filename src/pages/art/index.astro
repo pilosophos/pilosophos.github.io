@@ -122,10 +122,10 @@ const art = (await getCollection('art')).toSorted((a, b) => b.data.date?.getTime
       </button>
     </div>
 
-    <div id="viewer__sidebar" class="flex flex-col bg-zinc-900 p-5 w-screen h-full lg:w-150 lg:h-screen lg:p-10">
-      <nav class="pb-2 border-b border-stone-500 mb-3">
-        <button id="viewer__close" class="muted hover:text-pi-cyan font-display lg:text-lg">
-          &leftarrow; Back to gallery
+    <div id="viewer__sidebar" class="flex flex-col bg-zinc-900 px-5 pt-0 w-screen h-full lg:w-150 lg:h-screen lg:p-10 lg:pt-3">
+      <nav class="pb-2 border-b border-stone-500 mb-3 text-end">
+        <button id="viewer__close" class="muted hover:text-pi-cyan font-display text-xl">
+          Close <span class="text-4xl relative top-1.5">&times;</span>
         </button>
       </nav>
       <div id="viewer__desc" class="prose prose-invariants prose-headings:font-normal overflow-y-scroll"></div>
