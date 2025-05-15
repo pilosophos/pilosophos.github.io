@@ -1,4 +1,20 @@
 ---
+/**
+ * This component is designed to be a SINGLETON component
+ * (it *could* be edited to allow multiple on one page, but I can't think of
+ * why that would be a good idea).
+ * 
+ * NOTE: IF YOU CHANGE THE IDs OF ANY OF THE ELEMENTS YOU WILL BREAK THE JS IN
+ * THE ART GALLERY because it's all referenced by ID
+ * 
+ * === SLOTS ===
+ * @note If you don't provide `image` or `description`, you should populate it
+ *       using JS by appending children to `#viewer__image` and `#viewer__desc`
+ * @slot image: the <Image /> or <img /> element to display
+ * @slot sidebar-header: appears on top of the description, meant for close/back buttons
+ * @slot description: all content you want displayed in the sidebar describing the image
+ */
+
 const { showNav, class: className } = Astro.props;
 ---
 <div 
@@ -47,11 +63,8 @@ const { showNav, class: className } = Astro.props;
     </div>
 
     <div id="viewer__sidebar" class="flex flex-col bg-zinc-900 px-5 pt-0 w-screen h-full lg:w-150 lg:h-screen lg:p-10 lg:pt-3">
-      <nav class="pb-2 border-b border-stone-500 mb-3 text-end">
-        <button id="viewer__close" class="muted hover:text-pi-cyan font-display text-xl">
-          Close <span class="text-4xl relative top-1.5">&times;</span>
-        </button>
-      </nav>
+      <slot name="sidebar-header" />
+
       <div id="viewer__desc" class="prose prose-invariants prose-headings:font-normal overflow-y-scroll">
         <slot name="description" />
       </div>

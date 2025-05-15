@@ -30,7 +30,16 @@ const art = (await getCollection('art')).toSorted((a, b) => b.data.date?.getTime
   </main>
 </DefaultLayout>
 
-<ImageViewer showNav class="hidden"/>
+<ImageViewer showNav class="hidden">
+  <nav
+    slot="sidebar-header"
+    class="pb-2 border-b border-stone-500 mb-3 text-end"
+  >
+    <button id="viewer__close" class="muted hover:text-pi-cyan font-display text-xl">
+      Close <span class="text-4xl relative top-1.5">&times;</span>
+    </button>
+  </nav>
+</ImageViewer>
 
 <script>
   import Masonry from 'masonry-layout';
