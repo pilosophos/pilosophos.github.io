@@ -37,6 +37,14 @@ const { Content } = await render(post);
       quality="max"
       width={ post.data.cover.width }
     />
+    <nav
+      slot="sidebar-header"
+      class="py-2 border-b border-stone-500 mb-3 text-start"
+    >
+      <a href="/art" class="muted hover:text-pi-cyan font-display text-xl">
+        ← Back to gallery
+      </a>
+    </nav>
     <ImageDescription
       slot="description"
       title={ post.data.title }
