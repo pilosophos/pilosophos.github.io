@@ -1,7 +1,11 @@
 ---
+import '../../styles/global.css'
 import { Image } from "astro:assets";
 import { getCollection, render } from 'astro:content';
 import DefaultLayout from '../../layouts/DefaultLayout.astro';
+import Favicon from '../../components/Favicon.astro';
+import ImageViewer from '../../components/ImageViewer.astro';
+import ImageDescription from '../../components/ImageDescription.astro';
 // 1. Generate a new path for every collection entry
 export async function getStaticPaths() {
   const posts = await getCollection('art');
@@ -15,14 +19,32 @@ const { post } = Astro.props;
 const { Content } = await render(post);
 ---
 
-<DefaultLayout title={ post.data.title }>
-  <main class="container">
+<!DOCTYPE html>
+<html lang="en" class="bg-pi-gray text-white h-full">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <Favicon />
+  <title>{ post.data.title } | Pilosophos' Circle</title>
+</head>
+<body>
+  <ImageViewer>
     <Image
+      slot="image"
+      class="max-h-screen object-contain w-auto h-auto"
       src={ post.data.cover }
       alt={ post.data.title }
       quality="max"
-      width={400}
-      class="art-thumbnail"
+      width={ post.data.cover.width }
     />
-  </main>
-</DefaultLayout>
+    <ImageDescription
+      slot="description"
+      title={ post.data.title }
+      date={ post.data.date }
+    >
+      <Content />
+    </ImageDescription>
+  </ImageViewer>
+</div>
+</body>
+</html>

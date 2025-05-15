@@ -2,6 +2,8 @@
 import { Image } from "astro:assets";
 import DefaultLayout from "../../layouts/DefaultLayout.astro";
 import { getCollection, getEntry, render } from 'astro:content';
+import ImageDescription from "../../components/ImageDescription.astro";
+import ImageViewer from "../../components/ImageViewer.astro";
 
 const art = (await getCollection('art')).toSorted((a, b) => b.data.date?.getTime() - a.data.date?.getTime());
 ---
@@ -28,6 +30,8 @@ const art = (await getCollection('art')).toSorted((a, b) => b.data.date?.getTime
   </main>
 </DefaultLayout>
 
+<ImageViewer showNav class="hidden"/>
+
 <script>
   import Masonry from 'masonry-layout';
   new Masonry('#gallery', {
@@ -45,24 +49,13 @@ const art = (await getCollection('art')).toSorted((a, b) => b.data.date?.getTime
 
     return (
       <template id={ 'desc-' + piece.id }>
-        <div>
-          <header class="font-display not-prose">
-            <h1 class="text-4xl mb-0">{ piece.data.title }</h1>
-            <p>
-              Drawn:
-              <time datetime={ piece.data.date?.toISOString() }>
-                {
-                  piece.data.date?.toLocaleDateString(undefined, {
-                    day: 'numeric',
-                    year: 'numeric',
-                    month: 'long',
-                  })
-                }
-              </time>
-            </p>
-          </header>
+        <ImageDescription
+          slot="description"
+          title={ piece.data.title }
+          date={ piece.data.date }
+        >
           <Content />
-        </div>
+        </ImageDescription>
       </template>
     )
   })
@@ -82,56 +75,6 @@ const art = (await getCollection('art')).toSorted((a, b) => b.data.date?.getTime
     </template>
   )
 }
-
-<div 
-  id="viewer"
-  class="hidden fixed left-0 top-0 w-screen h-screen bg-black/75"
->
-  <article id="viewer__article" class="flex flex-col items-center lg:justify-between w-full h-full overflow-y-scroll lg:flex-row">
-    <div id="viewer__main" class="flex-center relative w-full lg:h-full">
-
-      <div id="viewer__image"></div>
-
-      <button
-        aria-label="Previous"
-        id="viewer__prev"
-        class="
-          group absolute left-0 h-full flex-center px-3 bg-gradient-to-r from-black/30 to-transparent transition-all duration-200
-          hover:ps-7 disabled:hover:px-3 lg:px-5 lg:disabled:hover:ps-5 disabled:opacity-10
-        "
-      >
-        <div class="
-          group-hover:opacity-90 flex-center w-8 h-8 rounded-full bg-white opacity-70 text-pi-gray text-2xl font-display box-shadow
-        ">
-          ←
-        </div>
-      </button>
-      <button
-        aria-label="Next"
-        id="viewer__next"
-        class="
-          group absolute right-0 h-full flex-center px-3 bg-gradient-to-l from-black/30 to-transparent transition-all duration-200
-          hover:pe-7 disabled:hover:px-3 lg:px-5 lg:disabled:hover:pe-5 disabled:opacity-10
-        "
-      >
-        <div class="
-          group-hover:opacity-90 flex-center w-8 h-8 rounded-full bg-white opacity-70 text-pi-gray text-2xl font-display box-shadow
-        ">
-          →
-        </div>
-      </button>
-    </div>
-
-    <div id="viewer__sidebar" class="flex flex-col bg-zinc-900 px-5 pt-0 w-screen h-full lg:w-150 lg:h-screen lg:p-10 lg:pt-3">
-      <nav class="pb-2 border-b border-stone-500 mb-3 text-end">
-        <button id="viewer__close" class="muted hover:text-pi-cyan font-display text-xl">
-          Close <span class="text-4xl relative top-1.5">&times;</span>
-        </button>
-      </nav>
-      <div id="viewer__desc" class="prose prose-invariants prose-headings:font-normal overflow-y-scroll"></div>
-    </div>
-  </article>
-</div>
 
 <script type="text/javascript">
   (function() {

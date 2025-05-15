@@ -1,0 +1,24 @@
+---
+const { title, date } = Astro.props;
+---
+<div>
+  <header class="font-display not-prose">
+    <h1 class="text-4xl mb-0">{ title }</h1>
+    <p>
+      Date:
+      {
+        date && <time datetime={ date?.toISOString() }>
+          {
+            date.toLocaleDateString(undefined, {
+              day: 'numeric',
+              year: 'numeric',
+              month: 'long',
+            })
+          }
+        </time>
+      }
+    </p>
+  </header>
+
+  <slot />
+</div>

@@ -1,0 +1,60 @@
+---
+const { showNav, class: className } = Astro.props;
+---
+<div 
+  id="viewer"
+  class={ `fixed left-0 top-0 w-screen h-screen bg-black/75 ${className}`}
+>
+  <article id="viewer__article" class="flex flex-col items-center lg:justify-between w-full h-full overflow-y-scroll lg:flex-row">
+    <div id="viewer__main" class="flex-center relative w-full lg:h-full">
+
+      <div id="viewer__image">
+        <slot name="image" />
+      </div>
+
+      { showNav &&
+        <>
+          <button
+            aria-label="Previous"
+            id="viewer__prev"
+            class="
+              group absolute left-0 h-full flex-center px-3 bg-gradient-to-r from-black/30 to-transparent transition-all duration-200
+              hover:ps-7 disabled:hover:px-3 lg:px-5 lg:disabled:hover:ps-5 disabled:opacity-10
+            "
+          >
+            <div class="
+              group-hover:opacity-90 flex-center w-8 h-8 rounded-full bg-white opacity-70 text-pi-gray text-2xl font-display box-shadow
+            ">
+              ←
+            </div>
+          </button>
+          <button
+            aria-label="Next"
+            id="viewer__next"
+            class="
+              group absolute right-0 h-full flex-center px-3 bg-gradient-to-l from-black/30 to-transparent transition-all duration-200
+              hover:pe-7 disabled:hover:px-3 lg:px-5 lg:disabled:hover:pe-5 disabled:opacity-10
+            "
+          >
+            <div class="
+              group-hover:opacity-90 flex-center w-8 h-8 rounded-full bg-white opacity-70 text-pi-gray text-2xl font-display box-shadow
+            ">
+              →
+            </div>
+          </button>
+        </>
+      }
+    </div>
+
+    <div id="viewer__sidebar" class="flex flex-col bg-zinc-900 px-5 pt-0 w-screen h-full lg:w-150 lg:h-screen lg:p-10 lg:pt-3">
+      <nav class="pb-2 border-b border-stone-500 mb-3 text-end">
+        <button id="viewer__close" class="muted hover:text-pi-cyan font-display text-xl">
+          Close <span class="text-4xl relative top-1.5">&times;</span>
+        </button>
+      </nav>
+      <div id="viewer__desc" class="prose prose-invariants prose-headings:font-normal overflow-y-scroll">
+        <slot name="description" />
+      </div>
+    </div>
+  </article>
+</div>
