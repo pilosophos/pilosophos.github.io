@@ -1,5 +1,5 @@
 ---
-title: Polaroids (Clean ver.)
+title: Polaroids of a Long Lost Love
 cover: polaroids-notext.png
 date: 2025-01-29
 ---
