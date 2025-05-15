@@ -34,8 +34,9 @@ const { Content } = await render(post);
       class="max-h-screen object-contain w-auto h-auto"
       src={ post.data.cover }
       alt={ post.data.title }
-      quality="max"
       width={ post.data.cover.width }
+      quality="max"
+      format="png"
     />
     <nav
       slot="sidebar-header"
