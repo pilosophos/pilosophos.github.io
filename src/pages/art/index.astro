@@ -1,4 +1,29 @@
 ---
+/**
+ * The image viewer logic is a little nuts, but it works like this:
+ * 1. Astro renders a <template id="image-{artId}"> containing the <Image> for each item in the gallery
+ * 2. Astro renders a <template id="desc-{artId}"> containing the sidebar description for each item in the gallery
+ * 3. In the client, whenever the user opens the viewer to a given image, the JS
+ *    clones the templates according to which image was requested into the viewer
+ * 4. The JS looks queries for a thumbnail with `[data-art-id="{artId}"]` and uses it `data-index`
+ *    to determine which artIds belong to the next and previous images in the gallery
+ * 
+ * === WHY IS IT LIKE THIS? ===
+ * It's a hack to take advantage of Astro's image optimizers for the thumbnails,
+ * even when the whole site is completely static.
+ * 
+ * I only want the full-sized images to load when they're opened in the image
+ * viewer, and Astro only generates the full-sized versions if there's an 
+ * <Image> element that uses them.
+ * 
+ * By rendering the full-sized images into a <template>, two things happen:
+ * - The browser will NOT add them to the DOM until opened in the viewer
+ * - The browser will NOT request the full size images until opened in the viewer
+ * 
+ * This way, we prevent the massive performance problems we would otherwise get
+ * if they weren't templates.
+ */
+
 import { Image } from "astro:assets";
 import DefaultLayout from "../../layouts/DefaultLayout.astro";
 import { getCollection, getEntry, render } from 'astro:content';
@@ -109,6 +134,7 @@ const art = (await getCollection('art')).toSorted((a, b) => b.data.date?.getTime
       const artId = new URLSearchParams(window.location.search).get('image');
       if (artId) showViewer(artId);
 
+      // enable viewer closers
       document.getElementById('viewer__close').addEventListener('click', hideViewer);
       mainArea.addEventListener('click', e => { if (e.target === mainArea) hideViewer() });
     }
@@ -122,6 +148,7 @@ const art = (await getCollection('art')).toSorted((a, b) => b.data.date?.getTime
         window.history.replaceState({path:newurl}, '', newurl);
       }
 
+      // Update image and image description
       const image = document.getElementById('image-' + artId).content.cloneNode(true);
       imgContainer.innerHTML = '';
       imgContainer.append(image);
@@ -130,6 +157,7 @@ const art = (await getCollection('art')).toSorted((a, b) => b.data.date?.getTime
       descContainer.innerHTML = '';
       descContainer.append(desc);
 
+      // Set the next and prev buttons
       let artIndex = document.querySelector(`[data-art-id='${artId}']`).dataset.index;
       artIndex = Number(artIndex)
       const nextArt = document.querySelector(`[data-index='${artIndex + 1}']`)?.dataset?.artId;
