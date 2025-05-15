@@ -3,7 +3,7 @@ import { Image } from "astro:assets";
 import DefaultLayout from "../../layouts/DefaultLayout.astro";
 import { getCollection, getEntry, render } from 'astro:content';
 
-const art = await getCollection('art');
+const art = (await getCollection('art')).toSorted((a, b) => b.data.date?.getTime() - a.data.date?.getTime());
 ---
 
 <DefaultLayout title="Art">
@@ -46,7 +46,21 @@ const art = await getCollection('art');
     return (
       <template id={ 'desc-' + piece.id }>
         <div>
-          <h1 class="font-display text-4xl">{ piece.data.title }</h1>
+          <header class="font-display not-prose">
+            <h1 class="text-4xl mb-0">{ piece.data.title }</h1>
+            <p>
+              Drawn:
+              <time datetime={ piece.data.date?.toISOString() }>
+                {
+                  piece.data.date?.toLocaleDateString(undefined, {
+                    day: 'numeric',
+                    year: 'numeric',
+                    month: 'long',
+                  })
+                }
+              </time>
+            </p>
+          </header>
           <Content />
         </div>
       </template>
