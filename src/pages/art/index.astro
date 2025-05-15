@@ -163,6 +163,7 @@ const art = (await getCollection('art')).toSorted((a, b) => b.data.date?.getTime
 
     function showViewer(artId) {
       viewer.classList.remove('hidden');
+      document.querySelector('body').style.overflowY = "hidden";
 
       if (history.replaceState) {
         const newurl = window.location.protocol + "//" + window.location.host + window.location.pathname + '?image=' + artId;
@@ -198,6 +199,7 @@ const art = (await getCollection('art')).toSorted((a, b) => b.data.date?.getTime
 
     function hideViewer() {
       viewer.classList.add('hidden');
+      document.querySelector('body').style.overflowY = "";
 
       if (history.replaceState) {
         const newurl = window.location.protocol + "//" + window.location.host + window.location.pathname
