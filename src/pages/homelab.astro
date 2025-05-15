@@ -1,5 +1,6 @@
 ---
 import ArticleHeader from '../components/ArticleHeader.astro';
+import HomelabDiagram from '../components/HomelabDiagram.astro';
 import IconH2 from '../components/IconH2.astro';
 import DefaultLayout from '../layouts/DefaultLayout.astro';
 ---
@@ -12,6 +13,10 @@ import DefaultLayout from '../layouts/DefaultLayout.astro';
   >
   I have a bunch of computers networked together that I call a homelab. It's not very high budget, and in fact most of it is hand-me-down or scavenged from the trash <span class="muted">(and then disinfected)</span>.
   </ArticleHeader>
+
+  <figure class="ascii-art w-min mx-auto text-sm mb-5">
+    <HomelabDiagram />
+  </figure>
 
   <main class="container">
     <section class="mb-10">
@@ -60,7 +65,6 @@ import DefaultLayout from '../layouts/DefaultLayout.astro';
           <ul class="list-disc ps-5 grid gap-3">
             <li>I use both the integrated and discrete GPU since I have it connected to two monitors: a Huion Kamvas display tablet and some Viewsonic monitor. The Huion is mounted to this swivel arm thingy so I can pull it from a typical monitor position down to my desk to draw on it.</li>
             <li>The SSD was originally a measly 120 GB boot drive, which started to fail after a while so I replaced it with a 1TB one.</li>
-            <li>I bought a 2x8 GB kit and added a stick to the server after my travel laptop's RAM failed, bringing my server from 8 to 16 GB.</li>
           </ul>
         </div>
       </div>
@@ -130,9 +134,45 @@ import DefaultLayout from '../layouts/DefaultLayout.astro';
     </section>
 
     <section class="mb-10">
-      <IconH2 icon="/images/icons/laptop.png" class="mb-5"> Travel Computer: Lenovo Thinkpad X260</IconH2>
+      <IconH2 icon="/images/icons/laptop.png" class="mb-5"> Travel Computer: Lenovo Thinkpad X260 20F6005HUS</IconH2>
 
-      <p>A trusty Thinkpad that's small enough to carry around. I used to have an L420 which was massive and broke my back every time I had to lug it around. Shame it doesn't have the old style keyboards which were way nicer to type on.</p>
+      <p class="mb-5">A trusty Thinkpad that's small enough to carry around. I used to have an L420 which was massive and broke my back every time I had to lug it around. Shame it doesn't have the old style keyboards which were way nicer to type on.</p>
+
+      <div>
+        <h3 class="text-2xl font-display mb-3">Information</h3>
+        <dl class="grid gap-4">
+          <div class="grid grid-cols-10 gap-1">
+            <dt class="font-bold">OS</dt>
+            <dd class="col-span-8">Arch Linux</dd>
+          </div>
+          <div class="grid grid-cols-10 gap-1">
+            <dt class="font-bold">CPU</dt>
+            <dd class="col-span-8">Intel i5-6200U</dd>
+          </div>
+          <div class="grid grid-cols-10 gap-1">
+            <dt class="font-bold">GPU</dt>
+            <dd class="col-span-8">Intel HD Graphics 520</dd>
+          </div>
+          <div class="grid grid-cols-10 gap-1">
+            <dt class="font-bold">RAM</dt>
+            <dd class="col-span-8">8 GB</dd>
+          </div>
+          <div class="grid grid-cols-10 gap-1">
+            <dt class="font-bold">SSD</dt>
+            <dd class="col-span-8">1TB</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="mb-10">
+      <IconH2 icon="/images/icons/modem-4.png" class="mb-5">3D printer server: Samsung Galaxy S4 (+Ender 3)</IconH2>
+
+      <p class="mb-3">I found an Ender 3 in the trash in my apartment building, believe it or not. It had a BL Touch bed leveling probe (incorrectly wired) and the power supply set to the wrong voltage. It hadn't been used in a long time, judging by the dust all around it. Turns out it works if you just flip the voltage switch, and swap a couple wires on the BL Touch cable.</p>
+
+      <p class="mb-3">The funny thing is, just the month before, I thought I'd get into 3D printing by getting a secondhand MP Mini Delta. So if I'd just waited a month, I wouldn't have spent all that extra for an inferior printer that I'm not using anymore.</p>
+      
+      <p class="mb-3">The server that runs the Ender 3 is a Galaxy S4 with <a href="https://github.com/feelfreelinux/octo4a" class="link">octo4a</a>, a port of OctoPrint for Android. I used to use the phone as a daily driver, but it feels pretty sluggish now even with optimized LineageOS on it. </p>
     </section>
   </main>
 </DefaultLayout>
