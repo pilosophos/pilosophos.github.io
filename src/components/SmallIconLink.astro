@@ -1,10 +1,9 @@
 ---
-const { href, icon, label, noUnderline } = Astro.props;
+const { href, icon, label, noUnderline, class: className } = Astro.props;
 ---
-<a href={ href } class="group">
+<a href={ href } class=`group ${className}`>
   <img src={ icon }
-    class="inline w-[16px] h-[16px] relative group-hover:-top-[1px] me-1"
-    width="16"
+    class="inline h-[16px] relative group-hover:-top-[1px] me-1"
     height="16"
     role="presentation"
   /><span

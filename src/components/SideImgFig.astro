@@ -7,9 +7,9 @@
  */
 import { Image } from "astro:assets";
 
-const { src, alt, height, width, title } = Astro.props;
+const { src, alt, height, width, title, class: className } = Astro.props;
 ---
-<aside class="flex justify-center my-5 md:my-0 md:float-end md:ms-10">
+<aside class={`flex flex-col items-center text-justify my-5 md:my-0 md:float-end md:ms-10 ${className}`}>
   <figure class="table">
     <Image src={ src } alt={ alt } title={ title } height={ height } width={ width } />
     <figcaption class="text-stone-400 table-caption caption-bottom mt-2">

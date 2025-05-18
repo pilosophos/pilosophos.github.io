@@ -1,6 +1,10 @@
 ---
+import { Image } from "astro:assets";
 import ArticleHeader from "../components/ArticleHeader.astro";
+import IconH2 from "../components/IconH2.astro";
 import DefaultLayout from "../layouts/DefaultLayout.astro";
+import ShoppingSpriteImg from "../art/shopping-sprite.png";
+import SmallIconLink from "../components/SmallIconLink.astro";
 ---
 
 <DefaultLayout title="Interests">
@@ -13,5 +17,60 @@ import DefaultLayout from "../layouts/DefaultLayout.astro";
       It's much more fun than talking about what you do for a living,
       so if you meet me, ask me about these things! 
     </ArticleHeader>
+
+    <section class="mb-10 flex flex-col gap-10 lg:flex-row ">
+      <div class="prose prose-invariants text-white max-w-180">
+        <IconH2 icon="/images/icons/paint_file-2.png" class="not-prose">Drawing</IconH2>
+
+        <p class="mt-0"><i>For a gallery of my drawings, see my <a href="/art" class="link">art page</a>.</i></p>
+        <p>I primarly draw digital manga-style illustrations, because I grew up reading a lot of Pokémon Special and watching anime. In school, I had a sketchbook around that I'd show people, and everyone's positive comments really pushed me to keep going. Today, I publish my illustrations all over the internet, and even sell some stickers and prints!</p>
+        <p>The artists that inspire me the most are Bruce Timm and Endou Okito. I've love Bruce Timm's simple yet expressive lineart, which squeezes incredible energy out of simple shapes. By contrast, Endou Okito's work is detailed yet delicate, and his colors make you feel like you've slipped into a dream.</p>
+        <p>I don't fully know how to reconcile these styles I love so much, but as I keep drawing and experimenting, I can feel myself grow as an artist. I hope you enjoy looking at my art and watching me improve!</p>
+      </div>
+
+      <div class="flex items-center justify-center flex-grow flex-shrink-0">
+        <figure class="table">
+          <Image src={ ShoppingSpriteImg } alt="A drawing of a faerie holding a 20 Proj bill" width={ 350 } />
+          <figcaption class="text-stone-400 table-caption caption-bottom mt-2">
+            One of my favorite drawings I've done is <a href="/art/shopping-sprite" class="link">Shopping Sprite</a>, January 2022.
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+
+    <section class="mb-10 flex flex-col gap-10 lg:flex-row-reverse">
+      <div class="prose prose-invariants text-white max-w-180">
+        <IconH2 icon="/images/icons/globe_map-0.png" class="not-prose">Worldbuilding</IconH2>
+
+        <p>Worldbuilding is where you make your own fictional world, populating it with cultures, politics, and history from your very own imagination. I originally got into it roleplaying on <a href="https://nationstates.net" class="link">NationStates</a>, a game where you create your own nation and can interact with other countries.</p>
+
+        <p>My favorite worldbuilding projects I've done are:</p>
+
+        <ul>
+          <li><SmallIconLink href="https://pilosophos.com/nspb-wiki-archive/wiki/Malaszec.html" icon="/images/malaszec-flag.png" label="Malaszec" class="not-prose"/> - a magical cyberpunk country having emerged from the collapse of an authoritarian regime and struggling to integrate faeries, elves, and humans into a ruthless corporatocracy. </li>
+          <li><SmallIconLink href="https://pilosophos.com/the-federal-constellation/" icon="/images/federal-constellation-flag.png" label="The Federal Constellation" class="not-prose"/> - a supranational space union founded by two alien worlds each on the other side of a shared wormhole, around which both home planets orbit. </li>
+        </ul>
+      </div>
+
+      <div class="flex items-center justify-center flex-grow flex-shrink-0">
+        <figure class="table">
+          <img src="/images/federal-constellation-flag.png" alt="A drawing of a faerie holding a 20 Proj bill" width={ 350 } />
+          <figcaption class="text-stone-400 table-caption caption-bottom mt-2">
+            Flag of the Federal Constellation, one of my old worldbuilding projects.
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="mb-10">
+      <IconH2 icon="/images/icons/directory_fonts-0.png">Conlanging</IconH2>
+    </section>
+    <section class="mb-10">
+      <IconH2 icon="/images/icons/computer_explorer-3.png">Technology</IconH2>
+    </section>
+    <section class="mb-10">
+      <IconH2 icon="/images/icons/joystick-2.png">Video games</IconH2>
+    </section>
   </main>
 </DefaultLayout>
