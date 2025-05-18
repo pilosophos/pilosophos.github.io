@@ -9,10 +9,11 @@ const { title, date } = Astro.props;
       {
         date && <time datetime={ date?.toISOString() }>
           {
-            date.toLocaleDateString(undefined, {
+            date.toLocaleDateString("en-CA", {
               day: 'numeric',
               year: 'numeric',
               month: 'long',
+              timeZone: 'UTC'
             })
           }
         </time>
