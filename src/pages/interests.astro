@@ -18,7 +18,7 @@ import SmallIconLink from "../components/SmallIconLink.astro";
       so if you meet me, ask me about these things! 
     </ArticleHeader>
 
-    <section class="mb-10 flex flex-col gap-10 lg:flex-row ">
+    <section class="mb-10 flex flex-col gap-10 lg:flex-row">
       <div class="prose prose-invariants text-white max-w-180">
         <IconH2 icon="/images/icons/paint_file-2.png" class="not-prose">Drawing</IconH2>
 
@@ -63,14 +63,21 @@ import SmallIconLink from "../components/SmallIconLink.astro";
       </div>
     </section>
 
-    <section class="mb-10">
-      <IconH2 icon="/images/icons/directory_fonts-0.png">Conlanging</IconH2>
-    </section>
-    <section class="mb-10">
-      <IconH2 icon="/images/icons/computer_explorer-3.png">Technology</IconH2>
-    </section>
-    <section class="mb-10">
-      <IconH2 icon="/images/icons/joystick-2.png">Video games</IconH2>
-    </section>
+    <div class="grid gap-5 lg:grid-cols-2">
+      <section class="prose prose-invariants max-w-full">
+        <IconH2 icon="/images/icons/directory_fonts-0.png" class="not-prose">Conlanging</IconH2>
+
+        <p>I like to make my own languages, which I started doing while I was worldbuilding. I thought that if I'm going to make up a completely fictional world and culture, why wouldn't they have their own unique language as well, instead of just making them speak English?</p>
+
+        <p>The most developed conlang is the <a href="https://pilosophos.com/nspb-wiki-archive/wiki/Malaszec_language" class="link">Malaszec language</a>, a fluid-S active-stative language with influence from its in-universe neighbor, the Andeijan feyspeech.</p>
+      </section>
+      <section class="prose prose-invariants max-w-full">
+        <IconH2 icon="/images/icons/computer_explorer-3.png" class="not-prose">Technology</IconH2>
+
+        <p>I've worked professionally as a software engineer and I sometimes write personal software projects (though I write most of them under a different name). This website, for instance, was created by me using Astro and Tailwind, and you can see my other software projects from the <a href="/software" class="link">software page</a>, like my <a href="https://pilosophos.com/88x31-viewer" class="link">Geocities 88x31 button viewer</a>.</p>
+
+        <p>I also have a smattering of networked computers that I call my <a href="/homelab" class="link">homelab</a>, which I use to host servers for my friends or for myself.</p>
+      </section>
+    </div>
   </main>
 </DefaultLayout>
