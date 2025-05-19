@@ -1,0 +1,39 @@
+---
+import ArticleHeader from '../../components/ArticleHeader.astro';
+import BigIconLink from '../../components/BigIconLink.astro';
+import DefaultLayout from '../../layouts/DefaultLayout.astro';
+---
+
+<DefaultLayout title="Software">
+  <ArticleHeader
+    icon="/images/icons/appwizard-2.png"
+    width="32"
+    title="Software"
+  >
+    Beep boop.
+  </ArticleHeader>
+
+  <main class="container">
+    <ul class="grid gap-3 md:grid-cols-2">
+      <li class="mb-5">
+        <BigIconLink
+          href="https://pilosophos.com/88x31-viewer/"
+          label="88x31 Button Viewer"
+          icon="/images/icons/magnifying_glass.png"
+        >
+          <p>A searchable web viewer for 88x31 buttons scraped from the GeoCities archive</p>
+        </BigIconLink>
+      </li>
+
+      <li class="mb-5">
+        <BigIconLink
+          href="/software/mosaic-tetris"
+          label="Mosaic Tetris"
+          icon="/images/icons/mosaic-tetris.png"
+        >
+          <p>A Tetris variant where you can put the pieces anywhere and they won't fall down, but you can't rotate them.</p>
+        </BigIconLink>
+      </li>
+    </ul>
+  </main>
+</DefaultLayout>

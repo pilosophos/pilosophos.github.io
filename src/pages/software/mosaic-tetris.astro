@@ -1,0 +1,52 @@
+---
+import ArticleHeader from '../../components/ArticleHeader.astro';
+import IconH2 from '../../components/IconH2.astro';
+import DefaultLayout from '../../layouts/DefaultLayout.astro';
+---
+
+<DefaultLayout title="Mosaic Tetris">
+  <ArticleHeader
+    icon="/images/icons/mosaic-tetris.png"
+    width="32"
+    title="Mosaic Tetris"
+  >
+    A Tetris variant where you laying down tetrominos on the board like tiles in a mosaic.
+  </ArticleHeader>
+
+  <main class="container">
+    <section class="mb-10">
+      <IconH2 icon="/images/icons/joystick-2.png">How to play</IconH2>
+
+      <p>Mosaic Tetris is a Tetris variant where you can put the pieces anywhere and they won't fall down, but you can't rotate them. Filling up horizontal <em>or</em> vertical lines will clear them and give you points.</p>
+    </section>
+
+    <section class="mb-10">
+      <IconH2 icon="/images/icons/directory_net_web-3.png">Download</IconH2>
+
+      <p class="mb-5">You can get the latest version here or from the <a href="https://github.com/pilosophos/mosaic-tetris/releases/latest" class="link">Github releases page</a> for Linux, Windows, and (possibly) Mac. I don't have a Mac to test it on so the Mac build might be totally broken.</p>
+
+      <div class="flex gap-10 justify-center">
+        <a href="https://github.com/pilosophos/mosaic-tetris/releases/latest/download/mosaic-tetris-linux" class="link flex flex-col items-center">
+          <img src="/images/icons/linux.png" height="64" class="h-[64px] object-contain"/>
+          Linux
+        </a>
+
+        <a href="https://github.com/pilosophos/mosaic-tetris/releases/latest/download/mosaic-tetris-windows.exe" class="link flex flex-col items-center">
+          <img src="/images/icons/windows.png" height="64" class="h-[64px] object-contain"/>
+          Windows
+        </a>
+
+        <a href="https://github.com/pilosophos/mosaic-tetris/releases/latest/download/mosaic-tetris-mac" class="link flex flex-col items-center">
+          <img src="/images/icons/mac.png" height="64" class="h-[64px] object-contain"/>
+          Mac
+        </a>
+      </div>
+    </section>
+
+    <section>
+      <IconH2 icon="/images/icons/address_book_home.png">tilde.town leaderboard</IconH2>
+
+      <p>The <a href="https://tilde.town/~pilosophos/town/mosaic-tetris-highscores.html" class="link">leaderboard</a> updates with Mosaic Tetris scores for tilde.town users every hour. If you're on tilde.town, run <code class="text-pi-pink">town mosaic-tetris</code> to play!</p>
+    </section>
+  </main>
+</DefaultLayout>
