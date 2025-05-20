@@ -1,7 +1,7 @@
 ---
 title: Piss Corps
 description: The diary of a criminal who steals septic tanks
-tags: [fiction]
+tags: [fiction, incomplete]
 ---
 <aside class="border border-yellow-500 bg-yellow-500/10 rounded p-3 my-3 flex items-center">
   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="me-3 fill-yellow-400" viewBox="0 0 16 16" role="img" aria-label="Warning:">
