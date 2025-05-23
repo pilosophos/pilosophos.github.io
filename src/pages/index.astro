@@ -9,20 +9,20 @@ import DefaultLayout from '../layouts/DefaultLayout.astro';
       <main class="col-span-2">
         <nav class="mb-3">
           <ul class="grid gap-3">
-            <li><BigNavLink label="Art" flavorText="Pictures worth 1000 words"/></li>
-            <li><BigNavLink label="Writing" flavorText="Monkey & typewriter not included"/></li>
-            <li><BigNavLink label="Support me" flavorText="How to commission me or buy my art"/></li>
-            <li><BigNavLink label="About" flavorText="About the guy behind it all"/></li>
+            <li><BigNavLink href="/art" label="Art" flavorText="Pictures worth 1000 words"/></li>
+            <li><BigNavLink href="/writing" label="Writing" flavorText="Monkey & typewriter not included"/></li>
+            <li><BigNavLink href="/support-me" label="Support me" flavorText="How to commission me or buy my art"/></li>
+            <li><BigNavLink href="/about" label="About" flavorText="About the guy behind it all"/></li>
           </ul>
         </nav>
         <nav class="text-end">
           <ul class="inline-flex flex-wrap justify-end gap-3">
-            <li class="px-5 border text-center text-pi-cyan rounded"><a href="">Email</a></li>
-            <li class="px-5 border text-center text-pi-cyan rounded"><a href="">Bluesky</a></li>
-            <li class="px-5 border text-center text-pi-cyan rounded"><a href="">Mastodon</a></li>
-            <li class="px-5 border text-center text-pi-cyan rounded"><a href="">Instagram</a></li>
-            <li class="px-5 border text-center text-pi-cyan rounded"><a href="">Tumblr</a></li>
-            <li class="px-5 border text-center text-pi-cyan rounded"><a href="">Pixiv</a></li>
+            <li class="border text-center text-pi-cyan rounded"><a href="" class="px-5 w-full">Email</a></li>
+            <li class="border text-center text-pi-cyan rounded"><a href="" class="px-5 w-full">Bluesky</a></li>
+            <li class="border text-center text-pi-cyan rounded"><a href="" class="px-5 w-full">Mastodon</a></li>
+            <li class="border text-center text-pi-cyan rounded"><a href="" class="px-5 w-full">Instagram</a></li>
+            <li class="border text-center text-pi-cyan rounded"><a href="" class="px-5 w-full">Tumblr</a></li>
+            <li class="border text-center text-pi-cyan rounded"><a href="" class="px-5 w-full">Pixiv</a></li>
           </ul>
         </nav>
       </main>
@@ -32,13 +32,23 @@ import DefaultLayout from '../layouts/DefaultLayout.astro';
             <img src="/images/malaszec-pfp.png" alt="" width="200" class="object-contain"/>
           </div>
           <div class="sidebar-decor grow bg-pi-gray rounded-lg flex items-end p-3">
-            <div class="text-end text-stone-500">
+            <div class="text-end text-stone-500 whitespace-pre-line">
               Oloromnal Graphical Shell for ACROS v2053.06.21-26a31f
+              inetd service loaded... 230ms
+              connected on interface enp0s10
+              netboot sequence initiated
+              awaiting system daemon... 166ms
+              failed to placate daemon
+              bailing out, you are now on your own
             </div>
           </div>
         </div>
-        <div class="w-12 relative">
-          <span class="absolute -left-42 top-62 rotate-90 inline-block text-stone-500 text-base/4 text-display">▞▗▖▚▘▚▚▚▗▚▜▗▝▞▝▞▛▞▝▞▝▗▞▞▗▚▞▜▙▝<br>▙▖▛▛▙▜▞▙▛▟▛▘▚▘▚▟▝▛▙▜▛▖▞▚▛▗▞▚▝▖</span>
+        <div class="w-14 relative">
+          <span aria-hidden="true" class="absolute -left-36 top-55 rotate-90 inline-block text-stone-500 text-base/4 text-display whitespace-pre-line">
+            ISO 3533 COMPLIANT INFORMATION SYSTEM
+            ▞▗▖▚▘▚▚▚▗▚▜▗▝▞▝▞▛▞▝▞▝▗▞▞▗▚▞▝
+            ▙▖▛▛▙▜▞▙▛▟▛▘▚▘▚▟▝▛▙▜▛▖▞▚▛▗▞▚
+          </span>
         </div>
       </div>
     </div>
