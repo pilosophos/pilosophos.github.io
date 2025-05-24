@@ -1,5 +1,6 @@
 ---
 import ArticleHeader from '../components/ArticleHeader.astro';
+import SmallIconLink from '../components/SmallIconLink.astro';
 import DefaultLayout from '../layouts/DefaultLayout.astro';
 ---
 
@@ -11,4 +12,33 @@ import DefaultLayout from '../layouts/DefaultLayout.astro';
   >
     Like my art? Want me to make more art? Here's how you can support me!
   </ArticleHeader>
+
+  <div class="container">
+    <main class="grid grid-cols-2">
+      <div>
+        <section class="mb-5">
+          <h2 class="text-3xl font-display mb-3">Buy stickers & shirts</h2>
+          <div class="prose prose-invariants">
+            <p>I sell <a href="https://www.redbubble.com/people/pilosophos/shop?iaCode=all-stickers" class="link">stickers</a> and <a href="https://www.redbubble.com/people/pilosophos/shop?iaCode=u-clothing">shirts</a> on <SmallIconLink href="https://pilosophos.redbubble.com" icon="/images/icons/redbubble.png" label="Redbubble" class="not-prose"/>.</p>
+          </div>
+        </section>
+
+        <section>
+          <h2 class="text-3xl font-display mb-3">Buy prints</h2>
+          <div class="prose prose-invariants">
+            <p>I sell prints of some of my art on <SmallIconLink href="https://pilosophos.etsy.com" icon="/images/icons/etsy.png" label="Etsy" class="not-prose"/>.</p>
+            <p>If you want to buy a print of something that's not currently sold, email me at <a href="mailto:pilosophos@gmail.com" class="link">pilosophos@gmail.com</a>.</p>
+          </div>
+        </section>
+      </div>
+
+      <section>
+        <h2 class="text-3xl font-display mb-3">Commissions & tips</h2>
+        <div class="prose prose-invariants">
+          <p>I take commissions on <SmallIconLink href="https://ko-fi.com/pilosophos" icon="/images/icons/ko-fi.png" label="Ko-fi" class="not-prose"/>, starting at $18 for profile pictures, $50 for medium shots, and $80 for full body color illustrations.</p>
+          <p>NSFW commissions are 169% the regular price.</p>
+        </div>
+      </section>
+    </main>
+  </div>
 </DefaultLayout>
