@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Living alone</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <style>
+    #display {
+      text-align: justify;
+    }
+
+    [data-typed='false'] {
+      color: gray;
+    }
+
+    body {
+      background-color: black;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      font-size: x-large;
+    }
+
+    body, #cheat {
+      font-family: 'Noto Serif', 'Times New Roman', Times, serif;
+    }
+
+    .container {
+      width: 50rem;
+      padding: 5rem;
+    }
+
+    #instructions {
+      font-size: xx-large;
+    }
+
+    #prompt {
+      color: lightgreen;
+    }
+
+    footer {
+      color: gray;
+      text-align: right;
+    }
+
+    .willFadeIn {
+      opacity: 0;
+      transition: opacity 2s;
+    }
+
+    .fadeIn {
+      opacity: 1;
+    }
+
+    #cheat-container {
+      text-align: right;
+    }
+
+    #cheat {
+      border: none;
+      background-color: transparent;
+      color: white;
+      text-decoration: underline;
+      font-size: medium;
+    }
+
+    #cheat:hover {
+      font-style: italic;
+    }
+
+    #cheat:active {
+      color: lightblue;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div>
+      <p id="instructions">Type <span id="prompt"></span> on your keyboard.</p>
+      <main id="display"></main>
+      <footer class="willFadeIn"><p>― <i>from</i> Nausea <i>by Jean-Paul Sartre</i></p></footer>
+      <div id="cheat-container"><button id="cheat" onClick="cheat()" class="willFadeIn">Cheat?</button></div>
+    </div>
+  </div>
+
+  <script>
+    const keySfx = [
+      new Audio("{{ '/demos/living-alone/key1.mp3' | relative_url }}"),
+      new Audio("{{ '/demos/living-alone/key2.mp3' | relative_url }}"),
+      new Audio("{{ '/demos/living-alone/key3.mp3' | relative_url }}"),
+    ];
+    const ding = new Audio("{{ '/demos/living-alone/ding.mp3' | relative_url }}");
+    
+    const TEXT = "When you live alone you no longer know what it is to tell a story: the plausible disappears at the same time as the friends. You let events flow by too: you suddenly see people appear who speak and then go away; you plunge into stories of which you can't make head or tail: you'd make a terrible witness.";
+
+    const display = document.getElementById('display');
+    const prompt = document.getElementById('prompt');
+    const cheatButton = document.getElementById('cheat');
+
+    let wordsTyped = 0;
+    let untypedWordSpans = [];
+    let currentWordSpan;
+    let currentPromptSpan;
+
+    function init() {
+      makeInitialDisplay();
+      currentPromptSpan = selectNextPrompt();
+      window.addEventListener('keydown', event => {
+        event.preventDefault();
+        typeOne(event.key, false);
+      });
+    }
+
+    function playKeySfx() {
+      toPlay = keySfx[Math.floor(Math.random() * keySfx.length)];
+      toPlay = toPlay.cloneNode(true);
+      toPlay.volume = .25;
+      toPlay.play();
+    }
+
+    function playDing() {
+      ding.cloneNode(true).play();
+    }
+
+    function cheat() {
+      cheatButton.style.visibility = 'hidden';
+      const intervalId = setInterval(() => {
+        typeOne(' ', true);
+        if (untypedWordSpans.length === 0) {
+          clearInterval(intervalId);
+        }
+      }, 100);
+    }
+
+    function finishPassage() {
+      playDing();
+      document.getElementById('instructions').textContent = 'Diary entry of Tuesday, 30th of January';
+      document.querySelector('footer').classList.toggle('fadeIn');;
+    }
+
+    function typeOne(pressedKey, force) {
+      const pressedLetter = pressedKey.toUpperCase();
+      const trueLetter = currentPromptSpan.dataset.trueLetter;
+      if (force || pressedLetter === trueLetter.toUpperCase()) {
+        playKeySfx();
+        currentPromptSpan.textContent = trueLetter;
+        currentPromptSpan.dataset.typed = true;
+
+        if (currentPromptSpan.nextElementSibling === null) { // if the word is over
+          untypedWordSpans = untypedWordSpans.filter(span => span !== currentWordSpan);
+          currentWordSpan = undefined;
+          wordsTyped++;
+          
+          if (untypedWordSpans.length === 0) {
+            finishPassage();
+            return;
+          }
+
+          if (wordsTyped > 3) {
+            cheatButton.classList.add('fadeIn');
+          }
+        }
+
+        currentPromptSpan = selectNextPrompt();
+      }
+    }
+
+    function selectNextPrompt() {
+        if (currentWordSpan === undefined) {
+          currentWordSpan = untypedWordSpans[Math.floor(Math.random() * untypedWordSpans.length)];
+        }
+        const nextLetterSpan = currentWordSpan.querySelector("[data-typed='false']");   
+        const nextLetter = nextLetterSpan.dataset.trueLetter.toUpperCase();
+        
+        prompt.textContent = nextLetter;
+        return nextLetterSpan;
+    }
+
+    function makeInitialDisplay() {
+      for (const word of TEXT.split(' ')) {
+        const wordSpan = document.createElement('span');
+        for (const [i, letter] of word.split('').entries()) {
+          
+          const letterSpan = document.createElement('span');
+          letterSpan.dataset.typed = false;
+          letterSpan.dataset.trueLetter = letter;
+          letterSpan.textContent = i === 0 ? 'u' : 'h';
+          wordSpan.append(letterSpan);
+        }
+        untypedWordSpans.push(wordSpan);
+        display.append(wordSpan);
+        display.append(document.createTextNode(' '));
+      }
+    }
+
+    init();
+  </script>
+</body>
+</html>
