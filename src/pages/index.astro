@@ -1,6 +1,8 @@
 ---
 import BigNavLink from '../components/BigNavLink.astro';
 import DefaultLayout from '../layouts/DefaultLayout.astro';
+import { Image } from "astro:assets";
+import FaerieHeroImg from "../assets/images/faerie-hero.png"
 ---
 
 <DefaultLayout title="Home">
@@ -17,17 +19,25 @@ import DefaultLayout from '../layouts/DefaultLayout.astro';
         </nav>
         <nav class="text-end">
           <ul class="inline-flex flex-wrap justify-end gap-3">
-            <li class="border text-center text-pi-cyan rounded"><a href="" class="px-5 w-full">Email</a></li>
-            <li class="border text-center text-pi-cyan rounded"><a href="" class="px-5 w-full">Bluesky</a></li>
-            <li class="border text-center text-pi-cyan rounded"><a href="" class="px-5 w-full">Mastodon</a></li>
-            <li class="border text-center text-pi-cyan rounded"><a href="" class="px-5 w-full">Instagram</a></li>
-            <li class="border text-center text-pi-cyan rounded"><a href="" class="px-5 w-full">Tumblr</a></li>
-            <li class="border text-center text-pi-cyan rounded"><a href="" class="px-5 w-full">Pixiv</a></li>
+            <li class="border text-center text-pi-cyan rounded"><a href="" class="px-5">Email</a></li>
+            <li class="border text-center text-pi-cyan rounded"><a href="" class="px-5">Bluesky</a></li>
+            <li class="border text-center text-pi-cyan rounded"><a href="" class="px-5">Mastodon</a></li>
+            <li class="border text-center text-pi-cyan rounded"><a href="" class="px-5">Instagram</a></li>
+            <li class="border text-center text-pi-cyan rounded"><a href="" class="px-5">Tumblr</a></li>
+            <li class="border text-center text-pi-cyan rounded"><a href="" class="px-5">Reddit</a></li>
+            <li class="border text-center text-pi-cyan rounded"><a href="" class="px-5">Pixiv</a></li>
           </ul>
         </nav>
       </main>
-      <div class="h-full gap-3 hidden lg:flex">
-        <div class="h-full sidebar-decor rounded-lg border border-pi-yellow bg-pi-yellow flex flex-col">
+      <div class="h-full gap-3 hidden lg:flex relative">
+        <Image
+          src={ FaerieHeroImg }
+          alt="A drawing of a faerie by pilosophos"
+          width="400"
+          class="absolute z-10 -bottom-21 xl:-bottom-26 right-0"
+          quality="max"
+        />
+        <div class="h-full sidebar-decor rounded-lg border border-pi-yellow bg-pi-yellow flex flex-col overflow-hidden">
           <div>
             <img src="/images/malaszec-pfp.png" alt="" width="200" class="object-contain"/>
           </div>

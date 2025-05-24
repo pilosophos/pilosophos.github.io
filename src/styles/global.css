@@ -29,6 +29,11 @@
 }
 
 @layer components {
+  .bg-texture-dots {
+    background-image: radial-gradient(circle at 1px 1px, var(--color-stone-600) 1px, transparent 0);
+    background-size: 40px 40px;
+  }
+
   .container {
     @apply mx-auto px-3 xl:px-0 w-full xl:w-320!;
   }
