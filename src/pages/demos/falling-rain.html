@@ -1,0 +1,112 @@
+---
+title: Falling rain
+description: Made on 2023 October 30
+date: 2023-10-30
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>{{ page.title }} | Pilosophos' Circle</title>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+
+    body {
+      background-color: black;
+      padding: 0;
+      margin: 0;
+      overflow: hidden;
+    }
+
+    #overlay {
+      position: absolute;
+      mix-blend-mode: color-dodge;
+      
+      display: flex;
+      height: 100%;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      overflow-y: scroll;
+      
+      color: cyan;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 8vh;
+      line-height: .8;
+      
+      text-transform: uppercase;
+    }
+  </style>
+</head>
+<body>
+  <div id="overlay">
+    <p>When I look out the window I can't help but feel a little melancholy. I don't really know what it is. As a kid I used to go out and play in the rain with my little rain boots with all the kids in the neighborhood, splashing away in the puddles and throwing mud balls at every passerby. When I'd come home my mother would scold me for getting the floors wet and the furniture muddy. But when you're five you don't care about any of that. You can't care. What good would caring do? But now I look out the window and I just see the rain.</p>
+  </div>
+  <canvas id="canvas"></canvas>
+
+  <script>
+    const AVAILABLE_CHARS = "░░▒▒▓".split("");
+    const CHAR_INTERVAL = 1;
+    const NEW_CHARS_PER_INTERVAL = 7;
+    const CHAR_DECAY_RATE = 1/60;
+    const CHAR_FALL_SPEED = 6.5;
+
+    init();
+
+    function init() {
+      let ctx = canvas.getContext("2d", { alpha: false });
+      requestAnimationFrame(() => fallingChars(ctx, 0, []));
+
+      resizeCanvas(ctx);
+      addEventListener("resize", () => resizeCanvas(ctx));
+    }
+
+    function resizeCanvas(ctx) {
+      let canvas = document.getElementById("canvas");
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+      
+      ctx.font = "bold 3.5vw monospace";
+      ctx.fillStyle = "cyan";
+    }
+    
+    const clamp = (num, min, max) => Math.min(Math.max(num, min), max);
+    
+    function fallingChars(ctx, frameNbr, chars) {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+      for (let i = 0; i < chars.length; i++) {
+        let char = chars[i];
+        ctx.globalAlpha = clamp(char.alpha, 0, 1);
+        ctx.fillText(char.ascii, char.x, char.y);
+        
+        char.alpha -= CHAR_DECAY_RATE;
+        char.y += CHAR_FALL_SPEED;
+      }
+      
+      chars = chars.filter(c => c.alpha >= 0 || c.y < canvas.height);
+
+      if (frameNbr % CHAR_INTERVAL === 0) {
+        for (let i = 0; i < NEW_CHARS_PER_INTERVAL; i++) addChar(chars);
+        frameNbr = 0;
+      }
+      
+      requestAnimationFrame(() => fallingChars(ctx, ++frameNbr, chars));
+    }
+
+    function addChar(chars) {
+      let rand = Math.random();
+      chars.push({
+        ascii: AVAILABLE_CHARS[Math.floor(rand * AVAILABLE_CHARS.length)],
+        x: Math.random() * canvas.width,
+        y: Math.random() * canvas.height - 100,
+        alpha: 1.0,
+      });
+    }
+  </script>
+</body>
+</html>
