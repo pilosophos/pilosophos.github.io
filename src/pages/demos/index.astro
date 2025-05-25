@@ -1,0 +1,49 @@
+---
+import ArticleHeader from '../../components/ArticleHeader.astro';
+import BigIconLink from '../../components/BigIconLink.astro';
+import DefaultLayout from '../../layouts/DefaultLayout.astro';
+---
+
+<DefaultLayout title="Demos">
+  <ArticleHeader
+    icon="/images/icons/color_profile.png"
+    width="32"
+    title="Demos"
+  >
+    Self-contained pieces of computer art
+  </ArticleHeader>
+
+  <main class="container">
+    <ul class="grid gap-3 md:grid-cols-2">
+      <li class="mb-5">
+        <BigIconLink
+          href="/demos/falling-rain"
+          label="Falling Rain"
+          icon="/images/icons/color_profile.png"
+        >
+          <p>2023 October 30. JavaScript and CSS on &lt;canvas&gt;.</p>
+        </BigIconLink>
+      </li>
+
+      <li class="mb-5">
+        <BigIconLink
+          href="/demos/falling-rain"
+          label="Snake"
+          icon="/images/icons/color_profile.png"
+        >
+          <p>2023 November 25. Interactive.</p>
+        </BigIconLink>
+      </li>
+
+      <li class="mb-5">
+        <BigIconLink
+          href="/demos/living-alone"
+          label="Living Alone"
+          icon="/images/icons/color_profile.png"
+        >
+          <p>2024 November 15. Interactive, with sound.</p>
+        </BigIconLink>
+      </li>
+    </ul>
+  </main>
+</DefaultLayout>
