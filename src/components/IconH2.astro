@@ -2,6 +2,6 @@
 const { icon, class: className, id } = Astro.props;
 ---
 <header id={id} class=`font-display ${className}`>
-  <img class="inline align-baseline me-1" src={ icon } role="presentation" width="32" height="32"/>
+  <img class="inline align-baseline me-1 relative -bottom-1" src={ icon } role="presentation" width="32" height="32"/>
   <h2 class="text-3xl text-center inline"><slot/></h2>
 </header>

@@ -1,5 +1,7 @@
 ---
 import ArticleHeader from '../components/ArticleHeader.astro';
+import IconH2 from '../components/IconH2.astro';
+import Image from 'astro:assets';
 import SmallIconLink from '../components/SmallIconLink.astro';
 import DefaultLayout from '../layouts/DefaultLayout.astro';
 ---
@@ -12,33 +14,64 @@ import DefaultLayout from '../layouts/DefaultLayout.astro';
   >
     Like my art? Want me to make more art? Here's how you can support me!
   </ArticleHeader>
+  
+  <nav class="container flex justify-center mb-10">
+    <ul class="flex justify-center gap-3 flex-wrap">
+      <li><SmallIconLink href="#movies" icon="images/icons/ko-fi.png" label="Tips & commissioning art"/>
+      <li><SmallIconLink href="#video-games" icon="/images/icons/redbubble.png" label="Buy stickers"/>
+      <li><SmallIconLink href="#music" icon="images/icons/etsy.png" label="Buy prints"/>
+    </ul>
+  </nav>
 
-  <div class="container">
-    <main class="grid grid-cols-2">
-      <div>
-        <section class="mb-5">
-          <h2 class="text-3xl font-display mb-3">Buy stickers & shirts</h2>
-          <div class="prose prose-invariants">
-            <p>I sell <a href="https://www.redbubble.com/people/pilosophos/shop?iaCode=all-stickers" class="link">stickers</a> and <a href="https://www.redbubble.com/people/pilosophos/shop?iaCode=u-clothing">shirts</a> on <SmallIconLink href="https://pilosophos.redbubble.com" icon="/images/icons/redbubble.png" label="Redbubble" class="not-prose"/>.</p>
-          </div>
+  <main class="container">
+    <section class="mb-10 flex flex-col gap-10 lg:flex-row">
+      <aside class="flex items-center justify-center flex-grow flex-shrink-0">
+        <figure class="table">
+          <img src={  } alt="A drawing of a faerie holding a 20 Proj bill" width={ 350 } />
+          <figcaption class="text-stone-400 table-caption caption-bottom mt-2">
+            One of my favorite drawings I've done is <a href="/art/shopping-sprite" class="link">Shopping Sprite</a>, January 2022.
+          </figcaption>
+        </figure>
+      </aside>
+
+      <div class="prose prose-invariants text-white max-w-180">
+        <IconH2 icon="/images/icons/ko-fi.png" class="not-prose"><a href="https://ko-fi.com/pilosophos" class="link">Tips & commissioning art »</a></IconH2>
+        <p>You can commission art from me, starting at US$18 for profile pictures, $50 for medium shots, and $80 for full body color illustrations.</p>
+        <p>I accept NSFW commissions subject to some restrictions, and at 169% the normal rate. Please e-mail me at <a href="mailto:pilosophos@gmail.com">pilosophos@gmail.com</a>.</p>
+        <p>Tips are also appreciated if you're feeling generous!</p>
+      </div>
+    </section>
+
+    <div class="mb-10 flex flex-col gap-10 lg:flex-row">
+      <div class="prose prose-invariants text-white max-w-180">
+        <section class="mb-10">
+          <IconH2 icon="/images/icons/redbubble.png" class="not-prose"><a href="https://pilosophos.redbubble.com" class="link">Buying stickers & shirts »</a></IconH2>
+          <p>You can buy stickers, pins, and shirts with stuff I've drawn on Redbubble:</p>
+          <nav>
+            <ul class="text-base/4">
+              <li><a href="https://pilosophos.redbubble.com" class="link">My Redbubble store</a></li>
+              <li><a href="https://www.redbubble.com/people/pilosophos/shop?iaCode=all-stickers" class="link">Just stickers</a></li>
+              <li><a href="https://www.redbubble.com/people/pilosophos/shop?iaCode=u-accessories" class="link">Just pins</a></li>
+              <li><a href="https://www.redbubble.com/people/pilosophos/shop?&iaCode=u-clothing" class="link">Just shirts</a></li>
+            </ul>
+          </nav>
         </section>
 
         <section>
-          <h2 class="text-3xl font-display mb-3">Buy prints</h2>
-          <div class="prose prose-invariants">
-            <p>I sell prints of some of my art on <SmallIconLink href="https://pilosophos.etsy.com" icon="/images/icons/etsy.png" label="Etsy" class="not-prose"/>.</p>
-            <p>If you want to buy a print of something that's not currently sold, email me at <a href="mailto:pilosophos@gmail.com" class="link">pilosophos@gmail.com</a>.</p>
-          </div>
+          <IconH2 icon="/images/icons/etsy.png" class="not-prose"><a href="https://pilosophos.etsy.com" class="link">Buying prints »</a></IconH2>
+          <p>You can buy prints of my art on my Etsy store.</p>
+          <p>If you want a print of my art that I don't currently sell, please e-mail me at <a href="mailto:pilosophos@gmail.com">pilosophos@gmail.com</a>.</p>
         </section>
       </div>
 
-      <section>
-        <h2 class="text-3xl font-display mb-3">Commissions & tips</h2>
-        <div class="prose prose-invariants">
-          <p>I take commissions on <SmallIconLink href="https://ko-fi.com/pilosophos" icon="/images/icons/ko-fi.png" label="Ko-fi" class="not-prose"/>, starting at $18 for profile pictures, $50 for medium shots, and $80 for full body color illustrations.</p>
-          <p>NSFW commissions are 169% the regular price.</p>
-        </div>
-      </section>
-    </main>
-  </div>
+      <aside class="flex items-center justify-center flex-grow flex-shrink-0">
+        <figure class="table">
+          <img src={  } alt="A drawing of a faerie holding a 20 Proj bill" width={ 350 } />
+          <figcaption class="text-stone-400 table-caption caption-bottom mt-2">
+            One of my favorite drawings I've done is <a href="/art/shopping-sprite" class="link">Shopping Sprite</a>, January 2022.
+          </figcaption>
+        </aside>
+      </div>
+    </div>
+  </main>
 </DefaultLayout>
