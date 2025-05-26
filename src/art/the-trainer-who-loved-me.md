@@ -2,6 +2,7 @@
 title: The Trainer Who Loved Me
 cover: the-trainer-who-loved-me.png
 date: 2024-03-24
+print: true
 ---
 The fifth in a line of James Bond x Pokéspe parodies that I drew, based on *The Spy Who Loved Me.*
 

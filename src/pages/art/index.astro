@@ -29,12 +29,16 @@ import DefaultLayout from "../../layouts/DefaultLayout.astro";
 import { getCollection, getEntry, render } from 'astro:content';
 import ImageDescription from "../../components/ImageDescription.astro";
 import ImageViewer from "../../components/ImageViewer.astro";
+import Alert from "../../components/Alert.astro";
 
 const art = (await getCollection('art')).toSorted((a, b) => b.data.date?.getTime() - a.data.date?.getTime());
 ---
 
 <DefaultLayout title="Art">
   <main class="container">
+    <Alert class="my-5">
+      If you'd like to commission some art from me, <a href="https://ko-fi.com/pilosophos/commissions" class="link">visit my Ko-fi</a> page for details!
+    </Alert>
     <div id="gallery" class="grid md:grid-cols-2 lg:grid-cols-3 justify-center gap-3 mx-auto">
       {
         art.map(async (piece, i) =>
@@ -88,6 +92,16 @@ const art = (await getCollection('art')).toSorted((a, b) => b.data.date?.getTime
           title={ piece.data.title }
           date={ piece.data.date }
         >
+          { piece.data.sticker && 
+            <Alert class="mt-5 not-prose">
+              You can now buy this as a sticker from <a href="https://www.redbubble.com/people/pilosophos/shop?iaCode=all-stickers" class="link">my Redbubble store</a>!
+            </Alert>
+          }
+          { piece.data.print && 
+            <Alert class="mt-5 not-prose">
+              You can now buy a print of this from <a href="https://pilosophos.etsy.com" class="link">my Etsy store</a>!
+            </Alert>
+          }
           <Content />
         </ImageDescription>
       </template>

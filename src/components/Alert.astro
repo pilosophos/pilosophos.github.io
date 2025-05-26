@@ -1,0 +1,18 @@
+---
+const { class: className } = Astro.props;
+---
+
+<div class={`outer rounded-lg block border border-pi-yellow ps-12 text-pi-yellow bg-pi-yellow relative ${className}`}>
+  <img src="/images/icons/warning.png" width="32" height="32" class="object-contain absolute top-2 left-2"/>
+  <div class="inner rounded-lg bg-black/80 p-2 ps-5 min-h-16 flex items-center text-base/5">
+    <div>
+      <slot />
+    </div>
+  </div>
+</div>
+
+<style>
+  .outer, .inner {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 20px 100%, 0 calc(100% - 20px));
+  }
+</style>

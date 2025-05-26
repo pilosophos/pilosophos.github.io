@@ -2,6 +2,7 @@
 title: Substitute Teacher
 cover: substitute-teacher.png
 date: 2025-03-25
+sticker: true
 ---
 I have a little substitute doll which I sometimes put in front of my webcam if I go AFK in a zoom meeting.
 
