@@ -8,5 +8,8 @@ export default defineConfig({
   site: 'https://pilosophos.com',
   vite: {
     plugins: [tailwindcss()]
+  },
+  build: {
+    format: 'file',
   }
 });
