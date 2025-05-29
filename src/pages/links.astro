@@ -18,7 +18,9 @@ import DefaultLayout from "../layouts/DefaultLayout.astro";
 
     <section class="mb-10">
       <IconH2 icon="/images/icons/msagent-3.png" class="mb-5">My stuff</IconH2>
-        <h3 class="font-display text-xl mb-5">Social Media</h3>
+
+      <section class="mb-5">
+        <h3 class="font-display text-xl mb-5 text-center">Social Media</h3>
         <ul class="flex flex-row justify-around flex-wrap gap-3">
           <li>
             <StackedIconLink href="https://tiny.tilde.website/@pilosophos" label="mastodon" icon="/images/icons/mastodon.png"/>
@@ -39,6 +41,22 @@ import DefaultLayout from "../layouts/DefaultLayout.astro";
             <StackedIconLink href="https://www.pixiv.net/en/users/77474454" label="pixiv (日本語)" icon="/images/icons/pixiv.png"/>
           </li>
         </ul>
+      </section>
+
+      <section>
+        <h3 class="font-display text-xl mb-5 text-center">Supporting me</h3>
+        <ul class="flex flex-row justify-around flex-wrap gap-3 max-w-150 mx-auto">
+          <li>
+            <StackedIconLink href="https://ko-fi.com/pilosophos" label="commission art" icon="/images/icons/ko-fi.png"/>
+          </li>
+          <li>
+            <StackedIconLink href="https://pilosophos.etsy.com/" label="buy prints" icon="/images/icons/etsy.png"/>
+          </li>
+          <li>
+            <StackedIconLink href="https://pilosophos.redbubble.com/" label="buy stickers" icon="/images/icons/redbubble.png"/>
+          </li>
+        </ul>
+      </section>
     </section>
     
     <section class="mb-10">
