@@ -2,7 +2,7 @@
 const { icon, href, label } = Astro.props;
 ---
 
-<a href="https://github.com/pilosophos/mosaic-tetris/releases/latest/download/mosaic-tetris-linux" class="link inline-flex flex-col items-center">
+<a href={ href } class="link inline-flex flex-col items-center">
   <img src={ icon } height="64" class="h-[64px] object-contain"/>
   { label }
 </a>
