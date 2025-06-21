@@ -7,7 +7,7 @@ tags: [nonfiction]
 # How to get a pictorial postmark
 
 ## What are they?
-<figure class="relative !mt-0 flex flex-col items-center xl:float-right xl:-mr-90 xl:w-80">
+<figure class="flex flex-col text-center items-center marginal-note">
   <img src="/images/pictorial-postmark-uk.jpg" alt="A pictorial postmark from Fenelon Falls, Ontario, Canada" width="153" height="153">
   <figcaption>A pictorial postmark from Fenelon Falls, Ontario, Canada</figcaption>
 </figure>

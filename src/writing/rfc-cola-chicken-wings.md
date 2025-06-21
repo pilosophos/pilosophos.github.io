@@ -46,4 +46,4 @@ If the wings are not pre-steamed, fat is noticeably rended into the sauce mixtur
 The original Coca Cola may be substituted for the Spiced Raspberry variant which I prefer, since it makes the wings slightly more aromatic (a vague raspberry smell) and gives it some depth. The difference is fairly minimal.
 
 ## If you have improvements
-If you have improvements, please reply to my [Mastodon post](https://tiny.tilde.website/@pilosophos/112719555315819765), or if you are on [tilde.town](https://tilde.town), you can also email me there.
+If you have improvements, please reply to my [Mastodon post](https://tiny.tilde.website/@pilosophos/112719555315819765), or email me at [pilosophos@gmail.com](mailto:pilosophos@gmail.com).

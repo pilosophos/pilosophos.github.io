@@ -29,6 +29,10 @@
 }
 
 @layer components {
+  .marginal-note {
+    @apply relative !mt-0 xl:float-right xl:-mr-90 xl:w-80;
+  }
+
   .bg-texture-dots {
     background-image: radial-gradient(circle at 1px 1px, var(--color-stone-600) 1px, transparent 0);
     background-size: 40px 40px;
