@@ -7,10 +7,12 @@ tags: [nonfiction]
 # How to get a pictorial postmark
 
 ## What are they?
-<figure class="flex flex-col text-center items-center marginal-note">
-  <img src="/images/pictorial-postmark-uk.jpg" alt="A pictorial postmark from Fenelon Falls, Ontario, Canada" width="153" height="153">
-  <figcaption>A pictorial postmark from Fenelon Falls, Ontario, Canada</figcaption>
-</figure>
+<div class="relative">
+  <figure class="flex flex-col text-center items-center marginal-note">
+    <img src="/images/pictorial-postmark-uk.jpg" alt="A pictorial postmark from Fenelon Falls, Ontario, Canada" width="153" height="153">
+    <figcaption>A pictorial postmark from Fenelon Falls, Ontario, Canada</figcaption>
+  </figure>
+</div>
 
 When you send a letter with postage stamps, your country's mail service will stamp over your postage stamps with a postmark, usually with a date on it. This does two things: the date tells you when the postal service collected your outgoing mailpiece, and it also slathers ink on your stamp so it can't be reused (known as stamp canceling).
 
