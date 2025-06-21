@@ -9,9 +9,17 @@ The Conversation Game is a game for two players, where each player tries to stee
 
 ## Rules
 
-<aside class="marginal-note text-base muted not-prose"><p>(Optional): To prevent cheating, each player could write their question on a piece of paper before the game starts, and players could reveal the paper at the end.</p></aside>
+<div class="relative">
 
-Each player selects an icebreaker question (e.g. `What's your favorite ice cream flavor?`) which they will keep hidden from the other player. The game has one winner, and you can win by one of three methods:
+  Each player selects an icebreaker question (e.g. `What's your favorite ice cream flavor?`) which they will keep hidden from the other player. The game has one winner, and you can win by one of three methods:
+
+  <aside class="marginal-note">
+  
+  (Optional): To prevent cheating, each player could write their question on a piece of paper before the game starts, and players could reveal the paper at the end.
+  
+  </aside>
+</div>
+
 * You obtain the answer to your icebreaker question from the other player
 * You successfully guess what the other player's icebreaker question is within three guesses
 * The other player has incorrectly guessed what your icebreaker question is three times
