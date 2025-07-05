@@ -19,7 +19,8 @@
   @apply prose-invert
     prose-a:text-pi-cyan prose-a:decoration-dotted prose-a:hover:text-white
     prose-code:font-normal prose-code:font-display prose-code:text-pi-pink prose-code:before:content-none prose-code:after:content-none
-    prose-figcaption:text-base prose-figcaption:text-stone-400;
+    prose-figcaption:text-base prose-figcaption:text-stone-400
+    prose-ul:marker:text-white;
 }
 
 
