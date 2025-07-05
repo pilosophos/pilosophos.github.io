@@ -91,6 +91,7 @@ const art = (await getCollection('art')).toSorted((a, b) => b.data.date?.getTime
           slot="description"
           title={ piece.data.title }
           date={ piece.data.date }
+          slug={ piece.id }
         >
           { piece.data.sticker && 
             <Alert class="mt-5 not-prose">
@@ -113,11 +114,12 @@ const art = (await getCollection('art')).toSorted((a, b) => b.data.date?.getTime
   // generate templates for full-res images themselves
   art.map(async (piece, i) =>
     <template id={ 'image-' + piece.id }>
-      <img
+      <Image
         class="max-h-screen object-contain w-auto h-auto"
-        src={ piece.data.cover.src }
+        src={ piece.data.cover }
         alt={ piece.data.title }
-        width={ piece.data.cover.width }
+        quality="max"
+        width={piece.data.cover.width}
       />
     </template>
   )

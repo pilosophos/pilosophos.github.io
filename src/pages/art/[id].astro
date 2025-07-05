@@ -2,7 +2,6 @@
 import '../../styles/global.css'
 import { Image } from "astro:assets";
 import { getCollection, render } from 'astro:content';
-import DefaultLayout from '../../layouts/DefaultLayout.astro';
 import Favicon from '../../components/Favicon.astro';
 import ImageViewer from '../../components/ImageViewer.astro';
 import ImageDescription from '../../components/ImageDescription.astro';
@@ -29,12 +28,14 @@ const { Content } = await render(post);
 </head>
 <body>
   <ImageViewer>
-    <img
+    <Image
       slot="image"
       class="max-h-screen object-contain w-auto h-auto"
-      src={ post.data.cover.src }
+      src={ post.data.cover }
       alt={ post.data.title }
       width={ post.data.cover.width }
+      quality="max"
+      format="png"
     />
     <nav
       slot="sidebar-header"
@@ -48,6 +49,7 @@ const { Content } = await render(post);
       slot="description"
       title={ post.data.title }
       date={ post.data.date }
+      slug={ post.id }
     >
       <Content />
     </ImageDescription>

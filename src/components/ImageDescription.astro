@@ -1,5 +1,7 @@
 ---
-const { title, date } = Astro.props;
+import SmallIconLink from "./SmallIconLink.astro";
+
+const { title, date, slug } = Astro.props;
 ---
 <div>
   <header class="font-display not-prose">
@@ -19,6 +21,8 @@ const { title, date } = Astro.props;
         </time>
       }
     </p>
+
+    <SmallIconLink label="View high quality" icon="/images/icons/tiny/painting.png" href={ `/art/${slug}-hq` } class="font-sans"/>
   </header>
 
   <slot />
