@@ -23,7 +23,9 @@
     prose-ul:marker:text-white;
 }
 
-
+html {
+  font-smooth: never;
+}
 
 @utility flex-center {
   display: flex;

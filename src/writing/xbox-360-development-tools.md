@@ -17,7 +17,7 @@ Alternatively, a fully open-source C/C++ stack is possible using LibXenon, but t
   
   <aside class="marginal-note">
   
-  I list the MD5/SHA256 hashes of trustworthy installers, but **there are no links provided to the Xbox 360 SDK or XNA 4.0 Extensions** because I'm not authorized to redistribute proprietary software that was never supposed to be publicly available.
+  I list the MD5/SHA256 hashes of trustworthy installers, but **I don't provide links to the Xbox 360 SDK or XNA 4.0 Extensions** because I'm not authorized to redistribute proprietary software that was never supposed to be publicly available.
   
   </aside>
 
