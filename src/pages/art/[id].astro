@@ -29,14 +29,12 @@ const { Content } = await render(post);
 </head>
 <body>
   <ImageViewer>
-    <Image
+    <img
       slot="image"
       class="max-h-screen object-contain w-auto h-auto"
-      src={ post.data.cover }
+      src={ post.data.cover.src }
       alt={ post.data.title }
       width={ post.data.cover.width }
-      quality="max"
-      format="png"
     />
     <nav
       slot="sidebar-header"

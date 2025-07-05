@@ -113,12 +113,11 @@ const art = (await getCollection('art')).toSorted((a, b) => b.data.date?.getTime
   // generate templates for full-res images themselves
   art.map(async (piece, i) =>
     <template id={ 'image-' + piece.id }>
-      <Image
+      <img
         class="max-h-screen object-contain w-auto h-auto"
-        src={ piece.data.cover }
+        src={ piece.data.cover.src }
         alt={ piece.data.title }
-        quality="max"
-        width={piece.data.cover.width}
+        width={ piece.data.cover.width }
       />
     </template>
   )
