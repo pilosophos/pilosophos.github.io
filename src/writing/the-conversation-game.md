@@ -14,6 +14,8 @@ The Conversation Game is a game for two players, where each player tries to stee
   Each player selects an icebreaker question (e.g. `What's your favorite ice cream flavor?`) which they will keep hidden from the other player. The game has one winner, and you can win by one of three methods:
 
   <aside class="marginal-note">
+
+  Specifically, an **icebreaker question** is a question you ask to get to know the other person. For more examples, see [this article](https://www.atlassian.com/blog/teamwork/icebreaker-questions).
   
   (Optional): To prevent cheating, each player could write their question on a piece of paper before the game starts, and players could reveal the paper at the end.
   
@@ -24,11 +26,18 @@ The Conversation Game is a game for two players, where each player tries to stee
 * You successfully guess what the other player's icebreaker question is within three guesses
 * The other player has incorrectly guessed what your icebreaker question is three times
 
-If a player believes they've won, they should declare what their icebreaker question is and the answer to that question.
+If a player believes they've won, they should declare what their icebreaker question is and the other person's answer to that question.
 
 Either player can start talking first.
 
-## Multi-round variant
+## FAQ
+
+### Is lying cheating?
+Yes. The point of the game is to have a conversation and get to know the other player is the point of this game, so lying is counterproductive.
+
+## Variants
+
+### Multi-round variant
 
 If players want to keep going after someone has won, the winner selects a new icebreaker question and the loser's incorrect guess count resets to 0.
 
@@ -36,6 +45,6 @@ The loser may select a new icebreaker question also, at the cost of resetting th
 
 When the players decide to stop playing the Conversation Game, they may compare the number of times they won, and whoever has the most wins is the overall winner.
 
-## More than two players?
+### More than two players?
 
 If you have suggestions for how to adapt this to more than 2 players, please send them to [pilosophos@gmail.com](mailto:pilosophos@gmail.com).
