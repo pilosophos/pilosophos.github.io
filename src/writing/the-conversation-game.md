@@ -13,7 +13,7 @@ The Conversation Game is a game for two players, where each player tries to stee
 
 <div class="relative">
 
-Each player selects an icebreaker question (e.g. `What's your favorite ice cream flavor?`) which they will keep hidden from the other player.
+Each player selects an icebreaker question (e.g. `What's your favorite ice cream flavor?`) which they will keep hidden from the other player. You will try to find out the other person's answer to your chosen question.
 
   <aside class="marginal-note">
 
