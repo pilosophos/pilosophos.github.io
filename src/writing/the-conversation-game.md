@@ -37,7 +37,7 @@ The game is played by having a conversation. You can win by one of three methods
 * You successfully guess what the other player's icebreaker question is within three guesses
 * The other player has incorrectly guessed what your icebreaker question is three times
 
-Any player can guess what the other person's question is at any time, and the other player must reveal whether it is their winning question. If the guesser is correct, they win immediately. For clarity, the guess should be accompanied by saying, "this is one of my Conversation Game guesses."
+Any player can guess what the other person's question is at any time, and the other player must reveal whether it is their winning question. If the guesser is correct, they win immediately. Otherwise, the guesser loses one of their guesses. For clarity, the guess should be accompanied by saying, "this is one of my Conversation Game guesses."
 
 If a player believes they've won because they have the other person's answer to their question, they should declare what their icebreaker question is and the other person's answer.
 
