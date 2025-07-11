@@ -5,15 +5,31 @@ tags: [nonfiction]
 ---
 # The Conversation Game
 
+<div class="relative">
+
 The Conversation Game is a game for two players, where each player tries to steer the conversation towards a certain topic without being too obvious. I made this game to practice my conversation skills.
+
+  <nav class="marginal-note not-prose mb-5">
+    <h2 class="font-display border-b pb-1 mb-1">Jump to...</h2>
+    <ol class="list-disc ps-5">
+      <li><a href="#rules" class="link">Rules</a></li>
+      <li><a href="#faq" class="link">FAQ</a></li>
+      <li><a href="#variants" class="link">Variants</a></li>
+      <li><a href="#changelog" class="link">Changelog</a></li>
+    </ol>
+  </nav>
+
+</div>
 
 ## Rules
 
-## Selecting a question
+These rules were last updated on 2025-07-11 21:40 UTC.
+
+### Selecting a question
 
 <div class="relative">
 
-Each player selects an icebreaker question (e.g. `What's your favorite ice cream flavor?`) which they will keep hidden from the other player. You will try to find out the other person's answer to your chosen question.
+Each player selects an icebreaker question (e.g. `What's your favorite ice cream flavor?`) which they will keep hidden from the other player. You will try to find out the other person's answer to your chosen question. Both players should then agree on a third, neutral icebreaker question that both players must answer before continuing with the rest of the game.
 
   <aside class="marginal-note">
 
@@ -29,9 +45,9 @@ Yes/no questions are too simplistic, but you can convert a yes/no question into 
 
 </div>
 
-## Main gameplay
+### Main gameplay
 
-The game is played by having a conversation. You can win by one of three methods:
+The game is played by having a conversation. After both players have answered the neutral icebreaker question, you can win by one of three methods:
 
 * You obtain the answer to your icebreaker question from the other player
 * You successfully guess what the other player's icebreaker question is within three guesses
@@ -61,3 +77,10 @@ When the players decide to stop playing the Conversation Game, they may compare 
 ### More than two players?
 
 If you have suggestions for how to adapt this to more than 2 players, please send them to [pilosophos@gmail.com](mailto:pilosophos@gmail.com).
+
+## Changelog
+
+Most recent change last.
+
+1. 2025-07-11 21:40 UTC
+  * Added the neutral starting question to reduce the advantage for the first person to speak.
