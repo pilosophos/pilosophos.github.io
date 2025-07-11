@@ -13,6 +13,17 @@
   --font-mono: "DOSV JPN24", sans-serif;
   --font-display: "DOSV JPN24", sans-serif;
   --font-ascii-art: "NEC", sans-serif;
+
+  --spacing: 4px;
+
+  --text-xs: 8px;
+  --text-sm: 12px;
+  --text-base: 16px;
+  --text-lg: 16px;
+  --text-xl: 20px;
+  --text-2xl: 24px;
+  --text-3xl: 28px;
+  --text-4xl: 36px;
 }
 
 .prose-invariants {
@@ -42,6 +53,13 @@ html {
 }
 
 @layer components {
+  .pill-link {
+    @apply inline-block w-full border text-center text-pi-cyan hover:bg-pi-cyan/20 active:bg-pi-cyan/30 transition-all rounded px-5 py-1;
+  }
+
+  .wordy-list {
+    @apply list-disc ms-5 mb-5 flex flex-col gap-3;
+  }
 
   .bg-texture-dots {
     background-image: radial-gradient(circle at 1px 1px, var(--color-stone-600) 1px, transparent 0);

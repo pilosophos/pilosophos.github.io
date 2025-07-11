@@ -3,6 +3,7 @@ import BigNavLink from '../components/BigNavLink.astro';
 import DefaultLayout from '../layouts/DefaultLayout.astro';
 import { Image } from "astro:assets";
 import FaerieHeroImg from "../assets/images/faerie-hero.png"
+import PillLink from '../components/PillLink.astro';
 ---
 
 <DefaultLayout title="Home">
@@ -18,14 +19,14 @@ import FaerieHeroImg from "../assets/images/faerie-hero.png"
           </ul>
         </nav>
         <nav class="text-end">
-          <ul class="inline-flex flex-wrap justify-end gap-3">
-            <li><a href="mailto:pilosophos@gmail.com" class="border text-center text-pi-cyan hover:bg-pi-cyan/20 active:bg-pi-cyan/30 transition-all duration-2.5s rounded px-5 py-1">Email</a></li>
-            <li><a href="https://bsky.app/profile/pilosophos.com" class="border text-center text-pi-cyan hover:bg-pi-cyan/20 active:bg-pi-cyan/30 transition-all duration-2.5s rounded px-5 py-1">Bluesky</a></li>
-            <li><a href="https://tiny.tilde.website/@pilosophos" class="border text-center text-pi-cyan hover:bg-pi-cyan/20 active:bg-pi-cyan/30 transition-all duration-2.5s rounded px-5 py-1">Mastodon</a></li>
-            <li><a href="https://www.instagram.com/pilosophos" class="border text-center text-pi-cyan hover:bg-pi-cyan/20 active:bg-pi-cyan/30 transition-all duration-2.5s rounded px-5 py-1">Instagram</a></li>
-            <li><a href="https://pilosophos.tumblr.com" class="border text-center text-pi-cyan hover:bg-pi-cyan/20 active:bg-pi-cyan/30 transition-all duration-2.5s rounded px-5 py-1">Tumblr</a></li>
-            <li><a href="https://reddit.com/u/pilosophos" class="border text-center text-pi-cyan hover:bg-pi-cyan/20 active:bg-pi-cyan/30 transition-all duration-2.5s rounded px-5 py-1">Reddit</a></li>
-            <li><a href="https://www.pixiv.net/en/users/77474454" class="border text-center text-pi-cyan hover:bg-pi-cyan/20 active:bg-pi-cyan/30 transition-all duration-2.5s rounded px-5 py-1">Pixiv</a></li>
+          <ul class="ps-8 grid grid-cols-3 gap-3 md:flex flex-wrap md:justify-end">
+            <li><a href="mailto:pilosophos@gmail.com" class="pill-link">Email</a></li>
+            <li><a href="https://bsky.app/profile/pilosophos.com" class="pill-link">Bluesky</a></li>
+            <li><a href="https://tiny.tilde.website/@pilosophos" class="pill-link">Mastodon</a></li>
+            <li><a href="https://www.instagram.com/pilosophos" class="pill-link">Instagram</a></li>
+            <li><a href="https://pilosophos.tumblr.com" class="pill-link">Tumblr</a></li>
+            <li><a href="https://reddit.com/u/pilosophos" class="pill-link">Reddit</a></li>
+            <li><a href="https://www.pixiv.net/en/users/77474454" class="pill-link">Pixiv</a></li>
           </ul>
         </nav>
       </main>
