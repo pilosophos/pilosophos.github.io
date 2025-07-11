@@ -23,6 +23,10 @@
     prose-ul:marker:text-white;
 }
 
+.prose-invariants a {
+  text-decoration-thickness: 1px;
+}
+
 html {
   font-smooth: never;
 }
@@ -51,6 +55,7 @@ html {
   .link {
     color: var(--color-pi-cyan);
     text-decoration: underline dotted;
+    text-decoration-thickness: 1px;
   }
 
   .link:hover {
