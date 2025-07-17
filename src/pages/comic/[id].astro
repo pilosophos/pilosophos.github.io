@@ -1,0 +1,50 @@
+---
+import { getCollection, render } from 'astro:content';
+import DefaultLayout from '../../layouts/DefaultLayout.astro';
+import ArticleHeader from '../../components/ArticleHeader.astro';
+// 1. Generate a new path for every collection entry
+export async function getStaticPaths() {
+  const posts = await getCollection('comic');
+  return posts.map(post => ({
+    params: { id: post.id },
+    props: { post },
+  }));
+}
+// 2. For your template, you can get the entry directly from the prop
+const { post } = Astro.props;
+const { Content } = await render(post);
+
+const lastId = parseInt((await getCollection('comic')).at(-1)?.id as string);
+const prevId = parseInt(post.id) - 1 > 0 ?  parseInt(post.id) - 1 : null;
+const nextId = parseInt(post.id) + 1 <= lastId ?  parseInt(post.id) + 1 : null;
+---
+<DefaultLayout title={ `${post.data.title} | Half-Remembered Dreams` }>
+  <section class="container">
+    <header>
+      <ArticleHeader icon="/images/icons/paint_old-0.png" title=`Half-Remembered Dreams`>
+        <p>{ post.data.title } ({ post.data.date?.toUTCString() })</p>
+      </ArticleHeader>
+    </header>
+    <main class="flex flex-col items-center">
+      <a href={ nextId ? "/comic/" + (parseInt(post.id) + 1) : undefined }>
+        <img
+          slot="image"
+          src={ post.data.cover.src }
+          title={ post.data.mouseover }
+          class="mb-5"
+        />
+      </a>
+      <nav>
+        <a class="link" href="/comic/1">First</a> |
+        { prevId && <><a class="link" href={ "/comic/" + prevId }>Prev</a> |</> }
+        { nextId && <><a class="link" href={ "/comic/" + nextId }>Next</a> |</> }
+        <a class="link" href={ "/comic/" + lastId }>Latest</a>
+      </nav>
+    </main>
+    <aside class="mx-auto p-5 prose prose-invariants">
+      <p><i class="font-display text-pi-pink not-italic">Half-Remembered Dreams</i> is heavily inspired by <a href="https://www.asofterworld.com/" class="link">A Softer World</a>. I'm drawing it as a way to experiment with different styles, and to make a webcomic like I always said I would, but never did.</p>
+      <p>There is currently no schedule for releases, but I'm hoping to upload once a week on average.</p>
+      <p>If you like my work, consider supporting me on <a href="https://ko-fi.com/pilosophos">Ko-fi</a>.</p>
+    </aside>
+  </section>
+</DefaultLayout>
