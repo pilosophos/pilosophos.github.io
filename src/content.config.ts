@@ -41,7 +41,7 @@ const comic = defineCollection({
     z.object({
       title: z.string(),
       cover: image(),
-      date: z.optional(z.date()),
+      date: z.date(),
       mouseover: z.optional(z.string())
     }),
 });

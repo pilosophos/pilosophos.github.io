@@ -1,0 +1,8 @@
+---
+import { getCollection } from "astro:content";
+import ComicLayout from "../../layouts/ComicLayout.astro";
+
+const lastComic = (await getCollection('comic')).at(-1);
+---
+
+<ComicLayout post={ lastComic } />
