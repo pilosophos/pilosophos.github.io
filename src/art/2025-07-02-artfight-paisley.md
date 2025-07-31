@@ -3,7 +3,7 @@ title: Paisley (Art Fight)
 cover: 2025-07-02-artfight-paisley.png
 date: 2025-07-02
 ---
-I managed to remember that [Art Fight](https://artfight.net/) exists this year and participate. It's this fun little thing where, you draw other people's OCs, and others draw art of your OCs also.
+I managed to remember that [Art Fight](https://artfight.net/) exists this year and participate. It's this fun little thing where you draw other people's OCs, and others draw art of your OCs also.
 
 This illustration features [sleepwick's](https://artfight.net/~sleepwick) Paisley, a Pokémon trainer from the Galar. I've not played Sword and/or Shield, but when I think of Galar, I think of *Wooloo* and *trains*, and this advertisement kind of just popped out.
 
