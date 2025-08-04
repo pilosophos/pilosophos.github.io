@@ -1,7 +1,7 @@
 ---
 title: Bunnysuit Attorney 2
 cover: 2025-08-02-bunny-mia-2.png
-date: 2025-08-02
+date: 2025-08-03
 ---
 I drew Mia Fey in a bunnysuit again!
 
