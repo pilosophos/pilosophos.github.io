@@ -26,12 +26,34 @@
   --text-4xl: 36px;
 }
 
-.prose-invariants {
+@utility prose-invariants {
   @apply prose-invert
     prose-a:text-pi-cyan prose-a:decoration-dotted prose-a:hover:text-white
     prose-code:font-normal prose-code:font-display prose-code:text-pi-pink prose-code:before:content-none prose-code:after:content-none
     prose-figcaption:text-base prose-figcaption:text-stone-400
-    prose-ul:marker:text-white;
+    prose-ul:marker:text-white
+    prose-blockquote:text-green-300 prose-blockquote:border-green-300
+    prose-blockquote:not-italic;
+  
+  li p:has(+ blockquote) {
+    margin-bottom: 0;
+  }
+
+  li blockquote {
+    margin-top: 0;
+  }
+
+  li blockquote p {
+    @apply mt-3;
+  }
+
+  /* Disable adding quote marks to block-quotes: https://github.com/tailwindlabs/tailwindcss-typography/issues/66 */
+  blockquote p {
+      &:first-of-type::before,
+      &:last-of-type::after {
+          content: none;
+      }
+  }
 }
 
 .prose-invariants a {
@@ -40,6 +62,10 @@
 
 html {
   font-smooth: never;
+}
+
+summary {
+  cursor: pointer;
 }
 
 @utility flex-center {
