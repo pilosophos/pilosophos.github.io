@@ -27,12 +27,13 @@ Last revised: 2025-08-12
 
 <nav>
     <h2 class="font-display border-b pb-1 mb-1">Jump to...</h2>
-    <ol class="list-disc ps-5">
+    <ol class="list-disc ps-5 flex flex-col gap-">
         <li><a href="#introduction" class="link">Introduciton</a></li>
         <li><a href="#why-there-are-no-universal-definitions" class="link">Why there are no universal definitions</a></li>
         <li><a href="#problem-1-mental-mismatch" class="link">Problem 1: Mental mismatch</a></li>
         <li><a href="#problem-2-context-sensitivity" class="link">Problem 2: Context sensitivity</a></li>
         <li><a href="#how-is-it-possible-to-say-anything-at-all" class="link">How is it possible to say anything at all?</a></li>
+        <li><a href="#how-should-what-is-x-problems-be-approached" class="link">How should "What is X" problems be approached?</a></li>
     </ol>
 </nav>
 
@@ -122,6 +123,8 @@ In this case, how you understand this dictionary definition of *springbok* still
 That is not to say "soup" cannot be defined. Sometimes soup has a pretty concrete definition, like when you're at a restaurant looking at soup section of the menu. In this context, "soup" refers to everything listed on the menu, and nothing that's off the menu. But obviously, that definition only applies in the context of this particular restaurant.
 
 ### The dictionary
+
+## How should "What is X" problems be approached?
 
 <aside class="border border-yellow-500 bg-yellow-500/10 rounded p-3 my-3 flex items-center">
   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="me-3 fill-yellow-400" viewBox="0 0 16 16" role="img" aria-label="Warning:">
