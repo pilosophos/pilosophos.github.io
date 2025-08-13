@@ -66,10 +66,10 @@ These all boil down to metaphysical questions of the form, `"What is X?"`. For t
 In this article, I propose that universal answers to these questions are impossible, and to come up with a definition to "What is an X?" *requires* you to compromise and create an answer that fails under at least one context.
 
 ## Why there are no universal definitions
-The big roadblocks to coming up with defining anything is:
+The big roadblocks to coming up with a one-size-fits-all definition for any word are:
 
-1. The mental mismatch problem: *whatever the word X is, X means different things to different people*
-2. The context problem: *words are context sensitive, so X can mean one thing in one context and something entirely different in another*
+1. The mental mismatch problem: whatever the word X is, X means different things to different people.
+2. The context problem: words are context sensitive, so X can mean one thing in one context and something entirely different in another.
 
 ## Problem 1: Mental mismatch
 The easiest way to demonstrate the mental mismatch problem is using color:
