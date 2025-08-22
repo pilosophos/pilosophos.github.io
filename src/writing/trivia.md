@@ -71,7 +71,7 @@ verbally ask election officials to write the name of the candidate for them on
 the ballot, and handing them onigiri filled with cash.
 
 ## Merge algorithm
-Have to sorted arrays and two pointers. Advance whatever pointer has the smaller
+Have two sorted arrays and two pointers. Advance whatever pointer has the smaller
 of the two and put the value in the merged array.
 
 ## Areal features
