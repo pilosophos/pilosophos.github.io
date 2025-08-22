@@ -34,7 +34,7 @@ jolt of electricity for a ¿few seconds at the start of the race?
 ## NASCAR
 Originates from moonshiners with modified cars for faster smuggling. After
 prohibition, races were frequently held at Daytona Beach. Originally raced with
-actual stock (bought from manufacturer) cars modifications.
+actual stock (bought from manufacturer) cars with modifications.
 
 ## Electromagnetic resonance (EMR)
 Graphics tablets with a grid of wires behind the display transmit EM waves via
