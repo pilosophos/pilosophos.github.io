@@ -128,3 +128,31 @@ Black tea fermented by a culture of certain bacterias and yeasts.
 Name derives from the asterisk (*), or splat. World of Darkness supplement books
 were called things like *clanbooks, traditionbooks, thingbooks*, which were
 collectively known as *\*books* on Usenet.
+
+## Stockfish
+Originally a classical chess-playing algorithm, it was augmented with a neural
+network in 2020, and in 2023 is now entirely a neural network.
+
+The classical algorithm works by looking at the tree of possible game states
+starting from the current state. Each state gets a score (in centipawns):
+
+- If during some state it is the computer's turn, then the score is the max of
+the child states' scores (it wants to make a move that benefits itself).
+- If it is the opponent's turn, then the score is the min of the child states'
+scores (the opponent wants to make a move that hurts the computer).
+
+Then the algorithm will make the move that maximizes the score. This algorithm
+is called Minimax.
+
+### Alpha-beta pruning
+Because the tree can get really big, to make it faster, Alpha-beta pruning stops
+evaluation (prunes parts of the tree) when it encounters a move that's proven to
+be worse than another move that's already been evaluated.
+
+## Asynchronous Transfer Mode (ATM)
+ATM is a data-link layer protocol (like Ethernet or I<sup>2</sup>C) mainly used
+for creating WANs. Data is encoded into fixed-size packets, then each packet
+can be routed differently along the network. ATM is used in DSL networks.
+
+Unlike Ethernet, you can guarantee an ATM connection's Quality of Service, such
+as its data rate and maximum delay.
