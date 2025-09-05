@@ -151,8 +151,10 @@ be worse than another move that's already been evaluated.
 
 ## Asynchronous Transfer Mode (ATM)
 ATM is a data-link layer protocol (like Ethernet or I<sup>2</sup>C) mainly used
-for creating WANs. Data is encoded into fixed-size packets, then each packet
-can be routed differently along the network. ATM is used in DSL networks.
+for creating WANs. First, to connect to another client, a virtual circuit is
+created specifying the route that the data should take along the network.
+Then all the data packets, which are all 53 bytes, are routed through this
+circuit.
 
 Unlike Ethernet, you can guarantee an ATM connection's Quality of Service, such
-as its data rate and maximum delay.
+as its data rate and maximum delay. ATM is used in DSL networks.
