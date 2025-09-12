@@ -27,8 +27,8 @@ Last revised: 2025-08-12
 
 <nav>
     <h2 class="font-display border-b pb-1 mb-1">Jump to...</h2>
-    <ol class="list-disc ps-5 flex flex-col gap-">
-        <li><a href="#introduction" class="link">Introduciton</a></li>
+    <ol class="list-disc ps-5 flex flex-col">
+        <li><a href="#introduction" class="link">Introduction</a></li>
         <li><a href="#why-there-are-no-universal-definitions" class="link">Why there are no universal definitions</a></li>
         <li><a href="#problem-1-mental-mismatch" class="link">Problem 1: Mental mismatch</a></li>
         <li><a href="#problem-2-context-sensitivity" class="link">Problem 2: Context sensitivity</a></li>
