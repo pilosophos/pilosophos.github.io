@@ -110,7 +110,7 @@ If you want to program in C# with XNA, you need to install Games for Windows Liv
 </div>
 
 If you encounter a network error during installation, **before you close the installer** do the following:
-1. Navigate to `%LOCALAPPDATA%\Microsoft\GFWLive\Downloads`. There will be two installer files here. <span class="muted">If there aren't any, you closed the GFWLive installed prematurely and you need to get back to the network error screen.</span>
+1. Navigate to `%LOCALAPPDATA%\Microsoft\GFWLive\Downloads`. There will be two installer files here. <span class="muted">If there aren't any, you closed the GFWLive installer prematurely and you need to get back to the network error screen.</span>
 2. Run both installers in any order.
 3. Close the GFWLive installer and GFWLive should be installed.
 
