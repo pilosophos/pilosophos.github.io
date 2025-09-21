@@ -29,6 +29,7 @@ const art = defineCollection({
       date: z.optional(z.date()),
       sticker: z.optional(z.boolean()),
       print: z.optional(z.boolean()),
+      tags: z.optional(z.array(z.string())),
     }),
 });
 

@@ -5,7 +5,7 @@
  * 2. Astro renders a <template id="desc-{artId}"> containing the sidebar description for each item in the gallery
  * 3. In the client, whenever the user opens the viewer to a given image, the JS
  *    clones the templates according to which image was requested into the viewer
- * 4. The JS looks queries for a thumbnail with `[data-art-id="{artId}"]` and uses it `data-index`
+ * 4. The JS queries for a thumbnail with `[data-art-id="{artId}"]` and uses its `data-index`
  *    to determine which artIds belong to the next and previous images in the gallery
  * 
  * === WHY IS IT LIKE THIS? ===
@@ -31,7 +31,11 @@ import ImageDescription from "../../components/ImageDescription.astro";
 import ImageViewer from "../../components/ImageViewer.astro";
 import Alert from "../../components/Alert.astro";
 
-const art = (await getCollection('art')).toSorted((a, b) => b.data.date?.getTime() - a.data.date?.getTime());
+const art = (
+  await getCollection('art'))
+    .filter(piece => !piece.data.tags?.includes('notmine'))
+    .toSorted((a, b) => b.data.date?.getTime() - a.data.date?.getTime()
+);
 ---
 
 <DefaultLayout title="Art">

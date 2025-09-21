@@ -4,6 +4,8 @@ import ArticleHeader from "../components/ArticleHeader.astro";
 import DefaultLayout from "../layouts/DefaultLayout.astro";
 import CamilleGreyEquipmentImg from "../art/camille-grey-equipment.png";
 import CamilleGreyImg from "../art/camille-grey.png";
+import ArtfightDefenseDubiousdiscWildcardImg from "../art/artfight-defense-dubiousdisc-wildcard.png";
+import ArtfightDefensePurpuroseaWantedImg from "../art/artfight-defense-purpurosea-wanted.png";
 ---
 
 <DefaultLayout title="OCs">
@@ -27,6 +29,10 @@ import CamilleGreyImg from "../art/camille-grey.png";
               <dd class="col-span-2">Shadowrun</dd>
             </div>
             <div class="grid grid-cols-3 gap-5">
+              <dt class="font-bold">Occupation</dt>
+              <dd class="col-span-2">Hacker</dd>
+            </div>
+            <div class="grid grid-cols-3 gap-5">
               <dt class="font-bold">Names</dt>
               <dd class="col-span-2">Camille Grey, Rosy</dd>
             </div>
@@ -40,7 +46,7 @@ import CamilleGreyImg from "../art/camille-grey.png";
             </div>
             <div class="grid grid-cols-3 gap-5">
               <dt class="font-bold">Dislikes</dt>
-              <dd class="col-span-2">Wasps, silence</dd>
+              <dd class="col-span-2">Wasps, silence, running</dd>
             </div>
           </dl>
         </section>
@@ -75,10 +81,10 @@ import CamilleGreyImg from "../art/camille-grey.png";
             <li>[Nose ring] A small gold septum ring.</li>
             <li>[Right ear] Head-mounted software-defined radio. Removable, but usually on.</span></li>
             <li>[Left ear] Three small gold earrings, with a Clippy hanging from the bottom one</li>
-            <li>[Right arm] A cyber arm. It is branded <code>YAMATETSU PI0423</code>.</li>
+            <li>[Right arm] A cyber arm. She shoulder is branded <code>YAMATETSU PI0423</code>, and the datapad on her forearm bears an <a href="/images/agerszijn.png">Agerszijn logo</a>.</li>
             <li>[Left arm] Part of her cropped-jacket, made of synthetic fur, with a decorative belt/armband.</li>
             <li>[Left hand] White riding gloves.</li>
-            <li>[Jackets] She is actually wearing two layers: the black cropped jacket, and an <code>REI Co-Op</code> branded windbreaker under it.</li>
+            <li>[Jackets] She is actually wearing two layers: the black cropped jacket, and an <a href="https://en.wikipedia.org/wiki/REI">REI Co-Op</a> branded windbreaker under it.</li>
             <li>[Zipper] RGB light zippers, normally set to a dim cyan.</li>
             <li>[Top zipper] The top zipper tag is a big steel ring.</li>
             <li>[Leggings] Have a strip running down the inside and outside legs, usually with a cyan caution tape pattern.</li>
@@ -96,13 +102,36 @@ import CamilleGreyImg from "../art/camille-grey.png";
         <ul class="not-prose flex justify-around items-center">
           <li>
             <a href="/art/camille-grey-equipment">
-              <Image src={ CamilleGreyEquipmentImg } alt="A decker and her equipment, drawn June 30, 2025" width={ 350 } />
+              <Image src={ CamilleGreyEquipmentImg } alt="A decker and her equipment, drawn July 27, 2025" width={ 350 } />
             </a>
           </li>
           <li>
             <a href="/art/camille-grey">
               <Image src={ CamilleGreyImg } alt="Camille Grey, drawn April 28, 2025" width={ 350 } />
             </a>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>Art by other people</h3>
+
+        <ul class="not-prose flex justify-around items-center">
+          <li>
+            <figure>
+              <a href="/art/artfight-defense-dubiousdisc-wildcard">
+                <Image src={ ArtfightDefenseDubiousdiscWildcardImg } alt="wildcard, drawn July 27, 2025 by dubiousdisc" width={ 350 } />
+              </a>
+              <figcaption>Drawn by dubiousdisc, Art Fight 2025</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <a href="/art/artfight-defense-purpurosea-wanted">
+                <Image src={ ArtfightDefensePurpuroseaWantedImg } alt="Camille Grey, drawn July 3, 2025" width={ 350 } />
+              </a>
+              <figcaption>Drawn by purpurosea, Art Fight 2025</figcaption>
+            </figure>
           </li>
         </ul>
       </section>
