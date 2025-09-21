@@ -41,8 +41,8 @@ const { Content } = await render(post);
       slot="sidebar-header"
       class="py-2 border-b border-stone-500 mb-3 text-start"
     >
-      <a href="/art" class="muted hover:text-pi-cyan font-display text-xl">
-        ← Back to gallery
+      <a id="back" href="/art" class="muted hover:text-pi-cyan font-display text-xl">
+        ← Back
       </a>
     </nav>
     <ImageDescription
@@ -55,5 +55,10 @@ const { Content } = await render(post);
     </ImageDescription>
   </ImageViewer>
 </div>
+
+<script>
+  document.getElementById('back').href = document.referrer;
+</script>
+
 </body>
 </html>
