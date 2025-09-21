@@ -1,0 +1,106 @@
+---
+import { Image } from "astro:assets";
+import ArticleHeader from "../components/ArticleHeader.astro";
+import DefaultLayout from "../layouts/DefaultLayout.astro";
+import CamilleGreyEquipmentImg from "../art/camille-grey-equipment.png";
+import CamilleGreyImg from "../art/camille-grey.png";
+---
+
+<DefaultLayout title="OCs">
+  <main class="container">
+    <ArticleHeader
+      icon="/images/icons/users.png"
+      title="Original Characters (OCs)"
+    >
+      Character bible for various original characters I've made
+    </ArticleHeader>
+
+    <section class="prose prose-invariants max-w-full">
+      <h2>Camille "Rosy" Grey</h2>
+
+      <div class="sidebar-decor not-prose float-end bg-pi-yellow pt-3 m-5 mt-0 rounded-lg border border-pi-yellow">
+        <h3 class="font-display text-pi-gray text-xl ps-5 mb-3">Camille "Rosy" Grey</h3>
+        <section class="sidebar-decor bg-pi-gray rounded-lg p-5">
+          <dl class="grid gap-1">
+            <div class="grid grid-cols-3 gap-5">
+              <dt class="font-bold">Universe</dt>
+              <dd class="col-span-2">Shadowrun</dd>
+            </div>
+            <div class="grid grid-cols-3 gap-5">
+              <dt class="font-bold">Names</dt>
+              <dd class="col-span-2">Camille Grey, Rosy</dd>
+            </div>
+            <div class="grid grid-cols-3 gap-5">
+              <dt class="font-bold">Living in</dt>
+              <dd class="col-span-2">Seattle, UCAS</dd>
+            </div>
+          </dl>
+        </section>
+      </div>
+
+      <section>
+        <p>
+          Camille is a hacker-for-hire who will work for anyone with enough cash, whether for good or for evil. She is often known as "Rosy" for wearing rose-tinted glasses, which are purely for fashion. She became ambidextrous after having replaced her previously non-dominant right arm with a cybernetic one, which she did because "it just seemed cool at the time".
+        </p>
+        
+        <p>
+          She enjoys clubbing and loud raves, and finds any room where she can hear herself speak to be too quiet. Occasionally, she can be seen amusing herself by flying drones at people as they run away in terror. Though calm and capable in a gunfight, she is deathly afraid of wasps and once unloaded a magazine into a black-and-yellow marble.
+        </p>
+
+        <p>
+          Camille is a character I made for the game tabletop RPG, Shadowrun, which is a cyberpunk setting where magic started to spring up on Earth one day resulting in the appearance of elves, orcs, and dragons.
+        </p>
+      </section>
+
+      <section>
+        <h3>Important design elements</h3>
+        <details>
+          <summary>Click to reveal</summary>
+          <ol>
+            <li>[Glasses] Decorative rose-tinted glasses.</li>
+            <li>[Nose ring] A small gold septum ring.</li>
+            <li>
+              <span class="block mb-1">[Right ear] Head-mounted software-defined radio.</span>
+              <blockquote class="ms-10 mb-0">Removable, but she is normally depicted with it on.</blockquote>
+            </li>
+            <li>[Left ear] Three small gold earrings, with a Clippy hanging from the bottom one</li>
+            <li>[Right arm] A cyber arm. It is branded <code>YAMATETSU PI0423</code>.</li>
+            <li>[Left arm] Part of her cropped-jacket, made of synthetic fur, with a decorative belt/armband.</li>
+            <li>[Left hand] White riding gloves.</li>
+            <li>[Jackets] She is actually wearing two layers: the black cropped jacket, and an <code>REI Co-Op</code> branded windbreaker under it.</li>
+            <li>[Zipper] RGB light zippers, normally set to a dim cyan.</li>
+            <li>[Top zipper] The top zipper tag is a big steel ring.</li>
+            <li>[Leggings] Have a strip running down the inside and outside legs, usually with a cyan caution tape pattern.</li>
+            <li>[Left leg] An ARES branded thigh holster.</li>
+            <li>[Boots] Like hiking boots, but the sole is raised like platform heels. Each boot has a small caution symbol on the soles, on the outward side.</li>
+            <li>[Gun] The engraving reads <code class="text-xl">美人薄命</code>. It is branded <code>セブロ PI-314</code>.</li>
+            <li>[Cyberdeck] A SONY branded cyberdeck with a black shoulder strap, like on a violin case. The endcaps light are RGB.</li>
+          </ol>
+        </details>
+      </section>
+
+      <section>
+        <h3>Gallery</h3>
+
+        <ul class="not-prose flex justify-around items-center">
+          <li>
+            <a href="/art/camille-grey-equipment">
+              <Image src={ CamilleGreyEquipmentImg } alt="A decker and her equipment, drawn June 30, 2025" width={ 350 } />
+            </a>
+          </li>
+          <li>
+            <a href="/art/camille-grey">
+              <Image src={ CamilleGreyImg } alt="Camille Grey, drawn April 28, 2025" width={ 350 } />
+            </a>
+          </li>
+        </ul>
+      </section>
+    </section>
+  </main>
+</DefaultLayout>
+
+<style>
+  .sidebar-decor {
+    clip-path: polygon(calc(100% - 30px) 0, 100% 30px, 100% 100%, 0 100%, 0 0);
+  }
+</style>

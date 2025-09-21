@@ -28,12 +28,14 @@
 
 @utility prose-invariants {
   @apply prose-invert
+    text-white
     prose-a:text-pi-cyan prose-a:decoration-dotted prose-a:hover:text-white
     prose-code:font-normal prose-code:font-display prose-code:text-pi-pink prose-code:before:content-none prose-code:after:content-none
     prose-figcaption:text-base prose-figcaption:text-stone-400
     prose-ul:marker:text-white
     prose-blockquote:text-green-300 prose-blockquote:border-green-300
-    prose-blockquote:not-italic;
+    prose-blockquote:not-italic
+    prose-headings:font-display prose-headings:font-normal;
   
   li p:has(+ blockquote) {
     margin-bottom: 0;
@@ -61,6 +63,7 @@
 }
 
 html {
+  @apply text-white;
   font-smooth: never;
 }
 
