@@ -1,7 +1,7 @@
 ---
 title: Shopping Sprite
 cover: shopping-sprite.png
-date: 2022-01-21
+date: 2020-08-25
 ---
 This is a faerie from my old worldbuilding project, Malaszec.
 
