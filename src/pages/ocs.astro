@@ -4,6 +4,8 @@ import ArticleHeader from "../components/ArticleHeader.astro";
 import DefaultLayout from "../layouts/DefaultLayout.astro";
 import CamilleGreyEquipmentImg from "../art/camille-grey-equipment.png";
 import CamilleGreyImg from "../art/camille-grey.png";
+import CamilleChibiImg from "../art/camille-chibi.png";
+import CamilleStylesImg from "../art/camille-styles.png";
 import ArtfightDefenseDubiousdiscWildcardImg from "../art/artfight-defense-dubiousdisc-wildcard.png";
 import ArtfightDefensePurpuroseaWantedImg from "../art/artfight-defense-purpurosea-wanted.png";
 ---
@@ -18,7 +20,7 @@ import ArtfightDefensePurpuroseaWantedImg from "../art/artfight-defense-purpuros
     </ArticleHeader>
 
     <section class="prose prose-invariants max-w-full">
-      <h2>Camille "Rosy" Grey</h2>
+      <h2>Camille "Rosy" Grey <a id="camille"></a></h2>
 
       <div class="sidebar-decor not-prose mx-auto md:float-end bg-pi-yellow pt-3 md:m-5 md:mt-0 rounded-lg border border-pi-yellow max-w-100">
         <h3 class="font-display text-pi-gray text-xl ps-5 mb-3">Camille "Rosy" Grey</h3>
@@ -99,16 +101,46 @@ import ArtfightDefensePurpuroseaWantedImg from "../art/artfight-defense-purpuros
       <section>
         <h3>Gallery</h3>
 
-        <ul class="not-prose flex justify-around items-center">
+        <ul class="not-prose flex justify-around items-center flex-wrap gap-5">
           <li>
-            <a href="/art/camille-grey-equipment">
-              <Image src={ CamilleGreyEquipmentImg } alt="A decker and her equipment, drawn July 27, 2025" width={ 350 } />
-            </a>
+            <figure class="table">
+              <a href="/art/camille-styles">
+                <Image src={ CamilleStylesImg } alt="Opposite sides of Shadowrun's playstyle spectrum, drawn September 24, 2025" width={ 350 } />
+              </a>
+              <figcaption class="table-caption caption-bottom">
+                "Opposite sides of Shadowrun's playstyle spectrum", September 24, 2025
+              </figcaption>
+            </figure>
           </li>
           <li>
-            <a href="/art/camille-grey">
-              <Image src={ CamilleGreyImg } alt="Camille Grey, drawn April 28, 2025" width={ 350 } />
-            </a>
+            <figure class="table">
+              <a href="/art/camille-chibi">
+                <Image src={ CamilleChibiImg } alt="Chibi Camille, drawn September 22, 2025" width={ 266 } />
+              </a>
+              <figcaption class="table-caption caption-bottom">
+                "Chibi Camille", September 22, 2025
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure class="table">
+              <a href="/art/camille-grey-equipment">
+                <Image src={ CamilleGreyEquipmentImg } alt="A decker and her equipment, drawn July 27, 2025" width={ 350 } />
+              </a>
+              <figcaption class="table-caption caption-bottom">
+                "A decker and her equipment", July 27, 2025
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure class="table">
+              <a href="/art/camille-grey">
+                <Image src={ CamilleGreyImg } alt="Camille Grey, drawn April 28, 2025" width={ 350 } />
+                <figcaption class="table-caption caption-bottom w-full">
+                  "Camille Grey", April 28, 2025
+                </figcaption>
+              </a>
+            </figure>
           </li>
         </ul>
       </section>
