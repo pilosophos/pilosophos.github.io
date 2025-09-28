@@ -126,7 +126,27 @@ summary {
   }
   
   .hard-blink {
-      animation: hard-blinker 1.5s step-start infinite;
+    animation: hard-blinker 1.5s step-start infinite;
+  }
+
+  .infobox-content {
+    @apply gap-1;
+    display: grid;
+    
+    & > div {
+      @apply gap-5;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+
+      & > dt {
+        grid-column: span 1;
+        font-weight: bold;
+      }
+
+      & > dd {
+        grid-column: span 2;
+      }
+    }
   }
   
   @keyframes blinker {
