@@ -13,7 +13,7 @@ import SmallIconLink from "./SmallIconLink.astro";
     </a>
   </div>
 
-  <nav class="flex flex-col items-center text-xl lg:text-2xl md:w-1/2 md:items-end">
+  <nav class="flex flex-col items-center text-base lg:text-2xl md:w-1/2 md:items-end">
     <ul class="flex justify-center md:justify-end gap-x-5 flex-wrap">
       <li class="flex-shrink-0">
         <SmallIconLink noUnderline
@@ -43,45 +43,43 @@ import SmallIconLink from "./SmallIconLink.astro";
           href="/about"
         />
       </li>
-    </ul>
-
-    <ul class="flex gap-x-3 text-base flex-wrap justify-center md:justify-end">
-      <li>
+      <div class="hidden lg:block lg:basis-full lg:h-0"></div>
+      <li class="text-base">
         <SmallIconLink noUnderline
           label="Interests"
           icon="/images/icons/tiny/paint_old-1.png"
           href="/interests"
         />
       </li>
-      <li>
+      <li class="text-base">
         <SmallIconLink noUnderline
           label="Recommendations"
           icon="/images/icons/tiny/trust0-1.png"
           href="/recommendations"
         />
       </li>
-      <li>
+      <li class="text-base">
         <SmallIconLink noUnderline
           label="Homelab"
           icon="/images/icons/tiny/network_normal_two_pcs-1.png"
           href="/homelab"
         />
       </li>
-      <li>
+      <li class="text-base">
         <SmallIconLink noUnderline
           label="Software"
           icon="/images/icons/tiny/appwizard-0.png"
           href="/software"
         />
       </li>
-      <li>
+      <li class="text-base">
         <SmallIconLink noUnderline
           label="Demos"
           icon="/images/icons/tiny/color_profile.png"
           href="/demos"
         />
       </li>
-      <li>
+      <li class="text-base">
         <SmallIconLink noUnderline
           label="Links"
           icon="/images/icons/tiny/internet_connection_wiz.png"
