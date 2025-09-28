@@ -2,12 +2,15 @@
 import { Image } from "astro:assets";
 import ArticleHeader from "../components/ArticleHeader.astro";
 import DefaultLayout from "../layouts/DefaultLayout.astro";
+import SmallIconLink from "../components/SmallIconLink.astro";
+
 import CamilleGreyEquipmentImg from "../art/camille-grey-equipment.png";
 import CamilleGreyImg from "../art/camille-grey.png";
 import CamilleChibiImg from "../art/camille-chibi.png";
 import CamilleStylesImg from "../art/camille-styles.png";
 import ArtfightDefenseDubiousdiscWildcardImg from "../art/artfight-defense-dubiousdisc-wildcard.png";
 import ArtfightDefensePurpuroseaWantedImg from "../art/artfight-defense-purpurosea-wanted.png";
+
 import ValentinaCedarImg from "../art/valentina-cedar.png";
 import KirliaTotodileImg from "../art/kirlia-and-totodile.png";
 import ArtfightDefenseJollyYoshiValImg from "../art/artfight-defense-jollyyoshi-valentina-cedar.jpeg";
@@ -24,16 +27,24 @@ import ArtfightDefenseDawningWindsValImg from "../art/artfight-defense-dawningwi
       Character bible for various original characters I've made
     </ArticleHeader>
 
+    <nav class="container flex justify-center mb-10">
+      <ul class="flex justify-center gap-3 flex-wrap">
+        <li><SmallIconLink href="#camille" icon="/images/icons/users.png" label="Camille"/>
+        <li><SmallIconLink href="#valentina" icon="/images/icons/users.png" label="Valentina"/>
+      </ul>
+    </nav>
+
     <section class="prose prose-invariants max-w-full">
       <h2 class="border-b border-stone-400">Camille "Rosy" Grey <a id="camille"></a></h2>
 
-      <div class="sidebar-decor not-prose mx-auto md:float-end bg-pi-yellow pt-3 md:m-5 md:mt-0 rounded-lg border border-pi-yellow max-w-100">
+      <div class="sidebar-decor not-prose mx-auto md:float-end bg-pi-pink pt-3 md:m-5 md:mt-0 rounded-lg border border-pi-pink max-w-100">
         <h3 class="font-display text-pi-gray text-xl ps-5 mb-3">Camille "Rosy" Grey</h3>
         <section class="sidebar-decor bg-pi-gray rounded-lg p-5">
           <dl class="infobox-content">
             <div><dt>Universe</dt><dd>Shadowrun</dd></div>
             <div><dt>Occupation</dt><dd>Hacker</dd></div>
             <div><dt>Names</dt><dd>Camille Grey, Rosy</dd></div>
+            <div><dt>Age</dt><dd>27</dd></div>
             <div><dt>Living in</dt><dd>Seattle, UCAS</dd></div>
             <div><dt>Likes</dt><dd>Clubbing, loud music, Clippy, big dogs, cyan, pink</dd></div>
             <div><dt>Dislikes</dt><dd>Wasps, silence, running</dd></div>
@@ -166,6 +177,7 @@ import ArtfightDefenseDawningWindsValImg from "../art/artfight-defense-dawningwi
             <div><dt>Universe</dt><dd>Pokémon</dd></div>
             <div><dt>Occupation</dt><dd>1st year biochemistry Ph.D student at Orange Islands University</dd></div>
             <div><dt>Names</dt><dd>Valentina Cedar, Val</dd></div>
+            <div><dt>Age</dt><dd>22</dd></div>
             <div><dt>Height</dt><dd>152 cm (~5 ft.)</dd></div>
             <div>
               <dt>Living in</dt>
