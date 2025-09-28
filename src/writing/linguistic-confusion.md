@@ -1,7 +1,7 @@
 ---
 title: Linguistic Confusion
 description: Thoughts on why answering metaphysical "What is X?" questions are possibly nonsense
-tags: [nonfiction, philosophy, semantics, incomplete]
+tags: [nonfiction, philosophy, semantics, incomplete, unpublished]
 ---
 # Linguistic Confusion
 

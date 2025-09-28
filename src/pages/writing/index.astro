@@ -4,7 +4,8 @@ import DefaultLayout from "../../layouts/DefaultLayout.astro";
 import BigIconLink from '../../components/BigIconLink.astro';
 import ArticleHeader from '../../components/ArticleHeader.astro';
 
-const posts = await getCollection('writing');
+const posts = await getCollection('writing')
+  .then(collection => collection.filter( post => !post.data.tags.includes('unpublished') ));
 ---
 <DefaultLayout title="Writing">
   <ArticleHeader icon="/images/icons/winrep-1.png" title="Writing">
