@@ -1,7 +1,7 @@
 ---
 title: Black Trenchcoat Camille
 cover: camille-cloak.png
-date: 2025-10-25
+date: 2025-10-29
 ---
 Maybe it's not really a trenchcoat― I've never seen any trenchcoat with that mantle looking thing on the shoulders. But I thought I'd do a bit of an alternate costume for my Shadowrun character, [Camille](/ocs#camille), more fitting for the black trenchcoat Shadowrun playstyle. Less bright, maybe a little more discreet (though it's hard to be discreet with that robot arm of hers!).
 
