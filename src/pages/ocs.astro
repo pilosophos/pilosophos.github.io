@@ -40,7 +40,10 @@ import ArtfightDefenseDawningWindsValImg from "../art/artfight-defense-dawningwi
       <h2 class="border-b border-stone-400">Camille "Rosy" Grey <a id="camille"></a></h2>
 
       <div class="sidebar-decor not-prose mx-auto md:float-end bg-pi-pink pt-3 md:m-5 md:mt-0 rounded-lg border border-pi-pink max-w-100">
-        <h3 class="font-display text-pi-gray text-xl ps-5 mb-3">Camille "Rosy" Grey</h3>
+        <h3 class="font-display text-pi-gray text-xl ps-5 mb-3">
+          Camille "Rosy" Grey
+          <small class="block uppercase font-sans">Partygoing hacker-for-hire</small>
+        </h3>
         <section class="sidebar-decor bg-pi-gray rounded-lg">
           <div class="w-full">
             <Image src={ CamilleProfileImg } alt="Profile picture of Camille Grey" height={ 640 } class="w-full"/>
@@ -202,7 +205,10 @@ import ArtfightDefenseDawningWindsValImg from "../art/artfight-defense-dawningwi
       <h2 class="border-b border-stone-400">Valentina "Val" Cedar <a id="valentina"></a></h2>
 
       <div class="sidebar-decor not-prose mx-auto md:float-end bg-orange-400 pt-3 md:m-5 md:mt-0 rounded-lg border border-orange-400 max-w-100">
-        <h3 class="font-display text-pi-gray text-xl ps-5 mb-3">Valentina "Val" Cedar</h3>
+        <h3 class="font-display text-pi-gray text-xl ps-5 mb-3">
+          Valentina "Val" Cedar
+          <small class="block uppercase font-sans">Biochemistry PhD student on study abroad</small>
+        </h3>
         <section class="sidebar-decor bg-pi-gray rounded-lg">
           <div class="w-full">
             <Image src={ ValentinaCedarImg } alt="Profile picture of Valentina Cedar" height={ 640 } class="w-full"/>
@@ -281,33 +287,50 @@ import ArtfightDefenseDawningWindsValImg from "../art/artfight-defense-dawningwi
 
       <section>
         <h3>Pokémon</h3>
-        <table class="not-prose table-auto w-full max-w-200">
-          <tr>
-            <th scope="row" class="border-r">Kyle (Totodile)</th>
-            <td class="ps-5">
-              <dl class="infobox-content">
-                <div><dt>Type</dt><dd>Water</dd></div>
-                <div><dt>Nature</dt><dd>Naughty</dd></div>
-                <div><dt>Gender</dt><dd>M</dd></div>
-                <div><dt>Held item</dt><dd>Leftovers</dd></div>
-                <div><dt>Ability</dt><dd>Sheer Force</dd></div>
-                <div>
-                  <dt>Known moves</dt>
-                  <dd>
-                    <ul class="list-disc ms-5">
-                      <li>Scald</li>
-                      <li>Ice Punch</li>
-                      <li>Aqua Jet</li>
-                      <li>Dragon Dance</li>
-                    </ul>
-                  </dd>
+        <article class="sidebar-decor not-prose bg-pi-cyan pt-3 md:m-5 md:mt-0 rounded-lg border border-pi-cyan max-w-150">
+          <h4 class="font-display text-pi-gray text-xl ps-5 mb-3">Kyle the Totodile ♂</h3>
+          <section class="sidebar-decor bg-pi-gray rounded-lg p-5">
+            <dl class="infobox-content mb-5 w-full">
+              <div><dt>Type</dt><dd>Water</dd></div>
+              <div><dt>Nature</dt><dd>Naughty</dd></div>
+              <div><dt>Held item</dt><dd>Leftovers</dd></div>
+              <div><dt>Ability</dt><dd>Sheer Force</dd></div>
+              <div><dt>Original Trainer</dt><dd>Dr. Philena Ivy</dd></div>
+              <div><dt>Original area</dt><dd>New Bark Town, Johto</dd></div>
+            </dl>
+
+            <ul class="grid grid-cols-2 gap-2 text-center">
+              <li class="border rounded text-blue-400">
+                <div class="p-3">Scald</div>
+                <div class="grid grid-cols-2 border-t">
+                  <div class="border-e">Water</div>
+                  <div>Special</div>
                 </div>
-                <div><dt>Original Trainer</dt><dd>Dr. Philena Ivy</dd></div>
-                <div><dt>Original area</dt><dd>New Bark Town, Johto</dd></div>
-              </dl>
-            </td>
-          </tr>
-        </table>
+              </li>
+              <li class="border rounded text-sky-300">
+                <div class="p-3">Ice Punch</div>
+                <div class="grid grid-cols-2 border-t">
+                  <div class="border-e">Ice</div>
+                  <div>Physical</div>
+                </div>
+              </li>
+              <li class="border rounded text-blue-400">
+                <div class="p-3">Aqua Jet</div>
+                <div class="grid grid-cols-2 border-t">
+                  <div class="border-e">Water</div>
+                  <div>Physical</div>
+                </div>
+              </li>
+              <li class="border rounded text-purple-400">
+                <div class="p-3">Dragon Dance</div>
+                <div class="grid grid-cols-2 border-t">
+                  <div class="border-e">Dragon</div>
+                  <div>Status</div>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </article>
       </section>
 
       <section>
