@@ -4,6 +4,7 @@ import ArticleHeader from "../components/ArticleHeader.astro";
 import DefaultLayout from "../layouts/DefaultLayout.astro";
 import SmallIconLink from "../components/SmallIconLink.astro";
 
+import CamilleProfileImg from "../art/camille-profile.png";
 import CamilleGreyEquipmentImg from "../art/camille-grey-equipment.png";
 import CamilleGreyImg from "../art/camille-grey.png";
 import CamilleChibiImg from "../art/camille-chibi.png";
@@ -40,16 +41,28 @@ import ArtfightDefenseDawningWindsValImg from "../art/artfight-defense-dawningwi
 
       <div class="sidebar-decor not-prose mx-auto md:float-end bg-pi-pink pt-3 md:m-5 md:mt-0 rounded-lg border border-pi-pink max-w-100">
         <h3 class="font-display text-pi-gray text-xl ps-5 mb-3">Camille "Rosy" Grey</h3>
-        <section class="sidebar-decor bg-pi-gray rounded-lg p-5">
-          <dl class="infobox-content">
-            <div><dt>Universe</dt><dd>Shadowrun</dd></div>
-            <div><dt>Occupation</dt><dd>Hacker</dd></div>
-            <div><dt>Names</dt><dd>Camille Grey, Rosy</dd></div>
-            <div><dt>Age</dt><dd>27</dd></div>
-            <div><dt>Living in</dt><dd>Seattle, UCAS</dd></div>
-            <div><dt>Likes</dt><dd>Clubbing, loud music, Clippy, big dogs, cyan, pink</dd></div>
-            <div><dt>Dislikes</dt><dd>Wasps, silence, running</dd></div>
-          </dl>
+        <section class="sidebar-decor bg-pi-gray rounded-lg">
+          <div class="w-full">
+            <Image src={ CamilleProfileImg } alt="Profile picture of Camille Grey" height={ 640 } class="w-full"/>
+          </div>
+          <div class="p-5">
+            <dl class="infobox-content">
+              <div><dt>Universe</dt><dd>Shadowrun</dd></div>
+              <div><dt>Occupation</dt><dd>Hacker</dd></div>
+              <div><dt>Names</dt><dd>Camille Grey, Rosy</dd></div>
+              <div><dt>Age</dt><dd>27</dd></div>
+              <div><dt>Living in</dt><dd>Seattle, UCAS</dd></div>
+              <div><dt>Likes</dt><dd>Clubbing, loud music, Clippy, big dogs, cyan, pink</dd></div>
+              <div><dt>Dislikes</dt><dd>Wasps, silence, running</dd></div>
+            </dl>
+          </div>
+
+          <div class="border-t border-pi-pink text-pi-pink flex">
+            <div class="p-2 uppercase text-sm/3">
+              Personnel dossier to be read by authorized persons only <br/>
+              NFN-1226-45517-B
+            </div>
+          </div>
         </section>
       </div>
 
@@ -104,7 +117,7 @@ import ArtfightDefenseDawningWindsValImg from "../art/artfight-defense-dawningwi
           <li>
             <figure class="table">
               <a class="link" href="/art/camille-cloak">
-                <Image src={ CamilleCloakImg } alt="Camille in a black-trenchcoat-esque alternate costume, October 25, 2025" width={ 350 } />
+                <Image src={ CamilleCloakImg } alt="Camille in a black-trenchcoat-esque alternate costume, October 25, 2025" height={ 350 } />
               </a>
               <figcaption class="table-caption caption-bottom">
                 Camille in a black-trenchcoat-esque alternate costume, October 25, 2025
@@ -114,7 +127,7 @@ import ArtfightDefenseDawningWindsValImg from "../art/artfight-defense-dawningwi
           <li>
             <figure class="table">
               <a class="link" href="/art/camille-styles">
-                <Image src={ CamilleStylesImg } alt="Opposite sides of Shadowrun's playstyle spectrum, drawn September 24, 2025" width={ 350 } />
+                <Image src={ CamilleStylesImg } alt="Opposite sides of Shadowrun's playstyle spectrum, drawn September 24, 2025" height={ 350 } />
               </a>
               <figcaption class="table-caption caption-bottom">
                 "Opposite sides of Shadowrun's playstyle spectrum", September 24, 2025
@@ -124,7 +137,7 @@ import ArtfightDefenseDawningWindsValImg from "../art/artfight-defense-dawningwi
           <li>
             <figure class="table">
               <a class="link" href="/art/camille-chibi">
-                <Image src={ CamilleChibiImg } alt="Chibi Camille, drawn September 22, 2025" width={ 266 } />
+                <Image src={ CamilleChibiImg } alt="Chibi Camille, drawn September 22, 2025" height={ 350 } />
               </a>
               <figcaption class="table-caption caption-bottom">
                 A pixel art chibi version of Camille, drawn September 22, 2025
@@ -134,7 +147,7 @@ import ArtfightDefenseDawningWindsValImg from "../art/artfight-defense-dawningwi
           <li>
             <figure class="table">
               <a class="link" href="/art/camille-grey-equipment">
-                <Image src={ CamilleGreyEquipmentImg } alt="A decker and her equipment, drawn July 27, 2025" width={ 350 } />
+                <Image src={ CamilleGreyEquipmentImg } alt="A decker and her equipment, drawn July 27, 2025" height={ 350 } />
               </a>
               <figcaption class="table-caption caption-bottom">
                 Camille with some information about her equipment, drawn July 27, 2025
@@ -144,7 +157,7 @@ import ArtfightDefenseDawningWindsValImg from "../art/artfight-defense-dawningwi
           <li>
             <figure class="table">
               <a class="link" href="/art/camille-grey">
-                <Image src={ CamilleGreyImg } alt="Camille Grey, drawn April 28, 2025" width={ 350 } />
+                <Image src={ CamilleGreyImg } alt="Camille Grey, drawn April 28, 2025" height={ 350 } />
               </a>
               <figcaption class="table-caption caption-bottom w-full">
                 Camille causing chaos at a nightclub, drawn April 28, 2025
@@ -157,11 +170,11 @@ import ArtfightDefenseDawningWindsValImg from "../art/artfight-defense-dawningwi
       <section>
         <h3>Art by other people</h3>
 
-        <ul class="not-prose flex justify-around items-center">
+        <ul class="not-prose flex justify-around items-center flex-wrap gap-5">
           <li>
             <figure>
               <a class="link" href="/art/artfight-defense-dubiousdisc-wildcard">
-                <Image src={ ArtfightDefenseDubiousdiscWildcardImg } alt="wildcard, drawn by dubiousdisc, Art Fight 2025" width={ 350 } />
+                <Image src={ ArtfightDefenseDubiousdiscWildcardImg } alt="wildcard, drawn by dubiousdisc, Art Fight 2025" height={ 350 } />
               </a>
               <figcaption>Drawn by dubiousdisc, Art Fight 2025</figcaption>
             </figure>
@@ -169,7 +182,7 @@ import ArtfightDefenseDawningWindsValImg from "../art/artfight-defense-dawningwi
           <li>
             <figure>
               <a class="link" href="/art/artfight-defense-purpurosea-wanted">
-                <Image src={ ArtfightDefensePurpuroseaWantedImg } alt="Wanted, drawn by purpurosea, Art Fight 2025" width={ 350 } />
+                <Image src={ ArtfightDefensePurpuroseaWantedImg } alt="Wanted, drawn by purpurosea, Art Fight 2025" height={ 350 } />
               </a>
               <figcaption>Drawn by purpurosea, Art Fight 2025</figcaption>
             </figure>
@@ -178,13 +191,16 @@ import ArtfightDefenseDawningWindsValImg from "../art/artfight-defense-dawningwi
       </section>
     </section>
 
-    <section class="prose prose-invariants max-w-full">
+    <section class="prose prose-invariants max-w-full mt-10">
       <h2 class="border-b border-stone-400">Valentina "Val" Cedar <a id="valentina"></a></h2>
 
       <div class="sidebar-decor not-prose mx-auto md:float-end bg-orange-400 pt-3 md:m-5 md:mt-0 rounded-lg border border-orange-400 max-w-100">
         <h3 class="font-display text-pi-gray text-xl ps-5 mb-3">Valentina "Val" Cedar</h3>
-        <section class="sidebar-decor bg-pi-gray rounded-lg p-5">
-          <dl class="infobox-content">
+        <section class="sidebar-decor bg-pi-gray rounded-lg">
+          <div class="w-full">
+            <Image src={ ValentinaCedarImg } alt="Profile picture of Valentina Cedar" height={ 640 } class="w-full"/>
+          </div>
+          <dl class="infobox-content p-5">
             <div><dt>Universe</dt><dd>Pokémon</dd></div>
             <div><dt>Occupation</dt><dd>1st year biochemistry Ph.D student at Orange Islands University</dd></div>
             <div><dt>Names</dt><dd>Valentina Cedar, Val</dd></div>
@@ -203,6 +219,12 @@ import ArtfightDefenseDawningWindsValImg from "../art/artfight-defense-dawningwi
             <div><dt>Likes</dt><dd>Surfing, the ocean, free food, procrastinating</dd></div>
             <div><dt>Dislikes</dt><dd>Flying, exams</dd></div>
           </dl>
+          <div class="border-t border-orange-400 text-orange-400 flex">
+            <div class="p-2 uppercase text-sm/3">
+              Personnel dossier to be read by authorized persons only <br/>
+              NFN-1226-45517-B
+            </div>
+          </div>
         </section>
       </div>
 
@@ -281,7 +303,7 @@ import ArtfightDefenseDawningWindsValImg from "../art/artfight-defense-dawningwi
           <li>
             <figure class="table">
               <a class="link" href="/art/valentina-cedar">
-                <Image src={ ValentinaCedarImg } alt="Valentina Cedar, drawn February 20, 2024" width={ 350 } />
+                <Image src={ ValentinaCedarImg } alt="Valentina Cedar, drawn February 20, 2024" height={ 350 } />
               </a>
               <figcaption class="table-caption caption-bottom">
                 Valentina with Totodile, drawn February 20, 2024
@@ -291,7 +313,7 @@ import ArtfightDefenseDawningWindsValImg from "../art/artfight-defense-dawningwi
           <li>
             <figure class="table">
               <a class="link" href="/art/kirlia-and-totodile">
-                <Image src={ KirliaTotodileImg } alt="Kirlia and Totodile, drawn March 10, 2024" width={ 266 } />
+                <Image src={ KirliaTotodileImg } alt="Kirlia and Totodile, drawn March 10, 2024" height={ 350 } />
               </a>
               <figcaption class="table-caption caption-bottom">
                 Kyle dancing with a Kirlia, drawn March 10, 2024
@@ -304,11 +326,11 @@ import ArtfightDefenseDawningWindsValImg from "../art/artfight-defense-dawningwi
       <section>
         <h3>Art by other people</h3>
 
-        <ul class="not-prose flex justify-around items-center">
+        <ul class="not-prose flex justify-around items-center flex-wrap gap-5">
           <li>
             <figure>
               <a class="link" href="/art/artfight-defense-jollyyoshi-valentina-cedar">
-                <Image src={ ArtfightDefenseJollyYoshiValImg } alt="Valentina Cedar, drawn by JollyYoshi, Art Fight 2025" width={ 350 } />
+                <Image src={ ArtfightDefenseJollyYoshiValImg } alt="Valentina Cedar, drawn by JollyYoshi, Art Fight 2025" height={ 350 } />
               </a>
               <figcaption>Drawn by JollyYoshi, Art Fight 2025</figcaption>
             </figure>
@@ -316,7 +338,7 @@ import ArtfightDefenseDawningWindsValImg from "../art/artfight-defense-dawningwi
           <li>
             <figure>
               <a class="link" href="/art/artfight-defense-sleepwick-valentina">
-                <Image src={ ArtfightDefenseSleepwickValImg } alt="Valentina, drawn by sleepwick, Art Fight 2025" width={ 350 } />
+                <Image src={ ArtfightDefenseSleepwickValImg } alt="Valentina, drawn by sleepwick, Art Fight 2025" height={ 350 } />
               </a>
               <figcaption>Drawn by sleepwick, Art Fight 2025</figcaption>
             </figure>
@@ -324,7 +346,7 @@ import ArtfightDefenseDawningWindsValImg from "../art/artfight-defense-dawningwi
           <li>
             <figure>
               <a class="link" href="/art/artfight-defense-dawningwinds-give-that-back">
-                <Image src={ ArtfightDefenseDawningWindsValImg } alt="Give that back!, drawn by DawningWinds, Art Fight 2025" width={ 350 } />
+                <Image src={ ArtfightDefenseDawningWindsValImg } alt="Give that back!, drawn by DawningWinds, Art Fight 2025" height={ 350 } />
               </a>
               <figcaption>Drawn by DawningWinds, Art Fight 2025</figcaption>
             </figure>

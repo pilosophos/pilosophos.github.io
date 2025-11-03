@@ -33,7 +33,7 @@ import Alert from "../../components/Alert.astro";
 
 const art = (
   await getCollection('art'))
-    .filter(piece => !piece.data.tags?.includes('notmine'))
+    .filter(piece => !piece.data.tags?.includes('notmine') && !piece.data.tags?.includes('notfeatured'))
     .toSorted((a, b) => b.data.date?.getTime() - a.data.date?.getTime()
 );
 ---
