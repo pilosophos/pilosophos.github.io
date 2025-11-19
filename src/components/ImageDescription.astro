@@ -25,5 +25,7 @@ const { title, date, slug } = Astro.props;
     <SmallIconLink label="View high quality" icon="/images/icons/tiny/painting.png" href={ `/art/${slug}-hq` } class="font-sans"/>
   </header>
 
-  <slot />
+  <div class="pe-5">
+    <slot />
+  </div>
 </div>
