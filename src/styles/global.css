@@ -65,6 +65,7 @@
 html {
   @apply text-white;
   font-smooth: never;
+  scrollbar-color: var(--color-pi-cyan) var(--color-pi-gray);
 }
 
 summary {
