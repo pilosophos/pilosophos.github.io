@@ -3,7 +3,7 @@ title: 'Val in the Lab'
 cover: val-in-the-lab.png
 date: 2025-11-22
 ---
-[Valentina](/ocs#valentina) is the character I played in my friend's Pokémon
+[Valentina](/ocs/valentina) is the character I played in my friend's Pokémon
 TTRPG. I haven't drawn her much since we abruptly stopped playing several months
 ago, but I have a soft spot for Val and I couldn't just let her be forgotten.
 
