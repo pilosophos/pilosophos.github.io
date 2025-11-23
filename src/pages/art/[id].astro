@@ -57,7 +57,10 @@ const { Content } = await render(post);
 </div>
 
 <script>
-  document.getElementById('back').href = document.referrer || '/art';
+  const referrerHost = new URL(document.referrer).host;
+  if (referrerHost.includes("localhost:") || referrerHost === "pilosophos.com") {
+    document.getElementById('back').href = document.referrer;
+  }
 </script>
 
 </body>
