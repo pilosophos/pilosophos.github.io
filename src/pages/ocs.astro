@@ -13,6 +13,8 @@ import CamilleCloakImg from "../art/camille-cloak.png";
 import ArtfightDefenseDubiousdiscWildcardImg from "../art/artfight-defense-dubiousdisc-wildcard.png";
 import ArtfightDefensePurpuroseaWantedImg from "../art/artfight-defense-purpurosea-wanted.png";
 
+import ValentinaProfileImg from "../art/valentina-profile.png";
+import KyleProfileImg from "../art/kyle-profile.png";
 import ValentinaLabImg from "../art/val-in-the-lab.png";
 import ValentinaCedarImg from "../art/valentina-cedar.png";
 import KirliaTotodileImg from "../art/kirlia-and-totodile.png";
@@ -212,7 +214,7 @@ import ArtfightDefenseDawningWindsValImg from "../art/artfight-defense-dawningwi
         </h3>
         <section class="sidebar-decor bg-pi-gray rounded-lg">
           <div class="w-full">
-            <Image src={ ValentinaCedarImg } alt="Profile picture of Valentina Cedar" height={ 640 } class="w-full"/>
+            <Image src={ ValentinaProfileImg } alt="Profile picture of Valentina Cedar" height={ 640 } class="w-full"/>
           </div>
           <dl class="infobox-content p-5">
             <div><dt>Universe</dt><dd>Pokémon</dd></div>
@@ -288,48 +290,56 @@ import ArtfightDefenseDawningWindsValImg from "../art/artfight-defense-dawningwi
 
       <section>
         <h3>Pokémon</h3>
-        <article class="sidebar-decor not-prose bg-pi-cyan pt-3 md:m-5 md:mt-0 rounded-lg border border-pi-cyan max-w-150">
+        <article class="sidebar-decor not-prose bg-pi-cyan pt-3 md:m-5 md:mt-0 rounded-lg border border-pi-cyan max-w-170">
           <h4 class="font-display text-pi-gray text-xl ps-5 mb-3">Kyle the Totodile ♂</h3>
           <section class="sidebar-decor bg-pi-gray rounded-lg p-5">
-            <dl class="infobox-content mb-5 w-full">
-              <div><dt>Type</dt><dd>Water</dd></div>
-              <div><dt>Nature</dt><dd>Naughty</dd></div>
-              <div><dt>Held item</dt><dd>Leftovers</dd></div>
-              <div><dt>Ability</dt><dd>Sheer Force</dd></div>
-              <div><dt>Original Trainer</dt><dd>Dr. Philena Ivy</dd></div>
-              <div><dt>Original area</dt><dd>New Bark Town, Johto</dd></div>
-            </dl>
+            <div class="flex gap-5 mb-3">
+              <div class="text-center">
+                <Image src={ KyleProfileImg } alt="Profile picture of Kyle the Totodile" height={ 350 } class="mx-auto"/>
+              </div>
 
-            <ul class="grid grid-cols-2 gap-2 text-center">
-              <li class="border rounded text-blue-400">
-                <div class="p-3">Scald</div>
-                <div class="grid grid-cols-2 border-t">
-                  <div class="border-e">Water</div>
-                  <div>Special</div>
-                </div>
-              </li>
-              <li class="border rounded text-sky-300">
-                <div class="p-3">Ice Punch</div>
-                <div class="grid grid-cols-2 border-t">
-                  <div class="border-e">Ice</div>
-                  <div>Physical</div>
-                </div>
-              </li>
-              <li class="border rounded text-blue-400">
-                <div class="p-3">Aqua Jet</div>
-                <div class="grid grid-cols-2 border-t">
-                  <div class="border-e">Water</div>
-                  <div>Physical</div>
-                </div>
-              </li>
-              <li class="border rounded text-purple-400">
-                <div class="p-3">Dragon Dance</div>
-                <div class="grid grid-cols-2 border-t">
-                  <div class="border-e">Dragon</div>
-                  <div>Status</div>
-                </div>
-              </li>
-            </ul>
+              <dl class="infobox-content mb-5 w-full">
+                <div><dt>Type</dt><dd>Water</dd></div>
+                <div><dt>Nature</dt><dd>Naughty</dd></div>
+                <div><dt>Held item</dt><dd>Leftovers</dd></div>
+                <div><dt>Ability</dt><dd>Sheer Force</dd></div>
+                <div><dt>Original Trainer</dt><dd>Dr. Philena Ivy</dd></div>
+                <div><dt>Original area</dt><dd>New Bark Town, Johto</dd></div>
+              </dl>
+            </div>
+
+            <div>
+              <ul class="grid grid-cols-2 gap-2 text-center">
+                <li class="border rounded text-blue-400">
+                  <div class="p-3">Scald</div>
+                  <div class="grid grid-cols-2 border-t">
+                    <div class="border-e">Water</div>
+                    <div>Special</div>
+                  </div>
+                </li>
+                <li class="border rounded text-sky-300">
+                  <div class="p-3">Ice Punch</div>
+                  <div class="grid grid-cols-2 border-t">
+                    <div class="border-e">Ice</div>
+                    <div>Physical</div>
+                  </div>
+                </li>
+                <li class="border rounded text-blue-400">
+                  <div class="p-3">Aqua Jet</div>
+                  <div class="grid grid-cols-2 border-t">
+                    <div class="border-e">Water</div>
+                    <div>Physical</div>
+                  </div>
+                </li>
+                <li class="border rounded text-purple-400">
+                  <div class="p-3">Dragon Dance</div>
+                  <div class="grid grid-cols-2 border-t">
+                    <div class="border-e">Dragon</div>
+                    <div>Status</div>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </section>
         </article>
       </section>

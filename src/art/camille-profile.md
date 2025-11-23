@@ -1,5 +1,5 @@
 ---
-title: Opposite sides of Shadowrun's playstyle spectrum
+title: Camille Grey (profile picture)
 cover: camille-profile.png
 date: 2025-09-24
 tags: [notfeatured]
