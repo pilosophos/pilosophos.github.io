@@ -1,0 +1,47 @@
+---
+import { Image } from "astro:assets";
+import ValentinaProfileImg from "@art/valentina-profile.png";
+---
+
+<div class="sidebar-decor not-prose mx-auto bg-orange-400 pt-3 md:m-5 md:mt-0 rounded-lg border border-orange-400 max-w-100">
+  <h2 class="font-display text-pi-gray text-xl ps-5 mb-3">
+    Valentina "Val" Cedar
+    <small class="block uppercase font-sans">Biochemistry PhD student on study abroad</small>
+  </h2>
+  <section class="sidebar-decor bg-pi-gray rounded-lg">
+    <div class="w-full">
+      <Image src={ ValentinaProfileImg } alt="Profile picture of Valentina Cedar" height={ 640 } class="w-full"/>
+    </div>
+    <dl class="infobox-content p-5">
+      <div><dt>Universe</dt><dd>Pokémon</dd></div>
+      <div><dt>Occupation</dt><dd>1st year biochemistry Ph.D student at Orange Islands University</dd></div>
+      <div><dt>Names</dt><dd>Valentina Cedar, Val</dd></div>
+      <div><dt>Age</dt><dd>22</dd></div>
+      <div><dt>Height</dt><dd>152 cm (~5 ft.)</dd></div>
+      <div>
+        <dt>Living in</dt>
+        <dd>
+          <ul class="list-disc ms-5">
+            <li>Mandarin Island N., Orange Islands</li>
+            <li>San Isidore, Sotona Region (Study abroad)</li>
+          </ul>
+        </dd>
+      </div>
+      <div><dt>Alma mater</dt><dd>Orange Islands University, (BSc Biochemistry)</dd></div>
+      <div><dt>Likes</dt><dd>Surfing, the ocean, free food, procrastinating</dd></div>
+      <div><dt>Dislikes</dt><dd>Flying, exams</dd></div>
+    </dl>
+    <div class="border-t border-orange-400 text-orange-400 flex mb-[1px]">
+      <div class="p-2 uppercase text-sm/3">
+        Personnel dossier to be read by authorized persons only <br/>
+        NFN-1226-45517-B
+      </div>
+    </div>
+  </section>
+</div>
+
+<style>
+  .sidebar-decor {
+    clip-path: polygon(calc(100% - 30px) 0, 100% 30px, 100% 100%, 0 100%, 0 0);
+  }
+</style>

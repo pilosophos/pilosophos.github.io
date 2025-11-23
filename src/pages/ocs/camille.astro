@@ -1,0 +1,173 @@
+---
+import { Image } from "astro:assets";
+import ArticleHeader from "@components/ArticleHeader.astro";
+import DefaultLayout from "@layouts/DefaultLayout.astro";
+import SmallIconLink from "@components/SmallIconLink.astro";
+
+import CamilleInfobox from "@components/ocs/CamilleInfobox.astro";
+
+import CamilleGreyEquipmentImg from "@art/camille-grey-equipment.png";
+import CamilleGreyImg from "@art/camille-grey.png";
+import CamilleChibiImg from "@art/camille-chibi.png";
+import CamilleStylesImg from "@art/camille-styles.png";
+import CamilleCloakImg from "@art/camille-cloak.png";
+import ArtfightDefenseDubiousdiscWildcardImg from "@art/artfight-defense-dubiousdisc-wildcard.png";
+import ArtfightDefensePurpuroseaWantedImg from "@art/artfight-defense-purpurosea-wanted.png";
+---
+
+<DefaultLayout title="OCs">
+  <main class="container">
+    <ArticleHeader
+      icon="/images/icons/users.png"
+      title='Camille "Rosy" Grey'
+    >
+      <a href="/ocs" class="link">← Click to go back to the OC index</a>
+    </ArticleHeader>
+
+    <nav class="container flex justify-center mb-10">
+      <ul class="flex justify-center gap-3 flex-wrap">
+        <li><SmallIconLink href="#summary" icon="/images/icons/users.png" label="Summary"/>
+        <li><SmallIconLink href="#design" icon="/images/icons/users.png" label="Design"/>
+        <li><SmallIconLink href="#gallery" icon="/images/icons/users.png" label="Gallery"/>
+        <li><SmallIconLink href="#art-by-other-people" icon="/images/icons/users.png" label="Art by others"/>
+      </ul>
+    </nav>
+
+    <section class="prose prose-invariants max-w-full">
+      <div class="md:float-end">
+        <CamilleInfobox />
+      </div>
+
+      <section id="summary">
+        <aside class="flex justify-center">
+          <blockquote class="md:w-150">
+            <small class="block border-b uppercase">Surveillance audio transcript - A06:04:32FF</small>
+            "The guest list for the new nightclub in Cap Hill is ultra-exclusive, but I can let myself in faster than a street sam on Cram. The emergency exit is vulnerable to a buffer overflow attack, and the lock is fail-open by default."
+          </blockquote>
+        </aside>
+
+        <p>
+          Camille is a hacker-for-hire who will work for anyone with enough cash, whether for good or for evil. She is often known as "Rosy" for wearing rose-tinted glasses, which are purely for fashion. She became ambidextrous after having replaced her previously non-dominant right arm with a cybernetic one, which she did because "it just seemed cool at the time".
+        </p>
+        
+        <p>
+          She enjoys clubbing and loud raves, and finds any room where she can hear herself speak to be too quiet. Occasionally, she can be seen amusing herself by flying drones at people as they run away in terror. Though calm and capable in a gunfight, she is deathly afraid of wasps and once unloaded a magazine into a black-and-yellow marble.
+        </p>
+
+        <p>
+          Camille is a character I made for the tabletop RPG <i>Shadowrun</i>, which is a cyberpunk setting where magic started to spring up on Earth one day resulting in the appearance of elves, orcs, and dragons.
+        </p>
+      </section>
+
+      <section id="design">
+        <h2>Design</h2>
+        <p>Though nicknamed after her rose-tinted glasses, her most noticeable feature is her cyberarm, which she likes to show off. She is often depicted wearing a head-mounted software-defined radio with an integrated earpiece, which can be connected using a cable to the cyberdeck she carries around, slung over her shoulder.</p>
+
+        <p>Since Camille was created as a design challenge― to make a Shadowrun character that looks like she's actually from Seattle― she wears clothes that can stand up to at least light rain and offers good wind coverage. For instance, she is mainly depicted with an REI windbreaker and high-heeled boots that resemble hiking boots. See the design checklist for more details on her clothes and accessories.</p>
+
+        <h4>Design checklist</h4>
+        <details>
+          <summary class="link">Main outfit (click to show)</summary>
+          <ol>
+            <li>[Glasses] Decorative rose-tinted glasses.</li>
+            <li>[Eyes] Cybernetic eyes. These can glow any color and at different luminosities, usually set to a dim cyan.</li>
+            <li>[Nose ring] A small steel septum ring.</li>
+            <li>[Right ear] Head-mounted software-defined radio. Removable, but usually on.</span></li>
+            <li>[Left ear] Three small gold earrings, with Clippy hanging from the bottom one</li>
+            <li>[Right arm] A cyber arm. Her shoulder is branded <code>YAMATETSU PI0423</code>, and the datapad on her forearm bears an <a class="link" href="/images/agerszijn.png">Agerszijn logo</a>.</li>
+            <li>[Left arm] Part of her cropped-jacket, made of synthetic fur, with a decorative belt/armband.</li>
+            <li>[Left hand] White riding gloves.</li>
+            <li>[Jackets] She is actually wearing two layers: a black cropped jacket, and an <a class="link" href="https://en.wikipedia.org/wiki/REI">REI Co-Op</a> branded windbreaker under it.</li>
+            <li>[Zipper] RGB light zippers, normally set to a dim cyan.</li>
+            <li>[Top zipper] The top zipper handle is a big steel ring.</li>
+            <li>[Leggings] A colored strip strip runs down the inside and outside of each leg, usually with a cyan caution tape pattern.</li>
+            <li>[Left leg] An ARES branded thigh holster.</li>
+            <li>[Boots] Like hiking boots, but the sole is raised like platform heels. Each boot has a small caution symbol on the soles, on the outward side.</li>
+            <li>[Gun] The engraving reads <code class="text-xl">美人薄命</code>. It is branded <code>セブロ PI-314</code>.</li>
+            <li>[Cyberdeck] A SONY branded cyberdeck with a black shoulder strap, like on a violin case. The endcaps lights are RGB.</li>
+          </ol>
+        </details>
+      </section>
+
+      <section id="gallery">
+        <h2>Gallery</h2>
+
+        <ul class="not-prose flex justify-around flex-wrap gap-5">
+          <li>
+            <figure class="table">
+              <a class="link" href="/art/camille-cloak">
+                <Image src={ CamilleCloakImg } alt="Camille in a black-trenchcoat-esque alternate costume, October 25, 2025" height={ 350 } />
+              </a>
+              <figcaption class="table-caption caption-bottom">
+                Camille in a black-trenchcoat-esque alternate costume, October 25, 2025
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure class="table">
+              <a class="link" href="/art/camille-styles">
+                <Image src={ CamilleStylesImg } alt="Opposite sides of Shadowrun's playstyle spectrum, drawn September 24, 2025" height={ 350 } />
+              </a>
+              <figcaption class="table-caption caption-bottom">
+                "Opposite sides of Shadowrun's playstyle spectrum", September 24, 2025
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure class="table">
+              <a class="link" href="/art/camille-chibi">
+                <Image src={ CamilleChibiImg } alt="Chibi Camille, drawn September 22, 2025" height={ 350 } />
+              </a>
+              <figcaption class="table-caption caption-bottom">
+                A pixel art chibi version of Camille, drawn September 22, 2025
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure class="table">
+              <a class="link" href="/art/camille-grey-equipment">
+                <Image src={ CamilleGreyEquipmentImg } alt="A decker and her equipment, drawn July 27, 2025" height={ 350 } />
+              </a>
+              <figcaption class="table-caption caption-bottom">
+                Camille with some information about her equipment, drawn July 27, 2025
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure class="table">
+              <a class="link" href="/art/camille-grey">
+                <Image src={ CamilleGreyImg } alt="Camille Grey, drawn April 28, 2025" height={ 350 } />
+              </a>
+              <figcaption class="table-caption caption-bottom w-full">
+                Camille causing chaos at a nightclub, drawn April 28, 2025
+              </figcaption>
+            </figure>
+          </li>
+        </ul>
+      </section>
+
+      <section id="art-by-other-people">
+        <h2>Art by other people</h2>
+
+        <ul class="not-prose flex justify-around items-center flex-wrap gap-5">
+          <li>
+            <figure>
+              <a class="link" href="/art/artfight-defense-dubiousdisc-wildcard">
+                <Image src={ ArtfightDefenseDubiousdiscWildcardImg } alt="wildcard, drawn by dubiousdisc, Art Fight 2025" height={ 350 } />
+              </a>
+              <figcaption>Drawn by dubiousdisc, Art Fight 2025</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <a class="link" href="/art/artfight-defense-purpurosea-wanted">
+                <Image src={ ArtfightDefensePurpuroseaWantedImg } alt="Wanted, drawn by purpurosea, Art Fight 2025" height={ 350 } />
+              </a>
+              <figcaption>Drawn by purpurosea, Art Fight 2025</figcaption>
+            </figure>
+          </li>
+        </ul>
+      </section>
+    </section>
+  </main>
+</DefaultLayout>

@@ -1,0 +1,217 @@
+---
+import { Image } from "astro:assets";
+import ArticleHeader from "@components/ArticleHeader.astro";
+import DefaultLayout from "@layouts/DefaultLayout.astro";
+import SmallIconLink from "@components/SmallIconLink.astro";
+
+import ValentinaInfobox from "@components/ocs/ValentinaInfobox.astro";
+
+import KyleProfileImg from "@art/kyle-profile.png";
+import ValentinaLabImg from "@art/val-in-the-lab.png";
+import ValentinaCedarImg from "@art/valentina-cedar.png";
+import KirliaTotodileImg from "@art/kirlia-and-totodile.png";
+import ArtfightDefenseJollyYoshiValImg from "@art/artfight-defense-jollyyoshi-valentina-cedar.jpeg";
+import ArtfightDefenseSleepwickValImg from "@art/artfight-defense-sleepwick-valentina.png";
+import ArtfightDefenseDawningWindsValImg from "@art/artfight-defense-dawningwinds-give-that-back.png";
+---
+
+<DefaultLayout title="OCs">
+  <main class="container">
+    <ArticleHeader
+      icon="/images/icons/users.png"
+      title="OCs > Valentina Cedar"
+    >
+      <a href="/ocs" class="link">← Click to go back to the OC index</a>
+    </ArticleHeader>
+
+    <nav class="container flex justify-center mb-10">
+      <ul class="flex justify-center gap-3 flex-wrap">
+        <li><SmallIconLink href="#summary" icon="/images/icons/users.png" label="Summary"/>
+        <li><SmallIconLink href="#design" icon="/images/icons/users.png" label="Design"/>
+        <li><SmallIconLink href="#pokemon" icon="/images/icons/users.png" label="Pokémon"/>
+        <li><SmallIconLink href="#gallery" icon="/images/icons/users.png" label="Gallery"/>
+        <li><SmallIconLink href="#art-by-other-people" icon="/images/icons/users.png" label="Art by others"/>
+      </ul>
+    </nav>
+
+    <section class="prose prose-invariants max-w-full mt-10">
+      <div class="md:float-end">
+        <ValentinaInfobox />
+      </div>
+
+      <section id="summary">
+        <aside class="flex justify-center">
+          <blockquote class="md:w-150">
+            <small class="block border-b uppercase">Surveillance audio transcript - A06:04:32FF</small>
+            "I'm trying to teach my Totodile, Kyle, to use Scald to cook my Up Ramen™. I've had to mop up the lab kitchen five days in a row now, but just imagine all the time I'll save if I didn't have to wait for the kettle to boil!"
+          </blockquote>
+        </aside>
+
+        <p>
+          Val is a first-year Ph.D at Orange Islands University student studying biochemistry. Before leaving for her summer study abroad in San Isidore, she was doing research with her doctoral advisor, <a class="link" href="https://bulbapedia.bulbagarden.net/wiki/Orange_Islands">Dr. Philena Ivy</a>, on the protein expression in regional Pokémon variants. One day, Dr. Ivy brought back a <a class="link" href="https://bulbapedia.bulbagarden.net/wiki/Totodile">Totodile</a> named Kyle to the lab in the Orange Islands, who quickly took to Val, and is often seen hiding stolen snacks or being chased around the lab by Val for running off with a PCR tray as a prank.
+        </p>
+
+        <p>
+          As she lives on a graduate stipend, she is constantly broke and can often be found circling the campus for seminars with free food. Though quite resourceful, Val is a chronic procrastinator, to the point where she originally sought a study abroad to exploit a loophole in her university's policies that would let her postpone her Ph.D qualifying exams. Dr. Ivy entrusted Val with Kyle, who she took to San Isidore to give the rest of the lab members a period of peace, and Kyle was practically more Val's Pokémon than Dr. Ivy's anyway.
+        </p>
+
+        <p>
+          Val is a character I made for a tabletop RPG set in the Pokémon universe that was being run by a friend of mine, that abruptly ended in the middle. The RPG was set in San Isidore, a city in the Sotona region, which was made for the RPG.
+        </p>
+      </section>
+
+      <section id="design">
+        <h2>Design</h2>
+        <p>She is often seen with an orange OIU hoodie, light blue jeans, and red sneakers. She is quite fond of her lab coat, and often "forgets" to take it off when not in the lab. The lapel of her lab coat sports a <a class="link" href="https://bulbapedia.bulbagarden.net/wiki/Badge#Orange_League">Coral-Eye Badge</a>, received for Kyle's superior accuracy at the <a class="link" href="https://bulbapedia.bulbagarden.net/wiki/Mikan_Gym">Mikan Gym's</a> water gun challenge, a performance Val has struggled to get out of Kyle since.</p>
+
+        <p>When out and about, she carries a messenger bag full of Pokéblocks, N95 masks, spare gloves, a notebook, leftover food from on-campus seminars, an Up Ramen™, and a corporate-branded Premier Ball given out at a career fair. Since the start of her study abroad, she carries a first-generation Pokédex with the label "PROPERTY OF OIU BIOCHEMISTRY," which was provided by Dr. Ivy, but is quite old and glitches out often.</p>
+
+        <p>She can be excited by new clothes, especially if they're kind of weird, such as Australian cork hats or skirts with lots of digits of <i>pi</i> printed on them, but she usually ends up going back to a lab coat, hoodie, and jeans ensemble eventually.</p>
+
+        <h4>Design checklist</h4>
+        <details>
+          <summary class="link">Main outfit (click to show)</summary>
+          <ol>
+            <li>[Hoodie] An orange OIU hoodie.</li>
+            <li>[Lab coat] A white lab coat. The lapel sports a <a class="link" href="https://bulbapedia.bulbagarden.net/wiki/Badge#Orange_League">Coral-Eye Badge</a>.</li>
+            <li>[Jeans] Light blue jeans.</li>
+            <li>[Sneakers] Red sneakers with a yellow stripe, resembling <a class="link" href="https://bulbapedia.bulbagarden.net/wiki/Misty_(anime)#Main_outfits">Misty's sneakers</a>.</li>
+            <li>[Bag] A messenger bag, resembling the <a class="link" href="https://bulbapedia.bulbagarden.net/wiki/Bag#HeartGold_and_SoulSilver">HeartGold/SoulSilver male protagonists's bag</a>.</li>
+            <li>[Pokédex] A first-generation Pokédex with the label "PROPERTY OF OIU BIOCHEMISTRY", resembling <a href="https://bulbapedia.bulbagarden.net/wiki/File:Ash_Original_Pok%C3%A9dex.png">Ash's original Pokédex</a>.</li>
+            <li>[Kyle] When Val appears, Kyle the <a class="link" href="https://bulbapedia.bulbagarden.net/wiki/Totodile">Totodile</a> is usually there too.</li>
+          </ol>
+        </details>
+      </section>
+
+      <section id="pokemon">
+        <h2>Pokémon</h2>
+        <article class="sidebar-decor not-prose bg-pi-cyan pt-3 md:m-5 md:mt-0 rounded-lg border border-pi-cyan max-w-170">
+          <h4 class="font-display text-pi-gray text-xl ps-5 mb-3">Kyle the Totodile ♂</h2>
+          <section class="sidebar-decor bg-pi-gray rounded-lg p-5">
+            <div class="flex gap-5 mb-3">
+              <div class="text-center">
+                <Image src={ KyleProfileImg } alt="Profile picture of Kyle the Totodile" height={ 350 } class="mx-auto"/>
+              </div>
+
+              <dl class="infobox-content mb-5 w-full">
+                <div><dt>Type</dt><dd>Water</dd></div>
+                <div><dt>Nature</dt><dd>Naughty</dd></div>
+                <div><dt>Held item</dt><dd>Leftovers</dd></div>
+                <div><dt>Ability</dt><dd>Sheer Force</dd></div>
+                <div><dt>Original Trainer</dt><dd>Dr. Philena Ivy</dd></div>
+                <div><dt>Original area</dt><dd>New Bark Town, Johto</dd></div>
+              </dl>
+            </div>
+
+            <div>
+              <ul class="grid grid-cols-2 gap-2 text-center">
+                <li class="border rounded text-blue-400">
+                  <div class="p-3">Scald</div>
+                  <div class="grid grid-cols-2 border-t">
+                    <div class="border-e">Water</div>
+                    <div>Special</div>
+                  </div>
+                </li>
+                <li class="border rounded text-sky-300">
+                  <div class="p-3">Ice Punch</div>
+                  <div class="grid grid-cols-2 border-t">
+                    <div class="border-e">Ice</div>
+                    <div>Physical</div>
+                  </div>
+                </li>
+                <li class="border rounded text-blue-400">
+                  <div class="p-3">Aqua Jet</div>
+                  <div class="grid grid-cols-2 border-t">
+                    <div class="border-e">Water</div>
+                    <div>Physical</div>
+                  </div>
+                </li>
+                <li class="border rounded text-purple-400">
+                  <div class="p-3">Dragon Dance</div>
+                  <div class="grid grid-cols-2 border-t">
+                    <div class="border-e">Dragon</div>
+                    <div>Status</div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </article>
+      </section>
+
+      <section id="gallery">
+        <h2>Gallery</h2>
+
+        <ul class="not-prose flex justify-around flex-wrap gap-5">
+          <li>
+            <figure class="table">
+              <a class="link" href="/art/val-in-the-lab">
+                <Image src={ ValentinaLabImg } alt="Val in the Lab, drawn November 22, 2025" height={ 350 } />
+              </a>
+              <figcaption class="table-caption caption-bottom">
+                Val in the Lab, drawn November 22, 2025
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure class="table">
+              <a class="link" href="/art/valentina-cedar">
+                <Image src={ ValentinaCedarImg } alt="Valentina Cedar, drawn February 20, 2024" height={ 350 } />
+              </a>
+              <figcaption class="table-caption caption-bottom">
+                Valentina with Totodile, drawn February 20, 2024
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure class="table">
+              <a class="link" href="/art/kirlia-and-totodile">
+                <Image src={ KirliaTotodileImg } alt="Kirlia and Totodile, drawn March 10, 2024" height={ 350 } />
+              </a>
+              <figcaption class="table-caption caption-bottom">
+                Kyle dancing with a Kirlia, drawn March 10, 2024
+              </figcaption>
+            </figure>
+          </li>
+        </ul>
+      </section>
+
+      <section id="art-by-other-people">
+        <h2>Art by other people</h2>
+
+        <ul class="not-prose flex justify-around flex-wrap gap-5">
+          <li>
+            <figure>
+              <a class="link" href="/art/artfight-defense-jollyyoshi-valentina-cedar">
+                <Image src={ ArtfightDefenseJollyYoshiValImg } alt="Valentina Cedar, drawn by JollyYoshi, Art Fight 2025" height={ 350 } />
+              </a>
+              <figcaption>Drawn by JollyYoshi, Art Fight 2025</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <a class="link" href="/art/artfight-defense-sleepwick-valentina">
+                <Image src={ ArtfightDefenseSleepwickValImg } alt="Valentina, drawn by sleepwick, Art Fight 2025" height={ 350 } />
+              </a>
+              <figcaption>Drawn by sleepwick, Art Fight 2025</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <a class="link" href="/art/artfight-defense-dawningwinds-give-that-back">
+                <Image src={ ArtfightDefenseDawningWindsValImg } alt="Give that back!, drawn by DawningWinds, Art Fight 2025" height={ 350 } />
+              </a>
+              <figcaption>Drawn by DawningWinds, Art Fight 2025</figcaption>
+            </figure>
+          </li>
+          </ul>
+      </section>
+    </section>
+  </main>
+</DefaultLayout>
+
+<style>
+  .sidebar-decor {
+    clip-path: polygon(calc(100% - 30px) 0, 100% 30px, 100% 100%, 0 100%, 0 0);
+  }
+</style>
