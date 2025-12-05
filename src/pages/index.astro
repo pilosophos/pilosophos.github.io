@@ -3,6 +3,7 @@ import BigNavLink from '../components/BigNavLink.astro';
 import DefaultLayout from '../layouts/DefaultLayout.astro';
 import { Image } from "astro:assets";
 import FaerieHeroImg from "../assets/images/faerie-hero.png"
+import DecorativeBarcodeImg from "../assets/images/decorative-barcode.svg"
 ---
 
 <DefaultLayout title="Home">
@@ -18,7 +19,7 @@ import FaerieHeroImg from "../assets/images/faerie-hero.png"
           </ul>
         </nav>
         <nav class="text-end">
-          <ul class="ps-8 grid grid-cols-3 gap-3 md:flex flex-wrap md:justify-end">
+          <ul class="ps-8 grid grid-cols-2 md:grid-cols-3 gap-3 md:flex flex-wrap md:justify-end">
             <li><a href="mailto:pilosophos@gmail.com" class="pill-link">Email</a></li>
             <li><a href="https://bsky.app/profile/pilosophos.com" class="pill-link">Bluesky</a></li>
             <li><a href="https://tiny.tilde.website/@pilosophos" class="pill-link">Mastodon</a></li>
@@ -42,7 +43,7 @@ import FaerieHeroImg from "../assets/images/faerie-hero.png"
             <img src="/images/malaszec-pfp.png" alt="" width="200" class="object-contain"/>
           </div>
           <div class="sidebar-decor grow bg-pi-gray rounded-lg flex items-end p-3">
-            <div class="text-end text-stone-500 whitespace-pre-line">
+            <div class="text-end text-stone-500 whitespace-pre-line" aria-hidden="true">
               Oloromnal Graphical Shell for ACROS v2053.06.21-26a31f
               inetd service loaded... 230ms
               connected on interface enp0s10
@@ -54,10 +55,13 @@ import FaerieHeroImg from "../assets/images/faerie-hero.png"
           </div>
         </div>
         <div class="w-14 relative">
-          <span aria-hidden="true" class="absolute -left-36 top-55 rotate-90 inline-block text-stone-500 text-base/4 text-display whitespace-pre-line">
+          <span aria-hidden="true" class="absolute -left-38 top-57 rotate-90 inline-block text-stone-500 text-base/4 text-display whitespace-pre-line w-max">
             ISO 3533 COMPLIANT INFORMATION SYSTEM
-            ▞▗▖▚▘▚▚▚▗▚▜▗▝▞▝▞▛▞▝▞▝▗▞▞▗▚▞▝
-            ▙▖▛▛▙▜▞▙▛▟▛▘▚▘▚▟▝▛▙▜▛▖▞▚▛▗▞▚
+            <Image
+              alt=""
+              src={DecorativeBarcodeImg}
+              class="w-90 h-10"
+            />
           </span>
         </div>
       </div>

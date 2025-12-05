@@ -6,8 +6,9 @@ const { i, href, label, flavorText } = Astro.props;
   href={ href }
   class="group rounded-lg block border border-pi-pink ps-5 md:ps-10 text-pi-pink bg-pi-pink"
 >
-  <div class="rounded-lg bg-pi-gray group-hover:bg-pi-gray/80 group-active:bg-pi-gray/60 p-5 ps-8 text-lg transition-all duration-.25s">
+  <div class="rounded-lg bg-pi-gray group-hover:bg-pi-gray/80 group-active:bg-pi-pink group-active:text-pi-gray p-5 ps-8 text-lg transition-all duration-.15s">
     <span class="text-4xl font-display">{ label }</span>
+    <span class="block h-3 relative -top-2" aria-hidden="true">////////</span>
     <span class="block text-sm md:text-base font-display">{ flavorText }</span>
   </div>
 </a>

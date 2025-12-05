@@ -84,7 +84,7 @@ summary {
 
 @layer components {
   .pill-link {
-    @apply inline-block w-full border text-center text-pi-cyan hover:bg-pi-cyan/20 active:bg-pi-cyan/30 transition-all rounded px-5 py-1;
+    @apply inline-block w-full border text-center text-pi-cyan hover:bg-pi-cyan/20 active:bg-pi-cyan/30 transition-all rounded md:px-5 py-1;
   }
 
   .wordy-list {
