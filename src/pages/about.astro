@@ -8,18 +8,18 @@ import DefaultLayout from '../layouts/DefaultLayout.astro';
   metadesc="Facts about Pilosophos, the digital artist born and raised on the internet."
 >
   <div class="container relative overflow-hidden">
-    <p class="font-display text-2xl/10 text-justify text-white/5 absolute top-0 left-0 -z-1" aria-hidden="true">
+    <p id="word-wall" class="font-display text-2xl/10 text-justify text-white absolute top-0 left-0 -z-1 opacity-5 transition-[opacity] duration-1000" aria-hidden="true">
       Despite being a Star Trek fan, I've never seen Star Wars.
       The times I feel loneliest is when I'm surrounded by people.
       I can't stand horror movies.
-      When I went to Japan, somtimes I didn't go into a restaurant unless I knew how to order something.
+      When I went to Japan, sometimes I didn't go into a restaurant unless I knew how to order something.
       I took a Latin class for four years in high school, but I barely remember any of it.
       Whenever I type Pokémon, I try to make sure to type it with the accent.
       Being stuck in a time loop might be pretty cool, at least for a while.
       I used to watch a lot of anime, but I haven't been keeping up with it anymore.
       One of the few free analog TV broadcasts when I was a kid was an oldies channel, so now I'm a fan of some ancient shows like Sanford & Son and McHale's Navy.
       I speak a language spoken by less than 100 people.
-      Sometimes I wonder what it'd be like to wanter the streets as a cat.
+      Sometimes I wonder what it'd be like to wander the streets as a cat.
       I wish more things tasted the way they smell.
       Please do not touch me.
       I don't really like the taste of milk, but that's okay, because I'm lactose intolerant.
@@ -38,69 +38,101 @@ import DefaultLayout from '../layouts/DefaultLayout.astro';
       I want to make music but I haven't put in enough practice to be good.
     </p>
 
-    <main class="flex flex-col-reverse items-center gap-10 p-5 xl:flex-row">
-      <div aria-hidden="true">
-        <pre class="ascii-art text-pi-cyan"><MalaszecLogoAscii/></pre>
+    <main id="veil" class="transition-opacity duration-1000">
+      <div class="flex flex-col-reverse items-center gap-10 p-5 xl:flex-row">
+        <div aria-hidden="true">
+          <pre class="ascii-art text-pi-cyan"><MalaszecLogoAscii/></pre>
+        </div>
+        <div class="flex flex-col justify-center">
+          <h1 class="text-3xl font-display mb-3">[~pilosophos]$ whoami</h1>
+          <dl class="grid gap-4">
+
+            <div class="grid grid-cols-3 gap-1">
+              <dt class="font-display">Aliases</dt>
+              <dd class="col-span-2">pilosophos, pilosopher, PI, pilo</dd>
+            </div>
+
+            <div class="grid grid-cols-3 gap-1">
+              <dt class="font-display">Place of origin</dt>
+              <dd class="col-span-2">The internet</dd>
+            </div>
+
+            <div class="grid grid-cols-3 gap-1">
+              <dt class="font-display">Interests</dt>
+              <dd class="col-span-2">drawing, worldbuilding, conlanging, technology, etc. (see my <a href="/interests" class="link">interests page</a>)</dd>
+            </div>
+
+            <div class="grid grid-cols-3 gap-1">
+              <dt class="font-display">Drawing tools</dt>
+              <dd class="col-span-2">Huion Kamvas Pro 16, Krita, Pentel Graphgear 500, Pilot Metropolitan</dd>
+            </div>
+
+            <div class="grid grid-cols-3 gap-1">
+              <dt class="font-display">Favorite show</dt>
+              <dd class="col-span-2">Star Trek: Deep Space Nine</dd>
+            </div>
+
+            <div class="grid grid-cols-3 gap-1">
+              <dt class="font-display">Favorite band</dt>
+              <dd class="col-span-2">Bôa</dd>
+            </div>
+
+            <div class="grid grid-cols-3 gap-1">
+              <dt class="font-display">Favorite anime</dt>
+              <dd class="col-span-2">Ghost in the Shell: Stand Alone Complex</dd>
+            </div>
+
+            <div class="grid grid-cols-3 gap-1">
+              <dt class="font-display">Social media</dt>
+              <dd class="col-span-2">
+                <SmallIconLink href="mailto:pilosophos@gmail.com" label="email" icon="/images/icons/tiny/envelope_closed-1.png"/>
+                <SmallIconLink href="https://tiny.tilde.website/@pilosophos" label="mastodon" icon="/images/icons/mastodon.png"/>
+                <SmallIconLink href="https://bsky.app/profile/pilosophos.com" label="bluesky" icon="/images/icons/bluesky.png"/>
+                <SmallIconLink href="https://pilosophos.tumblr.com" label="tumblr" icon="/images/icons/tumblr.png"/>
+                <SmallIconLink href="https://reddit.com/user/pilosophos" label="reddit" icon="/images/icons/reddit.png"/>
+                <SmallIconLink href="https://www.instagram.com/pilosophos" label="instagram" icon="/images/icons/instagram.png"/>
+                <SmallIconLink href="https://www.pixiv.net/en/users/77474454" label="pixiv" icon="/images/icons/pixiv.png"/>
+              </dd>
+            </div>
+
+            <div class="grid grid-cols-3 gap-1">
+              <dt class="font-display">PGP key</dt>
+              <dd class="col-span-2"><a href="/pgp-key.txt" class="link">pilosophos@gmail.com (fingerprint: 5A2074689029343297160719ED76EDAF5644F381)</a></dd>
+            </div>
+
+          </dl>
+        </div>
       </div>
-      <div class="flex flex-col justify-center">
-        <h1 class="text-3xl font-display mb-3">[~pilosophos]$ whoami</h1>
-        <dl class="grid gap-4">
-
-          <div class="grid grid-cols-3 gap-1">
-            <dt class="font-bold">Aliases</dt>
-            <dd class="col-span-2">pilosophos, pilosopher, PI, pilo</dd>
-          </div>
-
-          <div class="grid grid-cols-3 gap-1">
-            <dt class="font-bold">Place of origin</dt>
-            <dd class="col-span-2">The internet</dd>
-          </div>
-
-          <div class="grid grid-cols-3 gap-1">
-            <dt class="font-bold">Interests</dt>
-            <dd class="col-span-2">drawing, worldbuilding, conlanging, technology, etc. (see my <a href="/interests" class="link">interests page</a>)</dd>
-          </div>
-
-          <div class="grid grid-cols-3 gap-1">
-            <dt class="font-bold">Drawing tools</dt>
-            <dd class="col-span-2">Huion Kamvas Pro 16, Krita, Pentel Graphgear 500, Pilot Metropolitan</dd>
-          </div>
-
-          <div class="grid grid-cols-3 gap-1">
-            <dt class="font-bold">Favorite show</dt>
-            <dd class="col-span-2">Star Trek: Deep Space Nine</dd>
-          </div>
-
-          <div class="grid grid-cols-3 gap-1">
-            <dt class="font-bold">Favorite band</dt>
-            <dd class="col-span-2">Bôa</dd>
-          </div>
-
-          <div class="grid grid-cols-3 gap-1">
-            <dt class="font-bold">Favorite anime</dt>
-            <dd class="col-span-2">Ghost in the Shell: Stand Alone Complex</dd>
-          </div>
-
-          <div class="grid grid-cols-3 gap-1">
-            <dt class="font-bold">Social media</dt>
-            <dd class="col-span-2">
-              <SmallIconLink href="mailto:pilosophos@gmail.com" label="email" icon="/images/icons/tiny/envelope_closed-1.png"/>
-              <SmallIconLink href="https://tiny.tilde.website/@pilosophos" label="mastodon" icon="/images/icons/mastodon.png"/>
-              <SmallIconLink href="https://bsky.app/profile/pilosophos.com" label="bluesky" icon="/images/icons/bluesky.png"/>
-              <SmallIconLink href="https://pilosophos.tumblr.com" label="tumblr" icon="/images/icons/tumblr.png"/>
-              <SmallIconLink href="https://reddit.com/user/pilosophos" label="reddit" icon="/images/icons/reddit.png"/>
-              <SmallIconLink href="https://www.instagram.com/pilosophos" label="instagram" icon="/images/icons/instagram.png"/>
-              <SmallIconLink href="https://www.pixiv.net/en/users/77474454" label="pixiv" icon="/images/icons/pixiv.png"/>
-            </dd>
-          </div>
-
-          <div class="grid grid-cols-3 gap-1">
-            <dt class="font-bold">PGP key</dt>
-            <dd class="col-span-2"><a href="/pgp-key.txt" class="link">pilosophos@gmail.com (fingerprint: 5A2074689029343297160719ED76EDAF5644F381)</a></dd>
-          </div>
-
-        </dl>
-      </div>
-    </div>
   </main>
+  <div class="flex justify-center">
+    <button
+      id="peel"
+      class="italic bg-pi-gray/90 text-pi-cyan hover:bg-pi-cyan hover:text-pi-gray active:bg-white transition-colors px-3 border-b z-3"
+    >
+      Peel back the veil? <noscript>(You would normally peel back the veil with JavaScript)</noscript>
+    </button>
+  </div>
 </DefaultLayout>
+
+<script>
+  const peel = document.getElementById('peel')!;
+  const veil = document.getElementById('veil')!;
+  const wordWall = document.getElementById('word-wall')!;
+  peel.onclick = () => {
+    if (veil.style.opacity == '0') { // hiding the word wall again
+      veil.style.opacity = '100';
+      wordWall.style.zIndex = '-10';
+      wordWall.classList.add('opacity-5')
+      wordWall.classList.add('absolute')
+      veil.classList.remove('absolute')
+      peel.textContent = "Peel back the veil?"
+    } else { // start showing the word wall
+      veil.style.opacity = '0';
+      wordWall.classList.remove('opacity-5')
+      wordWall.classList.remove('absolute')
+      veil.classList.add('absolute')
+      wordWall.style.zIndex = '2';
+      peel.textContent = "I preferred you with the veil on."
+    }
+  }
+</script>

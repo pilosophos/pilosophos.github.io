@@ -5,6 +5,7 @@ const { href, icon, label, noUnderline, class: className } = Astro.props;
   <img src={ icon }
     class="inline h-[16px] relative group-hover:-top-[1px] me-1"
     height="16"
+    width="16"
     role="presentation"
   /><span
     class:list={[ "link group-hover:text-white", { 'no-underline': noUnderline } ]}
