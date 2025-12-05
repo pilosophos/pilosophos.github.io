@@ -1,6 +1,6 @@
 ---
 import '../../styles/global.css'
-import { Image } from "astro:assets";
+import { Image, getImage } from "astro:assets";
 import { getCollection, render } from 'astro:content';
 import Favicon from '../../components/Favicon.astro';
 import ImageViewer from '../../components/ImageViewer.astro';
@@ -16,6 +16,20 @@ export async function getStaticPaths() {
 // 2. For your template, you can get the entry directly from the prop
 const { post } = Astro.props;
 const { Content } = await render(post);
+
+const pageUrl = Astro.site + Astro.url.pathname.slice(1);
+
+const humanDate = post.data.date?.toLocaleDateString("en-CA", {
+  day: 'numeric',
+  year: 'numeric',
+  month: 'long',
+  timeZone: 'UTC'
+}) || 'an unknown date';
+const ogImageUrl = new URL(
+  (await getImage({ src: post.data.cover, format: "png" })).src,
+  Astro.url,
+).href;
+
 ---
 
 <!DOCTYPE html>
@@ -24,6 +38,12 @@ const { Content } = await render(post);
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <Favicon />
+  <meta property="og:title" content={ post.data.title + " | Pilosophos' Circle" } />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content={ ogImageUrl } />
+  <meta property="og:url" content={ pageUrl } />
+  <meta property="og:description" content={ `"${post.data.title}" is a piece of art by Pilosophos published on ${humanDate}` } />
+  <meta name="description" content="">
   <title>{ post.data.title } | Pilosophos' Circle</title>
 </head>
 <body>
@@ -42,7 +62,7 @@ const { Content } = await render(post);
       class="py-2 border-b border-stone-500 mb-3 text-start"
     >
       <a id="back" href="/art" class="muted hover:text-pi-cyan font-display text-xl">
-        ← Back
+        ← <span id="back-label">To the Pilosophos art gallery</span>
       </a>
     </nav>
     <ImageDescription
@@ -59,7 +79,8 @@ const { Content } = await render(post);
 <script>
   const referrerHost = new URL(document.referrer).host;
   if (referrerHost.includes("localhost:") || referrerHost === "pilosophos.com") {
-    document.getElementById('back').href = document.referrer;
+    document.getElementById('back')!.href = document.referrer;
+    document.getElementById('back-label')!.textContent = 'Back';
   }
 </script>
 

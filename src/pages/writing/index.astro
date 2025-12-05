@@ -7,7 +7,10 @@ import ArticleHeader from '../../components/ArticleHeader.astro';
 const posts = await getCollection('writing')
   .then(collection => collection.filter( post => !post.data.tags.includes('unpublished') ));
 ---
-<DefaultLayout title="Writing">
+<DefaultLayout
+  title="Writing"
+  metadesc="A collection of writing from the desk of Pilosophos."
+>
   <ArticleHeader icon="/images/icons/winrep-1.png" title="Writing">
     I'm hoping to give Shakespeare a run for his money someday
   </ArticleHeader>

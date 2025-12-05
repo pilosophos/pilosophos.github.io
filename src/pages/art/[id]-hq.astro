@@ -21,7 +21,7 @@ const { post } = Astro.props;
   <Favicon />
   <title>{ post.data.title } | Pilosophos' Circle</title>
 </head>
-<body>
+<body class="w-max">
   <img
     slot="image"
     src={ post.data.cover.src }
