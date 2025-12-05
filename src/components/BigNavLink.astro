@@ -4,17 +4,33 @@ const { i, href, label, flavorText } = Astro.props;
 
 <a
   href={ href }
-  class="group rounded-lg block border border-pi-pink ps-5 md:ps-10 text-pi-pink bg-pi-pink"
+  class="cyber-pentagon relative group rounded-lg block border border-pi-pink ps-5 md:ps-10 text-pi-pink bg-pi-pink"
 >
-  <div class="rounded-lg bg-pi-gray group-hover:bg-pi-gray/80 group-active:bg-pi-pink group-active:text-pi-gray p-5 ps-8 text-lg transition-all duration-.15s">
+  <div class="
+    cyber-pentagon
+    rounded-lg bg-pi-gray p-5 ps-8 text-lg 
+    group-hover:ms-10 group-hover:bg-pi-gray/80 group-active:bg-pi-pink group-active:text-pi-gray
+    transition-bignavlink
+  ">
     <span class="text-4xl font-display">{ label }</span>
     <span class="block h-3 relative -top-2" aria-hidden="true">////////</span>
     <span class="block text-sm md:text-base font-display">{ flavorText }</span>
+
+  </div>
+  <div class="absolute right-0 top-0 -scale-x-100 text-4xl p-2">⇱</div>
+  <div class="absolute right-0 bottom-0 my-1 mx-2 opacity-50 text-end" aria-hidden="true">
+    INDEX { crypto.randomUUID().slice(0,8) }
   </div>
 </a>
 
 <style>
-  a, div {
+  .transition-bignavlink {
+    transition-property: margin-left;
+    transition-timing-function: var(--default-transition-timing-function);
+    transition-duration: var(--default-transition-duration);
+  }
+
+  .cyber-pentagon {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 30px 100%, 0 calc(100% - 30px));
   }
 </style>

@@ -87,6 +87,16 @@ summary {
     @apply inline-block w-full border text-center text-pi-cyan hover:bg-pi-cyan/20 active:bg-pi-cyan/30 transition-all rounded md:px-5 py-1;
   }
 
+  .social-link {
+    @apply px-2 py-1 text-pi-cyan border-b-2 border-pi-cyan
+    block w-50
+    md:inline md:w-auto
+    hover:bg-pi-cyan hover:text-pi-gray
+    active:bg-white active:border-white;
+    text-transform: uppercase;
+    transition-duration: .15s;
+  }
+
   .wordy-list {
     @apply list-disc ms-5 mb-5 flex flex-col gap-3;
   }
