@@ -159,6 +159,14 @@ const art = (
       // enable viewer closers
       document.getElementById('viewer__close').addEventListener('click', hideViewer);
       mainArea.addEventListener('click', e => { if (e.target === mainArea) hideViewer() });
+
+      // slightly hacky way to do arrow nav
+      document.addEventListener('keydown', (event) => {
+        if (!viewer.classList.contains('hidden')) {
+          if (event.key === "ArrowLeft") prevBtn.click();
+          if (event.key === "ArrowRight") nextBtn.click();
+        }
+      })
     }
 
     function showViewer(artId) {
