@@ -1,0 +1,23 @@
+---
+const {
+  class: className,
+  notch='30px',
+  corner='bottom-left'
+} = Astro.props;
+
+const polygons = {
+  'top-left': `polygon(0 ${notch}, ${notch} 0, 100% 0, 100% 100%, 0 100%);`,
+  'top-right': `polygon(calc(100% - ${notch}) 0, 100% ${notch}, 100% 100%, 0 100%, 0 0);`,
+  'bottom-left': `polygon(0 0, 100% 0, 100% 100%, ${notch} 100%, 0 calc(100% - ${notch}) )`,
+  'bottom-right': `polygon(0 0, 100% 0, 100% calc(100% - ${notch}), calc(100% - ${notch}) 100%, 0 100%);`,
+};
+const clipPath = polygons[corner as keyof typeof polygons];
+
+---
+
+<div
+  class=`${className} block`
+  style={ {'clipPath': clipPath} }
+>
+  <slot />
+</div>
