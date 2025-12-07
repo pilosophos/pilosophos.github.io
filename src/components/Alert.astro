@@ -1,18 +1,20 @@
 ---
+import CyberPentagon from "./CyberPentagon.astro";
+
 const { class: className } = Astro.props;
 ---
 
-<div class={`outer rounded-lg block border border-pi-yellow ps-12 text-pi-yellow bg-pi-yellow relative ${className}`}>
-  <img src="/images/icons/warning.png" width="32" height="32" class="object-contain absolute top-2 left-2"/>
-  <div class="inner rounded-lg bg-black/80 p-2 ps-5 min-h-16 flex items-center text-base/5">
+<div class=`${className} flex`>
+  <CyberPentagon class="bg-pi-yellow w-20 me-1 flex items-center justify-center" notch="15px" corner="bottom-left">
+    <img src='/images/icons/warning.png'
+      class="relative -top-1 left-[2px] object-contain mt-1"
+      role="presentation"
+      width=32
+    >
+  </CyberPentagon>
+  <div class="border border-s-15 border-pi-yellow p-5 text-pi-yellow flex items-center w-full bg-pi-gray/50">
     <div>
       <slot />
     </div>
   </div>
 </div>
-
-<style>
-  .outer, .inner {
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 20px 100%, 0 calc(100% - 20px));
-  }
-</style>
