@@ -31,7 +31,7 @@ guide describes how to patch your console's NAND to play DVDs of any region.
   * [Xbox 360 Neighborhood](https://consolemods.org/wiki/Xbox_360:Xbox_360_Neighborhood)
 
 ## Risks
-* This procedure involves rewriting the console's NAND, which is required for it
+This procedure involves rewriting the console's NAND, which is required for it
 to boot. Writing a bad NAND will brick your Xbox 360.
 
 ## Dumping your NAND
