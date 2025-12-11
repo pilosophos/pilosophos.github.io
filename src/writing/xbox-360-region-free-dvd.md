@@ -51,7 +51,7 @@ to boot. Writing a bad NAND will brick your Xbox 360.
   </aside>
 
 1. On your PC, extract and run [X360 NAND Dump Checker](https://consolemods.org/wiki/File:X360_NAND_Dump_Checker_GUI_v1.0.rar).
-    * Bad blocks are normal, as long as `"NAND Verified as OK!"` appears at the end. If it does not, you may need to start again from step 1.
+    * Bad blocks are normal, as long as `"NAND Verified as OK!"` appears at the end. If it does not, you may need to redo the steps in [Dumping your NAND](#dumping-your-nand).
 2. Press `Check NAND` and select `flashdmp.bin`.
 3. In the same directory as `flashdmp.bin`, you will see a new file called `cpukey.txt` containing your CPU key.
 
