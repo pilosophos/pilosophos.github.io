@@ -164,4 +164,11 @@ Black, white, green, oolong, and pu-erh tea all come from the same plant species
 
 ## Pinky
 Pinky is a really small scripting language designed to be easy to implement by
-people learning to write compilers and interpreters.
+people learning to write compilers and interpreters. ([source](https://pinky-lang.org/))
+
+## Calibri used to detect forgery
+In the wake of the Panama Papers, the former Prime Minister of Pakistan Nawaz Sharif
+was under investigation for tax evasion. He produced documents purportedly dated 2006.
+The documents were typeset in Calibri, a font created in 2004 and available in beta
+versions of Windows Vista and Microsoft Office 2007, before both became widely
+available in 2007. ([source](https://arstechnica.com/tech-policy/2017/07/not-for-the-first-time-microsofts-fonts-have-caught-out-forgers/))
