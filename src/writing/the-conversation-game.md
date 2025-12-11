@@ -83,4 +83,4 @@ If you have suggestions for how to adapt this to more than 2 players, please sen
 Most recent change last.
 
 1. 2025-07-11 21:40 UTC
-  * Added the neutral starting question to reduce the advantage for the first person to speak.
+    * Added the neutral starting question to reduce the advantage for the first person to speak.
