@@ -161,3 +161,7 @@ as its data rate and maximum delay. ATM is used in DSL networks.
 
 ## Tea
 Black, white, green, oolong, and pu-erh tea all come from the same plant species, the tea tree *(Camellia sinensis)*. The difference between them is the level of oxidization achieved when processing them, with white tea being the least oxidized and black tea the most oxidized.
+
+## Pinky
+Pinky is a really small scripting language designed to be easy to implement by
+people learning to write compilers and interpreters.
