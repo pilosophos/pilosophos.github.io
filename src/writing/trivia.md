@@ -172,3 +172,10 @@ was under investigation for tax evasion. He produced documents purportedly dated
 The documents were typeset in Calibri, a font created in 2004 and available in beta
 versions of Windows Vista and Microsoft Office 2007, before both became widely
 available in 2007. ([source](https://arstechnica.com/tech-policy/2017/07/not-for-the-first-time-microsofts-fonts-have-caught-out-forgers/))
+
+## Menko
+Menko are Japanese cards used to play the game of the same name. Players put down Menko, and use a third Menko to try to flip the other two over. Whoever flips a Menko gets to keep the flipped Menko.
+
+The earliest Menko-like tokens date back to the Edo period and were made from fired clay, but over time other materials were used. Lead Menko were banned in 1900 because kids would lick them to gain an advantage and poision themselves, ushering in an era of cardboard-backed cards.
+
+After the Japanese defeat during WW2, the MacArthur administration banned the glorification of the Japanese military and soldiery, and Menko started to depict baseball stars rather than planes and samurai. ([source](https://www.dking-gallery.com/store/menko.html))
