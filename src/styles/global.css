@@ -83,6 +83,28 @@ summary {
 }
 
 @layer components {
+  .tree-list {
+    & ul {
+      @apply ms-2 mt-1;
+
+      & li {
+        @apply relative border-s my-0 ps-6 py-1 mt-1;
+
+        &::before {
+          @apply w-5 h-5 absolute -top-1 -left-px border;
+
+          content: '';
+          display: block;
+          border-width: 0 0 1px 1px;
+        }
+      }
+
+      & li:last-child {
+        @apply border-transparent;
+      }
+    }
+  }
+
   .pill-link {
     @apply inline-block w-full border text-center text-pi-cyan hover:bg-pi-cyan/20 active:bg-pi-cyan/30 transition-all rounded md:px-5 py-1;
   }

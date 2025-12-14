@@ -1,9 +1,11 @@
 ---
-const { icon } = Astro.props;
+const { icon, class: className } = Astro.props;
 ---
-<img src={ icon }
-  class="inline w-[16px] h-[16px] relative me-1"
-  width="16"
-  height="16"
-  role="presentation"
-/><span><slot /></span>
+<span class={className}>
+  <img src={ icon }
+    class="inline w-[16px] h-[16px] relative me-0.5"
+    width="16"
+    height="16"
+    role="presentation"
+  /><slot />
+</span>

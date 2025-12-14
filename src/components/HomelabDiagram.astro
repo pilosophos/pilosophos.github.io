@@ -1,14 +1,85 @@
 ---
 import SmallIconSpan from "./SmallIconSpan.astro";
-
 ---
-<pre><SmallIconSpan icon="/images/icons/tiny/world-5.png">Internet</SmallIconSpan>
-  ┃
-<SmallIconSpan icon="/images/icons/tiny/rj_jack-0.png">Router               Netgear R7000</SmallIconSpan>
-  ┃
-  ┣━<SmallIconSpan icon="/images/icons/tiny/laptop_small-0.png">Main computer    HP Omen 15 (2017)</SmallIconSpan>
-  ┣━<SmallIconSpan icon="/images/icons/tiny/laptop_small-0.png">Home server      Lenovo Ideapad Y50-70</SmallIconSpan>
-  ┣━<SmallIconSpan icon="/images/icons/tiny/laptop_small-0.png">Travel computer  Lenovo Thinkpad X260</SmallIconSpan>
-  ┗━<SmallIconSpan icon="/images/icons/tiny/modem-1.png">3D print server  Samsung Galaxy S4</SmallIconSpan>
-    ┗━<SmallIconSpan icon="/images/icons/tiny/printer_desk-1.png">3D printer     Ender 3</SmallIconSpan>
-</pre>
+<ul class="text-md tree-list w-90 md:w-100">
+  <li>
+    <SmallIconSpan icon="/images/icons/tiny/world-5.png">Internet</SmallIconSpan>
+    <ul>
+      <li>
+        <div class="device">
+          <SmallIconSpan icon="/images/icons/tiny/rj_jack-0.png">Router</SmallIconSpan>
+          <span class="ms-5">Netgear R7000</span>
+        </div>
+
+        <ul>
+          <li>
+            <a href="#omen-15" class="device link">
+              <SmallIconSpan icon="/images/icons/tiny/laptop_small-0.png" class="device">Main computer</SmallIconSpan>
+              <span class="device-name">HP Omen 15 (2017)</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#ideapad" class="device link">
+              <SmallIconSpan icon="/images/icons/tiny/laptop_small-0.png" class="device">Home server</SmallIconSpan>
+              <span class="device-name">Lenovo Ideapad Y50-70</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#pocket-reform" class="device link">
+              <SmallIconSpan icon="/images/icons/tiny/laptop_small-0.png" class="device">Funputer</SmallIconSpan>
+              <span class="device-name">MNT Pocket Reform v1</span>
+            </a>
+
+            <ul>
+              <li class="device">
+                <SmallIconSpan icon="/images/icons/tiny/printer_desk-1.png" class="device">3D Printer</SmallIconSpan>
+                <span class="device-name">Ender 3</span>
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="#thinkpad-x260" class="device link">
+              <SmallIconSpan icon="/images/icons/tiny/laptop_small-0.png" class="device">Seriousputer</SmallIconSpan>
+              <span class="device-name">Thinkpad X260</span>
+            </a>
+          </li>
+
+        </ul>
+      </li>
+
+      <li>
+        Retired devices
+
+        <ul>
+          <li>
+            <a href="#galaxy-s4" class="device link">
+              <SmallIconSpan icon="/images/icons/tiny/modem-1.png" class="device"><strike>3D print server</strike></SmallIconSpan>
+              <span class="device-name">Samsung Galaxy S4</span>
+            </a>
+          </li>
+          <li>
+            <a href="#thinkpad-l420" class="device link">
+              <SmallIconSpan icon="/images/icons/tiny/laptop_small-0.png" class="device"><strike>Main computer</strike></SmallIconSpan>
+              <span class="device-name">Thinkpad L420</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<style>
+  .device {
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+  }
+
+  .device-name {
+    text-align: end;
+  }
+</style>
