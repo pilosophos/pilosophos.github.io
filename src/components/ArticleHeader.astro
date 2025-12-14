@@ -1,7 +1,7 @@
 ---
-const { icon, title, width } = Astro.props;
+const { icon, title, width, class: className } = Astro.props;
 ---
-<header class="container text-center mb-5 font-display">
+<header class=`container text-center mb-5 font-display ${className}`>
   <div>
     <img class="inline align-baseline me-1" src={ icon } role="presentation" width={ width }>
     <h1 class="text-4xl text-center inline">{ title }</h1>
