@@ -53,13 +53,14 @@ date: 2023-10-30
     const CHAR_INTERVAL = 1;
     const NEW_CHARS_PER_INTERVAL = 7;
     const CHAR_DECAY_RATE = 1/60;
-    const CHAR_FALL_SPEED = 6.5;
+    const CHAR_FALL_SPEED = 5.5;
+    let lastRender = -1000;
 
     init();
 
     function init() {
       let ctx = canvas.getContext("2d", { alpha: false });
-      requestAnimationFrame(() => fallingChars(ctx, 0, []));
+      requestAnimationFrame((timestamp) => fallingChars(ctx, 0, [], timestamp));
 
       resizeCanvas(ctx);
       addEventListener("resize", () => resizeCanvas(ctx));
@@ -70,32 +71,40 @@ date: 2023-10-30
       canvas.width = window.innerWidth;
       canvas.height = window.innerHeight;
       
-      ctx.font = "bold 3.5vw monospace";
+      ctx.font = "bold 5em monospace";
       ctx.fillStyle = "cyan";
     }
     
     const clamp = (num, min, max) => Math.min(Math.max(num, min), max);
     
-    function fallingChars(ctx, frameNbr, chars) {
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
+    function fallingChars(ctx, frameNbr, chars, timestamp) {
+      let elapsed = timestamp - lastRender;
+      
+      if (elapsed > 15) {
+        lastRender = timestamp;
 
-      for (let i = 0; i < chars.length; i++) {
-        let char = chars[i];
-        ctx.globalAlpha = clamp(char.alpha, 0, 1);
-        ctx.fillText(char.ascii, char.x, char.y);
-        
-        char.alpha -= CHAR_DECAY_RATE;
-        char.y += CHAR_FALL_SPEED;
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+        for (let i = 0; i < chars.length; i++) {
+          let char = chars[i];
+          ctx.globalAlpha = clamp(char.alpha, 0, 1);
+          ctx.fillText(char.ascii, char.x, char.y);
+          
+          char.alpha -= CHAR_DECAY_RATE;
+          char.y += CHAR_FALL_SPEED;
+        }
+
+        chars = chars.filter(c => c.alpha >= 0 || c.y < canvas.height);
+
+        if (frameNbr % CHAR_INTERVAL === 0) {
+          for (let i = 0; i < NEW_CHARS_PER_INTERVAL; i++) addChar(chars);
+          frameNbr = 0;
+        }
+
+        ++frameNbr;
       }
       
-      chars = chars.filter(c => c.alpha >= 0 || c.y < canvas.height);
-
-      if (frameNbr % CHAR_INTERVAL === 0) {
-        for (let i = 0; i < NEW_CHARS_PER_INTERVAL; i++) addChar(chars);
-        frameNbr = 0;
-      }
-      
-      requestAnimationFrame(() => fallingChars(ctx, ++frameNbr, chars));
+      requestAnimationFrame((timestamp) => fallingChars(ctx, frameNbr, chars, timestamp));
     }
 
     function addChar(chars) {
