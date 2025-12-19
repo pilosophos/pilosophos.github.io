@@ -310,7 +310,7 @@ horse races with *JRA-PAT,* or *JRA Personal Access Terminal,* developed by the 
   </figcaption>
 </figure>
 
-There are also systems which were marketed to the general public but possibly
+There are also programs which were marketed to the general public but possibly
 never sold, including the Famicom Fitness System, which would allow you to
 connect an exercise bike to your Famicom.
 
