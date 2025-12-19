@@ -117,7 +117,8 @@ Out of the box, it came included with a few programs: *Calculation Board*, a cal
 <figure class="flex flex-col justify-center items-center gap-3 xl:flex-row xl:w-280">
   <img src="/images/nes-article/family-basic-manual.png" alt="Manual page for Sample Program 8" width="500" class="me-3">
   <figcaption class="font-display">
-      <p>Page 101 of the <a href="https://archive.org/details/family-basic-v2-1-manual-600dpi-ozidual/Family%20Basic%20v2.1%20Manual">Family BASIC 2.1 manual</a>, showing the code for Sample Program 8. In the top right, it says（ゲームではありません）, translating to <i>"(This is not a game)."</i></p>
+      <p>Page 101 of the <a href="https://archive.org/details/family-basic-v2-1-manual-600dpi-ozidual/Family%20Basic%20v2.1%20Manual">Family BASIC 2.1 manual</a>, showing the code for Sample Program 8. In the top right, it says ゲームではありません, translating to <i>"This is not a game."</i></p>
+      <p class="text-sm">For Penpen, this is a matter of life or death.</p>
   </figcaption>
 </figure>
 
@@ -130,12 +131,12 @@ Many third-party games and programs made in Family BASIC were distributed in boo
   including the [best selling](https://www.guinnessworldrecords.com/world-records/72695-most-computer-sales) desktop computer of all time, the [Commodore 64](https://en.wikipedia.org/wiki/Commodore_64).
 
   <aside class="marginal-note">
-    For an example, see <a href="https://archive.org/details/more-than-32-basic-programs-for-the-commodore-64"><i>More Than 32 BASIC Programs for the Commodore 64</i></a>.
+    See <a href="https://archive.org/details/more-than-32-basic-programs-for-the-commodore-64"><i>More Than 32 BASIC Programs for the Commodore 64</i></a> for some examples for the C64.
   </aside>
 </div>
 
-Although most of the examples focused on games, since Family BASIC was a complete
-programming language, you could make anything you wanted. In fact, using the `CALL`
+Although most of the examples focused on games, Family BASIC was a complete
+programming language, so you could make anything you wanted. In fact, using the `CALL`
 instruction, you could take full advantage of the CPU by making low-level system
 calls that weren't normally available.
 
@@ -179,7 +180,7 @@ slotted into the disk drive part of the addon.
       You can read the <a href="http://gameidiri.cocolog-nifty.com/blog/2007/02/basic_f283.html">2007 article</a> in Japanese,
       or a modern version of the mod on the <a href="https://github.com/TakuikaNinja/FC-DiskBASIC">FC-DiskBASIC</a> Github.
     </p>
-    <p>And yes, Nintendo offered technical support for the FDS <a href="https://web.archive.org/web/20071021081932/http://www.nintendo.co.jp/n10/repair/price.html#uketsuke_syuryo">until 2007</a>.</p>
+    <p>And yes, Nintendo really offered technical support for the FDS <a href="https://web.archive.org/web/20071021081932/http://www.nintendo.co.jp/n10/repair/price.html#uketsuke_syuryo">until 2007</a>.</p>
 
   </div>
 </div>
@@ -212,12 +213,11 @@ he wanted his company to be a *key player* in the upcoming Information Age. In
 a speech given to his employees, he proclaimed:
 
 <blockquote>
-  <p>
+  <p class="mb-0!">
     "From now on, our purpose is not only to develop new exciting entertainment software
 but to provide information that can be efficiently used in each household."
   </p>
-
-  <cite class="not-italic text-sm">Translation from *Game Over, Press Start to Continue: How Nintendo Conquered the World* by David Sheff & Andy Eddy, p. 77.</cite>
+  <cite class="not-italic text-sm">Translation from <i>Game Over, Press Start to Continue: How Nintendo Conquered the World</i>, p. 77.</cite>
 </blockquote>
 
 <div class="relative">
@@ -286,6 +286,7 @@ The most popular use of the Famicom Network System was gambling on
 horse races with *JRA-PAT,* or *JRA Personal Access Terminal,* developed by the [Japan Racing Association](https://en.wikipedia.org/wiki/Japan_Racing_Association). It was so successful that it captured 35% of the Japanese horse betting market, competing with PCs and dedicated betting terminals.
 
 <div class="relative">
+
   Unfortunately, much of the software released to use the Famicom Network System has
   become lost media since the network was taken down. For instance, there are Japanese
   newspapers mentioning *Post Transfer Home Service* for dealing
@@ -333,7 +334,7 @@ to concerns about underage gambling.
 
 TODO: link to article
 
-With the onset of the [Lost Decades](https://en.wikipedia.org/wiki/Lost_Decades),
+With the onset of the [Lost Decades](https://en.wikipedia.org/wiki/Lost_Decades) starting
 in the early 90s, the Japanese economy stagnated significantly. With much of the
 Famicom network traffic at its peak being stock trading, the ensuing lack of
 interest in stocks was the final nail in the coffin for a service that was already
