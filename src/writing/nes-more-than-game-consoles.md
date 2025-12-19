@@ -302,7 +302,7 @@ horse races with *JRA-PAT,* or *JRA Personal Access Terminal,* developed by the 
   <img src="/images/nes-article/newspaper.png" alt="A news clipping talking about " width="600">
   <figcaption class="font-display">
     <p>      
-      This news article reports on upcoming programs that would let you buy
+      This news article tells of upcoming programs that would let you buy
       train tickets, do online shopping, and make hotel reservations all from
       your very own Famicom.
     </p>
