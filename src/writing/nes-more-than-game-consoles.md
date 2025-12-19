@@ -30,7 +30,7 @@ Nintendo Entertainment System (NES), originally released in 1983 as the Family C
 or Famicom in Japan.
 
 <figure class="flex flex-col justify-center items-center gap-3 xl:flex-row xl:w-280">
-  <img src="/images/nes-article/famicom.png" alt="Example handstamp as it appears in the Postmark Bulletin, with serial number and date." width="500" class="me-3">
+  <img src="/images/nes-article/famicom.png" alt="A picture of the Famicom." width="500" class="me-3">
   <figcaption class="font-display">
       The original Family Computer, or Famicom, as released in Japan.
       The NES that we got in the West looks completely different, like a VCR,
@@ -79,13 +79,13 @@ BASIC programming language,
 plus the included Famicom keyboard that connected to the [expansion port](https://www.nintendoworldreport.com/feature/27664/nintendos-expansion-ports)
 in front of the console.
 
-Family BASIC came with a few programs: *Calculation Board*, a calculator,
+Out of the box, it came included with a few programs: *Calculation Board*, a calculator,
 *Music Board*, a music sequencer, and *Message Board*, for writing notes. A nearly identical version of Family BASIC, called Playbox BASIC, released for the [Sharp C1](https://www.nesdev.org/wiki/Sharp_C1) TV-plus-Famicom combo system comes with *Biorhythm Board* instead of Message Board.
 
 <figure class="flex flex-col justify-center items-center gap-3 xl:flex-row xl:w-280">
   <img src="/images/nes-article/biorhythm-board.png" alt="Manual page for Sample Program 8" width="500" class="me-3">
   <figcaption class="font-display">
-      <p><a href="https://en.wikipedia.org/wiki/Biorhythm_(pseudoscience)">Biorhythm</a> Board tries to pseudoscientifically predict fluctuations in your physiological, emotional, and intellectual state.</p>
+      <p>Biorhythm Board tried to predict fluctuations in your physiological, emotional, and intellectual state using psuedoscientific <a href="https://en.wikipedia.org/wiki/Biorhythm_(pseudoscience)">biorhythms</a>. Other than this replacing Message Board, Playbox BASIC was otherwise identical to Family BASIC.</p>
       <p><cite class="text-sm">Source: <a href="https://web.archive.org/web/20190915234033/http://www.sara.to/sigure/game/g12/index.html">Playbox BASIC vs. Famicom BASIC comparison page</a> (in Japanese)</cite></p>
   </figcaption>
 </figure>
@@ -118,7 +118,6 @@ Family BASIC came with a few programs: *Calculation Board*, a calculator,
   <img src="/images/nes-article/family-basic-manual.png" alt="Manual page for Sample Program 8" width="500" class="me-3">
   <figcaption class="font-display">
       <p>Page 101 of the <a href="https://archive.org/details/family-basic-v2-1-manual-600dpi-ozidual/Family%20Basic%20v2.1%20Manual">Family BASIC 2.1 manual</a>, showing the code for Sample Program 8. In the top right, it says（ゲームではありません）, translating to <i>"(This is not a game)."</i></p>
-      <p class="text-sm">The <a href="https://archive.org/details/family-basic-v3-manual-600dpi-ozidual/Family%20Basic%20V3%20Manual%20%28J%20OCR%29/">Family Basic v3 Manual</a> is also available on Internet Archive.</p>
   </figcaption>
 </figure>
 
@@ -224,7 +223,7 @@ but to provide information that can be efficiently used in each household."
 <div class="relative">
 
   The keystone to this vision was the Famicom Network System, developed
-  in cooperation with Nomura Securities, a stock trading company.
+  in cooperation with Nomura Securities, a stock brokering company.
   Nintendo would build a modem for the Famicom, and Nomura Securities would build
   a database that could be reached using the modem to access up-to-date stock market
   data.
@@ -244,7 +243,7 @@ but to provide information that can be efficiently used in each household."
       Like <a href="https://en.wikipedia.org/wiki/Dial-up_Internet_access">dial-up internet</a>, the Famicom Modem used
       a phone line to connect Famicoms to services on the network.
     </p>
-    <cite class="not-italic text-sm">Source: <a href="https://web.archive.org/web/20230201205244/https://glitterberri.com/developing-the-famicom-modem/">Developing the Famicom Modem</a></cite>
+    <cite class="text-sm">Source: <a href="https://web.archive.org/web/20230201205244/https://glitterberri.com/developing-the-famicom-modem/">Developing the Famicom Modem</a> in <i>Nikkei Electronics</i>, translated by Glitterberri</cite>
   </figcaption>
 </figure>
 
@@ -255,44 +254,75 @@ already be in place and they could figure out making online games fun later.
 Ultimately, this meant that few games were actually released for the Famicom Network System
 aside from Konami's *Tsuushin Shogi Club*.
 
-Instead, the Famicom Network System launched with exciting titles like
-*Nomura no Famicom Trade*, which allowed you to trade on the stock market. You
-would insert the *Tsuushin Cartridge* <span class="muted">("Communication Cartridge")</span> into the modem,
-and with the number pad on the Famicom Network System's special controller, you
-could choose which stocks you wanted and in what quantity.
+<div class="relative">
 
-Following release, a number of other financial companies wanted in on the action,
-leading to *Cosmo no Famicom Trade,* *Shin Nihon no Famicom Trade,* and
-*Kangyo Sumimaru no Famicom Trade,* among others.
+  Instead, the Famicom Network System launched with exciting titles like
+  *Nomura no Famicom Trade*, which allowed you to trade on the stock market. You
+  would insert the *Tsuushin Cartridge* <span class="muted">("Communication Cartridge")</span> into the modem,
+  and with the number pad on the Famicom Network System's special controller, you
+  could choose which stocks you wanted and in what quantity.
 
-TODO: add box art for these titles, B-roll footage
-TODO: link to commercial https://www.youtube.com/watch?v=Q9gbIZY1WY4
-TODO: cool site https://famicom.suppa.jp/ish11.html
+  <figure class="flex flex-col text-center items-center marginal-note">
+    <img src="/images/nes-article/fns-controller.jpg" alt="A picture of the Famicom Network System controller" width="280">
+    <figcaption>
+      A Famicom Network System controller with numpad. <cite>Source: <a href="https://www.raphnet.net/divers/famicom_network_controller_hvc_051/index_en.php">raphnet.net</a></cite>
+    </figcaption>
+  </figure>
+</div>
+
+
+
+<figure class="flex flex-col justify-center items-center gap-10 xl:flex-row xl:w-280">
+  <img src="/images/nes-article/fns-software.jpg" alt="A picture of some software for the Famicom Network System" width="400">
+  <figcaption class="font-display">
+    <p>      
+      Copies of <i>Nomura no Famicom Trade,</i> as well as programs for other stock brokers can be seen in this picture. The box featuring <a href="https://en.wikipedia.org/wiki/Doraemon">Doraemon</a> is <i>Sumitomo Homeline</i>, a program for doing your home banking with Sumitomo Bank.
+    </p>
+    <cite class="text-sm">Source: <a href="https://famicom.suppa.jp/ish11.html">famicom.suppa.jp</a></cite>
+  </figcaption>
+</figure>
 
 The most popular use of the Famicom Network System was gambling on
-horse races run by the [Japan Racing Association](https://en.wikipedia.org/wiki/Japan_Racing_Association)
-with *JRA-PAT,* the JRA Personal Access Terminal. It was so successful that it
-captured 35% of the Japanese horse betting market, competing with PCs and dedicated betting terminals.
+horse races with *JRA-PAT,* or *JRA Personal Access Terminal,* developed by the [Japan Racing Association](https://en.wikipedia.org/wiki/Japan_Racing_Association). It was so successful that it captured 35% of the Japanese horse betting market, competing with PCs and dedicated betting terminals.
 
-TODO: add box art, link to videos and music [Kyoutei](https://en.wikipedia.org/wiki/Ky%C5%8Dtei) motorboat races with *PiT - Motorboat Race*. https://www.youtube.com/watch?v=I1g-VV6Rf3Q
+<div class="relative">
+  Unfortunately, much of the software released to use the Famicom Network System has
+  become lost media since the network was taken down. For instance, there are Japanese
+  newspapers mentioning *Post Transfer Home Service* for dealing
+  with the post office, *Cattleya AV Club* for buying CDs, and a program for
+  buying clothes, but the whereabouts of these cartridges are unknown.
 
-Unfortunately, much of the software released to use the Famicom Network System has
-become lost media since the network was taken down. For instance, there are Japanese
-news articles and advertisements for titles like *Post Transfer Home Service* for dealing
-with the post office, or *Cattleya AV Club* for buying CDs, and software for
-buying clothes. If you find them, the folks at [lostmediawiki.com](https://lostmediawiki.com/Family_Computer_Network_System/TV-NET_(partially_found_ROM_and_peripherals_of_telecommunication_service_for_Famicom;_1987-1991))
-would be very interested.
+  <aside class="marginal-note">
+    If you have copies of these programs, the folks at <a class="https://lostmediawiki.com/Family_Computer_Network_System/TV-NET_(partially_found_ROM_and_peripherals_of_telecommunication_service_for_Famicom;_1987-1991)">lostmediawiki.com</a>
+    would love to hear from you and can help archive the software for future generations.
+  </aside>
+</div>
 
-TODO: Add news article images from lost media article eg. https://web.archive.org/web/20230320125945/http://www.microcore.jp/publicity/newspaper/2/p03.jpg
+<figure class="flex flex-col justify-center items-center gap-10 xl:flex-row xl:w-280">
+  <img src="/images/nes-article/newspaper.png" alt="A news clipping talking about " width="600">
+  <figcaption class="font-display">
+    <p>      
+      This news article reports on upcoming programs that would let you buy
+      train tickets, do online shopping, and make hotel reservations all from
+      your very own Famicom.
+    </p>
+    <cite class="text-sm">Source: <a href="https://web.archive.org/web/20230320125945/http://www.microcore.jp/publicity/newspaper/2/p03.jpg">Tokyo Sports News, 1989 November 16</a></cite>
+  </figcaption>
+</figure>
 
 There are also systems which were marketed to the general public but possibly
-never sold, including the Famicom Fitness System, developed by Nintendo,
-Fukuoka University, and Bridgestone <span class="muted">(the tire company)</span>.
-You could connect an ergometer to your Famicom, enter your weight and age,
-then pedal for 12 minutes. After uploading your pedalling data, you would receive 
-a personalized exercise regimen.
+never sold, including the Famicom Fitness System, which would allow you to
+connect an exercise bike to your Famicom.
 
-TODO: this is on the lost media article https://lostmediawiki.com/Family_Computer_Network_System/TV-NET_(partially_found_ROM_and_peripherals_of_telecommunication_service_for_Famicom;_1987-1991)
+
+<figure class="flex items-center gap-10 xl:flex-row xl:w-280">
+  <img src="/images/nes-article/fitness-system.jpg" alt="A picture of some software for the Famicom Network System" class="h-70">
+  <img src="/images/nes-article/fitness-system-2.jpg" alt="A picture of some software for the Famicom Network System" class="h-70">
+  <figcaption class="font-display">
+    <p>With an exercise bike connected, you could then enter your weight and age, and pedal for 12 minutes. After uploading your pedalling data, you would receive a personalized exercise regimen.</p>
+    <cite class="text-sm">Source: <a href="https://famicom.suppa.jp/mab17.html">famicom.suppa.jp</a></cite>
+  </figcaption>
+</figure>
 
 ## Legacy
 
