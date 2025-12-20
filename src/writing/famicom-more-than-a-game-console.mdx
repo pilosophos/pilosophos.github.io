@@ -19,25 +19,25 @@ import WideShowcase from '@components/writing/WideShowcase.astro'
   </figure>
 </div>
 
-I recently took part in an online debate about whether Nintendo and other game
-console manufacturers should allow modding. One question that came up during
-this was whether or not there is a clear distinction between a game console and
-a personal computer. While researching this question, I came across a lot of
-interesting peripherals and software for using the Nintendo Entertainment System
-for more than just for games, from programming in BASIC to trading stocks.
+Ever since the release of the Steam Deck, which allows you to play PC games on a
+handheld game console, the distinction between a game console and PC has been
+significantly blurred. But what if I told you that all the way back in the 1980s,
+the difference between a PC and game console were already becoming indistinguishable,
+and that the console we got in the West as the NES was supposed to be a general-purpose
+computer?
 
 ## The Famicom: a Family Computer
 
 While Nintendo had previously flirted with video games 
 with the [Color TV-Game](https://en.wikipedia.org/wiki/Color_TV-Game), home consoles
-that could only play one game each, Nintendo became a household name with the
-Nintendo Entertainment System (NES), originally released in 1983 as the Family Computer,
+that could only play one game each, Nintendo really became a household name with the
+Nintendo Entertainment System (NES), a system originally released in 1983 as the Family Computer,
 or Famicom in Japan.
 
 <WideShowcase>
   <img slot="showcased" src="/images/nes-article/famicom.png" alt="A picture of the Famicom." width="500"></img>
 
-  The original Family Computer, or Famicom, as released in Japan.
+  The original Family Computer, or Famicom.
   The NES that we got in the West was redesigned to resemble a VCR,
   to distance itself from game consoles after the
   [American Video Game Crash of 1983](https://en.wikipedia.org/wiki/Video_game_crash_of_1983).
@@ -50,11 +50,17 @@ than a PC and would be something even kids could have fun with.
 He appointed [Masayuki Uemura](https://en.wikipedia.org/wiki/Masayuki_Uemura) as head of Nintendo R&D2,
 the new hardware division of the company, to design what would become the Famicom.
 
-Since the Famicom was intended to be useful as a general purpose computer,
-part of its basic design was a chip that would allow peripherals to
-talk directly to the CPU― anything from keyboards, to modems, to disk drives.
+<HasMarginalNote>
+  Since the Famicom was intended to be useful as a general-purpose computer,
+  part of its basic design was a chip that would allow peripherals to
+  talk directly to the CPU― anything from keyboards, to modems, to disk drives.
 
-TODO: which chip is this?
+  <aside slot="marginal-note">
+    I'm unsure whether this manifested as a chip separate from the CPU in the
+    final design or not. This may have just become the [interrupt](https://www.nesdev.org/wiki/CPU_interrupts)
+    feature in the Famicom's CPU.
+  </aside>
+</HasMarginalNote>
 
 <blockquote>
   <p>
@@ -63,10 +69,10 @@ TODO: which chip is this?
     toylike, yet it included the capability to do far more than play games."
   </p>
 
-  <cite class="not-italic">― From [Game Over, Press Start to Continue: How Nintendo Conquered the World](https://archive.org/details/0966961706) (p. 34)</cite>
+  <cite class="not-italic">― From *[Game Over, Press Start to Continue: How Nintendo Conquered the World](https://archive.org/details/0966961706)* (p. 34)</cite>
 </blockquote>
 
-## Family BASIC, Data Recorder, and Disk System
+## Famicom addons
 
 <HasMarginalImg>
   Sure enough in 1984, a year after its release, consumers got [Family BASIC](https://www.mariowiki.com/Family_BASIC),
@@ -79,7 +85,7 @@ TODO: which chip is this?
 </HasMarginalImg>
 
 Out of the box, it came included with a few programs: *Calculation Board*, a calculator,
-*Music Board*, a music sequencer, and *Message Board*, for writing notes. A nearly identical version of Family BASIC, called Playbox BASIC, released for the [Sharp C1](https://www.nesdev.org/wiki/Sharp_C1) TV-plus-Famicom combo system comes with *Biorhythm Board* instead of Message Board.
+*Music Board*, a music sequencer, and *Message Board*, for writing notes. A nearly identical version of Family BASIC, called Playbox BASIC, released for the [Sharp C1](https://www.nesdev.org/wiki/Sharp_C1) TV-plus-Famicom combo system, comes with *Biorhythm Board* instead of Message Board.
 
 <WideShowcase>
   <img slot="showcased" src="/images/nes-article/biorhythm-board.png" alt="Manual page for Sample Program 8" width="500"></img>
@@ -87,7 +93,7 @@ Out of the box, it came included with a few programs: *Calculation Board*, a cal
   Biorhythm Board tried to predict fluctuations in your physiological,
   emotional, and intellectual state using psuedoscientific
   [biorhythms](https://en.wikipedia.org/wiki/Biorhythm_(pseudoscience)).
-  Other than this replacing Message Board, Playbox BASIC was otherwise identical
+  Other than replacing Message Board, Playbox BASIC was otherwise identical
   to Family BASIC.
 
   <cite slot="subcaption">
@@ -100,8 +106,7 @@ Out of the box, it came included with a few programs: *Calculation Board*, a cal
 
   It also had a manual that showed you how
   to make eight different sample games with BASIC, including *Route 66*, a top-down driving
-  game; *Type Master*, a typing game; and *Sample Program 8*, a game where Penpen grabs
-  flags while evading a Nitanita, which the manual insists is just a tech demo, not a game.
+  game, *Type Master*, a typing game, and *Sample Program 8*, which the manual insists is just a tech demo, not a game.
 
   <img slot="img" src="/images/nes-article/family-basic-sprites.png" alt="Sprites provided with Family BASIC that you could use in your own programs." width="200"></img>
   <figcaption slot="caption">
@@ -130,18 +135,19 @@ Many third-party games and programs made in Family BASIC were distributed in boo
 
 <HasMarginalNote>
   While typing the full code to a program may seem tedious to us today, this was
-  a fairly common way to distribute programs for computers at the time,
-  including the [best selling](https://www.guinnessworldrecords.com/world-records/72695-most-computer-sales) desktop computer of all time, the [Commodore 64](https://en.wikipedia.org/wiki/Commodore_64).
+  a fairly common way to distribute programs at the time,
+  including for the [best selling](https://www.guinnessworldrecords.com/world-records/72695-most-computer-sales) desktop computer of all time, the [Commodore 64](https://en.wikipedia.org/wiki/Commodore_64).
 
   <aside slot="marginal-note">
-    See <a href="https://archive.org/details/more-than-32-basic-programs-for-the-commodore-64"><i>More Than 32 BASIC Programs for the Commodore 64</i></a> for some examples for the C64.
+    See <a href="https://archive.org/details/more-than-32-basic-programs-for-the-commodore-64"><i>More Than 32 BASIC Programs for the Commodore 64</i></a> for some examples in English.
   </aside>
 </HasMarginalNote>
 
 Although most of the examples focused on games, Family BASIC was a complete
-programming language, so you could make anything you wanted. In fact, using the `CALL`
-instruction, you could take full advantage of the CPU by making low-level system
-calls that weren't normally available.
+programming language, so you could make anything you wanted. If you knew how the
+hardware worked (or were patient enough to figure it out), you could even unlock
+the Famicom's full power by calling low-level CPU instructions with the `CALL`
+function.
 
 <div class="relative">
 
@@ -200,46 +206,43 @@ slotted into the disk drive part of the addon.
   </figure>
 </div>
 
-Certain games would write save data to the Disk Card, and you could even participate
-in nationwide leaderboards by inserting it into a Disk Fax kiosk to fax your
-scores to Nintendo. You might even call this Nintendo's first "online gaming" service.
+Certain Disk Writer kiosks were also fax enabled. Some Disk Card games would
+write your scores to the disk, and you would take it to one of these Disk Fax
+kiosks to fax your scores to Nintendo, allowing you to participate in a
+nationwide leaderboard. It's a bit of a stretch, but you could arguably call this
+Nintendo's first "online gaming" service.
 
 ## Famicom Network System
 
-Yamauchi was a staunch believer in Nintendo as more than just a game company―
-he wanted his company to be a *key player* in the upcoming Information Age. In
-a speech given to his employees, he proclaimed:
+<HasMarginalImg>
+  Yamauchi was a staunch believer in Nintendo as more than just a game company―
+  he wanted his company to be a *key player* in the upcoming Information Age. In
+  a speech given to his employees, he proclaimed:
+
+  <img slot="img" src="/images/nes-article/famicom-modem.jpg" alt="A picture of a Famicom Network System peripheral" width="280"></img>
+  <figcaption slot="caption">A Famicom Network System modem attached to a Famicom.</figcaption>
+
+</HasMarginalImg>
 
 <blockquote>
-  <p class="mb-0!">
-    "From now on, our purpose is not only to develop new exciting entertainment software
+  "From now on, our purpose is not only to develop new exciting entertainment software
 but to provide information that can be efficiently used in each household."
-  </p>
-  <cite class="not-italic text-sm">Translation from <i>Game Over, Press Start to Continue: How Nintendo Conquered the World</i>, p. 77.</cite>
+  <cite class="not-italic text-sm block">Translation from <i>Game Over, Press Start to Continue: How Nintendo Conquered the World</i>, p. 77.</cite>
 </blockquote>
 
-<div class="relative">
-
-  The keystone to this vision was the Famicom Network System, developed
-  in cooperation with Nomura Securities, a stock brokering company.
-  Nintendo would build a modem for the Famicom, and Nomura Securities would build
-  a database that could be reached using the modem to access up-to-date stock market
-  data.
-
-  <figure class="flex flex-col text-center items-center marginal-note">
-    <img src="/images/nes-article/famicom-modem.jpg" alt="A picture of a Famicom Network System peripheral" width="280"></img>
-    <figcaption>
-      A Famicom Network System modem attached to a Famicom.
-    </figcaption>
-  </figure>
-</div>
+The keystone to this vision was the Famicom Network System, developed
+in cooperation with Nomura Securities, a stock brokering company.
+Nintendo would build a modem for the Famicom, and Nomura Securities would build
+a database that could be reached using the modem to access up-to-date stock market
+data.
 
 <figure class="flex flex-col justify-center items-center gap-3 xl:flex-row xl:w-280">
   <img src="/images/nes-article/network-diagram.jpg" alt="A diagram of the Famicom Network System" width="500" class="me-3"></img>
   <figcaption class="font-display">
     <p>
       Like <a href="https://en.wikipedia.org/wiki/Dial-up_Internet_access">dial-up internet</a>, the Famicom Modem used
-      a phone line to connect Famicoms to services on the network.
+      a phone line to connect Famicoms to services on the network. Data would be encoded as sound and travel through the telephone line,
+      and finally decoded back into data by the modem.
     </p>
     <cite class="text-sm">Source: <a href="https://web.archive.org/web/20230201205244/https://glitterberri.com/developing-the-famicom-modem/">Developing the Famicom Modem</a> in <i>Nikkei Electronics</i>, translated by Glitterberri</cite>
   </figcaption>
@@ -351,7 +354,7 @@ difficult to set up and use.
 ## Legacy
 
 <HasMarginalImg>
-  The ideas behind the Famicom Network led directly to the development of the
+  Despite its demise, the ideas behind the Famicom Network System led directly to the development of the
   Satellaview, a satellite service for the Super Famicom (known as the
   Super Nintendo in the West). Satellaview allowed users to receive satellite
   broadcasts with the Satellaview peripheral, and download games, magazines, and 
@@ -367,14 +370,14 @@ became the norm with consoles like the Sega Dreamcast, which had an inbuilt
 modem and yet another re-release of JRA-PAT that had [excellent music](https://www.youtube.com/watch?v=BeZw7qU2ju4).
 
 Nowadays, we often take both our PCs and the internet for granted. Everywhere we
-go, we are constantly connected services that let us do everything the Famicom
-could to do, and more. But for a time, not every home had a PC.
+go, we are constantly connected to services that let us do everything the Famicom
+could do and more. But for a time, not every home had a PC.
 You might just have a TV, a landline telephone, and a Famicom that was more than
 meets the eye.
 
 ## Your game consoles are so much more
 
-Even though Nintendo no longer designs game consoles to be general purpose computers,
+Even though Nintendo no longer designs game consoles to be general-purpose computers,
 most game consoles nowadays are essentially PCs with specialized gaming hardware.
 
 The [original Xbox](https://en.wikipedia.org/wiki/Xbox_(console)) (short for DirectX Box),
@@ -385,7 +388,7 @@ is really just an x86 Intel Pentium PC with a customized version of Windows for 
   and [OtherOS](https://en.wikipedia.org/wiki/OtherOS). This was such a useful
   feature that researchers built [compute clusters using PS3s](https://en.wikipedia.org/wiki/PlayStation_3_cluster) to speed up black hole
   simulations, cryptography research, and analyzing satellite imagery. When Sony
-  removed the OtherOS feature in 2010, a class-action lawsuit was brought against them,
+  removed the OtherOS feature in 2010, a [class-action lawsuit](https://web.archive.org/web/20160322110301/http://topclassactions.com/lawsuit-settlements/lawsuit-news/12043-appellate-court-puts-ps3-class-action-lawsuit-back-game/) was brought against them,
   proving that people really did care about Linux on their game consoles.
 
   <img slot="img" src="/images/nes-article/gravity-grid.jpg" width="250"></img>
@@ -396,14 +399,14 @@ is really just an x86 Intel Pentium PC with a customized version of Windows for 
 </HasMarginalImg>
 
 The Nintendo Switch is an ARM-based computer capable of dual-booting into Linux
-and Android with [Switchroot](https://switchroot.org/). It's a nifty device that
-you can carry around to do most things you'd do with a PC, and it even comes with
+and Android with [Switchroot](https://switchroot.org/). Using Linux on the Switch is great because
+you can carry it around to do most things you'd do with a PC, and it even comes with
 a convenient dock so you can connect it with a keyboard, mouse, and monitor when
 you're at home.
 
 The catch? Nintendo makes it as hard as humanly possible to do so. Developers had
 to hack the device by [shorting two pins](https://www.bleepingcomputer.com/news/hardware/researcher-discloses-unpatchable-nintendo-switch-exploit/)
-on the Joycon connector to gain access the bootloader to install other OSes. When this was publicized, Nintendo changed the hardware so you now
+on the Joycon connector to gain access the bootloader and install other OSes. When this was publicized, Nintendo changed the hardware so you now
 need to [install a modchip](https://switch.hacks.guide/user_guide/modchip/) to do so, requiring incredibly precise microsoldering skills.
 
 In our hands, we hold the ghost of Nintendo's dream: a Nintendo computer in
