@@ -13,6 +13,7 @@
   --font-mono: "DOSV JPN24", sans-serif;
   --font-display: "DOSV JPN24", sans-serif;
   --font-ascii-art: "NEC", sans-serif;
+  --font-jp: "JFDot jiskan24h", sans-serif;
 
   --spacing: 4px;
 
@@ -225,4 +226,9 @@ summary {
   font-family: "PressStart2P";
   src: url( '/fonts/PressStart2P-Regular.ttf' );
   size-adjust: 70%;
+}
+
+@font-face {
+  font-family: "JFDot jiskan24h";
+  src: url( '/fonts/JF-Dot-jiskan24h.ttf' );
 }
