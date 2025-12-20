@@ -4,5 +4,5 @@ const { icon, href, label } = Astro.props;
 
 <a href={ href } class="link inline-flex flex-col items-center">
   <img src={ icon } height="64" class="h-[64px] object-contain mb-3"/>
-  { label }
+  <slot/>{ label }
 </a>

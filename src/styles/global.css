@@ -13,7 +13,8 @@
   --font-mono: "DOSV JPN24", sans-serif;
   --font-display: "DOSV JPN24", sans-serif;
   --font-ascii-art: "NEC", sans-serif;
-  --font-jp: "JFDot jiskan24h", sans-serif;
+  --font-cjk: "JFDot milkjf16", sans-serif;
+  --font-cjk-display: "JFDot jiskan24h", sans-serif;
 
   --spacing: 4px;
 
@@ -231,4 +232,9 @@ summary {
 @font-face {
   font-family: "JFDot jiskan24h";
   src: url( '/fonts/JF-Dot-jiskan24h.ttf' );
+}
+
+@font-face {
+  font-family: "JFDot milkjf16";
+  src: url( '/fonts/JF-Dot-milkjf16.ttf' );
 }
