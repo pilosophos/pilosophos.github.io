@@ -2,6 +2,7 @@
 title: Xbox 360 development tools
 description: What you need to get started with Xbox 360 homebrew development
 tags: [nonfiction, xbox360]
+published: 2023-12-26
 ---
 # Xbox 360 development tools
 <p class="lead font-display !text-xl">What you need to get started with Xbox 360 homebrew development</p>

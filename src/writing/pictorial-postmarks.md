@@ -2,6 +2,7 @@
 title: How to get a pictorial postmark
 description: Fancy schmancy stamps that your postal service will stamp on your stamps
 tags: [nonfiction]
+published: 2024-09-02
 ---
 
 # How to get a pictorial postmark

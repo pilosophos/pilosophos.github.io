@@ -2,6 +2,7 @@
 title: North Downtown Station
 description: The feeling of a Malaszec train station
 tags: [fiction, Malaszec, magical cyberpunk]
+published: 2023-06-06
 ---
 # North Downtown Station
 

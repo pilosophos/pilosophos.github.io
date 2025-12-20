@@ -14,6 +14,8 @@ const writing = defineCollection({
     title: z.string(),
     description: z.string(),
     tags: z.array(z.string()),
+    published: z.optional(z.date()),
+    updated: z.optional(z.date()),
   })
 });
 

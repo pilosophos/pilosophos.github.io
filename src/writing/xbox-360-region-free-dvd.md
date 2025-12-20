@@ -2,6 +2,7 @@
 title: "Xbox 360 region-free DVD playback with RGH/JTAG"
 description: "A simple guide to unlocking region-free DVD playback on the Xbox 360, provided you already have RGH/JTAG"
 tags: [nonfiction, xbox360]
+published: 2025-12-06
 ---
 # Xbox 360 region-free DVD playback with RGH/JTAG
 Even with an RGH or JTAG'd Xbox 360, your console will likely be unable to play

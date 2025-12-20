@@ -2,6 +2,8 @@
 title: Trivia
 description: An unsorted collection of miscellaneous trivia
 tags: [nonfiction]
+published: 2025-08-21
+updated: 2025-12-12
 ---
 
 # Trivia

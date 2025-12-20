@@ -2,6 +2,8 @@
 title: The Conversation Game
 description: A game I invented to practice my conversation skills
 tags: [nonfiction]
+published: 2025-06-20
+updated: 2025-07-11
 ---
 # The Conversation Game
 
