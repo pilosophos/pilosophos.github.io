@@ -1,13 +1,18 @@
 ---
-title: "The NES: more than just a game console"
+title: "The Famicom: more than just a game console"
 description: An exploration of when game consoles can be used for so much more
 tags: [nonfiction, incomplete, unpublished]
 ---
-# The NES: more than just a game console
+import HasMarginalNote from '@components/writing/HasMarginalNote.astro'
+import HasMarginalImg from '@components/writing/HasMarginalImg.astro'
+import WideShowcase from '@components/writing/WideShowcase.astro'
+
+
+# The Famicom: more than just a game console
 
 <div class="relative">
   <figure class="flex flex-col text-center items-center marginal-note">
-    <img src="/images/nes-article/nes.png" alt="A picture of the legendary Nintendo Entertainment System, or NES." width="400">
+    <img src="/images/nes-article/nes.png" alt="A picture of the legendary Nintendo Entertainment System, or NES." width="400"></img>
     <figcaption>
       A picture of the legendary Nintendo Entertainment System, or NES.
     </figcaption>
@@ -29,15 +34,14 @@ that could only play one game each, Nintendo became a household name with the
 Nintendo Entertainment System (NES), originally released in 1983 as the Family Computer,
 or Famicom in Japan.
 
-<figure class="flex flex-col justify-center items-center gap-3 xl:flex-row xl:w-280">
-  <img src="/images/nes-article/famicom.png" alt="A picture of the Famicom." width="500" class="me-3">
-  <figcaption class="font-display">
-      The original Family Computer, or Famicom, as released in Japan.
-      The NES that we got in the West looks completely different, like a VCR,
-      to distance itself from game consoles due to the
-      <a href="https://en.wikipedia.org/wiki/Video_game_crash_of_1983">Video Game Crash of 1983</a> in the United States.
-  </figcaption>
-</figure>
+<WideShowcase>
+  <img slot="showcased" src="/images/nes-article/famicom.png" alt="A picture of the Famicom." width="500"></img>
+
+  The original Family Computer, or Famicom, as released in Japan.
+  The NES that we got in the West was redesigned to resemble a VCR,
+  to distance itself from game consoles after the
+  [American Video Game Crash of 1983](https://en.wikipedia.org/wiki/Video_game_crash_of_1983).
+</WideShowcase>
 
 The name *Family Computer* alludes to the fact that
 it was originally envisioned by Nintendo's late president, [Hiroshi Yamauchi](https://en.wikipedia.org/wiki/Hiroshi_Yamauchi),
@@ -64,58 +68,58 @@ TODO: which chip is this?
 
 ## Family BASIC, Data Recorder, and Disk System
 
-<div class="relative">
-  <figure class="flex flex-col text-center items-center marginal-note">
-    <img src="/images/nes-article/family-basic.png" alt="A picture of the Family BASIC cartridge, with keyboard" width="400">
-    <figcaption>
-      The Family BASIC cartridge and included Famicom Keyboard.
-    </figcaption>
-  </figure>
-</div>
+<HasMarginalImg>
+  Sure enough in 1984, a year after its release, consumers got [Family BASIC](https://www.mariowiki.com/Family_BASIC),
+  which let anyone program the Famicom using its dialect of the BASIC programming language,
+  plus the included Famicom keyboard that connected to the [expansion port](https://www.nintendoworldreport.com/feature/27664/nintendos-expansion-ports)
+  in front of the console.
 
-Sure enough in 1984, a year after its release, consumers got [Family BASIC](https://www.mariowiki.com/Family_BASIC),
-which let anyone program the Famicom using its dialect of the
-BASIC programming language,
-plus the included Famicom keyboard that connected to the [expansion port](https://www.nintendoworldreport.com/feature/27664/nintendos-expansion-ports)
-in front of the console.
+  <img slot="img" src="/images/nes-article/family-basic.png" alt="A picture of the Family BASIC cartridge, with keyboard" width="400"></img>
+  <figcaption slot="caption">The Family BASIC cartridge and included Famicom Keyboard.</figcaption>
+</HasMarginalImg>
 
 Out of the box, it came included with a few programs: *Calculation Board*, a calculator,
 *Music Board*, a music sequencer, and *Message Board*, for writing notes. A nearly identical version of Family BASIC, called Playbox BASIC, released for the [Sharp C1](https://www.nesdev.org/wiki/Sharp_C1) TV-plus-Famicom combo system comes with *Biorhythm Board* instead of Message Board.
 
-<figure class="flex flex-col justify-center items-center gap-3 xl:flex-row xl:w-280">
-  <img src="/images/nes-article/biorhythm-board.png" alt="Manual page for Sample Program 8" width="500" class="me-3">
-  <figcaption class="font-display">
-      <p>Biorhythm Board tried to predict fluctuations in your physiological, emotional, and intellectual state using psuedoscientific <a href="https://en.wikipedia.org/wiki/Biorhythm_(pseudoscience)">biorhythms</a>. Other than this replacing Message Board, Playbox BASIC was otherwise identical to Family BASIC.</p>
-      <p><cite class="text-sm">Source: <a href="https://web.archive.org/web/20190915234033/http://www.sara.to/sigure/game/g12/index.html">Playbox BASIC vs. Famicom BASIC comparison page</a> (in Japanese)</cite></p>
-  </figcaption>
-</figure>
+<WideShowcase>
+  <img slot="showcased" src="/images/nes-article/biorhythm-board.png" alt="Manual page for Sample Program 8" width="500"></img>
+
+  Biorhythm Board tried to predict fluctuations in your physiological,
+  emotional, and intellectual state using psuedoscientific
+  [biorhythms](https://en.wikipedia.org/wiki/Biorhythm_(pseudoscience)).
+  Other than this replacing Message Board, Playbox BASIC was otherwise identical
+  to Family BASIC.
+
+  <cite slot="subcaption">
+    Source: [Playbox BASIC vs. Famicom BASIC comparison page](https://web.archive.org/web/20190915234033/http://www.sara.to/sigure/game/g12/index.html) (in Japanese)
+  </cite>
+</WideShowcase>
 
 
-<div class="relative">
+<HasMarginalImg>
 
   It also had a manual that showed you how
   to make eight different sample games with BASIC, including *Route 66*, a top-down driving
   game; *Type Master*, a typing game; and *Sample Program 8*, a game where Penpen grabs
   flags while evading a Nitanita, which the manual insists is just a tech demo, not a game.
 
-  <figure class="flex flex-col text-center items-center marginal-note">
-    <img src="/images/nes-article/family-basic-sprites.png" alt="Sprites provided with Family BASIC that you could use in your own programs." width="200">
-    <figcaption>
-      Sprites were provided with Family BASIC that you could use in your own programs. <cite>Source: <a href="https://www.mariowiki.com/Family_BASIC">Mario Wiki</a></cite>
-    </figcaption>
-  </figure>
-</div>
+  <img slot="img" src="/images/nes-article/family-basic-sprites.png" alt="Sprites provided with Family BASIC that you could use in your own programs." width="200"></img>
+  <figcaption slot="caption">
+    Sprites were provided with Family BASIC that you could use in your own programs.
+    <cite>Source: <a href="https://www.mariowiki.com/Family_BASIC">Mario Wiki</a></cite>
+  </figcaption>
+</HasMarginalImg>
 
 <figure class="flex flex-col justify-center items-center gap-3 xl:flex-row xl:w-280">
-  <img src="/images/nes-article/tech-demo-8.png" alt="Screenshot of Sample Program 8." width="500" class="me-3">
+  <img src="/images/nes-article/tech-demo-8.png" alt="Screenshot of Sample Program 8." width="500" class="me-3"></img>
   <figcaption class="font-display">
-      <p>Sample Program 8 is a turn-based... "non-game." The player moves Penpen, then Nitanita moves to catch him. You get points by moving Penpen onto the flags.</p>
-      <p><cite class="text-sm">Source: Screenshot from Mikasen's <a href="https://www.youtube.com/watch?v=ir8jM3otL5w">Family BASIC sample program showcase video</a></cite></p>
+    <p>Sample Program 8 is a turn-based... "non-game." The player moves Penpen, then Nitanita moves to catch him. You get points by moving Penpen onto the flags.</p>
+    <p><cite class="text-sm">Source: Screenshot from Mikasen's <a href="https://www.youtube.com/watch?v=ir8jM3otL5w">Family BASIC sample program showcase video</a></cite></p>
   </figcaption>
 </figure>
 
 <figure class="flex flex-col justify-center items-center gap-3 xl:flex-row xl:w-280">
-  <img src="/images/nes-article/family-basic-manual.png" alt="Manual page for Sample Program 8" width="500" class="me-3">
+  <img src="/images/nes-article/family-basic-manual.png" alt="Manual page for Sample Program 8" width="500" class="me-3"></img>
   <figcaption class="font-display">
       <p>Page 101 of the <a href="https://archive.org/details/family-basic-v2-1-manual-600dpi-ozidual/Family%20Basic%20v2.1%20Manual">Family BASIC 2.1 manual</a>, showing the code for Sample Program 8. In the top right, it says ゲームではありません, translating to <i>"This is not a game."</i></p>
       <p class="text-sm">For Penpen, this is a matter of life or death.</p>
@@ -124,16 +128,15 @@ Out of the box, it came included with a few programs: *Calculation Board*, a cal
 
 Many third-party games and programs made in Family BASIC were distributed in books and magazines like [Program Pochette](https://archive.org/details/program-pochette-84-volume-1), [Micom Basic](https://archive.org/details/micom-basic-1984-09-ozidual) and [many more](https://ozidual.github.io/FamilyBasicTracking/Main.html). Like the examples in the Family BASIC manual, these were lines of source code that you would have to type into your Famicom manually in order to run.
 
-<div class="relative">
-
+<HasMarginalNote>
   While typing the full code to a program may seem tedious to us today, this was
   a fairly common way to distribute programs for computers at the time,
   including the [best selling](https://www.guinnessworldrecords.com/world-records/72695-most-computer-sales) desktop computer of all time, the [Commodore 64](https://en.wikipedia.org/wiki/Commodore_64).
 
-  <aside class="marginal-note">
+  <aside slot="marginal-note">
     See <a href="https://archive.org/details/more-than-32-basic-programs-for-the-commodore-64"><i>More Than 32 BASIC Programs for the Commodore 64</i></a> for some examples for the C64.
   </aside>
-</div>
+</HasMarginalNote>
 
 Although most of the examples focused on games, Family BASIC was a complete
 programming language, so you could make anything you wanted. In fact, using the `CALL`
@@ -148,7 +151,7 @@ calls that weren't normally available.
   Famicom Keyboard. 
 
   <figure class="flex flex-col text-center items-center marginal-note">
-    <img src="/images/nes-article/data-recorder.png" alt="A picture of Famicom Data Recorder" width="400">
+    <img src="/images/nes-article/data-recorder.png" alt="A picture of Famicom Data Recorder" width="400"></img>
     <figcaption>
       A Famicom Data Recorder. It's a cassette deck that says Nintendo on it.
     </figcaption>
@@ -162,31 +165,26 @@ slotted into the disk drive part of the addon.
 
 
 <figure class="flex flex-col justify-center items-center gap-3 xl:flex-row xl:w-280">
-  <img src="/images/nes-article/fds.png" alt="A picture of Famicom Disk System" width="380" class="me-3">
+  <img src="/images/nes-article/fds.png" alt="A picture of Famicom Disk System" width="380" class="me-3"></img>
   <figcaption class="font-display">
       The Famicom Disk System addon consists of two parts connected by a cable: The disk drive where you insert Disk Cards (bottom), and a RAM adapter which slots into the Famicom cartridge slot (top).
   </figcaption>
 </figure>
 
-<div class="relative">
-
+<HasMarginalNote>
   Since the Famicom Disk System occupied the cartridge slot used by Family BASIC,
   there was no officially supported way to save BASIC programs to a Disk Card.
   It took until the year official support ended for the
   Famicom Disk System in 2007 that Japanese console modders found a way to do so.
 
-  <aside class="marginal-note">
-    <p>
-      You can read the <a href="http://gameidiri.cocolog-nifty.com/blog/2007/02/basic_f283.html">2007 article</a> in Japanese,
-      or a modern version of the mod on the <a href="https://github.com/TakuikaNinja/FC-DiskBASIC">FC-DiskBASIC</a> Github.
-    </p>
+  <aside slot="marginal-note">
+    <p class="mt-0!">You can read the <a href="http://gameidiri.cocolog-nifty.com/blog/2007/02/basic_f283.html">2007 article</a> in Japanese,
+    or a modern version of the mod on the <a href="https://github.com/TakuikaNinja/FC-DiskBASIC">FC-DiskBASIC</a> Github.</p>
     <p>And yes, Nintendo really offered technical support for the FDS <a href="https://web.archive.org/web/20071021081932/http://www.nintendo.co.jp/n10/repair/price.html#uketsuke_syuryo">until 2007</a>.</p>
-
-  </div>
-</div>
+  </aside>
+</HasMarginalNote>
 
 <div class="relative">
-
   The main use of a Disk Card was to take it
   to Disk Writer kiosks at game stores where, for just ¥500 <span class="muted">(at the time, ~US$3.25)</span>, you could overwrite it
   with a new game from Nintendo. With disks being cheaper than Famicom cartridge games, and with
@@ -195,9 +193,9 @@ slotted into the disk drive part of the addon.
   sold in 1993.
 
   <figure class="flex flex-col text-center items-center marginal-note">
-    <img src="/images/nes-article/disk-writer.jpg" alt="A picture of a Disk Writer" width="220">
+    <img src="/images/nes-article/disk-writer.jpg" alt="A picture of a Disk Writer" width="220"></img>
     <figcaption>
-      A Disk Writer kiosk. <cite>Source: <a href="https://www.nintendo.com/jp/topics/article/0275103c-85e5-11e6-9b38-063b7ac45a6d">Nintendo</a></cite>
+      A Disk Writer kiosk. <cite>Source: <a href="https://www.nintendo.com/jp/topics/article/0275103c-85e5-11e6-9b38-063b7ac45a6d">Nintendo</a> (in Japanese)</cite>
     </figcaption>
   </figure>
 </div>
@@ -229,7 +227,7 @@ but to provide information that can be efficiently used in each household."
   data.
 
   <figure class="flex flex-col text-center items-center marginal-note">
-    <img src="/images/nes-article/famicom-modem.jpg" alt="A picture of a Famicom Network System peripheral" width="280">
+    <img src="/images/nes-article/famicom-modem.jpg" alt="A picture of a Famicom Network System peripheral" width="280"></img>
     <figcaption>
       A Famicom Network System modem attached to a Famicom.
     </figcaption>
@@ -237,7 +235,7 @@ but to provide information that can be efficiently used in each household."
 </div>
 
 <figure class="flex flex-col justify-center items-center gap-3 xl:flex-row xl:w-280">
-  <img src="/images/nes-article/network-diagram.jpg" alt="A diagram of the Famicom Network System" width="500" class="me-3">
+  <img src="/images/nes-article/network-diagram.jpg" alt="A diagram of the Famicom Network System" width="500" class="me-3"></img>
   <figcaption class="font-display">
     <p>
       Like <a href="https://en.wikipedia.org/wiki/Dial-up_Internet_access">dial-up internet</a>, the Famicom Modem used
@@ -263,7 +261,7 @@ aside from Konami's *Tsuushin Shogi Club*.
   could choose which stocks you wanted and in what quantity.
 
   <figure class="flex flex-col text-center items-center marginal-note">
-    <img src="/images/nes-article/fns-controller.jpg" alt="A picture of the Famicom Network System controller" width="280">
+    <img src="/images/nes-article/fns-controller.jpg" alt="A picture of the Famicom Network System controller" width="280"></img>
     <figcaption>
       A Famicom Network System controller with numpad. <cite>Source: <a href="https://www.raphnet.net/divers/famicom_network_controller_hvc_051/index_en.php">raphnet.net</a></cite>
     </figcaption>
@@ -273,12 +271,12 @@ aside from Konami's *Tsuushin Shogi Club*.
 
 
 <figure class="flex flex-col justify-center items-center gap-10 xl:flex-row xl:w-280">
-  <img src="/images/nes-article/fns-software.jpg" alt="A picture of some software for the Famicom Network System" width="400">
+  <img src="/images/nes-article/fns-software.jpg" alt="A picture of some software for the Famicom Network System" width="400"></img>
   <figcaption class="font-display">
     <p>      
       Copies of <i>Nomura no Famicom Trade,</i> as well as programs for other stock brokers can be seen in this picture. The box featuring <a href="https://en.wikipedia.org/wiki/Doraemon">Doraemon</a> is <i>Sumitomo Homeline</i>, a program for doing your home banking with Sumitomo Bank.
     </p>
-    <cite class="text-sm">Source: <a href="https://famicom.suppa.jp/ish11.html">famicom.suppa.jp</a></cite>
+    <cite class="text-sm">Source: <a href="https://famicom.suppa.jp/ish11.html">famicom.suppa.jp</a> (in Japanese)</cite>
   </figcaption>
 </figure>
 
@@ -294,81 +292,108 @@ horse races with *JRA-PAT,* or *JRA Personal Access Terminal,* developed by the 
   buying clothes, but the whereabouts of these cartridges are unknown.
 
   <aside class="marginal-note">
-    If you have copies of these programs, the folks at <a class="https://lostmediawiki.com/Family_Computer_Network_System/TV-NET_(partially_found_ROM_and_peripherals_of_telecommunication_service_for_Famicom;_1987-1991)">lostmediawiki.com</a>
+    If you have copies of these programs, the folks at [lostmediawiki.com](https://lostmediawiki.com/Family_Computer_Network_System/TV-NET_(partially_found_ROM_and_peripherals_of_telecommunication_service_for_Famicom;_1987-1991))
     would love to hear from you and can help archive the software for future generations.
   </aside>
 </div>
 
 <figure class="flex flex-col justify-center items-center gap-10 xl:flex-row xl:w-280">
-  <img src="/images/nes-article/newspaper.png" alt="A news clipping talking about " width="600">
-  <figcaption class="font-display">
-    <p>      
-      This news article tells of upcoming programs that would let you buy
-      train tickets, do online shopping, and make hotel reservations all from
-      your very own Famicom.
-    </p>
-    <cite class="text-sm">Source: <a href="https://web.archive.org/web/20230320125945/http://www.microcore.jp/publicity/newspaper/2/p03.jpg">Tokyo Sports News, 1989 November 16</a></cite>
+  <img src="/images/nes-article/newspaper.png" alt="A news article describing Famicom Network System software" width="600"></img>
+  <figcaption class="font-display mt-0!">
+    <p class="not-prose">This news article tells of upcoming programs that would let you buy train tickets, do online shopping, and make hotel reservations all from your very own Famicom.</p>
+
+    <cite class="text-sm">Source: <a href="https://web.archive.org/web/20230320125945/http://www.microcore.jp/publicity/newspaper/2/p03.jpg">Tokyo Sports News, 1989 November 16</a> (in Japanese)</cite>
   </figcaption>
 </figure>
 
-There are also programs which were marketed to the general public but possibly
-never sold, including the Famicom Fitness System, which would allow you to
-connect an exercise bike to your Famicom.
+There's also the Famicom Fitness System, developed jointly with Fukuoka University and
+a few other companies, that allowed the Famicom to read data from an exercise
+bike. It was marketed to fitness gyms and medical institutions, and was scheduled
+to be marketed to the general public in December 1990, but it is unknown if this
+ever happened.
 
-
-<figure class="flex items-center gap-10 xl:flex-row xl:w-280">
-  <img src="/images/nes-article/fitness-system.jpg" alt="A picture of some software for the Famicom Network System" class="h-70">
-  <img src="/images/nes-article/fitness-system-2.jpg" alt="A picture of some software for the Famicom Network System" class="h-70">
+<figure class="flex flex-col xl:flex-row items-center gap-10 xl:flex-row xl:w-280">
+  <img src="/images/nes-article/fitness-system.jpg" alt="A picture of someone using the Famicom Fitness System" class="h-70"></img>
+  <img src="/images/nes-article/fitness-system-2.jpg" alt="A picture of the Famicom Fitness System Screen" class="h-70"></img>
   <figcaption class="font-display">
     <p>With an exercise bike connected, you could then enter your weight and age, and pedal for 12 minutes. After uploading your pedalling data, you would receive a personalized exercise regimen.</p>
     <cite class="text-sm">Source: <a href="https://famicom.suppa.jp/mab17.html">famicom.suppa.jp</a></cite>
   </figcaption>
 </figure>
 
-## Legacy
-
-While we never got the Famicom Network System in the West, Nintendo were actually
-in talks with AT&T to set up a similar service in the United States. An NES
-modem for playing the Minnesota State Lottery was tested but never released, due
-to concerns about underage gambling.
-
-TODO: link to article
-
-With the onset of the [Lost Decades](https://en.wikipedia.org/wiki/Lost_Decades) starting
-in the early 90s, the Japanese economy stagnated significantly. With much of the
-Famicom network traffic at its peak being stock trading, the ensuing lack of
-interest in stocks was the final nail in the coffin for a service that was already
+What eventually killed the Famicom Network System in Japan was the onset of the
+[Lost Decades](https://en.wikipedia.org/wiki/Lost_Decades), a period of
+nationwide economic stagnation, starting in the early 90s. With stock trading
+comprising much the Famicom Network's traffic, consumers' plummeting interest in
+stocks was the final nail in the coffin for a service that was already
 difficult to set up and use.
 
-The idea behind the Famicom Network never completely died out, as Nintendo would
-come up with Satellaview, a similar service for the Super Famicom (known as the
-Super Nintendo in the West). Satellaview allowed users to receive satellite
-broadcasts with the Satellaview peripheral, and download games, magazines, and 
-other media.
+<HasMarginalImg>
+  In the West, Nintendo were hoping to create a similar network to the
+  Famicom Network System in the United States with partners like
+  AT&T and Fidelity Investments, but the idea came under fire when a program to play
+  the Minnesota State Lottery was announced. Concerns over underage gambling were
+  raised, and the NES modem was killed before making it to market.
 
-Being the most popular Famicom Network System application, the horse betting
-terminal JRA-PAT was re-released for Satellaview. Eventually, as time marched on,
-internet connectivity became the norm with consoles like the Sega Dreamcast,
-which had an inbuilt modem and a version of JRA-PAT with [excellent music](https://www.youtube.com/watch?v=BeZw7qU2ju4).
+  <img slot="img" src="/images/nes-article/nes-modem.jpg" alt="A picture of the NES modem"></img>
+  <figcaption slot="caption">The NES modem would have connected to the unused expansion port on the bottom the NES.</figcaption>
+</HasMarginalImg>
 
-Nowadays, we often take both our PCs and the internet for granted. But for a time,
-not every home had a PC. You might just have a TV, a landline telephone, and your
-trusty Famicom.
+<figure class="flex flex-col xl:flex-row items-center gap-10 xl:flex-row xl:w-280">
+  <img src="/images/nes-article/lottery-cart.jpg" alt="A picture of the Minnesota State Lottery cartridge" class="h-50 my-0!"></img>
+  <img src="/images/nes-article/lottery-screenshot.jpg" alt="A screenshot of the Minnesota State Lottery program" class="h-50 my-0!"></img>
+  <figcaption class="font-display">
+    <p>If Nintendo of America hadn't started with the Minnesota State Lottery, could we have been online shopping and doing our taxes with an NES?</p>
+    <cite class="text-sm">Source: <a href="https://nescat.blogspot.com/2013/09/the-nes-expansion-port-why-is-it-even.html">The NES Cat</a></cite>
+  </figcaption>
+</figure>
+
+## Legacy
+
+<HasMarginalImg>
+  The ideas behind the Famicom Network led directly to the development of the
+  Satellaview, a satellite service for the Super Famicom (known as the
+  Super Nintendo in the West). Satellaview allowed users to receive satellite
+  broadcasts with the Satellaview peripheral, and download games, magazines, and 
+  other media.
+
+  <img slot="img" src="/images/nes-article/satellaview.jpg" width="250"></img>
+  <figcaption slot="caption">The Super Famicom sits neatly on top of the Satellaview. Like the Famicom Network System, this was also a Japan exclusive.</figcaption>
+</HasMarginalImg>
+
+The horse betting program JRA-PAT, being one of the most popular applications,
+was re-released for Satellaview. As time marched on, internet connectivity
+became the norm with consoles like the Sega Dreamcast, which had an inbuilt
+modem and yet another re-release of JRA-PAT that had [excellent music](https://www.youtube.com/watch?v=BeZw7qU2ju4).
+
+Nowadays, we often take both our PCs and the internet for granted. Everywhere we
+go, we are constantly connected services that let us do everything the Famicom
+could to do, and more. But for a time, not every home had a PC.
+You might just have a TV, a landline telephone, and a Famicom that was more than
+meets the eye.
 
 ## Your game consoles are so much more
 
-Even though Nintendo no longer makes game consoles to be general purpose computers,
+Even though Nintendo no longer designs game consoles to be general purpose computers,
 most game consoles nowadays are essentially PCs with specialized gaming hardware.
 
 The [original Xbox](https://en.wikipedia.org/wiki/Xbox_(console)) (short for DirectX Box),
 is really just an x86 Intel Pentium PC with a customized version of Windows for gaming.
 
-Linux on the Playstation 2 and 3 were *officially supported* by Sony with [PS2 Linux](https://en.wikipedia.org/wiki/Linux_for_PlayStation_2)
-and [OtherOS](https://en.wikipedia.org/wiki/OtherOS). This was such a useful
-feature that researchers built [compute clusters using PS3s](https://en.wikipedia.org/wiki/PlayStation_3_cluster) to speed up black hole
-simulations, cryptography research, and analyzing satellite imagery. When Sony
-removed the OtherOS feature in 2010, a class-action lawsuit was brought against them,
-proving that people really did care about Linux on their game consoles.
+<HasMarginalImg>
+  Linux on the Playstation 2 and 3 were *officially supported* by Sony with [PS2 Linux](https://en.wikipedia.org/wiki/Linux_for_PlayStation_2)
+  and [OtherOS](https://en.wikipedia.org/wiki/OtherOS). This was such a useful
+  feature that researchers built [compute clusters using PS3s](https://en.wikipedia.org/wiki/PlayStation_3_cluster) to speed up black hole
+  simulations, cryptography research, and analyzing satellite imagery. When Sony
+  removed the OtherOS feature in 2010, a class-action lawsuit was brought against them,
+  proving that people really did care about Linux on their game consoles.
+
+  <img slot="img" src="/images/nes-article/gravity-grid.jpg" width="250"></img>
+  <figcaption slot="caption">
+    The PS3 Gravity Grid was a cluster of 400+ PS3s built by Dr. Guarav Khanna to study black holes.
+    <cite>Source: <a href="https://web.uri.edu/gravity/ps3/">University of Rhode Island</a></cite>
+  </figcaption>
+</HasMarginalImg>
 
 The Nintendo Switch is an ARM-based computer capable of dual-booting into Linux
 and Android with [Switchroot](https://switchroot.org/). It's a nifty device that
@@ -379,9 +404,8 @@ you're at home.
 The catch? Nintendo makes it as hard as humanly possible to do so. Developers had
 to hack the device by [shorting two pins](https://www.bleepingcomputer.com/news/hardware/researcher-discloses-unpatchable-nintendo-switch-exploit/)
 on the Joycon connector to gain access the bootloader to install other OSes. When this was publicized, Nintendo changed the hardware so you now
-need to [install a modchip](https://switch.hacks.guide/user_guide/modchip/) to do so, requiring incredibly precise soldering.
+need to [install a modchip](https://switch.hacks.guide/user_guide/modchip/) to do so, requiring incredibly precise microsoldering skills.
 
-In our hands, we hold the ghost of Nintendo's dream. Nintendo once envisioned
-a Nintendo computer in every home that would be your portal to the world's
-information. In a way, Nintendo got that wish― it's just not profitable for them
-anymore.
+In our hands, we hold the ghost of Nintendo's dream: a Nintendo computer in
+every home that could be your portal to the world's information. In a way,
+Nintendo got that wish― it's just not profitable for them anymore.

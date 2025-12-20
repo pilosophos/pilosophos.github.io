@@ -1,0 +1,9 @@
+<figure class="flex flex-col justify-center items-center gap-10 xl:flex-row xl:w-280">
+  <slot name="showcased"/>
+  <figcaption class="font-display">
+    <slot/>
+    <div class="text-sm">
+      <slot name="subcaption"/>
+    </div>
+  </figcaption>
+</figure>

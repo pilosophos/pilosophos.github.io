@@ -1,8 +1,6 @@
 ---
-import { Image } from "astro:assets";
 import { getCollection } from 'astro:content';
 import DefaultLayout from "../../layouts/DefaultLayout.astro";
-import DecorativeBarcodeImg from "../../assets/images/decorative-barcode.svg"
 import ArticleHeader from '../../components/ArticleHeader.astro';
 
 const posts = await getCollection('writing')
