@@ -10,12 +10,13 @@ const writing = defineCollection({
     pattern: '**/*.{md,mdx}',
     base: './src/writing',
   }),
-  schema: z.object({
+  schema: ({ image }) => z.object({
     title: z.string(),
     description: z.string(),
     tags: z.array(z.string()),
     published: z.optional(z.date()),
     updated: z.optional(z.date()),
+    cover: z.optional(image()),
   })
 });
 

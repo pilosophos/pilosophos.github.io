@@ -1,4 +1,5 @@
 ---
+import { getImage } from "astro:assets";
 import { getCollection, render } from 'astro:content';
 import DefaultLayout from '../../layouts/DefaultLayout.astro';
 import SmallIconLink from '../../components/SmallIconLink.astro';
@@ -13,8 +14,16 @@ export async function getStaticPaths() {
 // 2. For your template, you can get the entry directly from the prop
 const { post } = Astro.props;
 const { Content } = await render(post);
+
+let ogImageUrl;
+if (post.data.cover){
+  ogImageUrl = new URL(
+    (await getImage({ src: post.data.cover, format: "png" })).src,
+    Astro.url,
+  ).href;
+}
 ---
-<DefaultLayout title={ post.data.title } metadesc={ post.data.description }>
+<DefaultLayout title={ post.data.title } metadesc={ post.data.description } ogImage={ ogImageUrl }>
   <article class="
     container
     xl:-left-30 relative
