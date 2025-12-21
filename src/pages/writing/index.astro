@@ -3,8 +3,14 @@ import { getCollection } from 'astro:content';
 import DefaultLayout from "../../layouts/DefaultLayout.astro";
 import ArticleHeader from '../../components/ArticleHeader.astro';
 
-const posts = await getCollection('writing')
-  .then(collection => collection.filter( post => !post.data.tags.includes('unpublished') ));
+const posts = ((await getCollection('writing'))
+  .filter( post => !post.data.tags.includes('unpublished') )
+  .toSorted((a, b) => {
+    const aUpdated = a.data.updated || a.data.published;
+    const bUpdated = b.data.updated || b.data.published;
+    return bUpdated.getTime() - aUpdated.getTime()
+  })
+);
 ---
 <DefaultLayout
   title="Writing"
@@ -46,7 +52,7 @@ const posts = await getCollection('writing')
         {
           <ul class="grid gap-5">
             {
-              posts.toSorted((a,b) => a.data.title >= b.data.title ? 1 : -1 ).map(post => (
+              posts.map(post => (
                 <li class="group border-s-2 border-pi-cyan ps-5 hover:border-white">
                   <a href={ `/writing/${post.id}` }>
                     <div class="pe-3 group-hover:ps-2 group-hover:pe-0 transition-box">
