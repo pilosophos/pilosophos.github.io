@@ -38,10 +38,10 @@ const posts = ((await getCollection('writing'))
         </div>
 
         <div class="flex items-start justify-end pe-6 gap-3">
-          <div class="grid gap-3 grid-cols-3">
+          <div id="decorative-grid" class="grid gap-3 grid-cols-3">
             {
               [...Array(27).keys()].map(n =>
-                <div class="h-5 w-5 bg-pi-cyan" style={ `opacity: ${Math.max(Math.ceil(Math.random() * 100), 10)}%;` }></div>
+                <div class="h-5 w-5 bg-pi-cyan transition-[opacity] duration-300" style={ `opacity: ${Math.max(Math.ceil(Math.random() * 100), 10)}%;` }></div>
               )
             }
           </div>
@@ -53,7 +53,7 @@ const posts = ((await getCollection('writing'))
           <ul class="grid gap-5">
             {
               posts.map(post => (
-                <li class="group border-s-2 border-pi-cyan ps-5 hover:border-white">
+                <li class="post group border-s-2 border-pi-cyan ps-5 hover:border-white">
                   <a href={ `/writing/${post.id}` }>
                     <div class="pe-3 group-hover:ps-2 group-hover:pe-0 transition-box">
                       <span class="link group-hover:text-white font-display">{ post.data.title }</span>
@@ -72,3 +72,18 @@ const posts = ((await getCollection('writing'))
     </div>
   </main>
 </DefaultLayout>
+
+<script>
+  const squares = document.querySelectorAll('#decorative-grid div');
+  const posts = document.querySelectorAll('.post');
+  posts.forEach(elem => {
+    const square = elem as HTMLDivElement;
+    square.addEventListener('mouseleave', () => shuffleOpacity())
+  });
+
+  function shuffleOpacity() {
+    for (let square of squares) {
+      (square as HTMLDivElement).style.opacity = `${Math.max(Math.ceil(Math.random() * 100), 10)}%`;
+    }
+  }
+</script>
