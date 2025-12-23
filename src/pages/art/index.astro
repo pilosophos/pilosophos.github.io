@@ -46,16 +46,16 @@ const art = (
   metadesc="Marvel at the art of Pilosophos, the artist born and raised on the internet."
 >
   <main class="container">
-    <div class="flex my-5">
+    <div class="flex flex-col md:flex-row items-end md:items-stretch my-5 gap-3">
       <Alert class="w-full">
         <h2 class="font-display text-xl">Art commissions open!</h2>
         <p>If you'd like to commission some art from me, <a href="https://ko-fi.com/pilosophos/commissions" class="link">visit my Ko-fi</a> page for details!</p>
       </Alert>
 
-      <a href="/art/rss.xml" class="group flex ms-3">
+      <a href="/art/rss.xml" class="group flex">
         <CyberPentagon
           class=`
-            relative w-30 bg-pi-yellow text-pi-gray pe-1 my-px text-end
+            relative w-30 bg-pi-yellow text-pi-gray pe-2 md:pe-1 my-px text-end
             transition-colors group-hover:bg-amber-200 group-active:bg-white
           `
           notch="20px"
