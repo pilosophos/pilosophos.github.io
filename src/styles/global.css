@@ -238,3 +238,5 @@ summary {
   font-family: "JFDot milkjf16";
   src: url( '/fonts/JF-Dot-milkjf16.ttf' );
 }
+
+@import "./homelab.css"

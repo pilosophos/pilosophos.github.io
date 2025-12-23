@@ -1,0 +1,21 @@
+@layer components {
+  .machine-specs {
+    @apply gap-6 mb-13;
+    display: grid;
+    height: min-content;
+
+    & > div {
+      @apply border-b pb-2;
+      display: grid;
+
+
+      & > dd {
+        @apply text-2xl;
+      }
+
+      & > dt {
+        text-transform: uppercase;
+      }
+    }
+  }
+}

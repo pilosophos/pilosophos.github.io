@@ -1,8 +1,9 @@
 ---
-import ArticleHeader from '../components/ArticleHeader.astro';
-import HomelabDiagram from '../components/HomelabDiagram.astro';
-import IconH2 from '../components/IconH2.astro';
-import DefaultLayout from '../layouts/DefaultLayout.astro';
+import CyberPentagon from '@components/CyberPentagon.astro';
+import ArticleHeader from '@components/ArticleHeader.astro';
+import HomelabDiagram from '@components/HomelabDiagram.astro';
+import IconH2 from '@components/IconH2.astro';
+import DefaultLayout from '@layouts/DefaultLayout.astro';
 ---
 
 <DefaultLayout
@@ -18,124 +19,127 @@ import DefaultLayout from '../layouts/DefaultLayout.astro';
   </ArticleHeader>
 
   <div class="flex justify-center">
-    <figure class="mb-5">
+    <figure class="mb-16">
       <HomelabDiagram />
     </figure>
   </div>
 
   <main class="container">
-    <section class="mb-10" id="omen-15">
-      <IconH2 icon="/images/icons/laptop.png" class="mb-5">Main computer: HP Omen 15 (2017) 15-ce0xx</IconH2>
-
-      <p class="mb-5">A hand-me-down laptop from a friend of mine who was upgrading. It's fairly large, so I don't carry it around with me. There's a billion cables attached at all times anyway, so it would be a huge pain. I'd like to build my own beast of a computer someday, but it's not like I'm keeping up with any triple-A game titles these days, so what I have works fine.</p>
-
-      <div class="grid lg:grid-cols-2 mx-auto gap-5">
+    <section class="mb-10 grid grid-cols-3 gap-5" id="omen-15">
+      <dl class="machine-specs text-end">
         <div>
-          <h3 class="text-2xl font-display mb-3">Information</h3>
-          <dl class="grid gap-4">
-            <div class="grid grid-cols-10 gap-1">
-              <dt class="font-bold">OS</dt>
-              <dd class="col-span-8">Arch Linux</dd>
-            </div>
-            <div class="grid grid-cols-10 gap-1">
-              <dt class="font-bold">CPU</dt>
-              <dd class="col-span-8">Intel i7-7700HQ</dd>
-            </div>
-            <div class="grid grid-cols-10 gap-1">
-              <dt class="font-bold">GPU</dt>
-              <dd class="col-span-8">
-                <ul>
-                  <ol>Intel HD Graphics 630</ol>
-                  <ol>NVIDIA GeForce GTX 1050 Ti Mobile</ol>
-                </ul>
-              </dd>
-            </div>
-            <div class="grid grid-cols-10 gap-1">
-              <dt class="font-bold">RAM</dt>
-              <dd class="col-span-8">16 GB</dd>
-            </div>
-            <div class="grid grid-cols-10 gap-1">
-              <dt class="font-bold">HDD</dt>
-              <dd class="col-span-8">HGST Travelstar 7K1000 (1TB)</dd>
-            </div>
-            <div class="grid grid-cols-10 gap-1">
-              <dt class="font-bold">SSD</dt>
-              <dd class="col-span-8">SK Hynix Gold P31 (1TB)</dd>
-            </div>
-          </dl>
+          <dt>Operating System</dt>
+          <dd>Arch Linux</dd>
         </div>
 
         <div>
-          <h3 class="text-2xl font-display mb-3">Notes</h3>
-          <ul class="list-disc ps-5 grid gap-3">
-            <li>I use both the integrated and discrete GPU since I have it connected to two monitors: a Huion Kamvas display tablet and some Viewsonic monitor. The Huion is mounted to this swivel arm thingy so I can pull it from a typical monitor position down to my desk to draw on it.</li>
-            <li>The SSD was originally a measly 120 GB boot drive, which started to fail after a while so I replaced it with a 1TB one.</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section class="mb-10" id="ideapad">
-      <IconH2 icon="/images/icons/laptop.png" class="mb-5">Home server: Lenovo Ideapad Y50-70</IconH2>
-
-      <div class="mb-5">
-        <p>My home server is also a hand-me-down laptop, this time from my family. A laptop might be an unusual choice for a server, but I like to think of it as a server with a built in UPS and monitor*, which has come in handy every now and then. It's quiet enough that I can sleep next to it daily, which is important since I live in a microscopic studio apartment.</p>
-        <small>* I later discovered the battery had become what's known as a Spicy Pillow (technical term), so that had to go.</small>
-      </div>
-
-      <div class="grid lg:grid-cols-2 mx-auto gap-5">
-        <div>
-          <h3 class="text-2xl font-display mb-3">Information</h3>
-          <dl class="grid gap-4">
-            <div class="grid grid-cols-10 gap-1">
-              <dt class="font-bold">OS</dt>
-              <dd class="col-span-8">Debian Linux</dd>
-            </div>
-            <div class="grid grid-cols-10 gap-1">
-              <dt class="font-bold">CPU</dt>
-              <dd class="col-span-8">Intel i7-4710HQ</dd>
-            </div>
-            <div class="grid grid-cols-10 gap-1">
-              <dt class="font-bold">GPU</dt>
-              <dd class="col-span-8">
-                <ul>
-                  <ol>NVIDIA GeForce GTX 860M</ol>
-                  <ol>Intel HD Graphics 4600</ol>
-                </ul>
-              </dd>
-            </div>
-            <div class="grid grid-cols-10 gap-1">
-              <dt class="font-bold">RAM</dt>
-              <dd class="col-span-8">16 GB</dd>
-            </div>
-            <div class="grid grid-cols-10 gap-1">
-              <dt class="font-bold">SSD</dt>
-              <dd class="col-span-8">Patriot P210 1TB</dd>
-            </div>
-          </dl>
+          <dt>Central processing unit</dt>
+          <dd>Intel i7-7700HQ</dd>
         </div>
 
         <div>
-          <section class="mb-5">
-            <h3 class="text-2xl font-display mb-3">Services</h3>
-            <ul class="list-disc ps-5">
-              <li>File storage: Owncloud</li>
-              <li>Personal wiki: Dokuwiki</li>
-              <li>Media server: Jellyfin</li>
-              <li>Tagged image store: Szurubooru</li>
-              <li>Minecraft server (Aug-Nov 2023: Enigmatica 6 Expert)</li>
-            </ul>
-          </section>
+          <dt>Graphics</dt>
+          <dd><ul>
+            <ol>Intel HD Graphics 630</ol>
+            <ol>NVIDIA GeForce GTX 1050 Ti Mobile</ol>
+          </ul></dd>
+        </div>
+
+        <div>
+          <dt>Memory</dt>
+          <dd>16 GB</dd>
+        </div>
+
+        <div>
+          <dt>Hard drive</dt>
+          <dd>HGST Travelstar 7K1000 (1TB)</dd>
+        </div>
+
+        <div>
+          <dt>Solid state drive</dt>
+          <dd>SK Hynix Gold P31 (1TB)</dd>
+        </div>
+      </dl>
+
+      <CyberPentagon corner="bottom-left" notch="50px" class="bg-pi-yellow p-px ps-10 rounded col-span-2">
+        <CyberPentagon corner="bottom-left" notch="50px" class="bg-pi-gray rounded p-5 h-full">
+          <IconH2 icon="/images/icons/laptop.png" class="mb-5">Main computer: HP Omen 15 (2017) 15-ce0xx</IconH2>
+          <p class="mb-5">A hand-me-down laptop from a friend of mine who was upgrading. It's fairly large, so I don't carry it around with me. There's a billion cables attached at all times anyway, so it would be a huge pain. I'd like to build my own beast of a computer someday, but it's not like I'm keeping up with any triple-A game titles these days, so what I have works fine.</p>
 
           <section>
             <h3 class="text-2xl font-display mb-3">Notes</h3>
             <ul class="list-disc ps-5 grid gap-3">
-              <li>The server recieved a RAM upgrade from 8 to 16 GB after I started hosting a Enigmatica 6 Expert server, which consumes a ridiculous amount of RAM. I actually don't think this is enough, especially with the other services running. I don't want to spend even more money, so I increased the swapfile to 6 GB which at least keeps it from OOMing.</li>
-              <li>I previously used Airsonic for music, but I moved to Jellyfin to handle movies and TV also. Unfortunately, the Android app has problems playing back certain formats for unknown reasons, but the web interface seems to work fine.</li>
+              <li>I use both the integrated and discrete GPU since I have it connected to two monitors: a Huion Kamvas display tablet and some Viewsonic monitor. The Huion is mounted to this swivel arm thingy so I can pull it from a typical monitor position down to my desk to draw on it.</li>
+              <li>The SSD was originally a measly 120 GB boot drive, which started to fail after a while so I replaced it with a 1TB one.</li>
             </ul>
           </section>
+        </CyberPentagon>
+      </CyberPentagon>
+    </section>
+
+    <section class="mb-10 grid grid-cols-3 gap-5" id="ideapad">
+      <CyberPentagon corner="bottom-right" notch="50px" class="bg-pi-cyan p-px pe-10 rounded col-span-2">
+        <CyberPentagon corner="bottom-right" notch="50px" class="bg-pi-gray rounded p-5 h-full">
+          <IconH2 icon="/images/icons/laptop.png" class="mb-5">Home server: Lenovo Ideapad Y50-70</IconH2>
+
+          <div class="mb-10">
+            <p>My home server is also a hand-me-down laptop, this time from my family. A laptop might be an unusual choice for a server, but I like to think of it as a server with a built in UPS and monitor*, which has come in handy every now and then. It's quiet enough that I can sleep next to it daily, which is important since I live in a microscopic studio apartment.</p>
+            <small>* I later discovered the battery had become what's known as a Spicy Pillow (technical term), so that had to go.</small>
+          </div>
+
+
+          <div class="grid grid-cols-2">
+            <section>
+              <h3 class="text-2xl font-display mb-3">Services</h3>
+              <ul class="list-disc ps-5">
+                <li>File storage: Owncloud</li>
+                <li>Personal wiki: Dokuwiki</li>
+                <li>Media server: Jellyfin</li>
+                <li>Tagged image store: Szurubooru</li>
+                <li>Minecraft server (Aug-Nov 2023: Enigmatica 6 Expert)</li>
+              </ul>
+            </section>
+
+            <section>
+              <h3 class="text-2xl font-display mb-3">Notes</h3>
+              <ul class="list-disc ps-5 grid gap-3">
+                <li>The server recieved a RAM upgrade from 8 to 16 GB after I started hosting a Enigmatica 6 Expert server, which consumes a ridiculous amount of RAM. I actually don't think this is enough, especially with the other services running. I don't want to spend even more money, so I increased the swapfile to 6 GB which at least keeps it from OOMing.</li>
+                <li>I previously used Airsonic for music, but I moved to Jellyfin to handle movies and TV also. Unfortunately, the Android app has problems playing back certain formats for unknown reasons, but the web interface seems to work fine. lorem</li>
+              </ul>
+            </section>
+          </div>
+        </CyberPentagon>
+      </CyberPentagon>
+
+      <dl class="machine-specs">
+        <div>
+          <dt>Operating System</dt>
+          <dd>Debian Linux</dd>
         </div>
-      </div>
+
+        <div>
+          <dt>Central processing unit</dt>
+          <dd>Intel i7-4710HQ</dd>
+        </div>
+
+        <div>
+          <dt>Graphics</dt>
+          <dd><ul>
+            <ol>Intel HD Graphics 4600</ol>
+            <ol>NVIDIA GeForce GTX 860M</ol>
+          </ul></dd>
+        </div>
+
+        <div>
+          <dt>Memory</dt>
+          <dd>16 GB</dd>
+        </div>
+
+        <div>
+          <dt>Solid state drive</dt>
+          <dd>Patriot P210 (1TB)</dd>
+        </div>
+      </dl>
     </section>
 
     <section id="pocket-reform" class="mb-10 prose prose-invariants max-w-full">
