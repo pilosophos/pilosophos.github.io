@@ -21,9 +21,10 @@ export async function GET(context) {
 
   return rss({
     title: "Pilosophos' Circle (Writing)",
-    description: 'Writing by Pilosophos, who is trying to give Shakespeare a run for his money.',
+    description: 'Writing by Pilosophos, who is trying to give Shakespeare a run for his money. (This feed is for writing only. For my art RSS feed, subscribe to https://pilosophos.com/art/rss.xml)',
     site: context.site,
     trailingSlash: false,
+    stylesheet: '/rss/styles.xsl',
     items: items
       .filter(post => !post.data.tags.includes('unpublished') && (post.data.published !== undefined))
       .map(post => ({

@@ -25,11 +25,14 @@
  */
 
 import { Image } from "astro:assets";
-import DefaultLayout from "../../layouts/DefaultLayout.astro";
+import DefaultLayout from "@layouts/DefaultLayout.astro";
 import { getCollection, getEntry, render } from 'astro:content';
-import ImageDescription from "../../components/ImageDescription.astro";
-import ImageViewer from "../../components/ImageViewer.astro";
-import Alert from "../../components/Alert.astro";
+import ImageDescription from "@components/ImageDescription.astro";
+import ImageViewer from "@components/ImageViewer.astro";
+import Alert from "@components/Alert.astro";
+import CyberPentagon from '@components/CyberPentagon.astro';
+
+
 
 const art = (
   await getCollection('art'))
@@ -43,10 +46,32 @@ const art = (
   metadesc="Marvel at the art of Pilosophos, the artist born and raised on the internet."
 >
   <main class="container">
-    <Alert class="my-5">
-      <h2 class="font-display text-xl">Art commissions open!</h2>
-      <p>If you'd like to commission some art from me, <a href="https://ko-fi.com/pilosophos/commissions" class="link">visit my Ko-fi</a> page for details!</p>
-    </Alert>
+    <div class="flex my-5">
+      <Alert class="w-full">
+        <h2 class="font-display text-xl">Art commissions open!</h2>
+        <p>If you'd like to commission some art from me, <a href="https://ko-fi.com/pilosophos/commissions" class="link">visit my Ko-fi</a> page for details!</p>
+      </Alert>
+
+      <a href="/writing/rss.xml" class="group flex ms-3">
+        <CyberPentagon
+          class=`
+            relative w-30 bg-pi-yellow text-pi-gray pe-1 my-px text-end
+            transition-colors group-hover:bg-amber-200 group-active:bg-white
+          `
+          notch="20px"
+          corner="bottom-right"
+        >
+          <span class="block uppercase">art</span>
+          <span class="text-2xl/1 font-display">RSS</span>
+          <img src="/images/icons/rss.svg"
+            width="60"
+            class="absolute -bottom-1 left-1 origin-bottom-left group-hover:scale-110 transition-transform"
+            alt="RSS feed"
+          />
+        </CyberPentagon>
+      </a>
+    </div>
+
     <div id="gallery" class="grid md:grid-cols-2 lg:grid-cols-3 justify-center gap-3 mx-auto">
       {
         art.map(async (piece, i) =>

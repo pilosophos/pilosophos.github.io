@@ -43,9 +43,10 @@ export async function GET(context) {
   // This is the actual RSS content generator
   return rss({
     title: "Pilosophos' Circle (Art)",
-    description: 'Art by Pilosophos, artist born and raised on the internet.',
+    description: 'Art by Pilosophos, artist born and raised on the internet. (This feed is for art only. For my writing RSS feed, subscribe to https://pilosophos.com/writing/rss.xml)',
     site: context.site,
     trailingSlash: false,
+    stylesheet: '/rss/styles.xsl',
     items: items
       .map(post => {
         return {
