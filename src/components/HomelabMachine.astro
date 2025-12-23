@@ -26,7 +26,7 @@ const pentagonCorner = infoboxDirection === 'end' ? 'bottom-left' : 'bottom-righ
   ]}>
     <CyberPentagon corner={ pentagonCorner } notch="50px"
       class:list={[
-        "p-px rounded col-span-2 lg:w-2/3",
+        "relative p-px rounded col-span-2 lg:w-2/3",
         { 
           "bg-pi-cyan ps-10": infoboxDirection === "end",
           "bg-pi-yellow pe-10": infoboxDirection === "start"
@@ -38,6 +38,23 @@ const pentagonCorner = infoboxDirection === 'end' ? 'bottom-left' : 'bottom-righ
           <slot/>
         </div>
       </CyberPentagon>
+
+      <div class:list={[
+          "absolute text-pi-gray top-2 text-sm/3 uppercase select-none flex gap-2",
+          {
+            "left-2 text-start flex-row-reverse": infoboxDirection === "end",
+            "right-2 rotate-180 text-end": infoboxDirection === "start"
+          }
+        ]}
+        style="writing-mode:vertical-lr"
+        aria-hidden="true"
+      >
+        <div>
+          Unit 1039123:487//5290 - Database OK<br>
+          Description of a computational asset<br>
+        </div>
+        <div class="text-2xl/6 font-display">{ fullName[0] + fullName[fullName.length-1] }</div>
+      </div>
     </CyberPentagon>
 
     <div class:list={[
