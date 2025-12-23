@@ -1,0 +1,53 @@
+---
+import CyberPentagon from '@components/CyberPentagon.astro';
+import IconH2 from '@components/IconH2.astro';
+
+const { id, fullName, icon, infoboxDirection = 'end' } = Astro.props;
+
+const pentagonCorner = infoboxDirection === 'end' ? 'bottom-left' : 'bottom-right';
+---
+<section id={ id } class="lg:mb-20">
+  <IconH2 icon={ icon } class:list={[
+    "text-center mb-10 lg:mb-5",
+    { 
+      "lg:text-end": infoboxDirection === "end",
+      "lg:text-start": infoboxDirection === "start"
+    }
+  ]}>
+    { fullName }
+  </IconH2>
+
+  <div class:list={[
+    "mb-10 flex flex-col gap-5",
+    { 
+      "lg:flex-row-reverse": infoboxDirection === "end",
+      "lg:flex-row": infoboxDirection === "start"
+    }
+  ]}>
+    <CyberPentagon corner={ pentagonCorner } notch="50px"
+      class:list={[
+        "p-px rounded col-span-2 lg:w-2/3",
+        { 
+          "bg-pi-cyan ps-10": infoboxDirection === "end",
+          "bg-pi-yellow pe-10": infoboxDirection === "start"
+        }
+      ]}
+    >
+      <CyberPentagon corner={ pentagonCorner } notch="50px" class="bg-pi-gray rounded p-5 h-full">
+        <div class="prose prose-invariants max-w-full">
+          <slot/>
+        </div>
+      </CyberPentagon>
+    </CyberPentagon>
+
+    <div class:list={[
+      "lg:w-1/3",
+      { 
+        "lg:text-end": infoboxDirection === "end",
+        "lg:text-start": infoboxDirection === "start"
+      }
+    ]}>
+      <slot name="machine-specs"/>
+    </div>
+  </div>
+</section>
