@@ -66,7 +66,7 @@ linked together.
 * Evaporator (cold side): coolant expands into gas, heat energy absorbed.
 * Under low pressure, the boiling point of the coolant is lowered.
 
-## Tsugaru election 津軽選挙
+## Tsugaru election <span lang="ja" class="font-cjk-display">(津軽選挙)</span>
 In Aomori Prefecture, electoral fraud was so openly prevalent that candidates
 would bribe voters by going door-to-door handing out money, asking voters to
 verbally ask election officials to write the name of the candidate for them on
