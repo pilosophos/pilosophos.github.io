@@ -16,7 +16,7 @@ The main character is Max Caulfield, an adorable but meek high school girl who l
 photography. She's cute, but so embroiled in the dramatic high school environment
 that she lacks the self-esteem to see it.
 
-She kind of reminds me of Riki, the main character in Little Busters (my
+She kind of reminds me of Riki, the main character in [Little Busters](https://en.wikipedia.org/wiki/Little_Busters!) (my
 favorite VN of all time), since she's got a shy personality that's often
 overshadowed by the dominant personalities of those around her. Riki would deny
 it, but he's also pretty adorable.
