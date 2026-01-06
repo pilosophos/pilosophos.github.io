@@ -23,7 +23,13 @@ import CamilleProfileImg from "@art/camille-profile.png";
 
     <div class="grid lg:grid-cols-2 mt-10">
       <nav class="my-auto">
-        <h3 class="text-center text-4xl font-ari-display mb-5 uppercase italic hidden lg:block">Character select</h3>
+        <header>
+          <h3 class="text-center text-4xl font-ari-display uppercase italic hidden lg:block">Character select</h3>
+          <aside class="w-105 mb-5 mx-auto justify-between text-lg font-ari-display uppercase hidden lg:flex muted">
+            <span>Single player</span>
+            <span>Free play</span>
+          </aside>
+        </header>
         <ul class="flex flex-wrap justify-center gap-3 lg:gap-1">
           <CharacterSelect
             id="val"
