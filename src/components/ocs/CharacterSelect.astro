@@ -1,0 +1,60 @@
+---
+const { id, class: className, href, charName, charTitle } = Astro.props;
+---
+
+<li id={ id } class="charselect">
+  <a href={ href }>
+    <div class:list={[`group hexagon relative cursor-pointer hover:bg-white!`, className ]}>
+      <div class="hexagon">
+        <slot />
+      </div>
+      <div class="p-1 px-2 text-pi-gray uppercase font-bold font-ari-display w-44">
+        { charName }
+      </div>
+      <div class=`
+        player-indicator
+        text-red-400 font-ari-display text-4xl
+        absolute right-1 top-1
+        translate-x-15 group-hover:translate-x-0
+        transition-transform transition-[opacity]`
+      >
+        P1
+    </div>
+  </a>
+
+  <template class="stageimg-template">
+    <div class="fade-in">
+      <slot name="stageimg"/>
+    </div>
+  </template>
+
+  <template class="description-template">
+    <div class="description fade-in text-end">
+      <p class="name text-4xl uppercase">{ charName }</p>
+      <p class="title text-xl">{ charTitle }</p>
+    </div>
+  </template>
+</li>
+
+<style>
+  .hexagon {
+    clip-path: polygon(0 40px, 40px 0, 100% 0, 100% calc(100% - 40px), calc(100% - 40px) 100%, 0 100%);
+  }
+
+  .player-indicator {
+    text-shadow: 4px 4px 0px var(--color-pi-gray);
+  }
+
+  .fade-in {
+    opacity: 1;
+    transform: translateX(0px);
+    display: block;
+    transition-property: transform, opacity, display;
+    transition-duration: 0.2s;
+
+    @starting-style {
+      opacity: 0;
+      transform: translateX(100px)
+    }
+  }
+</style>

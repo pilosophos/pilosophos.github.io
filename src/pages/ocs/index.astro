@@ -1,9 +1,12 @@
 ---
+import { Image } from "astro:assets";
+
 import ArticleHeader from "@components/ArticleHeader.astro";
+import CharacterSelect from "@components/ocs/CharacterSelect.astro";
 import DefaultLayout from "@layouts/DefaultLayout.astro";
 
-import CamilleInfobox from "@components/ocs/CamilleInfobox.astro";
-import ValentinaInfobox from "@components/ocs/ValentinaInfobox.astro";
+import ValentinaPixelImg from "@art/valentina-pixel.png"
+import CamilleProfileImg from "@art/camille-profile.png";
 ---
 
 <DefaultLayout
@@ -19,20 +22,131 @@ import ValentinaInfobox from "@components/ocs/ValentinaInfobox.astro";
       info box to go to their character page.
     </ArticleHeader>
 
-    <nav class="flex items-start justify-center flex-wrap gap-10">
-      <a href="/ocs/camille" class="interactive"><CamilleInfobox /></a>
-      <a href="/ocs/valentina" class="interactive"><ValentinaInfobox /></a>
-    </nav>
+    <div class="grid lg:grid-cols-2 mt-10">
+      <nav class="my-auto">
+        <h3 class="text-center text-4xl font-ari-display mb-5 uppercase italic hidden lg:block">Character select</h3>
+        <ul class="flex flex-wrap justify-center gap-3 lg:gap-1">
+          <CharacterSelect
+            id="val"
+            href="/ocs/valentina"
+            charName="Valentina Cedar"
+            charTitle="PhD student on study abroad"
+            class="bg-orange-400"
+          >
+            <div class="bg-orange-200">
+              <Image
+                src={ ValentinaPixelImg }
+                alt="Valentina Cedar's profile picture"
+                height={ 200 } width={ 200 }
+                class="relative left-2"
+              />
+            </div>
+            <Image
+              slot="stageimg"
+              src={ ValentinaPixelImg }
+              alt="Valentina Cedar's profile picture"
+              class="picture"
+              style={ { display: 'none' } }
+              height={ 480 } width={ 480 }
+            />
+          </CharacterSelect>
+          <CharacterSelect
+            id="camille"
+            href="/ocs/camille"
+            charName=`Camille "Rosy" Grey`
+            charTitle="Partygoing hacker-for-hire"
+            class="bg-pi-pink"
+          >
+            <div class="bg-pink-200">
+              <Image
+                src={ CamilleProfileImg }
+                alt="Camille Grey's profile picture"
+                height={ 200 } width={ 200 }
+              />
+            </div>
+            <Image
+              slot="stageimg"
+              src={ CamilleProfileImg }
+              alt="Camille Grey's profile picture"
+              class="picture"
+              style={ { display: 'none' } }
+              height={ 480 } width={ 480 }
+            />
+          </CharacterSelect>
+        </ul>
+      </nav>
+
+      <a id="character-stage" class="decorative-grid transition-colors bg-pi-cyan/40 hidden lg:block">
+        <div id="stageimg" class="w-[480px] h-[480px] me-0 ms-auto"></div>
+        <div id="stagedesc" class="font-ari-display bg-pi-cyan pt-2 px-2 text-pi-gray text-end">
+          <div>
+            <p class="name text-4xl uppercase">Select a character</p>
+            <p class="title text-xl">TO SEE THEIR DETAILS</p>
+          </div>
+        </div>
+      </a>
+      
+
+    </div>
+    
     
   </main>
 </DefaultLayout>
 
 <style>
-  .interactive {
-    position: relative;
-
-    &:hover {
-      top: -1px;
-    }
+  .decorative-grid {
+    background-image: linear-gradient(90deg, transparent 26px, var(--color-pi-gray) 26px, var(--color-pi-gray) 35px, transparent 35px), linear-gradient(transparent 26px, var(--color-pi-gray) 26px, var(--color-pi-gray) 35px, transparent 35px);
+    background-size: 49px 49px;
   }
 </style>
+
+<script>
+  const charStage = document.getElementById('character-stage')! as HTMLAnchorElement;
+  const stageImg = document.getElementById('stageimg')!;
+  const stageDesc = document.getElementById('stagedesc')!;
+
+  let selectedCharId = null as string | null;
+
+  for (let charSelect of document.querySelectorAll('.charselect')) {
+    (charSelect as HTMLElement).onmouseenter = () => {
+      if (selectedCharId !== charSelect.id) {
+        selectedCharId = charSelect.id;
+        setStageHref(charSelect);
+        changeStageImg(charSelect);
+        changeStageDesc(charSelect);
+      }
+    }
+  }
+
+  function setStageHref(charSelect: Element) {
+    const link = charSelect.querySelector('a')!.href;
+    charStage.href = link;
+  }
+
+  /**
+   * Change the big image on the character stage to the character represented
+   * by the given character selector
+   * @param charSelect Character selector
+   */
+  function changeStageImg(charSelect: Element) {
+    stageImg.innerHTML = '';
+    const stageImgTemplate = charSelect.querySelector('.stageimg-template') as HTMLTemplateElement;
+    const stageImgContent = stageImgTemplate!.content.cloneNode(true);
+
+    stageImg.append(stageImgContent);
+    stageImg.querySelector('img')!.style.display = 'block';
+  }
+
+  /**
+   * Change the description on the stage to the character represented
+   * by the given character selector
+   * @param charSelect Character selector
+   */
+  function changeStageDesc(charSelect: Element) {
+    stageDesc.innerHTML = '';
+    const stageDescTemplate = charSelect.querySelector('.description-template') as HTMLTemplateElement;
+    const stageDescContent = stageDescTemplate!.content.cloneNode(true);
+
+    stageDesc.append(stageDescContent);
+  }
+</script>
