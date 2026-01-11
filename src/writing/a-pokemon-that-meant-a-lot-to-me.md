@@ -5,8 +5,8 @@ tags: [fiction, Pokémon]
 published: 2026-01-10
 ---
 # A Pokémon that meant a lot to me
-Posted by [@ValCedar](/ocs/valentina) 3 days ago  
-6 minute read (1,604 words)​
+*Posted by [@ValCedar](/ocs/valentina) 3 days ago  
+6 minute read (1,604 words)​*
 
 > I wrote this for Language Arts class in my second year of high school, when our teacher prompted the class to write about *"A Pokémon that meant a lot to you."* I found it again while trying to find some photos on my old laptop, and when I read it over, memories of my childhood that I had seemingly long forgotten hit me again, like they had happened just yesterday. I'm posting it online so I can come back to it, and maybe other people will like it too. ―Valentina
 
