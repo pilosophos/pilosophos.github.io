@@ -186,6 +186,6 @@ After the Japanese defeat during WW2, the MacArthur administration banned the gl
 
 The Ellica (Electric Lithium-Ion Car) is an 2004 electric vehicle prototype designed at Keio University. It reached a speed of 370 km/h on the Nardò High Speed Track in Italy and accelerates from 0-100 km/h in four seconds. It has eight wheels for traction, and they are smaller than normal passenger wheels so the car sits lower to the ground. It seats the driver and three passengers. ([source](https://en.wikipedia.org/wiki/Eliica))
 
-# Rembrandt lighting
+## Rembrandt lighting
 
 A lighting technique named after the Dutch painter Rembrandt that causes a triangular patch on the face's darker side to have a triangular illuminated patch below the eye. It is seen in film noir to evoke emotions and create a sense of mystery. ([source](https://en.wikipedia.org/wiki/Rembrandt_lighting))
