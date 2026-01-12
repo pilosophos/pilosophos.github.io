@@ -24,7 +24,7 @@ It's amazing how deeply we could get into these conversations. If people can say
 
 I could only pretend to care for so long, though. Day by day, I started saying less and less, and started zoning out more and more, wishing I could talk about the *Collected Mythology of Unown* or *Science Experiments You Can Try At Home*.
 
-Then one day, as I zoned out eating my turkey sandwich, I decided I was tired of having people talk *around* me. I mean, whether or not I contributed to the conversation, those same 9,600 words are still gonna get said by *someone*. So, as Melanie on my left craned her neck to talk to Amanda on my right about how Josie might have been flirting with Derek yesterday, my sandwich and I got up from that table and went right out the cafeteria door. The both of them just kept talking.
+Then one day, as I zoned out eating my sandwich, I decided I was tired of having people talk *around* me. I mean, whether or not I contributed to the conversation, those same 9,600 words are still gonna get said by *someone*. So, as Melanie on my left craned her neck to talk to Amanda on my right about how Josie might have been flirting with Derek yesterday, my sandwich and I got up from that table and went right out the cafeteria door. The both of them just kept talking.
 
 With every step I took, all those words started to fade away. After a little wandering, I settled down on a concrete stoop behind the gym. Leaves rustled in the wind. Pidgeottos flew past, high in the sky. Now, there were 0 words.
 
