@@ -36,9 +36,9 @@ I was furious! As he stared at me with his vacant little Psyduck eyes, I yelled 
 
 Even though I could no longer see him, that Psyduck still showed up in back of my mind all day. After school, looking for a new book to read, a subconscious Psyduck led me to the Psyduck section of the Pokémon shelves. When I went to bed that night, I stared at the ceiling counting Psyduck. They weren't different, unique Psyduck― I just counted that one Psyduck over and over.
 
-The next day, I returned to that spot behind the gym, with the rustling leaves and the Pidgeottos overhead. I returned even though I knew that Psyduck could come back to take my lunch, and even though it had frustrated me so the other day.
+The next day, I returned to that spot behind the gym, with the rustling leaves and the Pidgeottos overhead. I returned even though I knew that Psyduck could come back to take my lunch, and even though it had frustrated so much that he appeared in last night's dream, surfing on a giant sandwich far from my reach.
 
-I think, deep down, I wanted to be furious. I wanted to yell and scream away my frustrations until my throat was hoarse, because it gave my heart a break from just feeling lonely. 
+Looking back, I think that deep down, I *wanted* to be furious. I wanted to yell and scream away my frustrations until my throat was hoarse, because it gave my heart a break from just feeling lonely.
 
 So I sat down on the concrete stoop and sure enough, several minutes later, I spy that Psyduck peeking at me from behind the tree. I drew in a sharp breath and held my sandwich so tight the mayonnaise leeched from its sides. After considering me for a few moments, he waddled up to me just as he had the day before. My pulse quickened as he stopped right in front of me.
 
