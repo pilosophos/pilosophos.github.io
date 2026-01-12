@@ -189,3 +189,11 @@ The Ellica (Electric Lithium-Ion Car) is an 2004 electric vehicle prototype desi
 ## Rembrandt lighting
 
 A lighting technique named after the Dutch painter Rembrandt that causes a triangular patch on the face's darker side to have a triangular illuminated patch below the eye. It is seen in film noir to evoke emotions and create a sense of mystery. ([source](https://en.wikipedia.org/wiki/Rembrandt_lighting))
+
+## Modulex
+
+A company that spun out of LEGO in 1963 to make serious LEGOs for architecture. Modulex blocks were smaller and designed to be used in 1/20 scale models. They originally bore a LEGO wordmark on the studs, but this was changed to a simple `M`, in order to distance themselves from LEGOs, which were commonly seen as mere kids' toys. As architectural trends turned away from blocky shapes, Modulex switched to marketing towards factory and city planners.
+
+Modulex would go on to produce sets for building corporate project planning boards and other signage. As computers improved, providing convenient project management tools and CAD capabilities, Modulex bricks became obsolete. Though the bricks were discontinued in 2004, the company continues to this day as a manufacturer of commercial signage and displays.
+
+In 2015, a company called Modulex Bricks A/S was founded to make Modulex bricks from the original moulds, but it was bought out by the LEGO company and it has no intention of manufacturing them. ([source](https://www.youtube.com/watch?v=I_OUxVuoxjk))
