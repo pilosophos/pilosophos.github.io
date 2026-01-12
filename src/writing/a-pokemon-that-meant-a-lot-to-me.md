@@ -42,7 +42,7 @@ Looking back, I think that deep down, I *wanted* to be furious. I wanted to yell
 
 So I sat down on the concrete stoop and sure enough, several minutes later, I spy that Psyduck peeking at me from behind the tree. I drew in a sharp breath and held my sandwich so tight the mayonnaise leeched from its sides. After considering me for a few moments, he waddled up to me just as he had the day before. My pulse quickened as he stopped right in front of me.
 
-From behind his back he produced a misshapen crabapple. He held it out in front with his stubby little arms and, quite bewildered, I took it from him. This seemed to satisfy him, and he plopped himself down next to me with his own crabapple.
+From behind his back he produced a misshapen crabapple, and held it out in front with his stubby little arms. Quite bewildered, I shakily reached out an apprehensive arm and grabbed it. This seemed to satisfy him, and he plopped himself down next to me with his own crabapple.
 
 I guess he felt bad for taking my sandwich, and he'd brought something he thought I could eat as a peace offering.
 
