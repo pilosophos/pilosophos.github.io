@@ -32,7 +32,7 @@ That's where I met *that* Psyduck.
 
 I had tucked into my lunch once again, looking vaguely at the tree in front of me, when all of a sudden a Psyduck waddles up to me from behind a bush. As I raised my sandwich up, mouth wide for a bite, he snatches away my sandwich― *my sandwich!―* and tosses it right into his big fat gob. In one singular gulp, that sandwich was history.
 
-I was furious! As he started at me with his vacant little Psyduck eyes, I yelled at him for what felt like ten minutes straight, until the bell rang and I had to get back to class. In my parting shot, he turned right around and hopped back into the bush he came from. His tail wiggled amidst the leaves before he disappared from sight.
+I was furious! As he stared at me with his vacant little Psyduck eyes, I yelled at him for what felt like ten minutes straight, until the bell rang and I had to get back to class. In my parting shot, he turned right around and hopped back into the bush he came from. His tail wiggled amidst the leaves before he disappared from sight.
 
 Even though I could no longer see him, that Psyduck still showed up in back of my mind all day. After school, looking for a new book to read, a subconscious Psyduck led me to the Psyduck section of the Pokémon shelves. When I went to bed that night, I stared at the ceiling counting Psyduck. They weren't different, unique Psyduck― I just counted that one Psyduck over and over.
 
