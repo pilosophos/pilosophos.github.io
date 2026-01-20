@@ -1,0 +1,40 @@
+---
+import { Image } from "astro:assets";
+import WinstonInjuredImg from "@art/winston-injured.png";
+---
+
+<div class="sidebar-decor not-prose mx-auto bg-yellow-200 pt-3 md:m-5 md:mt-0 rounded-lg border border-yellow-200 max-w-100">
+  <h2 class="font-display text-pi-gray text-xl ps-5 mb-3">
+    Winston Archambault-Brewer
+    <small class="block uppercase font-sans">Latin teacher who tells tall tales</small>
+  </h2>
+  <section class="sidebar-decor bg-pi-gray rounded-lg">
+    <div class="w-full">
+      <Image src={ WinstonInjuredImg } alt="Profile picture of Camille Grey" height={ 640 } class="w-full"/>
+    </div>
+    <div class="p-5">
+      <dl class="infobox-content">
+        <div><dt>Universe</dt><dd>Genovia RP</dd></div>
+        <div><dt>Occupation</dt><dd>Latin Teacher</dd></div>
+        <div><dt>Names</dt><dd>Winston Archambault-Brewer, Mr. A-B</dd></div>
+        <div><dt>Age</dt><dd>33</dd></div>
+        <div><dt>Education</dt><dd>MA Latin</dd></div>
+        <div><dt>Likes</dt><dd>Latin, telling anecdotes, jelly beans, skiing, novelty ties</dd></div>
+        <div><dt>Dislikes</dt><dd>Singing, computers, raw fish</dd></div>
+      </dl>
+    </div>
+
+    <div class="border-t border-yellow-200 text-yellow-200 flex">
+      <div class="p-2 uppercase text-sm/3">
+        Personnel dossier to be read by authorized persons only <br/>
+        NFN-1226-45517-B
+      </div>
+    </div>
+  </section>
+</div>
+
+<style>
+  .sidebar-decor {
+    clip-path: polygon(calc(100% - 30px) 0, 100% 30px, 100% 100%, 0 100%, 0 0);
+  }
+</style>

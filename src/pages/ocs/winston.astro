@@ -1,0 +1,119 @@
+---
+import { Image } from "astro:assets";
+import ArticleHeader from "@components/ArticleHeader.astro";
+import DefaultLayout from "@layouts/DefaultLayout.astro";
+import SmallIconLink from "@components/SmallIconLink.astro";
+
+import WinstonInfobox from "@components/ocs/WinstonInfobox.astro";
+
+import WinstonInjuredTextImg from "@art/winston-injured-text.png";
+import WinstonTextImg from "@art/winston-text.png";
+
+---
+
+<DefaultLayout
+  title="OCs"
+  metadesc="Winston is a character created for a forum RP. He is a passionate Latin teacher at a posh school with a penchant for telling unbelievable tales and sweets."
+>
+  <main class="container">
+    <ArticleHeader
+      icon="/images/icons/users.png"
+      title='OCs > Winston Archambault-Brewer'
+    >
+      <a href="/ocs" class="link">← Click to go back to the OC index</a>
+    </ArticleHeader>
+
+    <nav class="container flex justify-center mb-10">
+      <ul class="flex justify-center gap-3 flex-wrap">
+        <li><SmallIconLink href="#summary" icon="/images/icons/users.png" label="Summary"/>
+        <li><SmallIconLink href="#design" icon="/images/icons/users.png" label="Design"/>
+        <li><SmallIconLink href="#gallery" icon="/images/icons/users.png" label="Gallery"/>
+      </ul>
+    </nav>
+
+    <section class="prose prose-invariants max-w-full">
+      <div class="md:float-end">
+        <WinstonInfobox />
+      </div>
+
+      <section id="summary">
+        <aside class="flex justify-center">
+          <blockquote class="md:w-150">
+            <small class="block border-b uppercase">Surveillance audio transcript - A06:04:32FF</small>
+            "Ecce! While I was at a hockey game last year, I actually bumped into the home team's owner― real friendly guy― and we started talking about time management. He showed me this interesting journaling method that maximizes his planning efficiency, and that's what I got this nice notebook for! But in the end, I've just filled it up with reviews of desserts from bakeries around town. Anyway, you asked who has the best cookies?"
+          </blockquote>
+        </aside>
+
+        <p>
+          Winston is a Latin teacher with a penchant for telling tales of his life so unusual, yet so detailed that many people either walk away with the impression that he's a Rennaisance man or a complete charlatan. Whether or not you believe that once taught an elephant to paint a bowl of fruit, or that he once traded a pavlova with granola for a Toyota Corolla, if there's anything that's singularly undeniable about Winston, it's his undying love for the Latin language.
+        </p>
+
+        <p>
+          Often heard mumbling ominously to himself in Latin at the bakery about which dessert to get for breakfast, passersby get the impression that he's been possessed by the ghost of a centurion or that he's made a dark pact with the devil. It is only once you get to know him that you realize that he's just an absentminded goof determined to keep the language alive. Perhaps unconsciously, he is hoping one day that someone will approach him and strike a lively Latin conversation while he's out and about, as unlikely as that may be.
+        </p>
+
+        <p>
+          Though he has only a brief time at Genovia as a substitute and is just beginning his first full year there as a teacher, he is no stranger to being surrounded by students with more wealth than he'll ever accrue in several lifetimes. His mother, Jeanette, headmastered a school for his home country's wealthiest, and after the tenth time hearing about his classmates' summer homes with twenty bedrooms and a stable, his surprise at hearing of such extravagant excesses quickly faded away.
+        </p>
+
+        <p>
+          It was while enrolled at his mother's school that Winston's passion for Latin began, which he attributes to the late Mr. Laurent Roy, "the best Latin teacher to exist since the fall of the Roman Empire," according to Winston. He always had a simple explanation for every difficult concept, a funny anecdote in his back pocket to cement the material, and a jar of jelly beans to share at the end of every lesson. Encouraged by Mr. Roy, Winston went on to earn a Masters in Latin. Though he graduated into uncertain prospects, if given a time machine, he wouldn't change a thing.
+        </p>
+
+        <p>
+          If you believe his CV and the odd tales he tells, Winston has variously worked as a clerk at a store that sold swords, a horoscope writer for a local tabloid, a paralibrarian, a bartender, a translator of Latin mottoes for a government heraldry office, and an adjunct lecturer at a university― all before coming to Genovia. He hopes that his return to secondary school as a teacher will continue Mr. Roy's legacy, giving students the same gift of Latin that Mr. Roy gave to him. "There will never be as great a teacher as him," says Winston, "but I'd better damn well try."
+        </p>
+      </section>
+
+      <section id="design">
+        <h2>Design</h2>
+        <p>
+          Winston is often seen around Genovia wearing a tan three-piece suit, which he wears because he feels obligated at a posh school, rather than personal style. If left up to him, he would be wearing a comfortable sweater, simple slacks, and a pair of moccasins. As an act of rebellion however, his suit is sometimes accompanied by one of various novelty ties, including his favorite: a black tie with a cartoon cat pattern all over. In his breast pocket, he carries a Montblanc pen, visibly quite worn, which he received fifteen years ago as present from his childhood friend, Helena Mellon.
+        </p>
+
+        <p>
+          Due to a skiing mishap, he wears a black sling on his left arm.
+        </p>
+
+        <h4>Design checklist</h4>
+        <details>
+          <summary class="link">Main outfit (click to show)</summary>
+          <ol>
+            <li>[Glasses] Rectangular under-rim glasses.</li>
+            <li>[Suit] A tan three-piece suit. The vest is a light gray.</li>
+            <li>[Tie] Usually a plain black tie, but occasionally a novelty tie with a cartoon black cat pattern over.</li>
+            <li>[Breast pocket] A worn Montblanc pen.</li>
+            <li>[Sling] A black sling on his left arm due to a skiing injury.</li>
+          </ol>
+        </details>
+      </section>
+
+      <section id="gallery">
+        <h2>Gallery</h2>
+
+        <ul class="not-prose flex justify-around flex-wrap gap-5">
+          <li>
+            <figure class="table">
+              <a class="link" href="/art/winston-injured-text">
+                <Image src={ WinstonInjuredTextImg } alt="Winston (injured), drawn January 20, 2026" height={ 350 } />
+              </a>
+              <figcaption class="table-caption caption-bottom">
+                Winston with a sling on his left arm from a skiing injury, drawn January 20, 2026
+              </figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure class="table">
+              <a class="link" href="/art/winston-text">
+                <Image src={ WinstonTextImg } alt="Kirlia and Totodile, drawn March 10, 2024" height={ 350 } />
+              </a>
+              <figcaption class="table-caption caption-bottom">
+                Winston's staff picture, drawn January 20, 2026
+              </figcaption>
+            </figure>
+          </li>
+        </ul>
+      </section>
+    </section>
+  </main>
+</DefaultLayout>
