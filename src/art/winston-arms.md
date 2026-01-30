@@ -4,8 +4,8 @@ cover: winston-arms.png
 date: 2026-01-30
 ---
 Actually, this is the full [heraldic achievement](https://en.wikipedia.org/wiki/Achievement_(heraldry)),
-not just the coat of arms, of Winston Archambault-Brewer, a Latin teacher fervently
-keeping the language alive. He's a character I made for an RP.
+not just the coat of arms. They belong to a character I made for an RP,
+Winston Archambault-Brewer, a Latin teacher fervently keeping the language alive.
 
 Canonically, Winston's arms would have been granted sometime when he worked as a
 translator of Latin mottoes for the Royal Heraldry Office of Kenawak.
