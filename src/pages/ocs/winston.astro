@@ -8,6 +8,7 @@ import WinstonInfobox from "@components/ocs/WinstonInfobox.astro";
 
 import WinstonInjuredTextImg from "@art/winston-injured-text.png";
 import WinstonTextImg from "@art/winston-text.png";
+import WinstonArmsImg from "@art/winston-arms.png";
 
 ---
 
@@ -92,6 +93,16 @@ import WinstonTextImg from "@art/winston-text.png";
         <h2>Gallery</h2>
 
         <ul class="not-prose flex justify-around flex-wrap gap-5">
+          <li>
+            <figure class="table">
+              <a class="link" href="/art/winston-arms">
+                <Image src={ WinstonArmsImg } alt="The Arms of Winston Archambault-Brewer, drawn January 30, 2026" height={ 350 } />
+              </a>
+              <figcaption class="table-caption caption-bottom">
+                The Arms of Winston Archambault-Brewer, drawn January 30, 2026
+              </figcaption>
+            </figure>
+          </li>
           <li>
             <figure class="table">
               <a class="link" href="/art/winston-injured-text">
