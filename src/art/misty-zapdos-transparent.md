@@ -1,6 +1,6 @@
 ---
 title: Misty in Zapdos Magazine (Transparent BG)
-cover: misty-zapdos-empty.png
+cover: misty-zapdos-transparent.png
 date: 2026-02-08
 tags: [notfeatured]
 ---
