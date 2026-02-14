@@ -12,7 +12,7 @@ together with [Zircon](https://toyhou.se/29305709.zircon/108070499),
 the Lati@s-inspired OC by my match. Their forum profile pic is Steven Stone at
 the Safari Zone (I think), so I'm drawing for a real Steven fan.
 
-I originally came up with this composition while at a board game shop with my
+I originally came up with this composition at a board game shop with my
 friends, while waiting for my turn in Power Grid. When there's about six of you
 all a board game where you have to make complex decisions, the mid- to late-game
 slows down to a crawl. One of my buddies, who takes the longest, adopts what I call
