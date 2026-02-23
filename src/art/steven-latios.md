@@ -1,8 +1,7 @@
 ---
-title: Steven & Zircon
-cover: steven-zircon.png
+title: Steven & Latios
+cover: steven-latios.png
 date: 2026-02-14
-tags: [notfeatured]
 ---
 I drew this for a *Palentine's Art Exchange* on Bulbagarden Forums. Everyone 
 signs up with a list of prompts they might want to see drawn by a randomly matched
@@ -10,8 +9,9 @@ forum user, which could involve canon Pokémon characters, OCs, or a mix of both
 
 The prompt I drew was of [Steven Stone](https://bulbapedia.bulbagarden.net/wiki/Steven_Stone)
 together with [Zircon](https://toyhou.se/29305709.zircon/108070499),
-the Lati@s-inspired OC by my match. Their forum profile pic is Steven Stone at
-the Safari Zone (I think), so I'm drawing for a real Steven fan.
+the Lati@s-inspired OC by my match. I made two versions: I finished this Latios
+one first, then replaced Latios with Zircon for the
+[Palentine's exchange version](/art/steven-zircon).
 
 I originally came up with this composition at a board game shop with my
 friends, while waiting for my turn in Power Grid. When there's about six of you
