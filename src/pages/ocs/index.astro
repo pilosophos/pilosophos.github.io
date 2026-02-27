@@ -7,6 +7,7 @@ import DefaultLayout from "@layouts/DefaultLayout.astro";
 
 import ValentinaPixelImg from "@art/valentina-pixel.png"
 import CamilleProfileImg from "@art/camille-profile.png";
+import WinstonProfileImg from "@art/winston-pixel.png";
 ---
 
 <DefaultLayout
@@ -73,6 +74,29 @@ import CamilleProfileImg from "@art/camille-profile.png";
               slot="stageimg"
               src={ CamilleProfileImg }
               alt="Camille Grey's profile picture"
+              class="picture"
+              style={ { display: 'none' } }
+              height={ 480 } width={ 480 }
+            />
+          </CharacterSelect>
+          <CharacterSelect
+            id="winston"
+            href="/ocs/winston"
+            charName=`Magister Winston A-B`
+            charTitle="Latin teacher who tells tall tales"
+            class="bg-red-400"
+          >
+            <div class="bg-red-200">
+              <Image
+                src={ WinstonProfileImg }
+                alt="Winston Archambault-Brewer's profile picture"
+                height={ 200 } width={ 200 }
+              />
+            </div>
+            <Image
+              slot="stageimg"
+              src={ WinstonProfileImg }
+              alt="Winston Archambault-Brewer's profile picture"
               class="picture"
               style={ { display: 'none' } }
               height={ 480 } width={ 480 }
