@@ -6,6 +6,8 @@ import BigNavLink from '@components/BigNavLink.astro';
 import CyberPentagon from '@components/CyberPentagon.astro';
 import DefaultLayout from '@layouts/DefaultLayout.astro';
 import CamilleGreyEquipmentImg from "@art/camille-grey-equipment.png";
+import SmallIconLink from "@components/SmallIconLink.astro";
+import SmallBackButton from "@components/SmallBackButton.astro";
 
 ---
 
@@ -22,64 +24,124 @@ import CamilleGreyEquipmentImg from "@art/camille-grey-equipment.png";
   </ArticleHeader>
 
   <main class="container">
-    <BigNavLink label="Art" flavorText="Pictures worth 1000 words"/>
 
-    <div class="h-30 mt-10 flex gap-3">
-      <CyberPentagon class=`
-          w-23 h-20 py-1 px-2 flex flex-col justify-between items-end rounded-md
-          border bg-pi-cyan text-pi-gray
-          hover:h-25 transition-all hover:bg-pi-yellow 
-        ` notch="20px">
-        <img src='/images/icons/paint_file-2.png'
-          class="relative object-contain mt-1"
-          role="presentation"
-          width=32
-          style="filter: drop-shadow(3px 3px 0 hsla(0, 0%, 0%, 0.5));"
-        >
-        <span class="font-display">Art</span>
-      </CyberPentagon>
-      <CyberPentagon class=`
-          w-23 h-20 py-1 px-2 flex flex-col justify-between items-end rounded-md
-          border bg-pi-cyan text-pi-gray
-          hover:h-25 transition-all hover:bg-pi-yellow 
-        ` notch="20px">
-        <img src='/images/icons/winrep-1.png'
-          class="relative object-contain mt-1"
-          role="presentation"
-          width=32
-          style="filter: drop-shadow(3px 3px 0 hsla(0, 0%, 0%, 0.5));"
-        >
-        <span class="font-display">Writing</span>
-      </CyberPentagon>
-    </div>
+    <article>
+      <nav class="flex justify-center">
+        <ul class="flex gap-1 text-pi-cyan text-center uppercase">
+          <li>
+            <a href="#"><SmallBackButton>← character select</SmallBackButton></a>
+          </li>
+          <li><a href="#" class="in-page-nav-link">Summary</a></li>
+          <li><a href="#" class="in-page-nav-link">Design</a></li>
+          <li><a href="#" class="in-page-nav-link">Gallery</a></li>
+        </ul>
+      </nav>
+    </article>
 
-    <div class="flex group">
-      <CyberPentagon class="bg-lime-300 w-20 me-1 flex items-center justify-center" notch="15px" corner="bottom-left">
-        <img src='/images/icons/help_sheet-0.png'
-          class="relative -top-1 object-contain mt-1"
-          role="presentation"
-          width=32
-          style="filter: drop-shadow(3px 3px 0 hsla(0, 0%, 0%, 0.5));"
-        >
-      </CyberPentagon>
-      <div class="border border-s-15 border-lime-300 px-5 h-20 text-lime-300 flex items-center">
-        What about: A small icon link that have a background highlight on hover,<br>
-        then the icon has a drop shadow and moves a little to the top left
-      </div>
-    </div>
-
-    <div class="mt-10">
-      <CyberPentagon class="group relative rounded-lg bg-pi-pink w-max py-px ps-2 pe-10 cursor-pointer active:bg-white transition-colors duration-150" corner="bottom-right">
-        <CyberPentagon corner="bottom-right" class="overflow-y-hidden">
-          <Image src={ CamilleGreyEquipmentImg } alt="A decker and her equipment, drawn July 27, 2025" height={ 500 } quality={'max'} class="rounded-lg"/>
-          <div class="absolute bottom-0 h-0 w-full bg-black/90 group-hover:h-30 transition-all">
-            <div class="p-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+    <article>
+      <nav class="container flex justify-center my-20">
+        <ul class="flex">
+          <div class="flex gap-1 rotate-45 w-23">
+            <li>
+              <div class="w-15 h-15 bg-orange-400/70 text-pi-gray px-1">
+                Summary
+              </div>
+            </li>
+            <li>
+              <div class="w-15 h-15 bg-orange-400/70 text-pi-gray px-1">
+                Summary
+              </div>
+            </li>
           </div>
-        </CyberPentagon>
-        <div class="absolute text-pi-gray top-5 right-1 font-display text-2xl rotate-180" style="writing-mode:vertical-lr">Camille "Rosy" Grey</div>
-      </CyberPentagon>
-    </div>
+          <div class="flex gap-1 rotate-45 relative w-23">
+            <li>
+              <div class="w-15 h-15 bg-orange-400/70 text-pi-gray px-1">
+                Summary
+              </div>
+            </li>
+            <li>
+              <div class="w-15 h-15 bg-orange-400/70 text-pi-gray px-1">
+                Summary
+              </div>
+            </li>
+          </div>
+          <div class="flex gap-1 rotate-45 relative w-23">
+            <li>
+              <div class="w-15 h-15 bg-orange-400/70 text-pi-gray px-1">
+                Summary
+              </div>
+            </li>
+            <li>
+              <div class="w-15 h-15 bg-orange-400/70 text-pi-gray px-1">
+                Summary
+              </div>
+            </li>
+          </div>
+        </ul>
+      </nav>
+    </article>
 
-    <p></p>
+    <article>
+      <BigNavLink label="Art" flavorText="Pictures worth 1000 words"/>
+    </article>
+
+    <article>
+      <div class="h-30 mt-10 flex gap-3">
+        <CyberPentagon class=`
+            w-23 h-20 py-1 px-2 flex flex-col justify-between items-end rounded-md
+            border bg-pi-cyan text-pi-gray
+            hover:h-25 transition-all hover:bg-pi-yellow
+          ` notch="20px">
+          <img src='/images/icons/paint_file-2.png'
+            class="relative object-contain mt-1"
+            role="presentation"
+            width=32
+            style="filter: drop-shadow(3px 3px 0 hsla(0, 0%, 0%, 0.5));"
+          >
+          <span class="font-display">Art</span>
+        </CyberPentagon>
+        <CyberPentagon class=`
+            w-23 h-20 py-1 px-2 flex flex-col justify-between items-end rounded-md
+            border bg-pi-cyan text-pi-gray
+            hover:h-25 transition-all hover:bg-pi-yellow
+          ` notch="20px">
+          <img src='/images/icons/winrep-1.png'
+            class="relative object-contain mt-1"
+            role="presentation"
+            width=32
+            style="filter: drop-shadow(3px 3px 0 hsla(0, 0%, 0%, 0.5));"
+          >
+          <span class="font-display">Writing</span>
+        </CyberPentagon>
+      </div>
+    </article>
+
+    <article>
+      <div class="flex group">
+        <CyberPentagon class="bg-lime-300 w-20 me-1 flex items-center justify-center" notch="15px" corner="bottom-left">
+          <img src='/images/icons/help_sheet-0.png'
+            class="relative -top-1 object-contain mt-1"
+            role="presentation"
+            width=32
+            style="filter: drop-shadow(3px 3px 0 hsla(0, 0%, 0%, 0.5));"
+          >
+        </CyberPentagon>
+        <div class="border border-s-15 border-lime-300 px-5 h-20 text-lime-300 flex items-center">
+          What about: A small icon link that have a background highlight on hover,<br>
+          then the icon has a drop shadow and moves a little to the top left
+        </div>
+      </div>
+      <div class="mt-10">
+        <CyberPentagon class="group relative rounded-lg bg-pi-pink w-max py-px ps-2 pe-10 cursor-pointer active:bg-white transition-colors duration-150" corner="bottom-right">
+          <CyberPentagon corner="bottom-right" class="overflow-y-hidden">
+            <Image src={ CamilleGreyEquipmentImg } alt="A decker and her equipment, drawn July 27, 2025" height={ 500 } quality={'max'} class="rounded-lg"/>
+            <div class="absolute bottom-0 h-0 w-full bg-black/90 group-hover:h-30 transition-all">
+              <div class="p-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+            </div>
+          </CyberPentagon>
+          <div class="absolute text-pi-gray top-5 right-1 font-display text-2xl rotate-180" style="writing-mode:vertical-lr">Camille "Rosy" Grey</div>
+        </CyberPentagon>
+      </div>
+    </article>
   </main>
 </DefaultLayout>

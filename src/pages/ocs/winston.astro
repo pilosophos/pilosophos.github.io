@@ -2,7 +2,7 @@
 import { Image } from "astro:assets";
 import ArticleHeader from "@components/ArticleHeader.astro";
 import DefaultLayout from "@layouts/DefaultLayout.astro";
-import SmallIconLink from "@components/SmallIconLink.astro";
+import SmallBackButton from "@components/SmallBackButton.astro";
 
 import WinstonInfobox from "@components/ocs/WinstonInfobox.astro";
 
@@ -24,11 +24,14 @@ import WinstonArmsImg from "@art/winston-arms.png";
       <a href="/ocs" class="link">← Click to go back to the OC index</a>
     </ArticleHeader>
 
-    <nav class="container flex justify-center mb-10">
-      <ul class="flex justify-center gap-3 flex-wrap">
-        <li><SmallIconLink href="#summary" icon="/images/icons/users.png" label="Summary"/>
-        <li><SmallIconLink href="#design" icon="/images/icons/users.png" label="Design"/>
-        <li><SmallIconLink href="#gallery" icon="/images/icons/users.png" label="Gallery"/>
+    <nav class="flex justify-center my-5">
+      <ul class="flex gap-1 text-pi-cyan text-center uppercase">
+        <li>
+          <a href="/ocs"><SmallBackButton>← character select</SmallBackButton></a>
+        </li>
+        <li><a href="#summary" class="in-page-nav-link">Summary</a></li>
+        <li><a href="#design" class="in-page-nav-link">Design</a></li>
+        <li><a href="#gallery" class="in-page-nav-link">Gallery</a></li>
       </ul>
     </nav>
 
@@ -42,11 +45,8 @@ import WinstonArmsImg from "@art/winston-arms.png";
           <blockquote class="md:mx-10">
             <small class="block border-b uppercase">Quick facts</small>
             <ul>
-              <li>33 years-old, 173 cm (~5ft 8in), often called <i>Magister</i> or <i>Mr. A-B</i> by students.</li>
               <li>Tells unlikely yet detailed stories that he swears are true.</li>
               <li>Absentminded, prone to mumbling to himself in Latin.</li>
-              <li>Used to be a student at Lilburne College, a posh secondary school headmastered by his mother Jeanette Archambault.</li>
-              <li>He follows in the footsteps of the teacher that inspired his passion for Latin, Mr. Laurent Roy.</li>
               <li>Has a sweet tooth, and keeps a journal of local sweet shop and bakery reviews.</li>
               <li>Was briefly a substitute teacher at Genovia before starting full-time.</li>
               <li>Wears a three-piece-suit out of a sense of obligation, sometimes with a novelty tie out of rebellion.</li>

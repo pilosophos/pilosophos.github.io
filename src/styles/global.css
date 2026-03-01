@@ -128,6 +128,16 @@ summary {
     transition-duration: .15s;
   }
 
+  .in-page-nav-link {
+    @apply w-25
+      border-1 border-pi-cyan
+      bg-pi-cyan/10
+      hover:bg-pi-cyan hover:text-pi-gray
+      active:bg-white active:border-white
+      transition-colors;
+    display: block;
+  }
+
   .wordy-list {
     @apply list-disc ms-5 mb-5 flex flex-col gap-3;
   }

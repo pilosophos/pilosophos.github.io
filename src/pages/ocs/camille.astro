@@ -2,7 +2,7 @@
 import { Image } from "astro:assets";
 import ArticleHeader from "@components/ArticleHeader.astro";
 import DefaultLayout from "@layouts/DefaultLayout.astro";
-import SmallIconLink from "@components/SmallIconLink.astro";
+import SmallBackButton from "@components/SmallBackButton.astro";
 
 import CamilleInfobox from "@components/ocs/CamilleInfobox.astro";
 
@@ -22,17 +22,20 @@ import ArtfightDefensePurpuroseaWantedImg from "@art/artfight-defense-purpurosea
   <main class="container">
     <ArticleHeader
       icon="/images/icons/users.png"
-      title='OCs > Camille "Rosy" Grey'
+      title='Camille Grey'
     >
-      <a href="/ocs" class="link">← Click to go back to the OC index</a>
+      From Pilosophos' Original Character archive
     </ArticleHeader>
 
-    <nav class="container flex justify-center mb-10">
-      <ul class="flex justify-center gap-3 flex-wrap">
-        <li><SmallIconLink href="#summary" icon="/images/icons/users.png" label="Summary"/>
-        <li><SmallIconLink href="#design" icon="/images/icons/users.png" label="Design"/>
-        <li><SmallIconLink href="#gallery" icon="/images/icons/users.png" label="Gallery"/>
-        <li><SmallIconLink href="#art-by-other-people" icon="/images/icons/users.png" label="Art by others"/>
+    <nav class="flex justify-center my-5">
+      <ul class="flex gap-1 text-pi-cyan text-center uppercase">
+        <li>
+          <a href="/ocs"><SmallBackButton>← character select</SmallBackButton></a>
+        </li>
+        <li><a href="#summary" class="in-page-nav-link">Summary</a></li>
+        <li><a href="#design" class="in-page-nav-link">Design</a></li>
+        <li><a href="#gallery" class="in-page-nav-link">Gallery</a></li>
+        <li><a href="#fanart" class="in-page-nav-link">Fanart</a></li>
       </ul>
     </nav>
 
@@ -149,8 +152,8 @@ import ArtfightDefensePurpuroseaWantedImg from "@art/artfight-defense-purpurosea
         </ul>
       </section>
 
-      <section id="art-by-other-people">
-        <h2>Art by other people</h2>
+      <section id="fanart">
+        <h2>Fanart (art of my character by other people)</h2>
 
         <ul class="not-prose flex justify-around items-center flex-wrap gap-5">
           <li>
