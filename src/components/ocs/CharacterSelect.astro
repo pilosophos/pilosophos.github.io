@@ -4,7 +4,7 @@ const { id, class: className, href, charName, charTitle } = Astro.props;
 
 <li id={ id } class="charselect">
   <a href={ href }>
-    <div class:list={[`group hexagon relative cursor-pointer hover:bg-white!`, className ]}>
+    <div class:list={[`group hexagon relative p-px cursor-pointer hover:bg-pi-cyan!`, className ]}>
       <div class="hexagon">
         <slot />
       </div>
@@ -13,7 +13,7 @@ const { id, class: className, href, charName, charTitle } = Astro.props;
       </div>
       <div class=`
         player-indicator
-        text-red-400 font-ari-display text-4xl
+        text-pi-cyan font-ari-display text-4xl
         absolute right-1 top-1
         translate-x-15 group-hover:translate-x-0
         transition-transform transition-[opacity]`
