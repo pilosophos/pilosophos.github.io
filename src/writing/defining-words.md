@@ -1,0 +1,48 @@
+---
+title: '"Is cereal soup?" and other poorly-defined questions'
+description: Until you have a practical reason to classify cereal as soup or not, the answer is indeterminate.
+tags: [nonfiction, soapbox, philosophy, semantics]
+published: 2026-03-01
+---
+# "Is cereal soup?" and other poorly-defined questions
+*Until you have a practical reason to classify cereal as soup or not, the answer is indeterminate.*
+
+## The problem
+
+You're trying to figure out whether a bowl of cereal with milk is soup. You decide that you need a definition of soup that you can compare cereal to. In trying to do so, you fall into a vicious cycle: (1) You start listing properties of soups, to form a definition. (2) You then realize the definition either includes too many things that are intuitively non-soups, or excludes too many things that are intuitively soups. (3) You revise your definition, with different properties. (4) You realize still you have the same problem as in Step 2.
+
+Most likely, the cycle is broken either by settling on an unsatisfying definition of soup, or by giving up and doing something else. Either way, we have failed to adequately define soup, which is weird, because society seems to have no trouble understanding the words soup and cereal in daily life, so there should be a definition… right?
+
+## What do words mean?
+
+Soup and cereal are words. Like all words, they are things we use to make something we want to happen, happen.
+
+If you need to borrow your friend's phone charger, you say `"Can I borrow your phone charger?"`, because those are the words that let him know that you want a phone charger.
+
+The fact that words have purpose behind them also means that they're situational. You don't say, `"Do you like hedgehogs?"`, or `"I've never seen Star Wars"`, or `"Pineapple"`, because those words won't make your friend give you what you need.
+
+The meaning of a single word, like pineapple, is also situational. If your friend asks you what flavor you want out of a bag of jelly beans, and you want the ones that taste like the tart, yellow-inside, green-topped fruits you see at the supermarket, you can say `"Pineapple."` In this case, pineapple means a flavor of jelly bean.
+
+If you're watching a war movie and the main character wants to use a Mk 2 grenade and says "pineapple," then pineapple means an exploding thing that looks vaguely like those tart, yellow-inside, green-topped fruits.
+
+If I invent a game where you have to run around until someone says `"Pineapple"` and then everyone has to stop for ten seconds or they lose, then `"Pineapple"` means `"Stop or lose a point"`.
+
+There are an infinite number of situations where `"Pineapple"` could be used, so it means an infinite number of different things. It's just that in most everyday situations, it has something in common with those tart, yellow-inside, green-topped fruits, so that's what goes in the dictionary. Importantly, the dictionary entry does *not* imply that whenever someone says `"Pineapple"`, it must refer to a particular set of fruity, green-topped objects. What it does is give you a hint: if someone says `"Pineapple"`, it *typically* has something in common with the fruit, whether it's size, shape, color, taste, or something else.
+
+Obviously, lots of things in the universe have something in common with the fruit in some way or another, so the only way to really narrow down what pineapple means is to have a situation where it can only mean a certain set of things.
+
+Same thing with soup: you can have tomato soup, primordial soup, quantum soup, and all kinds of other soups, all of varying degrees of similarity to each other. Until you are in a situation, like biology class, soup can mean virtually anything.
+
+Okay, fine. The definition of words is situational. How does this help me figure out if cereal is soup?
+
+## Why do you want to know?
+
+If you're trying to come up with a definition for something, `"Why do you want to know?"` is the single most important question to answer. Only if you know the answer can you come up with a satisfying definition.
+
+For instance, if the answer is `"I want to know I should give my parents a bowl of cereal when they ask for soup at lunch"`, then the definition of soup is `"Something that your parents want for lunch"`. Would your parents be satisfied with a bowl of cereal? No? Then cereal is not soup.
+
+If the answer is `"My friend is a jokester and I want to make him laugh when he asks for soup"`, then the definition of soup is `"Things you could present to your friend that would make him laugh when he asks for soup"`. Would your friend get the joke when given a bowl of cereal? Yes? Then cereal is soup.
+
+If the answer is `"I'm running a cereal factory in the United States and I need to know if what I'm making legally counts as soup"`, then the definition of soup is codified under [Title 40 of the Federal Code of Regulations, Section 407.81(j)](https://www.ecfr.gov/current/title-40/part-407/section-407.81#p-407.81(j)). Does the law say your cereal is soup? No? Then cereal is not soup.
+
+If the answer is `"I'm chewing the fat by discussing the metaphysics of soup and cereal"`, then the definition of soup is indeterminate, because the definition doesn't matter for the situation. You can discuss as long as you want and come to any conclusion, and it will still satisfy your purpose.

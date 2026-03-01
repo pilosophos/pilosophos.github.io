@@ -5,7 +5,7 @@ import ArticleHeader from '@components/ArticleHeader.astro';
 import CyberPentagon from '@components/CyberPentagon.astro';
 
 const posts = ((await getCollection('writing'))
-  .filter( post => !post.data.tags.includes('unpublished') && !post.data.tags.includes('soapbox') )
+  .filter( post => !post.data.tags.includes('unpublished') && post.data.tags.includes('soapbox') )
   .toSorted((a, b) => {
     const aUpdated = a.data.updated || a.data.published || new Date(0);
     const bUpdated = b.data.updated || b.data.published || new Date(0);
@@ -14,21 +14,21 @@ const posts = ((await getCollection('writing'))
 );
 ---
 <DefaultLayout
-  title="Writing"
-  metadesc="A collection of writing from the desk of Pilosophos."
+  title="Soapbox"
+  metadesc="The soapbox is a collection of opinion pieces that I haven't refined for release on the main writing page"
 >
   <main class="container">
     <div class="grid lg:grid-cols-2 lg:gap-15">
 
-      <ArticleHeader class="block lg:hidden" icon="/images/icons/winrep-1.png" title="Writing">
-        I'm hoping to give Shakespeare a run for his money someday
+      <ArticleHeader class="block lg:hidden" icon="/images/icons/winrep-1.png" title="Soapbox">
+        A collection of opinion pieces that I haven't refined for release on the main writing page
       </ArticleHeader>
 
-      <div class="hidden lg:block text-end mt-20">
+      <div class="hidden lg:block text-end my-20">
         <div class="whitespace-nowrap">
           <div class="inline-block max-w-80 xl:max-w-100">
-            <h2 class="font-display text-4xl md:mt-5">Writing</h2>
-            <p class="whitespace-normal">I'm hoping to give Shakespeare a run for his money for some day.</p>
+            <h2 class="font-display text-4xl md:mt-5">Soapbox</h2>
+            <p class="whitespace-normal">A collection of opinion pieces that I haven't refined for release on the main writing page.</p>
           </div>
           <img src="/images/icons/winrep-1.png"
             class="inline-block w-[112px] mx-5 relative -top-7"
@@ -40,19 +40,19 @@ const posts = ((await getCollection('writing'))
 
         <div class="flex items-start justify-end pe-6 gap-3">
           <div class="flex flex-col gap-3">
-            <a href="/writing/soapbox" class="group flex">
+            <a href="/writing" class="group flex">
               <CyberPentagon
                 class=`
-                  relative w-35 h-21 bg-pi-cyan text-pi-gray pe-1
+                  relative w-35 h-21 bg-rose-300 text-pi-gray pe-1
                   transition-colors group-hover:bg-white group-active:bg-white
                 `
                 notch="15px"
                 corner="top-left"
               >
-                <span class="block uppercase">the</span>
-                <span class="text-2xl/1 font-display">SOAPBOX</span>
+                <span class="block uppercase">back to</span>
+                <span class="text-2xl/1 font-display">WRITING INDEX</span>
               </CyberPentagon>
-              <div class="bg-pi-cyan transition-colors group-hover:bg-white group-active:bg-white w-1 h-21 ms-1"></div>
+              <div class="bg-rose-300 transition-colors group-hover:bg-white group-active:bg-white w-1 h-21 ms-1"></div>
             </a>
             <a href="/writing/rss.xml" class="group flex">
               <CyberPentagon

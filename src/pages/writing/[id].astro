@@ -22,6 +22,8 @@ if (post.data.cover){
     Astro.url,
   ).href;
 }
+
+const isSoapbox = post.data.tags.includes('soapbox');
 ---
 <DefaultLayout title={ post.data.title } metadesc={ post.data.description } ogImage={ ogImageUrl }>
   <article class="
@@ -38,9 +40,9 @@ if (post.data.cover){
     <header class="text-base mb-5 not-prose">
       <nav>
         <SmallIconLink
-          label="Back to writing index"
+          label={ isSoapbox ? "Back to soapbox index" : "Back to writing index" }
           icon="/images/icons/tiny/winrep-0.png"
-          href="/writing"
+          href={ isSoapbox ? "/writing/soapbox" : "/writing" }
         />
       </nav>
     </header>
@@ -50,9 +52,9 @@ if (post.data.cover){
     <footer class="text-base mb-5 not-prose">
       <nav>
         <SmallIconLink
-          label="Back to writing index"
+          label={ isSoapbox ? "Back to soapbox index" : "Back to writing index" }
           icon="/images/icons/tiny/winrep-0.png"
-          href="/writing"
+          href={ isSoapbox ? "/writing/soapbox" : "/writing" }
         />
       </nav>
     </footer>
