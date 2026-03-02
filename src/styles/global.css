@@ -255,4 +255,5 @@ summary {
   src: url( '/fonts/ari-w9500-display.ttf' );
 }
 
-@import "./homelab.css"
+@import "./homelab.css";
+@import "./mermaid-charts.css";

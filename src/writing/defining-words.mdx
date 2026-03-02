@@ -22,7 +22,16 @@ import HasMarginalImg from '@components/writing/HasMarginalImg.astro'
 
 ## The problem
 
-You're trying to figure out whether a bowl of cereal with milk is soup. You decide that you need a definition of soup that you can compare cereal to. In trying to do so, you fall into a vicious cycle: (1) You start listing properties of soups, to form a definition. (2) You then realize the definition either includes too many things that are intuitively non-soups, or excludes too many things that are intuitively soups. (3) You revise your definition, with different properties. (4) You realize still you have the same problem as in Step 2.
+You're trying to figure out whether a bowl of cereal with milk is soup. You decide that you need a definition of soup that you can compare cereal to. In trying to do so, you fall into a vicious cycle:
+
+```mermaid
+
+graph TD
+    S[Start defining soup] --> A
+    A[List properties of soups for your new definition] --> B[Definition includes too many things that are intuitively non-soups, or excludes too many soups]
+    B --> C[Decide to revise definition]
+    C --> A
+```
 
 Most likely, the cycle is broken either by settling on an unsatisfying definition of soup, or by giving up and doing something else. Either way, we have failed to adequately define soup, which is weird, because society seems to have no trouble understanding the words soup and cereal in daily life, so there should be a definition… right?
 
