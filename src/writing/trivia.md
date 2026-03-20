@@ -197,3 +197,8 @@ A company that spun out of LEGO in 1963 to make serious LEGOs for architecture. 
 Modulex would go on to produce sets for building corporate project planning boards and other signage. As computers improved, providing convenient project management tools and CAD capabilities, Modulex bricks became obsolete. Though the bricks were discontinued in 2004, the company continues to this day as a manufacturer of commercial signage and displays.
 
 In 2015, a company called Modulex Bricks A/S was founded to make Modulex bricks from the original moulds, but it was bought out by the LEGO company and it has no intention of manufacturing them. ([source](https://www.youtube.com/watch?v=I_OUxVuoxjk))
+
+## Stage stations
+Stage stations, also known as posting stations or relay stations, are facilities along main roads or trade routes where travelers can rest or replace exhausted horses for fresh ones. ([source](https://en.wikipedia.org/wiki/Stage_station))
+
+Shukuba (宿場) are Japanese stage stations, which were built between 1601 and 1624. Post stations would have lodgings for public officials, which were supported by subsidies from the Shogun. Shukuba-machi (宿場町) are the towns that developed around the stage stations, which often featured inns, tea houses, and retail stores. With the advent of railroads, these stage station towns entered a state of decline. ([source](https://en.wikipedia.org/wiki/Shukuba))
