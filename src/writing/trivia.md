@@ -3,7 +3,7 @@ title: Trivia
 description: An unsorted collection of miscellaneous trivia
 tags: [nonfiction]
 published: 2025-08-21
-updated: 2026-01-11
+updated: 2026-03-19
 ---
 
 # Trivia
