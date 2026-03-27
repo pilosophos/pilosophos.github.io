@@ -20,8 +20,8 @@ around looking at their phones. There is no chemistry here.
 
 Similarly, characters that are in the same RP need to have reasons to interact,
 otherwise they're just sitting around doing nothing. Simply being in the same
-RP is actually rather weak reason to interact, so you need to put some thought
-into your character's personality and background.
+RP is actually a rather weak reason to interact, so you need to put some thought
+into your character's personality and background to avoid the *crowded bus* problem.
 
 ## Chemistry through personality
 
