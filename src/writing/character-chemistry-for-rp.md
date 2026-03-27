@@ -10,7 +10,8 @@ In a character-focused RP, the most important factor to consider when making a
 character sheet is whether they'll have good chemistry with other
 player's characters. Since social interaction is the focus, good
 chemistry makes for good RP, which itself is a result of characters having
-reasons to interact with each other.
+reasons to interact with each other. When there are no reasons, there is no
+chemistry, and the RP dies.
 
 To illustrate this point, imagine you're packed into a crowded bus, with people
 all around you. You don't know them, and you have no reasons to talk with any of
