@@ -25,7 +25,7 @@ Argent, on a bend Sable between two wands of the same bendwise tips to chief
 and to base two horse heads conjoined of the field.
 
 ### Crest
-On a wizard's hat Gules, a raven proper coutourny.
+On a wizard's hat Gules, a raven proper contourny.
 
 ### Motto
 MANUS TUA NUMQUAM MONSTRANDA. This Latin phrase means "Never show your hand".
