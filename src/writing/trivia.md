@@ -202,3 +202,21 @@ In 2015, a company called Modulex Bricks A/S was founded to make Modulex bricks 
 Stage stations, also known as posting stations or relay stations, are facilities along main roads or trade routes where travelers can rest or replace exhausted horses for fresh ones. ([source](https://en.wikipedia.org/wiki/Stage_station))
 
 Shukuba (宿場) are Japanese stage stations, which were built between 1601 and 1624. Post stations would have lodgings for public officials, which were supported by subsidies from the Shogun. Shukuba-machi (宿場町) are the towns that developed around the stage stations, which often featured inns, tea houses, and retail stores. With the advent of railroads, these stage station towns entered a state of decline. ([source](https://en.wikipedia.org/wiki/Shukuba))
+
+## Stripped book
+Books are cheap to produce but expensive to ship. When a bookstore purchases a
+lot of books from the publisher, it does so at a considerable markup over the
+manufacturing and shipping price price, and adds an additional markup when
+selling the book to the customer.
+
+If the books haven't sold after a certain period of time and the bookstore wants
+to dispose of the book, they can recoup most the the cost from the publisher
+by destroying them. This is done by ripping the covers off the book, and the
+bookstore sends the covers back to the publisher as proof of destruction. The
+publisher doesn't actually want the books back; they just want to know that no additional profit can be made from the books.
+
+Books destroyed this way are called "stripped books." Since such books are not
+supposed to be sold, the copyright page of some books indicate that if the book
+was sold without a cover, that it is stolen property.
+
+Citations: [1](https://en.wikipedia.org/wiki/Stripped_book), [2](https://boards.straightdope.com/t/bookstore-question/244131/3), [3](https://reddit.com/r/OutOfTheLoop/comments/os2xoz/what_is_up_with_the_ripped_cover_warning_at_the/)
