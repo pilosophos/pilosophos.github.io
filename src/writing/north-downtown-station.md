@@ -30,13 +30,18 @@ A small crowd pours out of the train, and another crowd pours in to replace them
 The lady in the blue velvet skirt stands just outside the window. The commuters rushing past her jostle her auburn hair to and fro. Did she spend long on her hair this morning?
 
 A middle-aged woman races down the stairs against the people going up, a mass of colorful shopping bags streaming behind her.
-"Hey!" A man with a robotic arm shouts and holds his soda aloft to keep it from spilling as she rushes by.
 
-<p class="indent">"Ouch!" A bag hits a small girl in the head. Her mother crouches down to hug her close.</p>
+*"Hey!"*  
+A man with a robotic arm shouts and holds his soda aloft to keep it from spilling as she rushes by.
 
-"Watch it!" Tissue paper floats away from the woman's shopping bag onto a dwarf's tablet screen. His beard is moving, but his thick accent renders him incomprehensible.
+*"Ouch!"*  
+A bag hits a small girl in the head. Her mother crouches down to hug her close.
 
-<p class="indent">"Careful!" A large, bespectacled man clutches his glasses tighter to his face. His head looks like a melon.</p>
+*"Watch it!"*  
+Tissue paper floats away from the woman's shopping bag onto a dwarf's tablet screen. His beard is moving, but his thick accent renders him incomprehensible.
+
+*"Careful!"*  
+A large, bespectacled man clutches his glasses tighter to his face. His head looks like a melon.
 
 At last she squeezes herself and her bags in the spaces between commuters, and hunches over to catch her breath.
 
