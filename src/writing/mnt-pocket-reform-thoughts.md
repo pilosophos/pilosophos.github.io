@@ -6,17 +6,19 @@ published: 2026-04-17
 ---
 # Thoughts on the v1 MNT Pocket Reform
 
-Since the release of the Apple iPhone, we've all seen the trend of tech products
+Since the release of the Apple iPhone, we've all seen the trend of portable tech
 getting thinner and thinner, all the while losing the removable batteries,
 headphone jacks, and physical buttons along the way. Everything that gave the
-MP3 players and feature phones of yesteryear any sense of character and satisfaction
-to use has now been replaced by the homogenous glass slab.
+MP3 players and feature phones of yesteryear any identity has now been replaced
+by indistinct glass slabs. Even laptop design has started becoming trite and
+emotionless: Apple releases the silver slab over and over, and the Copilot button
+on PCs is yet another reminder that our humanity is slipping away day by day.
 
 Now imagine you're a hardware hacker. You see this bleak world of soulless
 consumer electronics whose design ethos can be summarized into a blank stare,
-and you decide that, *screw the rules,* you're going to make your own laptop, with
+and you decide that, *screw the rules,* you're going to make your own laptop with
 blackjack and hookers. So you raid the storerooms of Adafruit and Digikey, and
-using some good ol' fashioned ingenuity, pack all the cool shit you've always
+using some good ol' fashioned hacker ingenuity, pack all the cool shit you've always
 wanted into a vaguely laptop-shaped box with some screws. Oh, and you're German.
 Don't forget that you're German.
 
