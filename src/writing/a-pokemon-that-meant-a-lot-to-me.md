@@ -3,6 +3,7 @@ title: A Pokémon that meant a lot to me
 description: A recovered school assignment from the Pokémon universe
 tags: [fiction, Pokémon]
 published: 2026-01-10
+updated: 2026-04-27
 ---
 # A Pokémon that meant a lot to me
 *Posted by [@ValCedar](/ocs/valentina) 3 days ago  
@@ -46,7 +47,7 @@ From behind his back he produced a misshapen crabapple, and held it out in front
 
 I guess he felt bad for taking my sandwich, and he'd brought something he thought I could eat as a peace offering.
 
-All of a sudden, I started crying. Maybe I felt bad for having yelled at such a remorseful Psyduck the day before. Or maybe I was just lonely and this Psyduck was the only being that seemed to care about me. But in that moment, my brain couldn't think and make sense of it all. I could only hug him so tight that he started to flail around after a minute and I had to put him down.
+All of a sudden, tears welled up in my eyes and started streaming down by cheeks. Maybe I felt bad for having yelled at such a remorseful Psyduck the day before. Or maybe I was just lonely and this Psyduck was the only being that seemed to care about me. But in that moment, my brain couldn't think and make sense of it all. I could only hug him so tight that he started to flail around after a minute and I had to put him down.
 
 From then on, I started skipping the lunchroom and started having lunch with this Psyduck. Sometimes I'd bring him snacks that he'd gulp down all at once, only for him to clamor for more. I'd watch him pick up leaves that had fallen on the ground, gathering them in his arms until they were overflowing and scattering all across the floor. One time, I brought a playground ball and tried to teach him how to play Wallball. That was not a success.
 
@@ -56,12 +57,12 @@ When it came close to summer in my last year of middle school, I knew our lunche
 
 I didn't want my time with that Psyduck to disappear, so on graduation day, I slipped away and stole a Pokéball from the janitor's supply closet. I met him once again at the concrete stoop behind the gym, right on time, at noon.
 
-I gripped the Pokéball in my hand. I imagined the trajectory in my mind, the curve that it would make in the air. I had always been a lousy pitcher in P.E., but somehow, just this once, I knew exactly what power and angle I would have to throw it at.
+I gripped the Pokéball in my hand. I imagined the trajectory in my mind, the curve that it would make in the air. I had always been a lousy pitcher in P.E., but somehow, just this once, I knew exactly what power and angle I would have to throw it at. There was no way I could miss.
 
-I drew my arm back, and then Mr. Davis the Math teacher appeared behind me and took the stolen Pokéball before I could throw.
+I drew my arm back, ready for the throw, and then Mr. Davis the Math teacher appeared behind me and took the stolen Pokéball.
 
 "I'm sorry," he said, "But that Psyduck isn't yours to capture."
 
-After a stern talking to about theft, he told me that the Psyduck was named Daisy. *She* had been coming to school every day for six years at noon, when she used to play with her owner, a former student by the name of Adrian Lee, in the area behind the gym. The police have stopped looking for him, but his parents have never given up hope.
+After a stern talking to about theft, he told me that the Psyduck was named Daisy. *She* had been coming to school every day for six years at noon, when she used to play with her owner, a former student by the name of Adrian Lee, in the area behind the gym. Adrian hasn't been seen for many years. The police have stopped looking for him, but his parents have never given up hope.
 
 And neither, it seems, has that Psyduck.
