@@ -3,7 +3,7 @@ title: A Pokémon that meant a lot to me
 description: A recovered school assignment from the Pokémon universe
 tags: [fiction, Pokémon]
 published: 2026-01-10
-updated: 2026-04-27
+updated: 2026-05-07
 ---
 # A Pokémon that meant a lot to me
 *Posted by [@ValCedar](/ocs/valentina) 3 days ago  
@@ -57,12 +57,12 @@ When it came close to summer in my last year of middle school, I knew our lunche
 
 I didn't want my time with that Psyduck to disappear, so on graduation day, I slipped away and stole a Pokéball from the janitor's supply closet. I met him once again at the concrete stoop behind the gym, right on time, at noon.
 
-I gripped the Pokéball in my hand. I imagined the trajectory in my mind, the curve that it would make in the air. I had always been a lousy pitcher in P.E., but somehow, just this once, I knew exactly what power and angle I would have to throw it at. There was no way I could miss.
+I gripped the Pokéball in my hand. Dozens of simulations of the throw raced through my mind― angle and velocity of throw, air resistance, wind direction― absolutely everything accounted for. I had always been a lousy pitcher in P.E., but somehow, just this once, I *knew* I couldn't miss.
 
-I drew my arm back, ready for the throw, and then Mr. Davis the Math teacher appeared behind me and took the stolen Pokéball.
+I drew my arm back, poised for the throw, and with a *whoosh* in the air, Mr. Davis the Math teacher appeared behind me and stopped my hand.
 
-"I'm sorry," he said, "But that Psyduck isn't yours to capture."
+"I don't mean to be the bearer of bad news," he said, taking back the stolen Pokéball "But that Psyduck isn't yours to capture."
 
-After a stern talking to about theft, he told me that the Psyduck was named Daisy. *She* had been coming to school every day for six years at noon, when she used to play with her owner, a former student by the name of Adrian Lee, in the area behind the gym. Adrian hasn't been seen for many years. The police have stopped looking for him, but his parents have never given up hope.
+He told me that the Psyduck was named Daisy. *She* belonged to a student named Adrian Lee, and had been coming to the area behind the gym every day for six years at noon, the time and place she and Adrian would play together when he was at school. Adrian hasn't been seen for many years, but Daisy has never missed a single day. The police have run out of leads on his whereabouts, but his parents have never given up hope that, one day, he'll be back.
 
 And neither, it seems, has that Psyduck.
