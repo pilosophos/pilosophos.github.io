@@ -11,7 +11,7 @@ updated: 2026-05-07
 
 > I wrote this for Language Arts class in my second year of high school, when our teacher prompted the class to write about *"A Pokémon that meant a lot to you."* I found it again while trying to find some photos on my old laptop, and when I read it over, memories of my childhood that I had seemingly long forgotten hit me again, like they had happened just yesterday. I'm posting it online so I can come back to it, and maybe other people will like it too. ―Valentina
 
-My dad was never quite the same after my mom divorced him. He wiled his days away at home staring blankly at the TV, watching re-runs of *The Pokémon Whisperer*, with hardly a smile left in him anymore. Conversations with him consisted of vague nods and one-word responses, starting and ending in less time than it takes Billy Mays to sell you on Dusk Balls during the commercial break. Even if you went up to him and told him your best joke, he would only give you that pained half-smile that says, I get it, but I'm not laughing.
+My dad was never quite the same after my mom divorced him. He wiled his days away at home staring blankly at the TV, watching re-runs of *The Pokémon Whisperer*, with hardly a smile left in him anymore. Conversations with him consisted of vague nods and one-word responses, starting and ending in less time than it takes Billy Mays to sell you on Dusk Balls during the commercial break. Even if you went up to him and told him your best joke, he would only give you that pained half-smile that says, *"I get it, but I'm not laughing."*
 
 Unable to stand the emptiness of my real home, the library became where I spent all my time after school. I read books of all sorts, and soon I became what everyone started calling me: a nerd.
 
