@@ -47,7 +47,7 @@ From behind his back he produced a misshapen crabapple, and held it out in front
 
 I guess he felt bad for taking my sandwich, and he'd brought something he thought I could eat as a peace offering.
 
-All of a sudden, tears welled up in my eyes and started streaming down by cheeks. Maybe I felt bad for having yelled at such a remorseful Psyduck the day before. Or maybe I was just lonely and this Psyduck was the only being that seemed to care about me. But in that moment, my brain couldn't think and make sense of it all. I could only hug him so tight that he started to flail around after a minute and I had to put him down.
+For several moments, I just stood there, completely still, the crabapple in my hands, unsure how to react. But as the Psyduck sat there munching away, occasionally casting me a sidelong glance, I felt my eyes just suddenly start to well up. Tears streamed down my cheeks. Was I sad? Was it that I felt bad for having yelled at such a remorseful Psyduck yesterday? Or maybe I was just lonely and this Psyduck was the only being that seemed to care about me? But in that moment, my brain couldn't think and make sense of it all. I could only hug him so tight that, after a minute, he started to flail around in panic and I had to put him down.
 
 From then on, I started skipping the lunchroom and started having lunch with this Psyduck. Sometimes I'd bring him snacks that he'd gulp down all at once, only for him to clamor for more. I'd watch him pick up leaves that had fallen on the ground, gathering them in his arms until they were overflowing and scattering all across the floor. One time, I brought a playground ball and tried to teach him how to play Wallball. That was not a success.
 
