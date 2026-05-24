@@ -20,7 +20,7 @@ Years went by. The longer we didn't talk, the easier it became to forget. I'd th
 
 Now, having run out of options, I steeled my resolve and picked up the phone once again. I could feel my pulse quickening with every digit I pressed, bracing myself for whatever she might say when she picked up. *2-3-1*, I dialled. *4-7-8-...*
 
-As always, my finger lingered over the final 5. But this time, I really pressed it, and in that instant, jumbles of apologetic phrases started to course through my head.
+As always, my finger lingered over the final 5. But this time, when a few seconds had passed, I really pressed it. In that moment, jumbles of apologetic phrases started to course through my head.
 
 I hear my phone ringing my mother. *"Sorry, it's my bad,"* I thought about saying. Would that be too nonchalant?
 
