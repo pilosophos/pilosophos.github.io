@@ -29,7 +29,7 @@ A long couple hours later, the game ended.
 He didn't win the game.
 
 Anyway, I wanted to go for a pose with really striking foreshortening, kinda like
-with [Green in an Egg Chair](/art/green-egg/chair). The thing that really got me
+with [Green in an Egg Chair](/art/green-egg-chair). The thing that really got me
 onto the foreshortening thing are the illustrations in some of [KIRA and Giga's MVs](https://www.youtube.com/watch?v=LbO4pg_LHUI),
 which have really punchy visuals to match the tone of the music. In the end, my
 foreshortening still ends up a little subdued, but I think the end result is
