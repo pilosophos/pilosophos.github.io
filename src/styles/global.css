@@ -38,7 +38,8 @@
     prose-ul:marker:text-white
     prose-blockquote:text-green-300 prose-blockquote:border-green-300
     prose-blockquote:not-italic
-    prose-headings:font-display prose-headings:font-normal;
+    prose-headings:font-display prose-headings:font-normal
+    prose-hr:border-stone-400;
   
   li p:has(+ blockquote) {
     margin-bottom: 0;
