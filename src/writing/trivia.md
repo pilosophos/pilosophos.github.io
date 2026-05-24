@@ -220,3 +220,6 @@ supposed to be sold, the copyright page of some books indicate that if the book
 was sold without a cover, that it is stolen property.
 
 Citations: [1](https://en.wikipedia.org/wiki/Stripped_book), [2](https://boards.straightdope.com/t/bookstore-question/244131/3), [3](https://reddit.com/r/OutOfTheLoop/comments/os2xoz/what_is_up_with_the_ripped_cover_warning_at_the/)
+
+## Crash-only software
+
