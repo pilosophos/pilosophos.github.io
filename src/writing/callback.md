@@ -12,7 +12,7 @@ I lost my job a little more than two years ago after Castelia Financial went und
 
 At last when I got the email thanking all the employees for their hard work and dedication, but that there would be no need to come to work anymore, I felt nothing but a sigh of relief as I sank back into my pillow and hibernated for the rest of the fiscal quarter. I knew that when I woke up, I'd have to find another job to trade my precious time to for rent, but that'd be a problem for a future, more well-rested me.
 
-A couple years and a few thousand rejected job applications later, my bank account had started to look a little barren, and I could barely afford to look my landlord in the eye anymore. It hurt my pride, but there wasn't I could do but call my mother and ask if she'd take me back.
+A couple years and a few thousand rejected job applications later, my bank account had started to look a little barren, and I could barely afford to look my landlord in the eye anymore. It hurt my pride, but there wasn't anything I could do but call my mother and ask if she'd take me back.
 
 It had been about eleven years since I'd talked to her last, when I told her I'd be leaving for the big city. She was opposed to me leaving, you see. She said that the city is where folks go to put on ties, develop an obsession with money, and become miserable when it all falls apart. She begged and pleaded for me to stay in the country, and after I slammed the door on her on my way out, I would always feel awkward about phoning her afterwards. So I didn't.
 
