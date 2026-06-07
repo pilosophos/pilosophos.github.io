@@ -5,7 +5,6 @@ date: 2026-06-06
 ---
 I made another coat of arms for one of my roleplaying OCs, [Camille "Rosy" Grey](/ocs/camille). You know what, I have no in-universe reason for Camille having this. This basically only exists because I like making coats of arms.
 
-
 ## Blazon
 ### Arms
 Party per fess Bleu Celeste and Sable, a rose proper leaved and slipped by a wreath of thorns Vert, pendent therefrom three keys Argent.
