@@ -56,7 +56,7 @@ When you get to know him, Steph's actually a pretty nice guy. He gave me a job a
 
 I snapped out of my memories and walked up to the door. There stood a faded notice, peeling away at the edges. *"Going out of business. Thanks for 33 great years! ―Steph"*
 
-I tried to take a look inside, but the windows were all cloudy with dirt, caked on from years of neglect. I pulled a napkin out of my pocket and polished off a little section of the window, just big enough to peer into. The shelves were exactly where they used to be, and I know because the layout had been burned into my mind after stocking them thousands of times. But now, there were no more mini donuts and no more Pokémon food. No more 2-for-1 deals on Super Repels.
+I tried to take a look inside, but the windows were all cloudy with dirt, caked on from years of neglect. I pulled a napkin out of my pocket and polished off a little section of the window, just big enough to peer into. The shelves were exactly where they used to be, their layout burned into my mind after having stocked them thousands of times in my youth. But now, there were no more mini donuts and no more Pokémon food. No more 2-for-1 deals on Super Repels.
 
 My gaze lingered on the Poké Mart sign as I pulled myself away and continued down the street. Where is Steph now? He always said he wanted to visit the Orange Islands. There'd probably be some great rocks there.
 
