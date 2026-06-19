@@ -3,7 +3,7 @@ title: Trivia
 description: An unsorted collection of miscellaneous trivia
 tags: [nonfiction]
 published: 2025-08-21
-updated: 2026-03-19
+updated: 2026-06-18
 ---
 
 # Trivia
@@ -222,4 +222,15 @@ was sold without a cover, that it is stolen property.
 Citations: [1](https://en.wikipedia.org/wiki/Stripped_book), [2](https://boards.straightdope.com/t/bookstore-question/244131/3), [3](https://reddit.com/r/OutOfTheLoop/comments/os2xoz/what_is_up_with_the_ripped_cover_warning_at_the/)
 
 ## Crash-only software
+Crash-only software is designed to handle failures by restarting, without any particular recovery mechanism. ([source](https://en.wikipedia.org/wiki/Crash-only_software))
 
+## People don't change default settings
+In a 2025 survey of 3,242 users on Broadband Genie, a website that helps customers compare broadband service:
+- 47% of users never changed their router's default settings.
+- 81% never changed their router's admin password.
+- 69% never changed their Wi-Fi password.
+- 84% never updated their router's firmware.
+- 85% never changed their router's SSID.
+- 73% don't know why they would ever need to change their router's settings.
+
+([source](https://www.broadband.co.uk/broadband/help/router-security-research))
