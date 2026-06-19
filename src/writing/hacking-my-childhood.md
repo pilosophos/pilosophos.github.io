@@ -1,6 +1,6 @@
 ---
 title: Hacking my childhood
-description: Computer hacks I did as a kid to use the computer more
+description: Exploits of a bored kid whose computer time was limited
 tags: [nonfiction]
 published: 2026-06-18
 ---
@@ -9,7 +9,21 @@ Before high school, my time in front of a computer was heavily regulated. If I w
 
 What happens when you get a nerdy, bored, smartphone-less kid in front of a computer and tell him that he's not allowed to do something?
 
-## Crashing the library catalog
+<div class="marginal-note not-prose mb-5 xl:pt-25">
+
+<nav>
+    <h2 class="font-display border-b pb-1 mb-1">Jump to...</h2>
+    <ol class="list-disc ps-5 flex flex-col">
+        <li><a href="#crashing-the-library-catalog" class="link">Crashing the Library Catalog</a></li>
+        <li><a href="#wordpad-as-an-exploit-vector" class="link">WordPad as an exploit vector</a></li>
+        <li><a href="#running-halo-with-powershell" class="link">Running Halo with Powershell</a></li>
+        <li><a href="#the-moral-of-the-story" class="link">The moral of the story</a></li>
+    </ol>
+</nav>
+
+</div>
+
+## Crashing the Library Catalog
 An older boy at the public library actually taught this to me, when all the PCs still ran Windows XP.
 
 What's normally supposed to happen is this: To use a PC in the library, you have to sign in to a pice of software named *Library Catalog* using your library card number. This will open a menu of programs you can run like *Internet Explorer* and *Microsoft Word,* which replaces the Start Menu. It also starts a countdown timer, which logs you out after 1 hour of use. If you used up that hour, you'd have to wait until the next day to use a computer at the library again.
@@ -61,6 +75,8 @@ Until I came along.
 That is all.
 
 It turns out the Group Policy only stopped you from starting `exe` files from Windows Explorer, including the Start Menu and the Desktop. If you start it from some other existing process, including PowerShell, it would work. In fact, if 7zip was installed, you could run Halo from 7zip File Manager. CMD was blocked, but if it were enabled, I bet you could run it from there too.
+
+Hey, I wonder if you can get Cortana to run Halo for you.
 
 ## The moral of the story
 Most of these hacks probably no longer work where I tried them, but there's a whole world of under-secured computers out there to try them on. Securing computers is hard, *really* hard, and a bored kid with lots of time on their hands is going to do whatever they can to not be bored. They click buttons, open programs, and generally do weird things that other people don't. IT has to block *every* path to playing Halo. The bored kid only has to find *one.*
