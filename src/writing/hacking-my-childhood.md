@@ -50,7 +50,7 @@ In addition to the software called *Library Catalog,* there were also PCs that w
 
 You also didn't have to log in to use these computers, and so there was no countdown. They expected that no sane person would want to browse the library catalog for more than 15 minutes or so. (This was before you could watch movies from the library's website.)
 
-Curiously, this locked down browser also had a button in the toolbar to open [WordPad](https://en.wikipedia.org/wiki/WordPad), a rich text editor. I discovered a way to use this to browse the whole internet by exploiting this feature.
+Curiously, this locked down browser also had a button in the toolbar to open [WordPad](https://en.wikipedia.org/wiki/WordPad), a rich text editor. I discovered a way to exploit this feature to browse the whole internet for as long as I wanted.
 
 Note that by this time, the computers all ran Windows 7. WordPad no longer comes with current versions of Windows, so this probably no longer works if they've updated.
 
