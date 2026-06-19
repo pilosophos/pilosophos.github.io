@@ -18,6 +18,7 @@ What happens when you get a nerdy, bored, smartphone-less kid in front of a comp
         <li><a href="#wordpad-as-an-exploit-vector" class="link">WordPad as an exploit vector</a></li>
         <li><a href="#running-halo-with-powershell" class="link">Running Halo with Powershell</a></li>
         <li><a href="#the-moral-of-the-story" class="link">The moral of the story</a></li>
+        <li><a href="#bonus-my-fake-teacher-needs-me" class="link">Bonus: My fake teacher needs me</a></li>
     </ol>
 </nav>
 
@@ -80,3 +81,14 @@ Hey, I wonder if you can get Cortana to run Halo for you.
 
 ## The moral of the story
 Most of these hacks probably no longer work where I tried them, but there's a whole world of under-secured computers out there to try them on. Securing computers is hard, *really* hard, and a bored kid with lots of time on their hands is going to do whatever they can to not be bored. They click buttons, open programs, and generally do weird things that other people don't. IT has to block *every* path to playing Halo. The bored kid only has to find *one.*
+
+## Bonus: My fake teacher needs me
+This last one has nothing to do with computers. It's a combination of social engineering and theft.
+
+Sometimes a teacher at my school would want you to report to their classroom, even if you're normally taking a different class. Every teacher has this little pre-printed pad with fill-in-the-blanks that basically say, *"<u>Ms. Alice Teacherson</u> requests that <u>Bob Student</u> be excused so they can report to <u>Room 123</u> at <u>1:23 PM</u>"*, and then they sign it. At around 1:23, you give this slip of paper to your regular teacher, and then you're supposed to go to Room 123.
+
+If you steal a bunch of these blank pieces of paper, which often sit unguarded on teachers' desks, and you have nice handwriting, you can just pretend some teacher needs you somewhere and get out of class.
+
+It doesn't even need to be a real teacher, or a real room number. You can claim that a substitute teacher needs you, for instance, and then report to nowhere.
+
+I used this to skip Phys Ed a few times.
