@@ -26,7 +26,7 @@ What happens when you get a nerdy, bored, smartphone-less kid in front of a comp
 ## Crashing the Library Catalog
 An older boy at the public library actually taught this to me, when all the PCs still ran Windows XP.
 
-What's normally supposed to happen is this: To use a PC in the library, you have to sign in to a pice of software named *Library Catalog* using your library card number. This will open a menu of programs you can run like *Internet Explorer* and *Microsoft Word,* which replaces the Start Menu. It also starts a countdown timer, which logs you out after 1 hour of use. If you used up that hour, you'd have to wait until the next day to use a computer at the library again.
+What's normally supposed to happen is this: To use a PC in the library, you have to sign in to a piece of software named *Library Catalog* using your library card number. This will open a menu of programs you can run like *Internet Explorer* and *Microsoft Word,* which replaces the Start Menu. It also starts a countdown timer, which logs you out after 1 hour of use. If you used up that hour, you'd have to wait until the next day to use a computer at the library again.
 
 This hack crashes Library Catalog so the coundown timer goes away, and you can use the computer as long as you like.
 
