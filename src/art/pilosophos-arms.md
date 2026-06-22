@@ -3,7 +3,7 @@ title: The Arms of Pilosophos
 cover: pilosophos-arms.png
 date: 2026-06-21
 ---
-I made a few coats of arms for RP characters but I never made one for myself. I designed it around the rules of the Canadian Heraldic Authority, and put some extra effort into emblazoning this one compared to the others (because it's mine).
+I made a few coats of arms for RP characters but I never made one for myself until now. This is designed around the rules of the Canadian Heraldic Authority, and I put some extra effort into emblazoning this one compared to the others (because it's mine).
 
 ## Blazon
 ### Escutcheon
