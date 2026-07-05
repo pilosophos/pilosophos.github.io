@@ -10,7 +10,7 @@ I made a few coats of arms for RP characters but I never made one for myself unt
 Or, a quatrefoil pierced and conjoined at the petals with a square voided Sable.
 
 ### Crest
-A demi-faerie passant crined Or winged of a yellow-morphed *Papilio glaucus* Proper vested of a dress Sable holding a paintbrush Tenné bristled and garnished Argent tipped of the first.
+A demi-faerie passant crined Or winged of a yellow-morphed *Papilio glaucus* Proper vested of a dress Sable holding a paintbrush Proper tipped of the first.
 
 ### Motto
 OMNIA AMITTAS QUAE NON SERVANTUR. This Latin phrase means "You may lose everything that is unsaved".
