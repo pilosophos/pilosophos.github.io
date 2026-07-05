@@ -1,0 +1,104 @@
+---
+import ArticleHeader from '@components/ArticleHeader.astro';
+import DefaultLayout from '@layouts/DefaultLayout.astro';
+import CyberPentagon from '@components/CyberPentagon.astro';
+import EmblazonmentImg from '@art/pilosophos-arms.png';
+import EmblazonmentBoermacImg from '@art/pilosophos-arms-boermac.png';
+import DecorativeBarcodeImg from "@assets/images/decorative-barcode-mini.svg"
+import { Image } from 'astro:assets';
+---
+<DefaultLayout
+  title="Heraldry"
+  metadesc="Information on Pilosophos' assumed heraldic achievement, including coat of arms and crest, as well as emblazonments done by himself and others."
+>
+  <main class="container">
+    <ArticleHeader
+      title="Heraldry"
+    >
+      My assumed heraldic achievement, including coat of arms and crest
+    </ArticleHeader>
+
+    <CyberPentagon corner="bottom-right" notch="50px"
+      class="relative p-px rounded col-span-2 bg-pi-yellow ps-10"
+    >
+      <div
+        class="absolute left-0 text-pi-gray font-display uppercase p-2"
+        style="writing-mode:vertical-lr"
+      >
+        <Image
+          alt=""
+          src={DecorativeBarcodeImg}
+          class="w-6 h-6 inline"
+        />
+        Heraldic achievement - Pilosophos
+      </div>
+      <CyberPentagon corner="bottom-right" notch="50px" class="bg-pi-gray rounded h-full flex flex-col xl:flex-row">
+        <a href="/art/pilosophos-arms" class="shrink-0 flex items-center justify-center bg-[#f9f9f9]">
+          <Image
+            src={ EmblazonmentImg }
+            alt="Emblazonment of Pilosophos' arms"
+            width={ 1000 }
+            class="w-full max-w-120"
+          />
+        </a>
+        <div class="max-w-full p-6 flex items-center justify-center">
+          <dl class="blazon">
+            <div>
+              <dt>Shield</dt>
+              <dd>
+                <p>Or, a quatrefoil pierced and conjoined at the petals with a square voided Sable.</p>
+
+                <p class="muted mt-5 text-base">A heraldic recreation of my logo. It was originally the emblem of Malaszec, a fantasy-cyberpunk country I made for a collaborative worldbuilding project. The work I did there and the people I collaborated with changed my art for the better, so I’ve kept using the logo even though the country itself is quite dystopian.</p>
+              </dd>
+            </div>
+            <div>
+              <dt>Crest</dt>
+              <dd>A demi-faerie passant
+                <ul class="ps-10">
+                  <li>crined Or</li>
+                  <li>winged of a yellow-morphed <i>Papilio glaucus</i> Proper</li>
+                  <li>vested of a dress Sable</li>
+                  <li>holding a paintbrush Tenné
+                    <ul class="ps-10">
+                      <li>tipped of the first</li>
+                      <li>bristled and garnished Argent.</li>
+                    </ul>
+                  </li>
+                </ul>
+              </dd>
+
+              <p class="muted mt-5 text-base">I keep coming back to faeries as an art subject, maybe because I have an affinity for small versions of normally big things. The paintbrush, representing my art, is normal sized; the faerie is just that small.</p>
+            </div>
+            <div>
+              <dt>Motto</dt>
+              <dd>
+                <p><i>Omnia amittas quae non servantur</i>, a Latin phrase meaning <i>You may lose everything that is unsaved.</i></p>
+                <p>
+                  <p class="muted mt-5 text-base">A reminder to save your work. An alternate translation of the phrase is also possible: "May you lose everything that is unsaved," perhaps useful as a kind of curse against your enemies, as long as your enemies are using a computer.</p>
+                </p>
+              </dd>
+            </div>
+          </dl>
+        </div>
+      </CyberPentagon>
+    </CyberPentagon>
+
+    <section class="mt-10">
+      <ul class="not-prose flex justify-around items-center flex-wrap gap-5 text-center">
+        <li>
+          <figure class="table">
+            <a href="/art/pilosophos-arms-boermac">
+              <Image
+                src={ EmblazonmentBoermacImg }
+                alt="Emblazonment of Pilosophos' arms"
+                width={ 300 }
+                class:list={"h-full"}
+              />
+            </a>
+            <figcaption class="table-caption caption-bottom">Emblazoned by <a href="https://reddit.com/user/boermac" class="link">boermac</a> </figcaption>
+          </figure>
+        </li>
+      </ul>
+    </section>
+  </main>
+</DefaultLayout>

@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @plugin '@tailwindcss/typography';
+/* IF YOU NEED TO IMPORT CSS FILES: see the bottom of the file */
 
 @theme {
   --color-pi-gray: #38383f;
@@ -257,4 +258,5 @@ summary {
 }
 
 @import "./homelab.css";
+@import "./heraldry.css";
 @import "./mermaid-charts.css";
