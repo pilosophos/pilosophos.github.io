@@ -1,6 +1,6 @@
 ---
 title: Parker Shannon (Art Fight 2026)
-cover: 2026-07-05-parker-shannon.png
+cover: 2026-07-05-artfight-parker-shannon.png
 date: 2026-07-05
 ---
 An illustration I made for Art Fight 2026, a fun little event where you draw other people's OCs, and others draw art of your OCs also.
