@@ -4,6 +4,7 @@ import DefaultLayout from '@layouts/DefaultLayout.astro';
 import CyberPentagon from '@components/CyberPentagon.astro';
 import EmblazonmentImg from '@art/pilosophos-arms.png';
 import EmblazonmentBoermacImg from '@art/pilosophos-arms-boermac.png';
+import EmblazonmentOdessitImg from '@art/pilosophos-arms-odessit.png';
 import DecorativeBarcodeImg from "@assets/images/decorative-barcode-mini.svg"
 import { Image } from 'astro:assets';
 ---
@@ -84,6 +85,11 @@ import { Image } from 'astro:assets';
     </CyberPentagon>
 
     <section class="mt-10">
+      <div class="border-b border-stone-500 mb-8 pb-1">
+        <h2 class="text-3xl w-full font-display">Other emblazonments</h2>
+        <p>A gallery of my arms as depicted by other people.</p>
+      </div>
+
       <ul class="not-prose flex justify-around items-center flex-wrap gap-5 text-center">
         <li>
           <figure class="table">
@@ -95,7 +101,20 @@ import { Image } from 'astro:assets';
                 class:list={"h-full"}
               />
             </a>
-            <figcaption class="table-caption caption-bottom">Emblazoned in a stained glass style by <a href="https://reddit.com/user/boermac" class="link">boermac</a> </figcaption>
+            <figcaption class="table-caption caption-bottom">Emblazoned by <a href="https://reddit.com/user/boermac" class="link">boermac</a> on June 29, 2026.</figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure class="table">
+            <a href="/art/pilosophos-arms-odessit">
+              <Image
+                src={ EmblazonmentOdessitImg }
+                alt="Emblazonment of Pilosophos' arms by Dmytro Feodosiev"
+                width={ 300 }
+                class:list={"h-full"}
+              />
+            </a>
+            <figcaption class="table-caption caption-bottom">Emblazoned by <a href="https://mitik392.github.io/herbovnyk_kobzarya/" class="link">Dmytro Feodosiev</a> on Jul 7, 2026.</figcaption>
           </figure>
         </li>
       </ul>
