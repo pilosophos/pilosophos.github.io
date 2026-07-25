@@ -7,4 +7,4 @@ Many months ago I was commissioned (again) to make a series of Discord server ic
 
 The *Apodiformes* is an order of birds that includes hummingbirds. Knowing this, I hope a hummingbird slicing some bamboo with its beak is more or less self-explanatory.
 
-Out of the whole commission set, I think this one is my favorite, next to [Aesop's Elapure](/art/aesops-elaphure). The red sky, the swoosh of the ensharpened beak, the bird's pose. *It's all so wonderful,* I say, patting myself on the back.
+Out of the whole commission set, I think this one is my favorite, next to [Aesop's Elapure](/art/ae-aesops-elaphure). The red sky, the swoosh of the ensharpened beak, the bird's pose. *It's all so wonderful,* I say, patting myself on the back.
