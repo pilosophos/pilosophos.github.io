@@ -9,7 +9,7 @@ This one is made entirely of inside jokes, but luckily it was explained to me an
 
 *Alaskol* is the name of a hypothetical moon settlement created by a few members of the Discord server in their childhoods for a moon settlement design contest. This multi-day contest culminated in the creation of a PowerPoint presentation, the creation of which I was told involved many sleepless nights huddled around Google Slides and a considerable amount of bickering, politics, and voter fraud.
 
-I was given a copy of these slides, which included a diagram of a moon park made in Google Drawings, which had a diamond-shaped crossroads in the middle next to a lake, some benches, and a few trees. This diagram was labelled "RFP 7," which I can only assume stands for "Request For Park 7", like the Internet Engineering Task Force's [Requests for Comment](https://en.wikipedia.org/wiki/Request_for_Comments) (RFCs).
+I was given a copy of these slides, which included a diagram of a moon park made in Google Drawings featuring a diamond-shaped crossroads next to a lake, some benches, and a few trees. This diagram was labelled "RFP 7," which I can only assume stands for "Request For Park 7", like the Internet Engineering Task Force's [Requests for Comment](https://en.wikipedia.org/wiki/Request_for_Comments) (RFCs).
 
 *Entente* is a reference to an old NationStates region from around the same time period. In NationStates, players make virtual nations, and can join regions with other nations to chat and roleplay being countries. The Entente had the flag illustrated here.
 
