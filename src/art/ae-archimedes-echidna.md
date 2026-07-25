@@ -7,7 +7,7 @@ Many months ago I was commissioned (again) to make a series of Discord server ic
 
 Many of the members of the Discord server are from Seattle or its surrounds, and within walking distance to the famous Space Needs is the Pacific Science Center. Inside this museum is an Archimedes' screw. If you've never used one before, it's a rotatable screw that you stick into some water, and by turning the screw, it moves the water from the bottom to the top.
 
-It has been so long since I've been to the Pacific Science Center that this is one of the Archimedes' screw is among the few things I actually remember about it. I'd go again if I was in the area, but tickets are like US$30. For that price, you could go into the science museum in Ueno park twice and have lunch at the museum restaurant *both* times.
+It has been so long since I've been to the Pacific Science Center that Archimedes' screw is among the few things I actually remember about it. I'd go again if I was in the area, but tickets are like US$30. For that price, you could go into the science museum in Ueno park twice and have lunch at the museum restaurant *both* times.
 
 Knuckles the Echidna is, of course, an Echidna. Much like [Arthur](/art/ae-aardvarkish-effluvium), the only real way to know this is to be told, because no echidna I've ever seen is bright red and wears spiky gloves.
 
