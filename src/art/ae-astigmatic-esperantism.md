@@ -11,4 +11,4 @@ Of course, look at the news and there's at least 20 different, horrifically viol
 
 Astigmatism is an eye condition that makes things blurry due because your eye's curvature is weird, but it can be fixed with glasses. Hence, Zamenhof with glasses.
 
-Fun fact: though best known for Esperanto, Dr. Zamenhof was an ophtalmologist (an eye doctor) by trade, this is actually extra fitting.
+Fun fact: though best known for Esperanto, Dr. Zamenhof was an ophtalmologist (an eye doctor) by trade, so the glasses are actually extra fitting.
