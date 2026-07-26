@@ -7,7 +7,7 @@ An illustration I made for Art Fight 2026, a fun little event where you draw oth
 
 This depicts [JollyYoshi](https://artfight.net/~JollyYoshi)'s [Cassia Zoticus](https://artfight.net/character/6617418.cassia-zoticus), a space pilot from the farming planet Agroktima.
 
-Boy did this take a hell of a lot longer than I through it would. I don't draw enough backgrounds, even if it's a very simple scene. I wanted to do something with a bit of tension― get that ol' Dutch angle in― and something with dramatic lighting without making it too complicated.
+Boy did this take a hell of a lot longer than I through it would. I don't draw enough backgrounds, even if it's a very simple scene, so I made myself draw one as practice. I wanted to do something with a bit of tension― get that ol' Dutch angle in― and something with dramatic lighting without making it too complicated.
 
 Cassia is from a setting of JollyYoshi's own stories which I haven't read, so I took some design cues for the background from my favorite live action sci-fi franchise, Star Trek, with a nice little Okudagram right on the wall.
 
