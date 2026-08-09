@@ -1,7 +1,7 @@
 ---
 title: The Arms of EtnadRehsif (Commission)
 cover: etnad-arms.png
-date: ;dateiso8
+date: 2026-08-08
 ---
 I recently received a request for an emblazonment by [EtnadRehsif](https://rollofarms.miraheze.org/wiki/GreiiN:576), who has been commissioning various artists to emblazon their personal arms. Thank you very much for the commission!
 
