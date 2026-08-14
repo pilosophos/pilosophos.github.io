@@ -10,6 +10,9 @@ import WinstonInjuredTextImg from "@art/winston-injured-text.png";
 import WinstonTextImg from "@art/winston-text.png";
 import WinstonArmsImg from "@art/winston-arms.png";
 
+import ArtfightDefense26WinstonMorningImg from "@art/artfight-defense-26-winston-morning.png";
+import ArtfightDefense26WinstonOvercrowdedImg from "@art/artfight-defense-26-winston-overcrowded.png";
+
 ---
 
 <DefaultLayout
@@ -135,6 +138,30 @@ import WinstonArmsImg from "@art/winston-arms.png";
           </li>
         </ul>
       </section>
+
+      <section id="fanart">
+        <h2>Fanart (art of my character by other people)</h2>
+
+        <ul class="not-prose flex justify-around flex-wrap gap-5">
+          <li>
+            <figure class="table">
+              <a class="link" href="/art/artfight-defense-26-winston-morning">
+                <Image src={ ArtfightDefense26WinstonMorningImg } alt="Winston, drawn by Estarossa, Art Fight 2026" height={ 350 } />
+              </a>
+              <figcaption class="table-caption caption-bottom">Drawn by Estarossa, Art Fight 2026</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure class="table">
+              <a class="link" href="/art/artfight-defense-26-winston-overcrowded">
+                <Image src={ ArtfightDefense26WinstonOvercrowdedImg } alt="Winston, drawn by cirrusdisc, Art Fight 2026" height={ 350 } />
+              </a>
+              <figcaption class="table-caption caption-bottom">Drawn by cirrusdisc, Art Fight 2026</figcaption>
+            </figure>
+          </li>
+        </ul>
+      </section>
+
     </section>
   </main>
 </DefaultLayout>
