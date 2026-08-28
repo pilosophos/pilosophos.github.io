@@ -9,4 +9,6 @@ Here I depict the faerie crest on my own [coat of arms](/heraldry) guarding a co
 
 It's a little bit of a callback to [Shopping Sprite](/art/shopping-sprite), which I drew six years ago and which I think is really cute.
 
-This Four of Pentacles is made available to the public under the [Creative Commons BY-NC 4.0 International]( https://creativecommons.org/licenses/by-nc/4.0/) license. A [color-adjusted version for CMYK printing](/art/four-of-pentacles-cmyk) is also available.
+This Four of Pentacles is made available to the public under the [Creative Commons BY-NC 4.0 International]( https://creativecommons.org/licenses/by-nc/4.0/) license.
+
+A [color-adjusted version for CMYK printing](/art/four-of-pentacles-cmyk) is also available. However, if the print shop prefers the original (RGB) file and adjusts the colors in-house, use the original instead.
