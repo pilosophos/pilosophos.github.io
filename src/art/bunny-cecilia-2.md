@@ -1,6 +1,6 @@
 ---
 title: Bunny Cecilia 2
-cover: bunny-cecilia-2-sfw.png
+cover: bunny-cecilia-2.png
 date: 2026-08-31
 ---
 I've been doing a few illustrations on commission and for collab projects throughout August, and I'm going to be drawing something for another collab soon. I've also got someone who's been e-mailing me who seems like they'll be commissioning something. In the middle of all this, I really wanted to draw something just for myself. I like doing comms and collabs, but sometimes a man needs a change of pace.
