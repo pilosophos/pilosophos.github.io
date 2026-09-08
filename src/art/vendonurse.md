@@ -2,7 +2,6 @@
 title: Vendonurse
 cover: vendonurse.png
 date: 2025-08-16
-tags: [notfeatured]
 ---
 I was commissioned to draw the personification of the *Nurse vending machine* in
 the Vending Machines Mod for Terraria. The mod lets you turn any NPC into a
