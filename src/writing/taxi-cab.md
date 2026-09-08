@@ -1,6 +1,6 @@
 ---
 title: Jun stepped into the taxi cab.
-description: Jun takes the taxi to Lavender Town where he grew up, and rambles for the entire journey to the cabbie about his childhood, the Pokémon world, and donuts.
+description: Returning to Lavender Town where he grew up, Jun rambles for the entire journey to the cabbie about his childhood, the Pokémon world, and donuts.
 tags: [fiction, Pokémon]
 published: 2026-09-08
 ---
