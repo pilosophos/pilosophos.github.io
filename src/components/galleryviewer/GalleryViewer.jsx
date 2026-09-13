@@ -3,21 +3,23 @@ import ArrowNavButton from "./ArrowNavControl.jsx";
 import GalleryViewerExit from "./GalleryViewerExit.jsx";
 
 export default function GalleryViewer(props) {
-	const [desc, setDesc] = createSignal('');
-	
-	createEffect(async () => {
-		const res = await fetch(props.descSrc);
-		const html = await res.text();
-		setDesc(html);
-	}, []);
+  const [desc, setDesc] = createSignal('');
+  
+  createEffect(async () => {
+    if (props.descSrc) {
+      const res = await fetch(props.descSrc);
+      const html = await res.text();
+      setDesc(html);
+    }
+  }, []);
 
-	return (
-		<div 
-			id="viewer"
-			class="fixed left-0 top-0 w-screen h-screen bg-black/75"
-		>
-			<article class="flex flex-col items-center lg:justify-between w-full h-full overflow-y-auto lg:flex-row">
-				<div class="flex-center relative w-full lg:h-full">
+  return (
+    <div 
+      id="viewer"
+      class="fixed left-0 top-0 w-screen h-screen bg-black/75"
+    >
+      <article class="flex flex-col items-center lg:justify-between w-full h-full overflow-y-auto lg:flex-row">
+        <div class="flex-center relative w-full lg:h-full">
           <div>
             <img src={ props.imgSrc } class="max-h-screen object-contain w-auto h-auto"/>
           </div>
@@ -31,20 +33,20 @@ export default function GalleryViewer(props) {
               <ArrowNavButton left={ false } onClick={ props.onNextClicked }/>
             </Show>
           </Show>
-				</div>
+        </div>
 
-				<aside class="flex flex-col bg-zinc-900 px-5 pt-0 w-screen h-full lg:w-150 lg:h-screen lg:p-10 lg:pt-3">
+        <aside class="flex flex-col bg-zinc-900 px-5 pt-0 w-screen h-full lg:w-150 lg:h-screen lg:p-10 lg:pt-3">
           <GalleryViewerExit onExit={ props.onExit } />
 
-					<div class="prose prose-invariants prose-headings:font-normal overflow-y-auto">
-						<Show when={props.description}
-							fallback={<div innerHTML={ desc() }></div>}
-						>
-							{ props.description }
-						</Show>
-					</div>
-				</aside>
-			</article>
-		</div>
-	)
+          <div class="prose prose-invariants prose-headings:font-normal overflow-y-auto">
+            <Show when={props.description}
+              fallback={<div innerHTML={ desc() }></div>}
+            >
+              { props.description }
+            </Show>
+          </div>
+        </aside>
+      </article>
+    </div>
+  )
 }
