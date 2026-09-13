@@ -1,0 +1,50 @@
+---
+import DefaultLayout from '@layouts/DefaultLayout.astro';
+import { getCollection, getEntry, render } from 'astro:content';
+import Gallery from '@components/galleryviewer/Gallery.jsx';
+import { getImage } from 'astro:assets';
+import ArticleHeader from '@components/ArticleHeader.astro';
+
+const art = (
+  await getCollection('art'))
+    .filter(piece => piece.data.tags?.includes('sketchbook') && !piece.data.tags?.includes('notmine'))
+    .toSorted((a, b) => b.data.date?.getTime() - a.data.date?.getTime()
+);
+
+const descriptions = art.map(piece => `/art/${piece.id}-desc`);
+const images = await Promise.all(art.map(async piece => await getImage({src: piece.data.cover})));
+
+const thumbs = await Promise.all(art.map(async piece => await getImage({
+  src: piece.data.cover,
+  width: 450,
+  quality: 'max',
+})));
+---
+<DefaultLayout
+  title="Sketchbook"
+  metadesc="Sketches and scraps by the artist Pilosophos."
+>
+  <main class="container">
+    <ArticleHeader
+      title="Sketchbook"
+    >
+      Some of my unfinished sketches, scraps, and works-in-progress
+    </ArticleHeader>
+
+    <Gallery
+      client:load
+      pieces={
+        Array.from(art.map((piece, i) => ({
+          index: i,
+          href: `/art/${piece.id}`,
+          title: piece.data.title,
+          thumbImgSrc: thumbs[i].src,
+          thumbWidth: thumbs[i].attributes.width,
+          thumbHeight: thumbs[i].attributes.height,
+          fullImgSrc: images[i].src,
+          descSrc: descriptions[i],
+        })))
+      }
+    />
+  </main>
+</DefaultLayout>

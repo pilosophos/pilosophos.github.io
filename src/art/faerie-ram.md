@@ -2,6 +2,7 @@
 title: Faerie Tech Support
 cover: faerie-ram.png
 date: 2025-11-10
+tags: [sketchbook]
 ---
 This one got popular on Tumblr about a month after I originally posted it, and it has gotten occasional likes and reblogs since then. I didn't expect it to get spread around as much as it did; it was just a little something I sketched one day on a whim, without intending to finish it.
 
