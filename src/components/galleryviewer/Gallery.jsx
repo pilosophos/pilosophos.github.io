@@ -1,4 +1,4 @@
-import { createSignal, Show } from "solid-js";
+import { createSignal, Show, onMount } from "solid-js";
 import GalleryViewer from '@components/galleryviewer/GalleryViewer.jsx';
 
 export default function Gallery(props) {
@@ -12,29 +12,37 @@ export default function Gallery(props) {
 
   function viewerNextPiece() {
     setViewerShownPiece(props.pieces[viewerShownPiece().index + 1]);
-    console.log(props.pieces[viewerShownPiece().index])
   }
 
   function viewerPrevPiece() {
     setViewerShownPiece(props.pieces[viewerShownPiece().index - 1]);
-    console.log(props.pieces[viewerShownPiece().index])
   }
+
+  onMount(async () => {
+    const Masonry = (await import('masonry-layout')).default;
+
+    new Masonry('#gallery', {
+      itemSelector: '.gallery-item',
+      gutter: 10,
+      fitWidth: true,
+      transitionDuration: '0.2s',
+    })
+  });
 
 	return (
 		<div>
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 justify-center gap-3 mx-auto">
+      <div id="gallery" class="grid md:grid-cols-2 lg:grid-cols-3 justify-center gap-3 mx-auto">
         <For each={props.pieces}>{
           piece => (
             <a href={ piece.href }
-              class="gallery-item mb-[10px] w-[350px] lg:w-[420px]"
+              class="gallery-item mb-[10px] w-[350px] lg:w-[420px] bg-black/20"
               onClick={ event => openPiece(event, piece) }
             >
               <img
                 src={ piece.thumbImgSrc }
                 alt={ piece.title }
-                quality="max"
-                width={420}
-                loading="lazy"
+                width={ piece.thumbWidth }
+                height={ piece.thumbHeight }
               />
             </a>
           )          

@@ -32,6 +32,8 @@ const thumbs = await Promise.all(art.map(async piece => await getImage({
           href: `/art/${piece.id}`,
           title: piece.data.title,
           thumbImgSrc: thumbs[i].src,
+          thumbWidth: thumbs[i].attributes.width,
+          thumbHeight: thumbs[i].attributes.height,
           fullImgSrc: images[i].src,
           descSrc: descriptions[i],
         })))
