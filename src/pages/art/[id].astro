@@ -5,6 +5,7 @@ import { getCollection, render } from 'astro:content';
 import Favicon from '../../components/Favicon.astro';
 import ImageViewer from '../../components/ImageViewer.astro';
 import ImageDescription from '../../components/ImageDescription.astro';
+import GalleryViewer from '@components/galleryviewer/GalleryViewer';
 // 1. Generate a new path for every collection entry
 export async function getStaticPaths() {
   const posts = await getCollection('art');
@@ -25,11 +26,10 @@ const humanDate = post.data.date?.toLocaleDateString("en-CA", {
   month: 'long',
   timeZone: 'UTC'
 }) || 'an unknown date';
-const ogImageUrl = new URL(
-  (await getImage({ src: post.data.cover, format: "png" })).src,
-  Astro.url,
-).href;
+const imgSrc = (await getImage({ src: post.data.cover, format: "png" })).src;
+const ogImageUrl = new URL(imgSrc, Astro.url).href;
 
+const descSrc = `/art/${post.id}-desc`
 ---
 
 <!DOCTYPE html>
@@ -47,42 +47,21 @@ const ogImageUrl = new URL(
   <title>{ post.data.title } | Pilosophos' Circle</title>
 </head>
 <body>
-  <ImageViewer>
-    <Image
-      slot="image"
-      class="max-h-screen object-contain w-auto h-auto"
-      src={ post.data.cover }
-      alt={ post.data.title }
-      width={ post.data.cover.width }
-      quality="max"
-      format="png"
-    />
-    <nav
-      slot="sidebar-header"
-      class="py-2 border-b border-stone-500 mb-3 text-start"
-    >
-      <a id="back" href="/art" class="muted hover:text-pi-cyan font-display text-xl">
-        ← <span id="back-label">To the Pilosophos art gallery</span>
-      </a>
-    </nav>
-    <ImageDescription
-      slot="description"
-      title={ post.data.title }
-      date={ post.data.date }
-      slug={ post.id }
-    >
-      <Content />
-    </ImageDescription>
-  </ImageViewer>
-</div>
-
-<script>
-  const referrerHost = new URL(document.referrer).host;
-  if (referrerHost.includes("localhost:") || referrerHost === "pilosophos.com") {
-    document.getElementById('back')!.href = document.referrer;
-    document.getElementById('back-label')!.textContent = 'Back';
-  }
-</script>
-
+  <GalleryViewer
+    imgIndex={ 0 }
+    imgSrc={ imgSrc }
+    showNav={ false }
+  >
+    <div slot="description">
+      <ImageDescription
+        slot="description"
+        title={ post.data.title }
+        date={ post.data.date }
+        slug={ post.id }
+      >
+        <Content />
+      </ImageDescription>
+    </div>
+  </GalleryViewer>
 </body>
 </html>
