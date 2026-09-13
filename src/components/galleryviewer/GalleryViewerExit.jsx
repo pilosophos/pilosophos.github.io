@@ -18,18 +18,18 @@ export default function GalleryViewerExit(props) {
   return (
     <nav class="py-2 border-b border-stone-500 mb-3 text-start">
       <Switch fallback={
-          <a id="back" href="/art" class="muted hover:text-pi-cyan font-display text-xl">
+          <a href="/art" class="muted hover:text-pi-cyan font-display text-xl">
             ← To the Pilosophos art gallery
           </a>
       }>
-        <Match when={props.onExit}>
-          <a id="back" href="/art" class="muted hover:text-pi-cyan font-display text-xl">
+        <Match when={ props.onExit }>
+          <button onclick={ props.onExit } class="muted hover:text-pi-cyan font-display text-xl">
             Close <span class="text-4xl relative top-1.5">&times;</span>
-          </a>
+          </button>
         </Match>
 
-        <Match when={props.onExit === undefined && backTarget() !== undefined}>
-          <a id="back" href={ backTarget() } class="muted hover:text-pi-cyan font-display text-xl">
+        <Match when={ props.onExit === undefined && backTarget() !== undefined }>
+          <a href={ backTarget() } class="muted hover:text-pi-cyan font-display text-xl">
             ← Back
           </a>
         </Match>
