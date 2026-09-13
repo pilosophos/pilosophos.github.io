@@ -2,9 +2,8 @@
 import '../../styles/global.css'
 import { Image, getImage } from "astro:assets";
 import { getCollection, render } from 'astro:content';
-import Favicon from '../../components/Favicon.astro';
-import ImageViewer from '../../components/ImageViewer.astro';
-import ImageDescription from '../../components/ImageDescription.astro';
+import Favicon from '@components/Favicon.astro';
+import ImageDescription from '@components/ImageDescription.astro';
 import GalleryViewer from '@components/galleryviewer/GalleryViewer';
 // 1. Generate a new path for every collection entry
 export async function getStaticPaths() {
