@@ -22,7 +22,7 @@ const images = await Promise.all(art.map(async piece => await getImage({src: pie
     <GalleryViewer
       client:load
       imgSrcs={ images.map(im => im.src) }
-      imgIds={ art.map(piece => piece.id) }
+      descSrcs={ art.map(piece => `/art/${piece.id}-desc`) }
       showNav={ true }
     />
   </main>

@@ -1,14 +1,14 @@
 import { createEffect, createSignal, children as resolveChildren } from "solid-js";
 import ArrowNavButton from "./ArrowNavControl.jsx";
 
-export default function GalleryViewer({imgIds, imgSrcs, className, showNav}) {
+export default function GalleryViewer({imgSrcs, descSrcs, className, showNav}) {
     const [imgIndex, setImageIndex] = createSignal(0);
     const [minIndex, maxIndex] = [0, imgSrcs.length - 1];
 
     const [desc, setDesc] = createSignal('');
     
     createEffect(async () => {
-        const res = await fetch(`/art/${imgIds[imgIndex()]}-desc`);
+        const res = await fetch(descSrcs[imgIndex()]);
         const html = await res.text();
         setDesc(html);
     }, [imgIndex]);
