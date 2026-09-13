@@ -1,11 +1,16 @@
 import { createSignal } from "solid-js";
 import ArrowNavButton from "./ArrowNavControl.jsx";
 
-export default function GalleryViewer({imgSrcs, className, showNav}) {
+export default function GalleryViewer({imgSrcs, className, showNav, children}) {
     const [imgIndex, setImageIndex] = createSignal(0);
+    const [minIndex, maxIndex] = [0, imgSrcs.length - 1];
 
-    function seeNextImg() { setImageIndex(currentIndex => currentIndex + 1) }
-    function seePrevImg() { setImageIndex(currentIndex => currentIndex - 1) }
+    function seeNextImg() {
+        setImageIndex(currentIndex => Math.min(currentIndex + 1, maxIndex))
+    }
+    function seePrevImg() {
+        setImageIndex(currentIndex => Math.max(currentIndex - 1, minIndex))
+    }
 
     return (
         <div 
@@ -21,8 +26,8 @@ export default function GalleryViewer({imgSrcs, className, showNav}) {
 
                 { showNav &&
                     <>
-                        <ArrowNavButton left={ true } onClick={ seePrevImg }/>
-                        <ArrowNavButton left={ false } onClick={ seeNextImg }/>
+                        {imgIndex() > minIndex && <ArrowNavButton left={ true } onClick={ seePrevImg }/>}
+                        {imgIndex() < maxIndex && <ArrowNavButton left={ false } onClick={ seeNextImg }/>}
                     </>
                 }
                 </div>
