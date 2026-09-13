@@ -1,4 +1,4 @@
-import { createEffect, createSignal } from "solid-js";
+import { createEffect, createSignal, Show } from "solid-js";
 import ArrowNavButton from "./ArrowNavControl.jsx";
 import GalleryViewerExit from "./GalleryViewerExit.jsx";
 
@@ -36,7 +36,13 @@ export default function GalleryViewer(props) {
 				<aside class="flex flex-col bg-zinc-900 px-5 pt-0 w-screen h-full lg:w-150 lg:h-screen lg:p-10 lg:pt-3">
           <GalleryViewerExit onExit={ props.onExit } />
 
-					<div class="prose prose-invariants prose-headings:font-normal overflow-y-auto" innerHTML={desc()}></div>
+					<div class="prose prose-invariants prose-headings:font-normal overflow-y-auto">
+						<Show when={props.description}
+							fallback={<div innerHTML={ desc() }></div>}
+						>
+							{ props.description }
+						</Show>
+					</div>
 				</aside>
 			</article>
 		</div>
