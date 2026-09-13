@@ -10,6 +10,10 @@ export default function Gallery(props) {
     setViewerShownPiece(piece);
   }
 
+  function exitViewer() {
+    setViewerShownPiece(null);
+  }
+
   function viewerNextPiece() {
     setViewerShownPiece(props.pieces[viewerShownPiece().index + 1]);
   }
@@ -43,31 +47,24 @@ export default function Gallery(props) {
                 alt={ piece.title }
                 width={ piece.thumbWidth }
                 height={ piece.thumbHeight }
+                loading="lazy"
               />
             </a>
           )          
         }</For>
       </div>
 
-      <Show when={viewerShownPiece()}>
+      <Show when={viewerShownPiece() !== null}>
         <GalleryViewer
           imgIndex={ viewerShownPiece().index }
           imgSrc={ viewerShownPiece().fullImgSrc }
           descSrc={ viewerShownPiece().descSrc }
           showNav={ true }
           maxIndex={ maxIndex }
-          nextClicked={ viewerNextPiece }
-          prevClicked={ viewerPrevPiece }
-        >
-          <nav
-            slot="sidebar-header"
-            class="pb-2 border-b border-stone-500 mb-3 text-end"
-          >
-            <button commandfor="viewer-modal" command="close" class="muted hover:text-pi-cyan font-display text-xl">
-              Close <span class="text-4xl relative top-1.5">&times;</span>
-            </button>
-          </nav>
-        </GalleryViewer>
+          onNextClicked={ viewerNextPiece }
+          onPrevClicked={ viewerPrevPiece }
+          onExit={ exitViewer }
+        />
       </Show>
     </div>
 	);

@@ -1,5 +1,6 @@
 import { createEffect, createSignal } from "solid-js";
 import ArrowNavButton from "./ArrowNavControl.jsx";
+import GalleryViewerExit from "./GalleryViewerExit.jsx";
 
 export default function GalleryViewer(props) {
 	const [desc, setDesc] = createSignal('');
@@ -23,17 +24,17 @@ export default function GalleryViewer(props) {
 
           <Show when={props.showNav}>
             <Show when={props.imgIndex > 0}>
-              <ArrowNavButton left={ true } onClick={ props.prevClicked }/>
+              <ArrowNavButton left={ true } onClick={ props.onPrevClicked }/>
             </Show>
 
             <Show when={props.imgIndex < props.maxIndex}>
-              <ArrowNavButton left={ false } onClick={ props.nextClicked }/>
+              <ArrowNavButton left={ false } onClick={ props.onNextClicked }/>
             </Show>
           </Show>
 				</div>
 
 				<aside class="flex flex-col bg-zinc-900 px-5 pt-0 w-screen h-full lg:w-150 lg:h-screen lg:p-10 lg:pt-3">
-					{ props.sidebarHeader }
+          <GalleryViewerExit onExit={ props.onExit } />
 
 					<div class="prose prose-invariants prose-headings:font-normal overflow-y-auto" innerHTML={desc()}></div>
 				</aside>
