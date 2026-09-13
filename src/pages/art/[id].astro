@@ -27,8 +27,6 @@ const humanDate = post.data.date?.toLocaleDateString("en-CA", {
 }) || 'an unknown date';
 const imgSrc = (await getImage({ src: post.data.cover, format: "png" })).src;
 const ogImageUrl = new URL(imgSrc, Astro.url).href;
-
-const descSrc = `/art/${post.id}-desc`
 ---
 
 <!DOCTYPE html>
