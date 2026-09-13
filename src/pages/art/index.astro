@@ -1,248 +1,43 @@
 ---
-/**
- * The image viewer logic is a little nuts, but it works like this:
- * 1. Astro renders a <template id="image-{artId}"> containing the <Image> for each item in the gallery
- * 2. Astro renders a <template id="desc-{artId}"> containing the sidebar description for each item in the gallery
- * 3. In the client, whenever the user opens the viewer to a given image, the JS
- *    clones the templates according to which image was requested into the viewer
- * 4. The JS queries for a thumbnail with `[data-art-id="{artId}"]` and uses its `data-index`
- *    to determine which artIds belong to the next and previous images in the gallery
- * 
- * === WHY IS IT LIKE THIS? ===
- * It's a hack to take advantage of Astro's image optimizers for the thumbnails,
- * even when the whole site is completely static.
- * 
- * I only want the full-sized images to load when they're opened in the image
- * viewer, and Astro only generates the full-sized versions if there's an 
- * <Image> element that uses them.
- * 
- * By rendering the full-sized images into a <template>, two things happen:
- * - The browser will NOT add them to the DOM until opened in the viewer
- * - The browser will NOT request the full size images until opened in the viewer
- * 
- * This way, we prevent the massive performance problems we would otherwise get
- * if they weren't templates.
- */
-
-import { Image } from "astro:assets";
-import DefaultLayout from "@layouts/DefaultLayout.astro";
+import DefaultLayout from '@layouts/DefaultLayout.astro';
 import { getCollection, getEntry, render } from 'astro:content';
-import ImageDescription from "@components/ImageDescription.astro";
-import ImageViewer from "@components/ImageViewer.astro";
-import Alert from "@components/Alert.astro";
-import CyberPentagon from '@components/CyberPentagon.astro';
-
-
+import Gallery from '@components/galleryviewer/Gallery.jsx';
+import { getImage } from 'astro:assets';
 
 const art = (
   await getCollection('art'))
     .filter(piece => !piece.data.tags?.includes('notmine') && !piece.data.tags?.includes('notfeatured'))
     .toSorted((a, b) => b.data.date?.getTime() - a.data.date?.getTime()
 );
----
 
+const descriptions = art.map(piece => `/art/${piece.id}-desc`);
+const images = await Promise.all(art.map(async piece => await getImage({src: piece.data.cover})));
+
+const thumbs = await Promise.all(art.map(async piece => await getImage({
+  src: piece.data.cover,
+  width: 450,
+  quality: 'max',
+})));
+---
 <DefaultLayout
   title="Art"
   metadesc="Marvel at the art of Pilosophos, the artist born and raised on the internet."
 >
   <main class="container">
-    <div class="flex flex-col md:flex-row items-end md:items-stretch my-5 gap-3">
-      <Alert class="w-full">
-        <h2 class="font-display md:text-xl">Art commissions open!</h2>
-        <p>If you'd like to commission some art from me, <a href="https://ko-fi.com/pilosophos/commissions" class="link">visit my Ko-fi</a> page for details!</p>
-      </Alert>
-
-      <a href="/art/rss.xml" class="group hidden md:flex">
-        <CyberPentagon
-          class=`
-            relative w-30 bg-pi-yellow text-pi-gray pe-2 md:pe-1 my-px text-end
-            transition-colors group-hover:bg-amber-200 group-active:bg-white
-          `
-          notch="20px"
-          corner="bottom-right"
-        >
-          <span class="block uppercase">art</span>
-          <span class="text-2xl/1 font-display">RSS</span>
-          <img src="/images/icons/rss.svg"
-            width="60"
-            class="absolute -bottom-1 left-1 origin-bottom-left group-hover:scale-110 transition-transform"
-            alt="RSS feed"
-          />
-        </CyberPentagon>
-      </a>
-    </div>
-
-    <div id="gallery" class="grid md:grid-cols-2 lg:grid-cols-3 justify-center gap-3 mx-auto">
-      {
-        art.map(async (piece, i) =>
-          <a href={ '/art/' + piece.id } class="gallery-item mb-[10px] w-[350px] lg:w-[420px]">
-            <Image
-              src={ piece.data.cover }
-              alt={ piece.data.title }
-              quality="max"
-              width={420}
-              class="art-thumbnail"
-              data-index={ i }
-              data-art-id={ piece.id }
-            />
-          </a>
-        )
+    <Gallery
+      client:load
+      pieces={
+        Array.from(art.map((piece, i) => ({
+          index: i,
+          href: `/art/${piece.id}`,
+          title: piece.data.title,
+          thumbImgSrc: thumbs[i].src,
+          thumbWidth: thumbs[i].attributes.width,
+          thumbHeight: thumbs[i].attributes.height,
+          fullImgSrc: images[i].src,
+          descSrc: descriptions[i],
+        })))
       }
-    </div>
+    />
   </main>
 </DefaultLayout>
-
-<ImageViewer showNav class="hidden">
-  <nav
-    slot="sidebar-header"
-    class="pb-2 border-b border-stone-500 mb-3 text-end"
-  >
-    <button id="viewer__close" class="muted hover:text-pi-cyan font-display text-xl">
-      Close <span class="text-4xl relative top-1.5">&times;</span>
-    </button>
-  </nav>
-</ImageViewer>
-
-<script>
-  import Masonry from 'masonry-layout';
-  new Masonry('#gallery', {
-    itemSelector: '.gallery-item',
-    gutter: 10,
-    fitWidth: true,
-    transitionDuration: '0.2s',
-  })
-</script>
-
-{
-  // generate templates for image descriptions
-  art.map(async (piece, i) => {
-    const { Content } = await render(piece);
-
-    return (
-      <template id={ 'desc-' + piece.id }>
-        <ImageDescription
-          slot="description"
-          title={ piece.data.title }
-          date={ piece.data.date }
-          slug={ piece.id }
-        >
-          { piece.data.sticker && 
-            <Alert class="mt-5 not-prose">
-              You can now buy this as a sticker from <a href="https://www.redbubble.com/people/pilosophos/shop?iaCode=all-stickers" class="link">my Redbubble store</a>!
-            </Alert>
-          }
-          { piece.data.print && 
-            <Alert class="mt-5 not-prose">
-              You can now buy a print of this from <a href="https://pilosophos.etsy.com" class="link">my Etsy store</a>!
-            </Alert>
-          }
-          <Content />
-        </ImageDescription>
-      </template>
-    )
-  })
-}
-
-{
-  // generate templates for full-res images themselves
-  art.map(async (piece, i) =>
-    <template id={ 'image-' + piece.id }>
-      <Image
-        class="max-h-screen object-contain w-auto h-auto"
-        src={ piece.data.cover }
-        alt={ piece.data.title }
-        quality="max"
-        width={piece.data.cover.width}
-      />
-    </template>
-  )
-}
-
-<script type="text/javascript">
-  (function() {
-    'use strict';
-
-    const viewer = document.getElementById('viewer');
-    const imgContainer = document.getElementById('viewer__image');
-    const mainArea = document.getElementById('viewer__main');
-    const descContainer = document.getElementById('viewer__desc');
-    const nextBtn = document.getElementById('viewer__next');
-    const prevBtn = document.getElementById('viewer__prev');
-
-    function init() {
-      // turn thumbnails into image viewer activators
-      document.querySelectorAll('.art-thumbnail').forEach(
-        thumb => thumb.addEventListener('click', event => {
-          event.preventDefault();
-          showViewer(thumb.dataset.artId);
-        })
-      );
-
-      // show viewer if there's an art ID specified in the URL
-      const artId = new URLSearchParams(window.location.search).get('image');
-      if (artId) showViewer(artId);
-
-      // enable viewer closers
-      document.getElementById('viewer__close').addEventListener('click', hideViewer);
-      mainArea.addEventListener('click', e => { if (e.target === mainArea) hideViewer() });
-
-      // slightly hacky way to do arrow nav
-      document.addEventListener('keydown', (event) => {
-        if (!viewer.classList.contains('hidden')) {
-          if (event.key === "ArrowLeft") prevBtn.click();
-          if (event.key === "ArrowRight") nextBtn.click();
-        }
-      })
-    }
-
-    function showViewer(artId) {
-      viewer.classList.remove('hidden');
-      document.querySelector('body').style.overflowY = "hidden";
-
-      if (history.replaceState) {
-        const newurl = window.location.protocol + "//" + window.location.host + window.location.pathname + '?image=' + artId;
-        window.history.replaceState({path:newurl}, '', newurl);
-      }
-
-      // Update image and image description
-      const image = document.getElementById('image-' + artId).content.cloneNode(true);
-      imgContainer.innerHTML = '';
-      imgContainer.append(image);
-
-      const desc = document.getElementById('desc-' + artId).content.cloneNode(true);
-      descContainer.innerHTML = '';
-      descContainer.append(desc);
-
-      // Set the next and prev buttons
-      let artIndex = document.querySelector(`[data-art-id='${artId}']`).dataset.index;
-      artIndex = Number(artIndex)
-      const nextArt = document.querySelector(`[data-index='${artIndex + 1}']`)?.dataset?.artId;
-      if (nextArt) {
-        nextBtn.onclick = () => showViewer(nextArt);
-        nextBtn.disabled = false;
-      } else {
-        nextBtn.disabled = true;
-      }
-
-      const prevArt = document.querySelector(`[data-index='${artIndex - 1}']`)?.dataset?.artId;
-      if (prevArt) {
-        prevBtn.onclick = () => showViewer(prevArt);
-        prevBtn.disabled = false;
-      } else {
-        prevBtn.disabled = true;
-      }
-    }
-
-    function hideViewer() {
-      viewer.classList.add('hidden');
-      document.querySelector('body').style.overflowY = "";
-
-      if (history.replaceState) {
-        const newurl = window.location.protocol + "//" + window.location.host + window.location.pathname
-        window.history.replaceState({path:newurl}, '', newurl);
-      }
-    }
-
-    init();
-  })();
-</script>
