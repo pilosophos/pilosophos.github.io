@@ -1,0 +1,40 @@
+---
+import '../../styles/global.css'
+import { getCollection, render } from 'astro:content';
+import Favicon from '../../components/Favicon.astro';
+import ImageDescription from '@components/ImageDescription.astro';
+import Alert from '@components/Alert.astro';
+// 1. Generate a new path for every collection entry
+export async function getStaticPaths() {
+  const posts = await getCollection('art');
+  return posts.map(post => ({
+    params: { id: post.id },
+    props: { post },
+  }));
+}
+// 2. For your template, you can get the entry directly from the prop
+const { post } = Astro.props;
+
+const { Content } = await render(post);
+
+---
+<div id={ 'desc-' + post.id }>
+  <ImageDescription
+    slot="description"
+    title={ post.data.title }
+    date={ post.data.date }
+    slug={ post.id }
+  >
+    { post.data.sticker && 
+      <Alert class="mt-5 not-prose">
+        You can now buy this as a sticker from <a href="https://www.redbubble.com/people/pilosophos/shop?iaCode=all-stickers" class="link">my Redbubble store</a>!
+      </Alert>
+    }
+    { post.data.print && 
+      <Alert class="mt-5 not-prose">
+        You can now buy a print of this from <a href="https://pilosophos.etsy.com" class="link">my Etsy store</a>!
+      </Alert>
+    }
+    <Content />
+  </ImageDescription>
+</div>

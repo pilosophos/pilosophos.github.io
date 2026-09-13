@@ -1,16 +1,31 @@
 {
   "extends": "astro/tsconfigs/strict",
-  "include": [".astro/types.d.ts", "**/*"],
-  "exclude": ["dist"],
+  "include": [
+    ".astro/types.d.ts",
+    "**/*"
+  ],
+  "exclude": [
+    "dist"
+  ],
   "compilerOptions": {
     "moduleResolution": "node16",
     "module": "node16",
     "baseUrl": ".",
     "paths": {
-      "@components/*": ["./src/components/*"],
-      "@layouts/*": ["./src/layouts/*"],
-      "@art/*": ["./src/art/*"],
-      "@assets/*": ["./src/assets/*"],
+      "@components/*": [
+        "./src/components/*"
+      ],
+      "@layouts/*": [
+        "./src/layouts/*"
+      ],
+      "@art/*": [
+        "./src/art/*"
+      ],
+      "@assets/*": [
+        "./src/assets/*"
+      ]
     },
-  },
+    "jsx": "preserve",
+    "jsxImportSource": "solid-js"
+  }
 }
