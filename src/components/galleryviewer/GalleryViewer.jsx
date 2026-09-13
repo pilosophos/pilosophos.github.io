@@ -1,4 +1,4 @@
-import { createEffect, createSignal, Show } from "solid-js";
+import { createEffect, createSignal, Show, onMount } from "solid-js";
 import ArrowNavButton from "./ArrowNavControl.jsx";
 import GalleryViewerExit from "./GalleryViewerExit.jsx";
 
@@ -11,7 +11,20 @@ export default function GalleryViewer(props) {
       const html = await res.text();
       setDesc(html);
     }
-  }, []);
+  });
+
+  onMount(() => {
+    document.addEventListener('keyup', (event) => {
+      console.log(event.key)
+      if (event.key === 'Escape') {
+        props.onExit();
+      } else if (event.key === 'ArrowRight') {
+        props.onNextClicked();
+      } else if (event.key === 'ArrowLeft') {
+        props.onPrevClicked();
+      }
+    })
+  })
 
   return (
     <div 
