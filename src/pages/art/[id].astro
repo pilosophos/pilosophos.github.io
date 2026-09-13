@@ -45,6 +45,7 @@ const ogImageUrl = new URL(imgSrc, Astro.url).href;
 </head>
 <body>
   <GalleryViewer
+    client:idle
     imgIndex={ 0 }
     imgSrc={ imgSrc }
     showNav={ false }
