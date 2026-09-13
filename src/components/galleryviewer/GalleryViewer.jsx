@@ -15,7 +15,6 @@ export default function GalleryViewer(props) {
 
   onMount(() => {
     document.addEventListener('keyup', (event) => {
-      console.log(event.key)
       if (event.key === 'Escape') {
         props.onExit();
       } else if (event.key === 'ArrowRight') {

@@ -15,11 +15,11 @@ export default function Gallery(props) {
   }
 
   function viewerNextPiece() {
-    setViewerShownPiece(props.pieces[viewerShownPiece().index + 1]);
+    setViewerShownPiece(props.pieces[Math.min(viewerShownPiece().index + 1, maxIndex)]);
   }
 
   function viewerPrevPiece() {
-    setViewerShownPiece(props.pieces[viewerShownPiece().index - 1]);
+    setViewerShownPiece(props.pieces[Math.max(viewerShownPiece().index - 1, 0)]);
   }
 
   onMount(async () => {
