@@ -1,9 +1,17 @@
-import { createSignal } from "solid-js";
+import { createEffect, createSignal, children as resolveChildren } from "solid-js";
 import ArrowNavButton from "./ArrowNavControl.jsx";
 
-export default function GalleryViewer({imgSrcs, className, showNav, children}) {
+export default function GalleryViewer({imgIds, imgSrcs, className, showNav}) {
     const [imgIndex, setImageIndex] = createSignal(0);
     const [minIndex, maxIndex] = [0, imgSrcs.length - 1];
+
+    const [desc, setDesc] = createSignal('');
+    
+    createEffect(async () => {
+        const res = await fetch(`/art/${imgIds[imgIndex()]}-desc`);
+        const html = await res.text();
+        setDesc(html);
+    }, [imgIndex]);
 
     function seeNextImg() {
         setImageIndex(currentIndex => Math.min(currentIndex + 1, maxIndex))
@@ -35,8 +43,7 @@ export default function GalleryViewer({imgSrcs, className, showNav, children}) {
                 <aside class="flex flex-col bg-zinc-900 px-5 pt-0 w-screen h-full lg:w-150 lg:h-screen lg:p-10 lg:pt-3">
                     <slot name="sidebar-header" />
 
-                    <div class="prose prose-invariants prose-headings:font-normal overflow-y-auto">
-                        <slot name="description" />
+                    <div class="prose prose-invariants prose-headings:font-normal overflow-y-auto" innerHTML={desc()}>
                     </div>
                 </aside>
             </article>

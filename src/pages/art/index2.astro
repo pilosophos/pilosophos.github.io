@@ -3,6 +3,8 @@ import DefaultLayout from '@layouts/DefaultLayout.astro';
 import { getCollection, getEntry, render } from 'astro:content';
 import GalleryViewer from '@components/galleryviewer/GalleryViewer.jsx';
 import { getImage } from 'astro:assets';
+import ImageDescription from '@components/ImageDescription.astro';
+import Alert from '@components/Alert.astro';
 
 const art = (
   await getCollection('art'))
@@ -17,8 +19,10 @@ const images = await Promise.all(art.map(async piece => await getImage({src: pie
   metadesc="Marvel at the art of Pilosophos, the artist born and raised on the internet."
 >
   <main class="container">
-    <GalleryViewer client:load
+    <GalleryViewer
+      client:load
       imgSrcs={ images.map(im => im.src) }
+      imgIds={ art.map(piece => piece.id) }
       showNav={ true }
     />
   </main>
