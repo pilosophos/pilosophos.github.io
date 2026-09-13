@@ -1,9 +1,9 @@
 import { clsx } from 'clsx';
 
-export default function ArrowNavButton({left, onClick}) {
+export default function ArrowNavButton(props) {
 	return (
 		<button
-			onClick={ onClick }
+			onClick={ props.onClick }
 			aria-label="Previous"
 			id="viewer__prev"
 			className={clsx(
@@ -12,14 +12,14 @@ export default function ArrowNavButton({left, onClick}) {
 				"transition-all duration-200",
 				"lg:px-5",
 				"disabled:hover:px-3 disabled:opacity-10",
-				left && "left-0 bg-gradient-to-r hover:ps-7 lg:disabled:hover:ps-5",
-				!left && "right-0 bg-gradient-to-l hover:pe-7 lg:disabled:hover:pe-5",
+				props.left && "left-0 bg-gradient-to-r hover:ps-7 lg:disabled:hover:ps-5",
+				!props.left && "right-0 bg-gradient-to-l hover:pe-7 lg:disabled:hover:pe-5",
 			)}
 		>
 			<div class="
 				group-hover:opacity-90 flex-center w-8 h-8 rounded-full bg-white opacity-70 text-pi-gray text-2xl font-display box-shadow
 			">
-				{ left ? "←" : "→" }
+				{ props.left ? "←" : "→" }
 			</div>
 		</button>   
 	);
