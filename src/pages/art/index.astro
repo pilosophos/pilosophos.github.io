@@ -3,6 +3,8 @@ import DefaultLayout from '@layouts/DefaultLayout.astro';
 import { getCollection, getEntry, render } from 'astro:content';
 import Gallery from '@components/galleryviewer/Gallery.jsx';
 import { getImage } from 'astro:assets';
+import Alert from '@components/Alert.astro';
+import CyberPentagon from '@components/CyberPentagon.astro';
 
 const art = (
   await getCollection('art'))
@@ -24,6 +26,32 @@ const thumbs = await Promise.all(art.map(async piece => await getImage({
   metadesc="Marvel at the art of Pilosophos, the artist born and raised on the internet."
 >
   <main class="container">
+    <div class="flex flex-col md:flex-row items-end md:items-stretch my-5 gap-3">
+      <Alert class="w-full">
+        <h2 class="font-display md:text-xl">Art commissions open!</h2>
+        <p>If you'd like to commission some art from me, <a href="https://ko-fi.com/pilosophos/commissions" class="link">visit my Ko-fi</a> page for details!</p>
+      </Alert>
+
+      <a href="/art/rss.xml" class="group hidden md:flex">
+        <CyberPentagon
+          class=`
+            relative w-30 bg-pi-yellow text-pi-gray pe-2 md:pe-1 my-px text-end
+            transition-colors group-hover:bg-amber-200 group-active:bg-white
+          `
+          notch="20px"
+          corner="bottom-right"
+        >
+          <span class="block uppercase">art</span>
+          <span class="text-2xl/1 font-display">RSS</span>
+          <img src="/images/icons/rss.svg"
+            width="60"
+            class="absolute -bottom-1 left-1 origin-bottom-left group-hover:scale-110 transition-transform"
+            alt="RSS feed"
+          />
+        </CyberPentagon>
+      </a>
+    </div>
+
     <Gallery
       client:load
       pieces={
