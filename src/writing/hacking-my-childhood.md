@@ -1,7 +1,7 @@
 ---
 title: Hacking my childhood
 description: Exploits of a bored kid whose computer time was limited
-tags: [nonfiction]
+tags: [nonfiction, computers]
 published: 2026-06-18
 ---
 # Hacking my childhood

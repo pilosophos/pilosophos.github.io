@@ -1,7 +1,7 @@
 ---
 title: "RFC: Cola chicken wings"
 description: A Recipe for Cooking (RFC) for chicken wings in a Coca Cola-based sauce
-tags: [nonfiction, recipes]
+tags: [nonfiction, recipes, tutorial]
 published: 2024-07-02
 updated: 2025-03-13
 ---

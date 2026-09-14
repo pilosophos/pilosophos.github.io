@@ -1,7 +1,7 @@
 ---
 title: Callback
 description: A man down on his luck returns to the rural town he grew up in and comes face to face with the sadness that accompanies nostalgia.
-tags: [fiction, Pokémon]
+tags: [fiction, Pokémon, slice of life]
 published: 2026-04-27
 ---
 # Callback

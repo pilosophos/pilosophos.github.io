@@ -1,7 +1,7 @@
 ---
 title: A Pokémon that meant a lot to me
 description: A recovered school assignment from the Pokémon universe about a Psyduck who comes to school to play with a lonely girl.
-tags: [fiction, Pokémon]
+tags: [fiction, Pokémon, slice of life, coming of age]
 published: 2026-01-10
 updated: 2026-05-07
 ---

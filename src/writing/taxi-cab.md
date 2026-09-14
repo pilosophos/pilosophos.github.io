@@ -1,7 +1,7 @@
 ---
 title: Jun stepped into the taxi cab.
 description: Returning to Lavender Town where he grew up, Jun rambles for the entire journey to the cabbie about his childhood, the Pokémon world, and donuts.
-tags: [fiction, Pokémon]
+tags: [fiction, Pokémon, slice of life, stream of consciousness]
 published: 2026-09-08
 ---
 # Jun stepped into the taxi cab.
@@ -248,7 +248,7 @@ air just about every time.
 In elementary school, maybe in year three or four, our class tried this
 thing called a *show and tell*, or something like that. You'd bring
 something cool to show to your classmates and you'd talk about it.
-Anyway, Puchi's fetch skills were so awesome that one day I brought
+Anyway, I thought Puchi's fetch skills were so awesome that one day I brought
 Puchi and her tennis ball and the throwing stick, and I threw the tennis
 ball to have her fetch it. We weren't outside or anything, so that ball
 flew across the classroom, all the kids are just covering their heads

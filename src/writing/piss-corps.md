@@ -1,7 +1,7 @@
 ---
 title: Piss Corps
 description: The diary of a criminal who steals septic tanks
-tags: [fiction, incomplete]
+tags: [fiction, incomplete, sci-fi]
 published: 2024-04-17
 updated: 2024-09-15
 ---
