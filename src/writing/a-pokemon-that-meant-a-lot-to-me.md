@@ -43,11 +43,11 @@ Looking back, I think that deep down, I *wanted* to be furious. I wanted to yell
 
 So I sat down on the concrete stoop and sure enough, several minutes later, I spy that Psyduck peeking at me from behind the tree. I drew in a sharp breath and held my sandwich so tight the mayonnaise leeched from its sides. After considering me for a few moments, he waddled up to me just as he had the day before. My pulse quickened as he stopped right in front of me.
 
-From behind his back he produced a misshapen crabapple, and held it out in front with his stubby little arms. Quite bewildered, I shakily reached out an apprehensive arm and grabbed it. This seemed to satisfy him, and he plopped himself down next to me with his own crabapple.
+From behind his back he produced a misshapen crabapple, and held it out in front with his stubby little arms. Quite bewildered, I shakily reached out an apprehensive arm of my own and grabbed it. This seemed to satisfy him, and he plopped himself down next to me with his own crabapple.
 
 I guess he felt bad for taking my sandwich, and he'd brought something he thought I could eat as a peace offering.
 
-For several moments, I just stood there, completely still, the crabapple in my hands, unsure how to react. But as the Psyduck sat there munching away, occasionally casting me a sidelong glance, I felt my eyes just suddenly start to well up. Tears streamed down my cheeks. Was I sad? Was it that I felt bad for having yelled at such a remorseful Psyduck yesterday? Or maybe I was just lonely and this Psyduck was the only being that seemed to care about me? But in that moment, my brain couldn't think and make sense of it all. I could only hug him so tight that, after a minute, he started to flail around in panic and I had to put him down.
+For several moments, I just stood there, completely still, the crabapple in my hands, unsure how to react. But as the Psyduck sat there munching away, occasionally casting me a sidelong glance, I felt my eyes just suddenly start to well up. Tears streamed down my cheeks. Was I sad? Was it that I felt bad for having yelled at such a remorseful Psyduck yesterday? Or maybe I was just lonely and this Psyduck was the only being that seemed to care about me? But in that moment, my brain couldn't think and make sense of it all. I could only hug him so tight that, after a minute, he started to flail around in panic and I had to put him back down.
 
 From then on, I started skipping the lunchroom and started having lunch with this Psyduck. Sometimes I'd bring him snacks that he'd gulp down all at once, only for him to clamor for more. I'd watch him pick up leaves that had fallen on the ground, gathering them in his arms until they were overflowing and scattering all across the floor. One time, I brought a playground ball and tried to teach him how to play Wallball. That was not a success.
 
@@ -57,7 +57,7 @@ When it came close to summer in my last year of middle school, I knew our lunche
 
 I didn't want my time with that Psyduck to disappear, so on graduation day, I slipped away and stole a Pokéball from the janitor's supply closet. I met him once again at the concrete stoop behind the gym, right on time, at noon.
 
-I gripped the Pokéball in my hand. Dozens of simulations of the throw raced through my mind― angle and velocity of throw, air resistance, wind direction― absolutely everything accounted for. I had always been a lousy pitcher in P.E., but somehow, just this once, I *knew* I couldn't miss.
+I gripped the Pokéball in my hand. Dozens of simulations of the throw raced through my mind― angle, velocity, air resistance, wind direction― absolutely everything accounted for. I had always been a lousy pitcher in P.E., but somehow, just this once, I *knew* I couldn't miss.
 
 I drew my arm back, poised for the throw, and with a *whoosh* in the air, Mr. Davis the Math teacher appeared behind me and stopped my hand.
 
