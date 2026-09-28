@@ -3,19 +3,33 @@ import { Image } from "astro:assets";
 import ArticleHeader from "@components/ArticleHeader.astro";
 import DefaultLayout from "@layouts/DefaultLayout.astro";
 import SmallBackButton from "@components/SmallBackButton.astro";
+import { Gallery, prepareArtForGallery } from '@components/galleryviewer/Gallery.jsx';
 
 import CamilleInfobox from "@components/ocs/CamilleInfobox.astro";
 
-import CamilleGreyEquipmentImg from "@art/camille-grey-equipment.png";
-import CamilleGreyImg from "@art/camille-grey.png";
-import CamilleChibiImg from "@art/camille-chibi.png";
-import CamilleStylesImg from "@art/camille-styles.png";
-import CamilleCloakImg from "@art/camille-cloak.png";
-import HazmatImg from "@art/hazmat.png";
+
 
 import ArtfightDefenseDubiousdiscWildcardImg from "@art/artfight-defense-dubiousdisc-wildcard.png";
 import ArtfightDefensePurpuroseaWantedImg from "@art/artfight-defense-purpurosea-wanted.png";
 import ArtfightDefense26CamillePros from "@art/artfight-defense-26-camille-pros.png";
+import { getEntries } from "astro:content";
+
+const myGalleryPieces = (await getEntries([
+  {collection: "art", id: "hazmat"},
+  {collection: "art", id: "camille-cloak"},
+  {collection: "art", id: "camille-chibi"},
+  {collection: "art", id: "camille-styles"},
+  {collection: "art", id: "camille-grey-equipment"},
+  {collection: "art", id: "camille-grey"},
+])).toSorted((a, b) => b.data.date?.getTime() - a.data.date?.getTime());
+const myGalleryItems = await prepareArtForGallery(myGalleryPieces)
+
+const fanGalleryPieces = (await getEntries([
+  {collection: "art", id: "artfight-defense-dubiousdisc-wildcard"},
+  {collection: "art", id: "artfight-defense-purpurosea-wanted"},
+  {collection: "art", id: "artfight-defense-26-camille-pros"},
+])).toSorted((a, b) => b.data.date?.getTime() - a.data.date?.getTime());
+const fanGalleryItems = await prepareArtForGallery(fanGalleryPieces);
 ---
 
 <DefaultLayout
@@ -128,99 +142,23 @@ import ArtfightDefense26CamillePros from "@art/artfight-defense-26-camille-pros.
       <section id="gallery">
         <h2>Gallery</h2>
 
-        <ul class="not-prose flex justify-around flex-wrap gap-5">
-          <li>
-            <figure class="table">
-              <a class="link" href="/art/hazmat">
-                <Image src={ HazmatImg } alt="Camille in a hazmat suit, June 1, 2026" height={ 350 } />
-              </a>
-              <figcaption class="table-caption caption-bottom">
-                Camille in a hazmat suit, drawn June 1, 2026
-              </figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure class="table">
-              <a class="link" href="/art/camille-cloak">
-                <Image src={ CamilleCloakImg } alt="Camille in a black-trenchcoat-esque alternate costume, October 25, 2025" height={ 350 } />
-              </a>
-              <figcaption class="table-caption caption-bottom">
-                Camille in a black-trenchcoat-esque alternate costume, drawn October 25, 2025
-              </figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure class="table">
-              <a class="link" href="/art/camille-styles">
-                <Image src={ CamilleStylesImg } alt="Opposite sides of Shadowrun's playstyle spectrum, drawn September 24, 2025" height={ 350 } />
-              </a>
-              <figcaption class="table-caption caption-bottom">
-                "Opposite sides of Shadowrun's playstyle spectrum", drawn September 24, 2025
-              </figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure class="table">
-              <a class="link" href="/art/camille-chibi">
-                <Image src={ CamilleChibiImg } alt="Chibi Camille, drawn September 22, 2025" height={ 350 } />
-              </a>
-              <figcaption class="table-caption caption-bottom">
-                A pixel art chibi version of Camille, drawn September 22, 2025
-              </figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure class="table">
-              <a class="link" href="/art/camille-grey-equipment">
-                <Image src={ CamilleGreyEquipmentImg } alt="A decker and her equipment, drawn July 27, 2025" height={ 350 } />
-              </a>
-              <figcaption class="table-caption caption-bottom">
-                Camille with some information about her equipment, drawn July 27, 2025
-              </figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure class="table">
-              <a class="link" href="/art/camille-grey">
-                <Image src={ CamilleGreyImg } alt="Camille Grey, drawn April 28, 2025" height={ 350 } />
-              </a>
-              <figcaption class="table-caption caption-bottom w-full">
-                Camille causing chaos at a nightclub, drawn April 28, 2025
-              </figcaption>
-            </figure>
-          </li>
-        </ul>
+        <div class="relative prose-img:my-0">
+          <Gallery
+            client:load
+            pieces={myGalleryItems}
+          />
+        </div>
       </section>
 
       <section id="fanart">
         <h2>Fanart (art of my character by other people)</h2>
 
-        <ul class="not-prose flex justify-around items-center flex-wrap gap-5">
-          <li>
-            <figure class="table">
-              <a class="link" href="/art/artfight-defense-26-camille-pros">
-                <Image src={ ArtfightDefense26CamillePros } alt="Professionals have standards, drawn by firebet, Art Fight 2026" height={ 350 } />
-              </a>
-              <figcaption class="table-caption caption-bottom">Drawn by firebet, Art Fight 2026</figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure class="table">
-              <a class="link" href="/art/artfight-defense-dubiousdisc-wildcard">
-                <Image src={ ArtfightDefenseDubiousdiscWildcardImg } alt="wildcard, drawn by dubiousdisc, Art Fight 2025" height={ 350 } />
-              </a>
-              <figcaption class="table-caption caption-bottom">Drawn by dubiousdisc, Art Fight 2025</figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure class="table">
-              <a class="link" href="/art/artfight-defense-purpurosea-wanted">
-                <Image src={ ArtfightDefensePurpuroseaWantedImg } alt="Wanted, drawn by purpurosea, Art Fight 2025" height={ 350 } />
-              </a>
-              <figcaption class="table-caption caption-bottom">Drawn by purpurosea, Art Fight 2025</figcaption>
-            </figure>
-          </li>
-        </ul>
+        <div class="relative prose-img:my-0">
+          <Gallery
+            client:load
+            pieces={fanGalleryItems}
+          />
+        </div>
       </section>
     </section>
   </main>
