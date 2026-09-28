@@ -28,7 +28,7 @@ export default function GalleryViewer(props) {
   return (
     <div 
       id="viewer"
-      class="fixed left-0 top-0 w-screen h-screen bg-black/75"
+      class="z-10 fixed left-0 top-0 w-screen h-screen bg-black/75"
     >
       <article class="flex flex-col items-center lg:justify-between w-full h-full overflow-y-auto lg:flex-row">
         <div class="flex-center relative w-full lg:h-full">
