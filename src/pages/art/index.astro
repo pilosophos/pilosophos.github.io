@@ -1,7 +1,7 @@
 ---
 import DefaultLayout from '@layouts/DefaultLayout.astro';
 import { getCollection, getEntry, render } from 'astro:content';
-import Gallery from '@components/galleryviewer/Gallery.jsx';
+import { Gallery, prepareArtForGallery } from '@components/galleryviewer/Gallery.jsx';
 import { getImage } from 'astro:assets';
 import Alert from '@components/Alert.astro';
 import CyberPentagon from '@components/CyberPentagon.astro';
@@ -12,14 +12,7 @@ const art = (
     .toSorted((a, b) => b.data.date?.getTime() - a.data.date?.getTime()
 );
 
-const descriptions = art.map(piece => `/art/${piece.id}-desc`);
-const images = await Promise.all(art.map(async piece => await getImage({src: piece.data.cover})));
-
-const thumbs = await Promise.all(art.map(async piece => await getImage({
-  src: piece.data.cover,
-  width: 450,
-  quality: 'max',
-})));
+const galleryItems = await prepareArtForGallery(art);
 ---
 <DefaultLayout
   title="Art"
@@ -54,18 +47,7 @@ const thumbs = await Promise.all(art.map(async piece => await getImage({
 
     <Gallery
       client:load
-      pieces={
-        Array.from(art.map((piece, i) => ({
-          index: i,
-          href: `/art/${piece.id}`,
-          title: piece.data.title,
-          thumbImgSrc: thumbs[i].src,
-          thumbWidth: thumbs[i].attributes.width,
-          thumbHeight: thumbs[i].attributes.height,
-          fullImgSrc: images[i].src,
-          descSrc: descriptions[i],
-        })))
-      }
+      pieces={ galleryItems }
     />
   </main>
 </DefaultLayout>

@@ -1,7 +1,8 @@
 import { createSignal, Show, onMount } from "solid-js";
+import { getImage } from 'astro:assets';
 import GalleryViewer from '@components/galleryviewer/GalleryViewer.jsx';
 
-export default function Gallery(props) {
+export function Gallery(props) {
 	const [viewerShownPiece, setViewerShownPiece] = createSignal(null);
 	const maxIndex = props.pieces.length - 1;
 
@@ -68,4 +69,30 @@ export default function Gallery(props) {
       </Show>
     </div>
 	);
+}
+
+/**
+ * Prepare an array of Art collection entries for use in the `pieces` prop of the
+ * Gallery element.
+ * @param {Object[]} artEntries Art collection entries from astro.getEntries/getCollection
+ */
+export async function prepareArtForGallery(artEntries) {
+  const descriptions = artEntries.map(piece => `/art/${piece.id}-desc`);
+  const images = await Promise.all(artEntries.map(async piece => await getImage({src: piece.data.cover})));
+  const thumbs = await Promise.all(artEntries.map(async piece => await getImage({
+    src: piece.data.cover,
+    width: 450,
+    quality: 'max',
+  })));
+
+  return Array.from(artEntries.map((piece, i) => ({
+    index: i,
+    href: `/art/${piece.id}`,
+    title: piece.data.title,
+    thumbImgSrc: thumbs[i].src,
+    thumbWidth: thumbs[i].attributes.width,
+    thumbHeight: thumbs[i].attributes.height,
+    fullImgSrc: images[i].src,
+    descSrc: descriptions[i],
+  })));
 }
