@@ -40,7 +40,7 @@ export function Gallery(props) {
         <For each={props.pieces}>{
           piece => (
             <a href={ piece.href }
-              class="gallery-item mb-[10px] w-[350px] lg:w-[420px] bg-black/20"
+              class="gallery-item mb-[10px] w-[350px] lg:w-[420px]"
               onClick={ event => openPiece(event, piece) }
             >
               <img
