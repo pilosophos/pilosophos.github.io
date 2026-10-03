@@ -2,6 +2,8 @@
 title: The Sixth World Collection
 cover: sixth-world-collection.png
 date: 2026-10-03
+tags: [sketchbook]
+
 ---
 I haven't posted any art in a while `:(`. I'm not dead, just very busy.
 
