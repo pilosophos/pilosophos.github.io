@@ -4,8 +4,8 @@ description: An art piece I made for a film festival.
 tags: [nonfiction, unpublished]
 published: 2026-10-11
 ---
-# Your Memories
-*tl;dr Your Memories is a social computing experiment.*
+# Now Screening: Your Memories
+*tl;dr Now Screening: Your Memories is a social computing experiment.*
 
 We used to be so excited about the internet, as a society. A revolutionary new
 way to connect with your friends, and even find new ones. You could hop on to a
@@ -19,7 +19,7 @@ It's not our fault. Humanity and community don't make much revenue, so the tech
 companies that dominate the web have moved on to things like TikTok and ChatGPT.
 There are no friends to be made there, only money.
 
-*Your Memories* is an experiment in bringing back that sense of community through
+*Now Screening: Your Memories* is an experiment in bringing back that sense of community through
 computing. I programmed it entirely by hand, without LLMs, with a setup at the Key
 Peninsula International Film Festival in mind. As people showed up to the
 festival, they could come up to the computer and log one of their precious memories.
@@ -57,10 +57,10 @@ you don't want people to accidentally move the mouse cursor to the projector,
 disrupting the projection and confusing the user who's trying to add a memory.
 
 # License
-The software of *Your Memories* is licensed to the public under a Creative Commons
+The software of *Now Screening: Your Memories* is licensed to the public under a Creative Commons
 [Attribution-NonCommercial-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-nc-sa/4.0/)
-license. This means you can share *Your Memories* and display it at events, as
+license. This means you can share *Now Screening: Your Memories* and display it at events, as
 long as you credit `Pilosophos` and are doing so for non-commercial purposes.
 
-You can even make derivatives of *Your Memories*, so long as it meets those
+You can even make derivatives of *Now Screening: Your Memories*, so long as it meets those
 requirements and uses the same license.
