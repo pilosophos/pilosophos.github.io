@@ -1,5 +1,5 @@
 ---
-title: Now Screening: Your Memories
+title: "Now Screening: Your Memories"
 description: An art piece I made for a film festival.
 tags: [nonfiction, unpublished]
 published: 2026-10-11
@@ -41,6 +41,8 @@ browser tabs, and other distractors).
 The Guestbook Computer is where the public will add their memory to be projected.
 It is so named because if you set it up at the entrance to your event, it can
 act as a sort of guestbook that attendees sign.
+
+You should put the projector, but not the Projector Computer, next to the Guestbook Computer. This reinforces the relationship between the things that the projector projects, and the things people do on the Guestbook Computer. This may involve running a long cable.
 
 The Guestbook Computer itself should display the [memory creator webpage](https://pilosophos.com/memories)
 using a browser in Kiosk Mode, so that people cannot navigate off the page. For
