@@ -55,3 +55,12 @@ firefox --kiosk --private-window https://pilosophos.com/memories/projector
 The Guestbook and Projector computers are separate comptuers for a similar reason:
 you don't want people to accidentally move the mouse cursor to the projector,
 disrupting the projection and confusing the user who's trying to add a memory.
+
+# License
+*Your Memories* is licensed to the public under a Creative Commons
+[Attribution-NonCommercial-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+license. This means you can share *Your Memories* and display it at events, as
+long as you credit `Pilosophos` and are doing so for non-commercial purposes.
+
+You can even make copies and derivatives of it, so long as it meets those
+requirements and uses the same license.
