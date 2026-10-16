@@ -8,7 +8,7 @@ published: 2026-09-08
 
 <div class="relative not-prose">
   <figure class="flex flex-col gap-3 text-center items-center marginal-note">
-    <a href="/art/bulbabang-taxi"><img src="/images/bulbabang-taxi.webp" alt="Cover art for 'Jun stepped into the taxi cab.' by Khelios" ></a>
+    <a href="/art/bulbabang-taxi"><img src="/images/bulbabang-taxi.webp" alt="Cover art for 'Jun stepped into the taxi cab.' by escolopendror" ></a>
   </figure>
 </div>
 
