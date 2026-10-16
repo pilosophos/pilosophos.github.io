@@ -10,3 +10,6 @@ I initially started working on a [completely different illustration](/art/bulbab
 Since all the action is crammed into a more compact space, I think this design coveys the chaos in the story better than the old design. I'm a little sad I didn't get to include the parody newspaper I added, *Le Monde Pokémon*, however.
 
 It turns out illustrating this also took me a very long time, even though it's mostly flat shading, so it's definitely a good thing I didn't keep going with the old one.
+
+## License
+This illustration is made available to the public under the [Creative Commons BY-NC 4.0 International]( https://creativecommons.org/licenses/by-nc/4.0/) license.
