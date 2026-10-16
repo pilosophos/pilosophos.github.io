@@ -6,6 +6,12 @@ published: 2026-09-08
 ---
 # Jun stepped into the taxi cab.
 
+<div class="relative not-prose">
+  <figure class="flex flex-col gap-3 text-center items-center marginal-note">
+    <a href="/art/bulbabang-taxi"><img src="/images/bulbabang-taxi.webp" alt="Cover art for 'Jun stepped into the taxi cab.' by Khelios" ></a>
+  </figure>
+</div>
+
 "I'm heading to the Lavender Town address on this piece of paper. Yeah,
 I know it's a bit far to go by cab, but I don't really feel like
 taking the train and I don't want to drive.
