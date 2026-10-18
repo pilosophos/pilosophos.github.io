@@ -1,6 +1,6 @@
 ---
 title: Jun stepped into the taxi cab. (Bulbabang illustration)
-cover: bulbabang-taxi.webp
+cover: bulbabang-taxi.png
 date: 2026-10-16
 tags: [notmine]
 ---
