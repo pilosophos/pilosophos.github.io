@@ -4,13 +4,23 @@ description: Returning to Lavender Town where he grew up, Jun rambles for the en
 tags: [fiction, Pokémon, slice of life, stream of consciousness]
 published: 2026-09-08
 ---
+import HasMarginalImg from '@components/writing/HasMarginalImg.astro'
+import HasMarginalNote from '@components/writing/HasMarginalNote.astro'
+
+
 # Jun stepped into the taxi cab.
 
-<div class="relative not-prose">
+<HasMarginalImg>
+  <a slot="img" href="/art/bulbabang-taxi">
+    <img class="my-0!" src="/images/bulbabang-taxi.png" alt="Cover art for 'Jun stepped into the taxi cab.' by escolopendror" />
+  </a>
+</HasMarginalImg>
+
+{/* <div class="relative not-prose">
   <figure class="flex flex-col gap-3 text-center items-center marginal-note">
-    <a href="/art/bulbabang-taxi"><img src="/images/bulbabang-taxi.png" alt="Cover art for 'Jun stepped into the taxi cab.' by escolopendror" ></a>
+    <a href="/art/bulbabang-taxi"><img src="/images/bulbabang-taxi.png" alt="Cover art for 'Jun stepped into the taxi cab.' by escolopendror" /></a>
   </figure>
-</div>
+</div> */}
 
 "I'm heading to the Lavender Town address on this piece of paper. Yeah,
 I know it's a bit far to go by cab, but I don't really feel like
@@ -296,4 +306,10 @@ Jun paid the cab driver and stepped out of the taxi.
 He turned his head left and right, looking around for something he was
 starting to realize he would never find.
 
-"Mom, dad. Where― where is Puchi?"
+<HasMarginalNote>
+
+  "Mom, dad. Where― where is Puchi?"
+
+  <aside slot="marginal-note">If you enjoyed this story, you might also like my other Pokémon stories, [A Pokémon that meant a lot to me](/writing/a-pokemon-that-meant-a-lot-to-me) and [Callback](/writing/callback).</aside>
+
+</HasMarginalNote>
