@@ -2,7 +2,7 @@
 title: Medals Sketch
 cover: 2026-11-14-medals-sketch.png
 date: 2026-11-14
-tags: [sketchbook]
+tags: [sketchbook, notfeatured]
 ---
 I drew this because I was rooting around Wikipedia and got to the [Royal warrant of appointment (UK)](https://en.wikipedia.org/wiki/Royal_warrant_of_appointment_(United_Kingdom)) article on Wikipedia. Apparently these Royal warrants are given to companies who are official supplies for the Royal Family in Britain. Out of curiosity, I found a list of such companies on the website of the Royal Warrant Holders Association, and one of them is listed as "Manufacturers of Insignia," which I thought was interesting.
 
