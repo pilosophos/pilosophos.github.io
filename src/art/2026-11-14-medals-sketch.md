@@ -9,3 +9,5 @@ I drew this because I was rooting around Wikipedia and got to the [Royal warrant
 On this manufacturer's website is [an article](https://cleave.com/story-lieutenancy-badges) about how they designed and made a badge, and I liked the gouache design drawings on there.
 
 I don't do a whole lot of straight-up painting, so I thought I'd do a little bit of a (digital) paint-only sketch.
+
+The shield in the middle is my [coat of arms](/heraldry), with my [faerie crest](heraldry) on top.
